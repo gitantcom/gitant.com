@@ -17,6 +17,7 @@ $DefaultPasswords['upload'] = crypt('secrettwo');
 
 $TimeFmt = '%B %d, %Y, at %I:%M %p EST';
 
+include_once("scripts/xlpage-utf-8.php");
 XLPage('zh-cn.utf8','PmWikiZhCn.XLPage');
 
 
