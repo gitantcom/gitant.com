@@ -11,11 +11,11 @@ $PageLogoUrl = "http://example.com/mylogo.gif";
 #$ScriptUrl = 'http://example.com/pmwiki/pmwiki.php';
 #$PubDirUrl = 'http://example.com/pmwiki/pub';
 
-$DefaultPasswords['admin'] = crypt('021120');
+$DefaultPasswords['admin'] = crypt('secret_password');
 $DefaultPasswords['edit'] = crypt('021120');
 
 $EnableUpload = 1;
-$DefaultPasswords['upload'] = crypt('021120');
+$DefaultPasswords['upload'] = crypt('secret_password');
 
 # Uncomment and change these if needed
 # putenv("TZ=EST5EDT"); # if you run PHP 5.0 or older
