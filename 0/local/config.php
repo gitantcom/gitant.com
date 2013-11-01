@@ -1,7 +1,9 @@
 <?php 
 if (!defined('PmWiki')) exit();
+
 include_once("scripts/xlpage-utf-8.php");
 XLPage('zhcn','PmWikiZhCn.XLPage');
+
 $WikiTitle = "Gitant.Com";
 $PageLogoUrl = "http://example.com/mylogo.gif";
 
@@ -10,6 +12,7 @@ $PageLogoUrl = "http://example.com/mylogo.gif";
 #$PubDirUrl = 'http://example.com/pmwiki/pub';
 
 $DefaultPasswords['admin'] = crypt('021120');
+$DefaultPasswords['edit'] = crypt('021120');
 
 $EnableUpload = 1;
 $DefaultPasswords['upload'] = crypt('021120');
