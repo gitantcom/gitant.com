@@ -1,3 +1,3 @@
 <?php
-	echo "Welcome to Baidu Cloud";
+	include_once('pmwiki.php');
 ?>
