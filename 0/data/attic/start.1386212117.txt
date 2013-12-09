@@ -1,0 +1,78 @@
+====== DokuWiki ======
+~~NOTOC~~
+
+DokuWiki is a simple to use and highly versatile Open Source [[wp>wiki]] software that doesn't require a database. It is loved by users for its clean and readable [[wiki:syntax]]. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in [[:acl|access controls]] and [[:auth|authentication connectors]] make DokuWiki especially useful in the enterprise context and the large number of [[:plugins]] contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
+
+
+Get started: [[http://download.dokuwiki.org|{{:marketing:download-big.png|Download the latest version}}]]
+
+----
+
+<dokuteaser>
+==== Why DokuWiki? ====
+{{ :wiki:dokuwiki-128.png?nolink&80}}
+DokuWiki is a popular choice when choosing a Wiki software and has many advantages over similar software.
+
+  * Easy to install and use
+  * Low system requirements
+  * Built-in Access Control Lists
+  * Large variety of extensions
+  * Over 50 languages supported
+  * Device independent
+  * Open Source
+
+[[:features|Learn more about DokuWiki features]]
+</dokuteaser>
+
+
+<dokuteaser>
+==== Use Cases ====
+{{ :marketing:hackfest.jpg?nolink&150|DokuWiki Hackfest London 2012}} 
+Wikis are quick to update and new pages are easily added. Designed for collaboration while maintaining a history of every change, DokuWiki could be used as
+
+  * Corporate Knowledge Base
+  * Private notebook
+  * Software manual
+  * Project workspace
+  * CMS -- intranet
+
+
+</dokuteaser>
+
+
+<dokuteaser>
+==== Customizing DokuWiki ====
+{{ :marketing:customize.png?nolink&90|}} 
+We support customization on all levels of expertise. From easy configuration via the admin interface through downloading of templates and plugins to developing your own extensions.
+
+  * [[:config|Configuration]]
+  * [[:plugins|Plugins]]
+  * [[:template|Templates]] (aka. skins/themes)
+  * [[:tips|Tips & tricks]]
+
+[[:development|Read the development manual]]
+</dokuteaser>
+
+<dokuteaser>
+==== Our Community ====
+{{ :marketing:community.png?nolink&90}}
+A part of OpenSource is giving back to the community by getting involved. There are numerous of options to do that.
+
+  * Share your experience
+  * Do some wiki gardening
+  * Help plugin authors with documentation
+  * [[http://translate.dokuwiki.org/|Help translate the DokuWiki interface]]
+  * [[http://bugs.splitbrain.org/index.php?project=1|Submit bugs and feature wishes]]
+  * [[http://forum.dokuwiki.org|Answer questions in the forum]]
+
+[[:teams:getting_involved|Get involved]]
+</dokuteaser>
+
+
+===== Copyright =====
+
+2004-2013 (c) Andreas Gohr <andi@splitbrain.org>((Please do not contact me for help and support -- use the [[doku>mailinglist]] or [[http://forum.dokuwiki.org|forum]] instead)) and the DokuWiki Community
+
+The DokuWiki engine is licensed under [[http://www.gnu.org/licenses/gpl.html|GNU General Public License]] Version 2. If you use DokuWiki in your company, consider [[doku>donate|donating]] a few bucks ;-).
+
+Not sure what this means? See the [[doku>faq:license|FAQ on the Licenses]].

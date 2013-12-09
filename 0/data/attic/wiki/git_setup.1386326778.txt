@@ -1,0 +1,13 @@
+ ==== git 如何保存用户名? ====
+
+<code bash>
+$ git config --global
+credential.'https://sprockets.tv/'.username dieter
+<code>
+
+ ====  git如何设置ssl证书? ====
+
+费大幅度飞
+
+ ==== git 如何设置提交容量限制? ====
+fdfdf
