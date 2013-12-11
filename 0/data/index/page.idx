@@ -6,3 +6,12 @@ wiki:dokuwiki
 wiki:git_history
 wiki:git_setup
 gitlocal:git_repo_localnet
+wiki:git_reference
+gitclient:git_client
+wiki:git_codereview
+gitonline:git_repo_online
+gitcommand:git_command
+gitcommand:git_how
+gitsubtree:gitsubtree
+gitpush:gitpush
+gitcommand:gitremote

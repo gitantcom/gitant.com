@@ -1,27 +1,29 @@
-a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1386162841;s:8:"modified";i:1386581068;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386581068;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:7:"sidebar";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:15:"Git命令100问";s:8:"relation";a:2:{s:10:"references";a:12:{s:19:"gitcommand:git_diff";b:0;s:18:"gitcommand:git_log";b:0;s:20:"gitcommand:git_reset";b:0;s:20:"gitcommand:git_merge";b:0;s:26:"gitlocal:git_repo_localnet";b:1;s:25:"gitonline:git_repo_online";b:0;s:9:"bitbucket";b:0;s:20:"gitclient:git_client";b:0;s:12:"分支模式";b:0;s:12:"wiki:welcome";b:1;s:11:"wiki:syntax";b:1;s:13:"wiki:dokuwiki";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:295:"Git命令100问
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1386162841;s:8:"modified";i:1386730090;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386730090;s:2:"ip";s:13:"10.209.88.254";s:4:"type";s:1:"E";s:2:"id";s:7:"sidebar";s:4:"user";s:5:"uahoo";s:3:"sum";s:19:"[Git 使用100问] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:15:"Git代码托管";s:11:"description";a:2:{s:15:"tableofcontents";a:8:{i:0;a:4:{s:3:"hid";s:15:"git代码托管";s:5:"title";s:15:"Git代码托管";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:1;a:4:{s:3:"hid";s:21:"git代码评审工具";s:5:"title";s:21:"Git代码评审工具";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:2;a:4:{s:3:"hid";s:15:"git持续集成";s:5:"title";s:15:"Git持续集成";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:12:"git客户端";s:5:"title";s:12:"Git客户端";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:4;a:4:{s:3:"hid";s:9:"git参考";s:5:"title";s:9:"Git参考";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:5;a:4:{s:3:"hid";s:15:"git分支模式";s:5:"title";s:15:"Git分支模式";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:6;a:4:{s:3:"hid";s:16:"git_使用100问";s:5:"title";s:16:"Git 使用100问";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:7;a:4:{s:3:"hid";s:10:"wiki帮助";s:5:"title";s:10:"wiki帮助";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:306:"Git代码托管
 
-	*  git 比对
-	*  git 查看日志
-	*   git 回退
-	*   git 合并
+	*  搭建Git托管
+	*  选择Git托管
 
-使用Git仓库
+Git代码评审工具
 
-	*  选择Git局域网仓库
-	*  选择Git在线仓库
+	*   Git代码评审
 
-	*  bitbucket
+Git持续集成
+
+	*  Git持续集成
 
 Git客户端
 
 	*  选择Git 客户端
 
+Git参考
+
+	*   Git资料
+
 Git分支模式
 
 	*  分支模式
 
-wiki帮助
+Git 使用100问
 
-	*  welcome
-	*  syntax
-	*  dokuwiki";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1386162841;s:8:"modified";i:1386581068;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386581068;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:7:"sidebar";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}
+	*  git 比对
+	*  解决使用Git时的问题";}s:8:"relation";a:2:{s:10:"references";a:12:{s:26:"gitlocal:git_repo_localnet";b:1;s:25:"gitonline:git_repo_online";b:1;s:19:"wiki:git_codereview";b:1;s:11:"wiki:git_ci";b:0;s:20:"gitclient:git_client";b:1;s:18:"wiki:git_reference";b:1;s:12:"分支模式";b:0;s:24:"wiki:gitcommand:git_diff";b:0;s:22:"gitcommand:git_command";b:1;s:12:"wiki:welcome";b:1;s:11:"wiki:syntax";b:1;s:13:"wiki:dokuwiki";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1386162841;s:8:"modified";i:1386730090;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386730090;s:2:"ip";s:13:"10.209.88.254";s:4:"type";s:1:"E";s:2:"id";s:7:"sidebar";s:4:"user";s:5:"uahoo";s:3:"sum";s:19:"[Git 使用100问] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

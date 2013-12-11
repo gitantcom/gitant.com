@@ -1,0 +1,17 @@
+===== Git Push =====
+  * 如何修改远端git仓库 remote 的url地址？
+
+<code bash>
+$ git remote set-url remote URL
+</code>
+
+  * 如何推送本地新分支new-branch 到远端 origin 仓库？
+ <code bash >
+ $ git push -u origin new-branch
+ </code>
+  
+  * 如何修改远端git仓库的分支名称？
+ <code bash>
+  $ git push -u origin new  
+  $ git push origin :old
+  </code>

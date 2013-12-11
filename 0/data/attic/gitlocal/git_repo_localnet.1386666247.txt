@@ -1,0 +1,15 @@
+
+===== 搭建自己的Git代码托管仓库 =====
+
+==== Gitolite ====
+
+==== Gitblit ====
+[[http://www.gitblit.com/ | GitBlit ]] 
+==== Gitlab ====
+[[http://gitlab.org/| GitLab ]]
+
+==== Gitbucket ====
+[[https://github.com/takezoe/gitbucket | GitBucket ]] 复刻github的git代码托管。
+ 
+
+

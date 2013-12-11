@@ -1,0 +1,10 @@
+==== Windows 平台 ====
+  * [[https://code.google.com/p/msysgit/ | mysysgit ]] 基本的命令行工具
+  * [[http://sourcetreeapp.com/ |SourceTree ]]   SourceTree 是 Windows 和Mac OS X 下免费的 Git 和 Hg 客户端。
+  * [[http://www.syntevo.com/smartgithg/ | SmartGit ]] SmartGit 是syntevo 公司推出的支持Git和HG的客户端工具。
+  * [[http://code.google.com/p/tortoisegit/ | TortoiseGIT ]]  著名的TortoiseSVN的git版本。
+  * [[http://www.collab.net/giteyeapp| GitEye ]] CollabNet 公司的免费工具。
+ 
+====windows平台Git比较差异工具====
+    * [[ http://code.google.com/p/tortoisegit/ |TortoiseMerge]]
+    * [[ http://www.perforce.com/perforce/products/merge.html |p4 merge and diff  ]]

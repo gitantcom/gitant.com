@@ -1,0 +1,9 @@
+==== Windows 平台 ====
+  * [[http://sourcetreeapp.com/ |SourceTree ]]   SourceTree 是 Windows 和Mac OS X 下免费的 Git 和 Hg 客户端。支持创建、克隆、提交、push、pull 和合并等操作。
+  * [[http://www.syntevo.com/smartgithg/ | SmartGit ]] SmartGit 是syntevo 公司推出的支持Git和HG的客户端工具。
+  * [[http://code.google.com/p/tortoisegit/ | TortoiseGIT ]]  著名的TortoiseSVN的git版本。
+  * 
+ 
+====windows平台Git比较差异工具====
+    * [[ http://code.google.com/p/tortoisegit/ |TortoiseMerge]]
+    * [[ http://www.perforce.com/perforce/products/merge.html |p4 merge and diff  ]]

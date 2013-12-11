@@ -1,0 +1,6 @@
+===== Git Push =====
+  * 如何修改远端git仓库 remote 的url地址？
+
+<code bash>
+$ git remote set-url remote URL
+</code>

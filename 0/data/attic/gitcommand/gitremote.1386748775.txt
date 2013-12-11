@@ -1,0 +1,14 @@
+==== Git remote ==== 
+  git push 把变更合并到远端仓库
+ 
+  * 如何修改远端git仓库 remote 的url地址？
+
+<code bash>
+$ git remote set-url remote URL
+</code>
+
+  * 如何推送本地新分支到远端origin仓库？
+ <code bash >
+ $ git push -u origin new-branch
+ </code>
+  

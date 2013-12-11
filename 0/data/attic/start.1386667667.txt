@@ -1,0 +1,24 @@
+====== Gitant ======
+~~NOTOC~~
+
+=== Git ====
+
+
+Get started: [[https://msysgit.googlecode.com/files/Git-1.8.4-preview20130916.exe|{{:wiki:download-big.png|Download the latest version}}]]
+
+----
+
+
+==== Git的来源? ====
+
+Git是一个分布式版本控制／软件配置管理软件，原来是linux内核开发者林纳斯·托瓦兹（Linus Torvalds）为了更好地管理linux内核开发而创立的。
+
+{{:wiki:logo_2x.png?100*50}}
+==== Git 简史 ====
+
+[[wiki:git_history|Git的发展历史]]
+
+[[:features|Learn more about DokuWiki features]]
+
+
+
