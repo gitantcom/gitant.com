@@ -58,3 +58,4 @@ gitreset:gitreset
 gitlog:gitlog
 gitpush:gitpush
 gitcommand:gitremote
+gitcommand:git_release
