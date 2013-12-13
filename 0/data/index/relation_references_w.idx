@@ -59,3 +59,6 @@ gitlog:gitlog
 gitpush:gitpush
 gitcommand:gitremote
 gitcommand:git_release
+gitcommand:gitconfig
+gitcommand:gitconfigpasswd
+gitcommand:gitcommitname

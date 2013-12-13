@@ -15,3 +15,7 @@ gitcommand:git_how
 gitsubtree:gitsubtree
 gitpush:gitpush
 gitcommand:gitremote
+gitreset:gitreset
+gitcommand:gitconfig
+gitcommand:gitconfigpasswd
+gitcommand:gitcommitname

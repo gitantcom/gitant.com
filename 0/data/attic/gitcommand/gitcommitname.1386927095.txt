@@ -1,0 +1,11 @@
+
+==== 直接定义=====
+MD5值
+
+
+==== 相对定义=====
+HEAD, HEAD^, HEAD^^, HEAD^<n>分别表示当前提交，倒数第二次提交，倒数第三次提交，以及倒数第n次提交
+<code bash>
+git reset --hard HEAD^
+git reset --soft HEAD
+</code>

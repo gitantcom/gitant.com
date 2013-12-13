@@ -1,7 +1,7 @@
 Git
 Formatting Syntax
 Welcome to your new DokuWiki
-代码评审
+命令举例
 DokuWiki
 
 git 如何保存用户名?
@@ -15,3 +15,7 @@ Github
 使用git subtree集成项目到子目录
 Git Push
 Git remote
+如何强迫保持本地master分支与远程仓库同步？
+配置用户名
+HTTPS 方式保存密码
+直接定义

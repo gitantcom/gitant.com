@@ -1,33 +1,3 @@
-1386147304	10.209.91.169	C	start	uahoo	created	
-1386151350	10.209.91.169	E	start	uahoo		
-1386162561	10.212.41.146	E	start	uahoo		
-1386162841	10.212.41.146	C	sidebar	uahoo	created	
-1386162895	10.212.41.146	E	sidebar	uahoo		
-1386163200	10.212.41.146	E	sidebar	uahoo		
-1386163301	10.212.41.146	E	sidebar	uahoo		
-1386163539	10.212.41.146	E	sidebar	uahoo		
-1386163579	10.212.41.146	E	sidebar	uahoo		
-1386163698	10.212.41.146	E	start	uahoo		
-1386163787	10.212.41.146	E	sidebar	uahoo		
-1386163860	10.212.41.146	E	sidebar	uahoo		
-1386163947	10.212.41.146	E	sidebar	uahoo		
-1386164020	10.212.41.146	E	sidebar	uahoo		
-1386164127	10.212.41.146	E	sidebar	uahoo		
-1386164161	10.212.41.146	E	sidebar	uahoo		
-1386164749	10.212.41.146	E	sidebar	uahoo		
-1386209986	10.209.91.169	E	sidebar	uahoo		
-1386210026	10.209.91.169	E	sidebar	uahoo		
-1386210083	10.209.91.169	E	sidebar	uahoo		
-1386210118	10.209.91.169	E	sidebar	uahoo		
-1386210263	10.209.91.169	E	sidebar	uahoo		
-1386210341	10.209.91.169	E	sidebar	uahoo		
-1386210684	10.209.91.169	E	sidebar	uahoo		
-1386210712	10.209.91.169	E	sidebar	uahoo		
-1386212117	10.209.91.169	E	start	uahoo		
-1386213051	10.209.91.169	E	start	uahoo		
-1386213351	10.209.91.169	E	start	uahoo		
-1386213471	10.209.91.169	E	start	uahoo		
-1386228492	10.221.135.112	E	start	uahoo		
 1386254264	10.212.41.83	E	start	uahoo		
 1386254428	10.212.41.83	E	start	uahoo	[Git的来源?] 	
 1386254468	10.212.41.83	E	start	uahoo	[Git的来源?] 	
@@ -141,3 +111,20 @@
 1386814337	10.209.88.254	E	sidebar	uahoo	[Git 命令] 	
 1386814440	10.209.88.254	E	sidebar	uahoo		
 1386814478	10.209.88.254	E	sidebar	uahoo		
+1386832305	10.209.88.254	E	sidebar	uahoo		
+1386833251	10.209.88.254	C	gitreset:gitreset	uahoo	创建	
+1386833291	10.209.88.254	E	gitreset:gitreset	uahoo		
+1386841901	10.221.135.112	E	gitcommand:git_command	uahoo		
+1386841913	10.221.135.112	E	gitcommand:git_command	uahoo		
+1386842429	10.221.135.112	C	gitcommand:gitconfig	uahoo	创建	
+1386842729	10.221.135.112	E	gitcommand:gitconfig	uahoo		
+1386842756	10.221.135.112	E	gitcommand:gitconfig	uahoo	[git配置文件] 	
+1386842844	10.221.135.112	C	gitcommand:gitconfigpasswd	uahoo	创建	
+1386842914	10.221.135.112	E	gitcommand:gitconfigpasswd	uahoo		
+1386842947	10.221.135.112	E	gitcommand:gitconfigpasswd	uahoo		
+1386926145	10.221.135.112	E	gitcommand:git_command	uahoo		
+1386926271	10.221.135.112	E	gitreset:gitreset	uahoo		
+1386926312	10.221.135.112	E	gitreset:gitreset	uahoo	[如何强迫保持本地master分支与远程仓库同步？] 	
+1386926418	10.221.135.112	E	gitreset:gitreset	uahoo		
+1386927008	10.221.135.112	E	gitcommand:git_command	uahoo		
+1386927095	10.221.135.112	C	gitcommand:gitcommitname	uahoo	创建	

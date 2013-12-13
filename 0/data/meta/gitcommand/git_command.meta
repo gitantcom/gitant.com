@@ -1,4 +1,8 @@
-a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1386730150;s:8:"modified";i:1386747888;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386747888;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:22:"gitcommand:git_command";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:8:"relation";a:2:{s:10:"references";a:8:{s:24:"gitcommand:git_changeset";b:0;s:20:"gitcommand:git_merge";b:0;s:18:"gitcommand:git_how";b:1;s:21:"gitsubtree:gitsubtree";b:1;s:17:"gitreset:gitreset";b:0;s:13:"gitlog:gitlog";b:0;s:15:"gitpush:gitpush";b:1;s:20:"gitcommand:gitremote";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:89:"git_changeset
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1386730150;s:8:"modified";i:1386927008;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386927008;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:22:"gitcommand:git_command";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:8:"relation";a:2:{s:10:"references";a:10:{s:20:"gitcommand:gitconfig";b:1;s:24:"gitcommand:gitcommitname";b:0;s:24:"gitcommand:git_changeset";b:0;s:20:"gitcommand:git_merge";b:0;s:18:"gitcommand:git_how";b:1;s:21:"gitsubtree:gitsubtree";b:1;s:17:"gitreset:gitreset";b:1;s:13:"gitlog:gitlog";b:0;s:15:"gitpush:gitpush";b:1;s:20:"gitcommand:gitremote";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:153:"git的全局配置
+
+ Git提交的命名
+
+ git_changeset
 
  git_merge
 
@@ -6,10 +10,10 @@ a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1386730150;s:8:"modified
 
  gitsubtree
 
- gitreset
+ Git 的回退操作
 
  gitlog
 
  gitpush
 
-gitremote";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1386730150;s:8:"modified";i:1386747888;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386747888;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:22:"gitcommand:git_command";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}
+ git remote的操作";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1386730150;s:8:"modified";i:1386927008;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1386927008;s:2:"ip";s:14:"10.221.135.112";s:4:"type";s:1:"E";s:2:"id";s:22:"gitcommand:git_command";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

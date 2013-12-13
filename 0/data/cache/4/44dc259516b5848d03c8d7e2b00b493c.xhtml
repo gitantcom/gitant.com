@@ -1,0 +1,44 @@
+
+<h3 class="sectionedit1" id="如何强迫保持本地master分支与远程仓库同步">如何强迫保持本地master分支与远程仓库同步？</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> 首先创建分支，保留当前工作状态</div>
+</li>
+</ul>
+<pre class="code bash">$ <span class="kw2">git commit</span> <span class="re5">-a</span> <span class="re5">-m</span> <span class="st0">&quot;Saving my work, just in case&quot;</span>
+$ <span class="kw2">git branch</span> my-saved-work</pre>
+<ul>
+<li class="level1"><div class="li"> 然后强制同步远端master分支；</div>
+</li>
+</ul>
+<pre class="code bash">$ <span class="kw2">git fetch</span> origin
+$ <span class="kw2">git reset</span> <span class="re5">--hard</span> origin<span class="sy0">/</span>master</pre>
+
+</div>
+<!-- EDIT1 SECTION "如何强迫保持本地master分支与远程仓库同步？" [1-339] -->
+<h3 class="sectionedit2" id="放弃最后一次提交">放弃最后一次提交？</h3>
+<div class="level3">
+
+<p>
+你做了一次提交后，你想取消刚才的提交？
+</p>
+<pre class="code bash">$ <span class="kw2">git reset</span> HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis</pre>
+
+</div>
+<!-- EDIT2 SECTION "放弃最后一次提交？" [340-520] -->
+<h3 class="sectionedit3" id="放弃某一次提交">放弃某一次提交？</h3>
+<div class="level3">
+
+<p>
+使用~符号，HEAD~1是上两次提交。
+</p>
+
+<p>
+$ git reset HEAD~3
+</p>
+
+</div>
+<!-- EDIT3 SECTION "放弃某一次提交？" [521-] -->

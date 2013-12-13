@@ -1,0 +1,62 @@
+====配置用户名====
+ 
+
+你个人的用户名称和电子邮件地址，用户名可随意修改，git 用于记录是谁提交了更新，以及更新人的联系方式。
+<code bash>
+$ git config --global user.name "lixin"
+$ git config --global user.email lixin@example.com
+</code>
+
+====文本编辑器====
+
+在需要输入必要的文本信息时调用，比如提交更新时忘了加注释。一般情况会用系统默认的编辑器，比如Vi、Vim。当然也可以自定：
+<code bash>
+$ git config --global core.editor emacs
+</code>
+
+====差异分析工具====
+
+在解决冲突时经常用到，一般为vimdiff
+<code bash>
+$ git config --global merge.tool vimdiff
+</code>
+
+====自动高亮====
+
+很有用的颜色提示，因有些人不喜欢，所以默认是不开启的
+<code bash>
+$ git config --global color.ui auto
+</code>
+
+====查看配置====
+
+查看所有配置
+<code bash>
+$ git config --list
+</code>
+
+查看某个配置
+$ git config user.name
+
+====git配置文件====
+
+/etc/gitconfig 对所有用户有效  
+~/.gitconfig 对当前用户有效  
+{工作目录}/.git/config 仅对当前项目有效  
+$HOME 或者 C:Documents and Settings$USER 下的.gitconfig  
+git安装目录下的/etc/gitconfig  
+同上  
+
+在类 unix 系统中，配置文件为：
+
+在Windows中对应分别为：
+
+对应命令：
+<code bash>
+$ git config --system
+$ git config --global
+$ git config --local 或 $ git config
+</code>
+
+====配置https协议git用户密码====
+[[gitcommand:gitconfigpasswd|设置https协议个git用户密码]]

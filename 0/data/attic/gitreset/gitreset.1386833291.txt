@@ -1,0 +1,14 @@
+==== 如何强迫保持本地master分支与远程仓库同步？ ====
+  * 创建分支，保留当前工作状态
+<code bash >
+$ git commit -a -m "Saving my work, just in case"
+$ git branch my-saved-work
+</code>
+
+  * 强制同步远端master分支；
+
+<code bash >
+$ git fetch origin
+$ git reset --hard origin/master
+</code>
+

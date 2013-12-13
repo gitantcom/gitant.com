@@ -1,0 +1,95 @@
+
+<h3 class="sectionedit1" id="配置用户名">配置用户名</h3>
+<div class="level3">
+
+<p>
+你个人的用户名称和电子邮件地址，用户名可随意修改，git 用于记录是谁提交了更新，以及更新人的联系方式。
+</p>
+<pre class="code bash">$ <span class="kw2">git config</span> <span class="re5">--global</span> user.name <span class="st0">&quot;lixin&quot;</span>
+$ <span class="kw2">git config</span> <span class="re5">--global</span> user.email lixin<span class="sy0">@</span>example.com</pre>
+
+</div>
+<!-- EDIT1 SECTION "配置用户名" [1-288] -->
+<h3 class="sectionedit2" id="文本编辑器">文本编辑器</h3>
+<div class="level3">
+
+<p>
+在需要输入必要的文本信息时调用，比如提交更新时忘了加注释。一般情况会用系统默认的编辑器，比如Vi、Vim。当然也可以自定：
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git config</span> <span class="re5">--global</span> core.editor emacs</pre>
+
+</div>
+<!-- EDIT2 SECTION "文本编辑器" [289-548] -->
+<h3 class="sectionedit3" id="差异分析工具">差异分析工具</h3>
+<div class="level3">
+
+<p>
+在解决冲突时经常用到，一般为vimdiff
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git config</span> <span class="re5">--global</span> merge.tool vimdiff</pre>
+
+</div>
+<!-- EDIT3 SECTION "差异分析工具" [549-688] -->
+<h3 class="sectionedit4" id="自动高亮">自动高亮</h3>
+<div class="level3">
+
+<p>
+很有用的颜色提示，因有些人不喜欢，所以默认是不开启的
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git config</span> <span class="re5">--global</span> color.ui auto</pre>
+
+</div>
+<!-- EDIT4 SECTION "自动高亮" [689-846] -->
+<h3 class="sectionedit5" id="查看配置">查看配置</h3>
+<div class="level3">
+
+<p>
+查看所有配置
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git config</span> <span class="re5">--list</span></pre>
+
+<p>
+查看某个配置
+$ git config user.name
+</p>
+
+</div>
+<!-- EDIT5 SECTION "查看配置" [847-971] -->
+<h3 class="sectionedit6" id="git配置文件">git配置文件</h3>
+<div class="level3">
+
+<p>
+/etc/gitconfig 对所有用户有效  
+~/.gitconfig 对当前用户有效  
+{工作目录}/.git/config 仅对当前项目有效  
+$HOME 或者 C:Documents and Settings$USER 下的.gitconfig  
+git安装目录下的/etc/gitconfig  
+同上  
+</p>
+
+<p>
+在类 unix 系统中，配置文件为：
+</p>
+
+<p>
+在Windows中对应分别为：
+</p>
+
+<p>
+对应命令：
+</p>
+<pre class="code bash">$ <span class="kw2">git config</span> <span class="re5">--system</span>
+$ <span class="kw2">git config</span> <span class="re5">--global</span>
+$ <span class="kw2">git config</span> <span class="re5">--local</span> 或 $ <span class="kw2">git config</span></pre>
+
+</div>
+<!-- EDIT6 SECTION "git配置文件" [972-1432] -->
+<h3 class="sectionedit7" id="配置https协议git用户密码">配置https协议git用户密码</h3>
+<div class="level3">
+
+<p>
+<a href="/0/doku.php?id=gitcommand:gitconfigpasswd" class="wikilink1" title="gitcommand:gitconfigpasswd">设置https协议个git用户密码</a>
+</p>
+
+</div>
+<!-- EDIT7 SECTION "配置https协议git用户密码" [1433-] -->

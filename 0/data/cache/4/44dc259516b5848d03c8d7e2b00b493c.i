@@ -1,0 +1,12 @@
+a:37:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:60:"如何强迫保持本地master分支与远程仓库同步？";i:1;i:3;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1;}i:3;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:71;}i:4;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:71;}i:5;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:71;}i:6;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:46:" 首先创建分支，保留当前工作状态";}i:2;i:75;}i:7;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:121;}i:8;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:121;}i:9;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:121;}i:10;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:78:"
+$ git commit -a -m "Saving my work, just in case"
+$ git branch my-saved-work
+";i:1;s:4:"bash";i:2;N;}i:2;i:127;}i:11;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:220;}i:12;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:220;}i:13;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:220;}i:14;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:40:" 然后强制同步远端master分支；";}i:2;i:224;}i:15;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:264;}i:16;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:264;}i:17;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:264;}i:18;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:53:"
+$ git fetch origin
+$ git reset --hard origin/master
+";i:1;s:4:"bash";i:2;N;}i:2;i:271;}i:19;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:340;}i:20;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:27:"放弃最后一次提交？";i:1;i:3;i:2;i:340;}i:2;i:340;}i:21;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:340;}i:22;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:340;}i:23;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:57:"你做了一次提交后，你想取消刚才的提交？";}i:2;i:378;}i:24;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:441;}i:25;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:65:"
+$ git reset HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis
+";i:1;s:4:"bash";i:2;N;}i:2;i:441;}i:26;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:521;}i:27;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:24:"放弃某一次提交？";i:1;i:3;i:2;i:521;}i:2;i:521;}i:28;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:521;}i:29;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:521;}i:30;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:43:"使用~符号，HEAD~1是上两次提交。";}i:2;i:556;}i:31;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:599;}i:32;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:599;}i:33;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:18:"$ git reset HEAD~3";}i:2;i:601;}i:34;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:619;}i:35;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:620;}i:36;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:620;}}
