@@ -19,3 +19,4 @@ gitreset:gitreset
 gitcommand:gitconfig
 gitcommand:gitconfigpasswd
 gitcommand:gitcommitname
+gitcommand:git_diff
