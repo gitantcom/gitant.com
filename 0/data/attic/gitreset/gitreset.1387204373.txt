@@ -1,0 +1,29 @@
+==== 如何回退本地的提交？ ====
+
+==== 如何强迫保持本地master分支与远程仓库同步？ ====
+  * 首先创建分支，保留当前工作状态
+<code bash >
+$ git commit -a -m "Saving my work, just in case"
+$ git branch my-saved-work
+</code>
+
+  * 然后强制同步远端master分支；
+
+<code bash >
+$ git fetch origin
+$ git reset --hard origin/master
+</code>
+
+==== 放弃最后一次提交？ ====
+你做了一次提交后，你想取消刚才的提交？
+<code bash>
+$ git reset HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis
+</code>
+
+==== 放弃某一次提交？ ====
+使用~符号，HEAD~1是上两次提交。
+
+$ git reset HEAD~3

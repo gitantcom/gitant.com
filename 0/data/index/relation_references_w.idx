@@ -64,3 +64,5 @@ gitcommand:gitconfigpasswd
 gitcommand:gitcommitname
 gitcommand:git-workflow-svn
 gitcommand:git-workflow-gitflow
+gitcommand:gitbranchmodel
+gitcommand:gitrevert
