@@ -62,3 +62,5 @@ gitcommand:git_release
 gitcommand:gitconfig
 gitcommand:gitconfigpasswd
 gitcommand:gitcommitname
+gitcommand:git-workflow-svn
+gitcommand:git-workflow-gitflow

@@ -1,0 +1,11 @@
+<WRAP center round box 15%>
+Git 的分支模式
+</WRAP>
+
+[[gitcommand:git-workflow-svn|{{gitcommand:git-workflow-svn.png?100*50|Git中央集中式分支管理模式   }}]]
+
+[[gitcommand:git-workflow-gitflow|{{ gitcommand:git-workflow-gitflow.png?120*50|GitFlow分支管理模式  }}]]
+-----
+{{wiki:dokuwiki-128.png }}
+{{ wiki:dokuwiki-128.png }}
+

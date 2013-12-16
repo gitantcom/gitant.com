@@ -20,3 +20,5 @@ gitcommand:gitconfig
 gitcommand:gitconfigpasswd
 gitcommand:gitcommitname
 gitcommand:git_diff
+分支模式
+gitcommand:git-workflow-gitflow

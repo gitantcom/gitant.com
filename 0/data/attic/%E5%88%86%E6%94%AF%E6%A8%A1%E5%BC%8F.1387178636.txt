@@ -1,0 +1,3 @@
+<WRAP center round box 60%>
+简单居中方框
+</WRAP>
