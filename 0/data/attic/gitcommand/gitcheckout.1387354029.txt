@@ -8,12 +8,8 @@ $ git checkout abcde file/to/restore  #恢复某个文件到指定版本
   * 查看文件日志
     <code bash >
     $git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
-    * fa3c141 2011-03-09 | Added HTML header (HEAD, master) [Marina Pushkova]
-    * 8c32287 2011-03-09 | Added standard HTML page tags [Marina Pushkova]
-    * 43628f7 2011-03-09 | Added h1 tag [Marina Pushkova]
-    * 911e8c9 2011-03-09 | First Commit [Marina Pushkova]
     </code>
-   * 检出某个hash值的文件
+   * 检出某个hash值得文件
     <code bash>
     $ git checkout 911e8c9
     Note: checking out '911e8c9'.
@@ -29,7 +25,3 @@ $ git checkout abcde file/to/restore  #恢复某个文件到指定版本
 
     HEAD is now at 911e8c9... First Commit
     </code>
-    * 回到master的最新版
-    <code bash>
-     $git checkout master
-     </code>

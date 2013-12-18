@@ -1,0 +1,6 @@
+    <span class="re1">$git</span> log <span class="re5">--pretty</span>=format:<span class="st0">&quot;%h %ad | %s%d [%an]&quot;</span> <span class="re5">--graph</span> <span class="re5">--date</span>=short
+    <span class="sy0">*</span> fa3c141 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added HTML header <span class="br0">&#40;</span>HEAD, master<span class="br0">&#41;</span> <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 8c32287 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added standard HTML page tags <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 43628f7 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added h1 tag <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 911e8c9 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> First Commit <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+&nbsp;

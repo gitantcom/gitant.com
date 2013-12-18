@@ -1,0 +1,2 @@
+    <span class="re1">$git</span> log <span class="re5">--pretty</span>=format:<span class="st0">&quot;%h %ad | %s%d [%an]&quot;</span> <span class="re5">--graph</span> <span class="re5">--date</span>=short
+&nbsp;
