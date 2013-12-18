@@ -1,0 +1,55 @@
+==== 如何回退本地的提交？ ====
+
+<code bash>
+$ git commit ...
+$ git reset --soft HEAD^      <1>
+$ edit                        <2>
+$ git commit -a -c ORIG_HEAD  <3>
+</code>
+
+  - git完成提交，发现需要回退，并保留原变更的内容
+  - 重新编辑内容
+  - 重新完成提交
+
+==== 如何强迫保持本地master分支与远程仓库同步？ ====
+  * 首先创建分支，保留当前工作状态
+<code bash >
+$ git commit -a -m "Saving my work, just in case"
+$ git branch my-saved-work
+</code>
+
+  * 然后强制同步远端master分支；
+
+<code bash >
+$ git fetch origin
+$ git reset --hard origin/master
+</code>
+
+==== 放弃最后一次提交？ ====
+你做了一次提交后，你想取消刚才的提交？
+<code bash>
+$ git reset HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis
+</code>
+
+==== 放弃某一次提交？ ====
+使用~符号，HEAD~1是上两次提交。
+
+$ git reset HEAD~3
+
+====放弃合并或者pull操作？ ====
+
+<code bash >
+$ git pull                         <1>
+Auto-merging nitfol
+CONFLICT (content): Merge conflict in nitfol
+Automatic merge failed; fix conflicts and then commit the result.
+$ git reset --hard                 <2>
+$ git pull . topic/branch          <3>
+Updating from 41223... to 13134...
+Fast-forward
+$ git reset --hard ORIG_HEAD       <4>
+</code>
+

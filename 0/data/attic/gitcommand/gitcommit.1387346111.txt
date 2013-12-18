@@ -1,0 +1,5 @@
+==== How do I reset/revert a specific file to a specific revision using Git? ====
+Assuming the commit you want is "abcde"
+<code bash >
+git checkout abcde file/to/restore
+</code>

@@ -1,21 +1,26 @@
 
 <h3 class="sectionedit1" id="如何回退本地的提交">如何回退本地的提交？</h3>
 <div class="level3">
-<pre class="code bash">$ <span class="kw2">git commit</span> ...
-$ <span class="kw2">git reset</span> <span class="re5">--soft</span> HEAD^      <span class="sy0">&lt;</span><span class="nu0">1</span><span class="sy0">&gt;</span>
-$ edit                        <span class="sy0">&lt;</span><span class="nu0">2</span><span class="sy0">&gt;</span>
-$ <span class="kw2">git commit</span> <span class="re5">-a</span> <span class="re5">-c</span> ORIG_HEAD  <span class="sy0">&lt;</span><span class="nu0">3</span><span class="sy0">&gt;</span></pre>
+<pre class="code bash">    $ <span class="kw2">git commit</span> ...              <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
+    $ <span class="kw2">git reset</span> <span class="re5">--soft</span> <span class="st_h">'HEAD^'</span>    <span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span>
+    $ edit                        <span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span>
+    $ <span class="kw2">git add</span> ....                <span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span>
+    $ <span class="kw2">git commit</span> <span class="re5">-c</span> ORIG_HEAD     <span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span></pre>
 <ol>
-<li class="level1"><div class="li"> git完成提交，发现需要回退，并保留原变更的内容</div>
+<li class="level1"><div class="li"> This is what you want to undo</div>
 </li>
-<li class="level1"><div class="li"> 重新编辑内容</div>
+<li class="level1"><div class="li"> This is most often done when you remembered what you just committed is incomplete, or you misspelled your commit message, or both. Leaves working tree as it was before “reset”. (The quotes may or may not be required in your shell)</div>
 </li>
-<li class="level1"><div class="li"> 重新完成提交</div>
+<li class="level1"><div class="li"> Make corrections to working tree files</div>
+</li>
+<li class="level1"><div class="li"> Stage changes for commit</div>
+</li>
+<li class="level1"><div class="li"> reset” copies the old head to .git/ORIG_HEAD; redo the commit by starting with its log message. If you do not need to edit the message further, you can give -C option instead</div>
 </li>
 </ol>
 
 </div>
-<!-- EDIT1 SECTION "如何回退本地的提交？" [1-300] -->
+<!-- EDIT1 SECTION "如何回退本地的提交？" [1-776] -->
 <h3 class="sectionedit2" id="如何强迫保持本地master分支与远程仓库同步">如何强迫保持本地master分支与远程仓库同步？</h3>
 <div class="level3">
 <ul>
@@ -32,7 +37,7 @@ $ <span class="kw2">git branch</span> my-saved-work</pre>
 $ <span class="kw2">git reset</span> <span class="re5">--hard</span> origin<span class="sy0">/</span>master</pre>
 
 </div>
-<!-- EDIT2 SECTION "如何强迫保持本地master分支与远程仓库同步？" [301-639] -->
+<!-- EDIT2 SECTION "如何强迫保持本地master分支与远程仓库同步？" [777-1115] -->
 <h3 class="sectionedit3" id="放弃最后一次提交">放弃最后一次提交？</h3>
 <div class="level3">
 
@@ -45,7 +50,7 @@ M Zeus
 M Adonis</pre>
 
 </div>
-<!-- EDIT3 SECTION "放弃最后一次提交？" [640-820] -->
+<!-- EDIT3 SECTION "放弃最后一次提交？" [1116-1296] -->
 <h3 class="sectionedit4" id="放弃某一次提交">放弃某一次提交？</h3>
 <div class="level3">
 
@@ -58,4 +63,18 @@ $ git reset HEAD~3
 </p>
 
 </div>
-<!-- EDIT4 SECTION "放弃某一次提交？" [821-] -->
+<!-- EDIT4 SECTION "放弃某一次提交？" [1297-1396] -->
+<h3 class="sectionedit5" id="放弃合并或者pull操作">放弃合并或者pull操作？</h3>
+<div class="level3">
+<pre class="code bash">$ <span class="kw2">git pull</span>                         <span class="sy0">&lt;</span><span class="nu0">1</span><span class="sy0">&gt;</span>
+Auto-merging nitfol
+CONFLICT <span class="br0">&#40;</span>content<span class="br0">&#41;</span>: Merge conflict <span class="kw1">in</span> nitfol
+Automatic merge failed; fix conflicts and <span class="kw1">then</span> commit the result.
+$ <span class="kw2">git reset</span> <span class="re5">--hard</span>                 <span class="sy0">&lt;</span><span class="nu0">2</span><span class="sy0">&gt;</span>
+$ <span class="kw2">git pull</span> . topic<span class="sy0">/</span>branch          <span class="sy0">&lt;</span><span class="nu0">3</span><span class="sy0">&gt;</span>
+Updating from <span class="nu0">41223</span>... to <span class="nu0">13134</span>...
+Fast-forward
+$ <span class="kw2">git reset</span> <span class="re5">--hard</span> ORIG_HEAD       <span class="sy0">&lt;</span><span class="nu0">4</span><span class="sy0">&gt;</span></pre>
+
+</div>
+<!-- EDIT5 SECTION "放弃合并或者pull操作？" [1397-] -->

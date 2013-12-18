@@ -260,3 +260,7 @@ wrap
 flow
 refs
 orig
+fast
+undo
+tree
+redo

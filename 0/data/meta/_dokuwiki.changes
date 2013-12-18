@@ -139,3 +139,23 @@
 1387206500	10.212.40.188	E	gitclient:git_client	uahoo	[Windows 平台] 	
 1387206817	10.212.40.188	E	gitclient:git_client	uahoo		
 1387250277	10.209.88.254	E	start	uahoo		
+1387277199	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387277261	10.221.135.120	E	gitreset:gitreset	uahoo		
+1387277432	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387339630	10.221.135.120	E	start	uahoo	[Git 简史] 	
+1387339653	10.221.135.120	E	start	uahoo		
+1387339675	10.221.135.120	E	start	uahoo		
+1387339736	10.221.135.120	E	start	uahoo		
+1387339773	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387343058	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387343545	10.221.135.120	E	wiki:git_reference	uahoo		
+1387343655	10.221.135.120	E	wiki:git_reference	uahoo		
+1387346111	10.221.135.120	C	gitcommand:gitcommit	uahoo	创建	
+1387346417	10.221.135.120	E	gitreset:gitreset	uahoo	[如何回退本地的提交？] 	
+1387346447	10.221.135.120	E	gitreset:gitreset	uahoo		
+1387346659	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387346710	10.221.135.120	E	gitcommand:git_command	uahoo		
+1387346723	10.221.135.120	D	gitcommand:gitcommit	uahoo	移除	
+1387346757	10.221.135.120	C	gitcommand:gitcheckout	uahoo	创建	
+1387346899	10.221.135.120	C	gitcommand:gitcommit	uahoo	创建	
+1387346947	10.221.135.120	E	gitcommand:gitcheckout	uahoo		

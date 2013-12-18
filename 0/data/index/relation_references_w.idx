@@ -66,3 +66,6 @@ gitcommand:git-workflow-svn
 gitcommand:git-workflow-gitflow
 gitcommand:gitbranchmodel
 gitcommand:gitrevert
+gitcommand:gitsubmodel
+gitcommand:gitcommit
+gitcommand:gitcheckout
