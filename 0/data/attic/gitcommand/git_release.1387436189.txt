@@ -1,0 +1,4 @@
+
+====modgit =====
+Shell script for Git module deployment with include/exclude filters. [[https://github.com/jreinke/modgit|modgit]]
+ 

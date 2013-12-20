@@ -69,3 +69,7 @@ gitcommand:gitrevert
 gitcommand:gitsubmodel
 gitcommand:gitcommit
 gitcommand:gitcheckout
+gitcommand:git_parallel
+wiki:git_howto_pull_request
+wiki:using_pull_requests
+wiki:git_push_website

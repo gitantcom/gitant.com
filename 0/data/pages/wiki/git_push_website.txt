@@ -1,0 +1,34 @@
+=====用git部署php站点=====
+出处信息
+
+在小站点上，直接用git来部署php代码是相当方便的事情，你的远程站点以及本地版本库都有一个版本控制，追踪问题或者回滚是很轻松的事情。下面介绍用git部署时的设置步骤
+
+====在远程服务器的设置====
+
+假定你需要部署的代码在/var/www/yoursite
+<code bash>
+cd /var/www/yoursite
+git init .
+git config receive.denyCurrentBranch ignore
+git config --bool receive.denyNonFastForwards false
+cd .git/hooks
+wget http://utsl.gen.nz/git/post-update
+chmod +x post-update
+</code>
+
+====在本地git库中新增配置====
+<code bash>
+[remote "prod"]
+        url = your-ssh-username@your-host:/var/www/yoursite/
+</code>
+这样就算设置完成了。
+
+====推送操作====
+如果你想把本地的代码推送到远程服务器，下面简单的步骤就可以做到
+<code bash>
+git pull
+git push prod
+</code>
+====注意事项====
+
+ 如果远程服务器上git的配置目录.git暴露在外部可访问的位置，请在web服务器上设置这个目录不可见。

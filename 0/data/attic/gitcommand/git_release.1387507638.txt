@@ -1,0 +1,6 @@
+
+====modgit =====
+Shell script for Git module deployment with include/exclude filters. [[https://github.com/jreinke/modgit|modgit]]
+ 
+====git 简单push部署====
+用push实现php部署 [[wiki:git_push_website|git push 远端部署]]

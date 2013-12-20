@@ -25,3 +25,7 @@ gitcommand:git-workflow-gitflow
 gitcommand:gitbranchmodel
 gitcommand:gitcommit
 gitcommand:gitcheckout
+gitcommand:git_parallel
+wiki:git_howto_pull_request
+gitcommand:git_release
+wiki:git_push_website

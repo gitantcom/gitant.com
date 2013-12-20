@@ -1,0 +1,7 @@
+<span class="kw3">cd</span> <span class="sy0">/</span>var<span class="sy0">/</span>www<span class="sy0">/</span>yoursite
+<span class="kw2">git init</span> .
+<span class="kw2">git config</span> receive.denyCurrentBranch ignore
+<span class="kw2">git config</span> <span class="re5">--bool</span> receive.denyNonFastForwards <span class="kw2">false</span>
+<span class="kw3">cd</span> .git<span class="sy0">/</span>hooks
+<span class="kw2">wget</span> http:<span class="sy0">//</span>utsl.gen.nz<span class="sy0">/</span>git<span class="sy0">/</span>post-update
+<span class="kw2">chmod</span> +x post-update

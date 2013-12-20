@@ -1,0 +1,15 @@
+a:38:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:21:"用git部署php站点";i:1;i:2;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:2;}i:2;i:1;}i:3;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1;}i:4;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:12:"出处信息";}i:2;i:33;}i:5;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:45;}i:6;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:45;}i:7;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:231:"在小站点上，直接用git来部署php代码是相当方便的事情，你的远程站点以及本地版本库都有一个版本控制，追踪问题或者回滚是很轻松的事情。下面介绍用git部署时的设置步骤";}i:2;i:47;}i:8;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:278;}i:9;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:280;}i:10;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:27:"在远程服务器的设置";i:1;i:3;i:2;i:280;}i:2;i:280;}i:11;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:280;}i:12;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:280;}i:13;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:50:"假定你需要部署的代码在/var/www/yoursite";}i:2;i:317;}i:14;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:373;}i:15;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:204:"
+cd /var/www/yoursite
+git init .
+git config receive.denyCurrentBranch ignore
+git config --bool receive.denyNonFastForwards false
+cd .git/hooks
+wget http://utsl.gen.nz/git/post-update
+chmod +x post-update
+";i:1;s:4:"bash";i:2;N;}i:2;i:373;}i:16;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:592;}i:17;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:30:"在本地git库中新增配置";i:1;i:3;i:2;i:592;}i:2;i:592;}i:18;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:592;}i:19;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:78:"
+[remote "prod"]
+        url = your-ssh-username@your-host:/var/www/yoursite/
+";i:1;s:4:"bash";i:2;N;}i:2;i:636;}i:20;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:636;}i:21;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:30:"这样就算设置完成了。";}i:2;i:728;}i:22;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:758;}i:23;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:760;}i:24;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:12:"推送操作";i:1;i:3;i:2;i:760;}i:2;i:760;}i:25;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:760;}i:26;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:760;}i:27;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:93:"如果你想把本地的代码推送到远程服务器，下面简单的步骤就可以做到";}i:2;i:781;}i:28;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:880;}i:29;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:24:"
+git pull
+git push prod
+";i:1;s:4:"bash";i:2;N;}i:2;i:880;}i:30;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:918;}i:31;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:12:"注意事项";i:1;i:3;i:2;i:918;}i:2;i:918;}i:32;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:918;}i:33;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:918;}i:34;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:134:" 如果远程服务器上git的配置目录.git暴露在外部可访问的位置，请在web服务器上设置这个目录不可见。";}i:2;i:940;}i:35;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1074;}i:36;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1074;}i:37;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1074;}}

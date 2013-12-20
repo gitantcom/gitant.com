@@ -1,0 +1,61 @@
+
+<h2 class="sectionedit1" id="用git部署php站点">用git部署php站点</h2>
+<div class="level2">
+
+<p>
+出处信息
+</p>
+
+<p>
+在小站点上，直接用git来部署php代码是相当方便的事情，你的远程站点以及本地版本库都有一个版本控制，追踪问题或者回滚是很轻松的事情。下面介绍用git部署时的设置步骤
+</p>
+
+</div>
+<!-- EDIT1 SECTION "用git部署php站点" [1-279] -->
+<h3 class="sectionedit2" id="在远程服务器的设置">在远程服务器的设置</h3>
+<div class="level3">
+
+<p>
+假定你需要部署的代码在/var/www/yoursite
+</p>
+<pre class="code bash"><span class="kw3">cd</span> <span class="sy0">/</span>var<span class="sy0">/</span>www<span class="sy0">/</span>yoursite
+<span class="kw2">git init</span> .
+<span class="kw2">git config</span> receive.denyCurrentBranch ignore
+<span class="kw2">git config</span> <span class="re5">--bool</span> receive.denyNonFastForwards <span class="kw2">false</span>
+<span class="kw3">cd</span> .git<span class="sy0">/</span>hooks
+<span class="kw2">wget</span> http:<span class="sy0">//</span>utsl.gen.nz<span class="sy0">/</span>git<span class="sy0">/</span>post-update
+<span class="kw2">chmod</span> +x post-update</pre>
+
+</div>
+<!-- EDIT2 SECTION "在远程服务器的设置" [280-591] -->
+<h3 class="sectionedit3" id="在本地git库中新增配置">在本地git库中新增配置</h3>
+<div class="level3">
+<pre class="code bash"><span class="br0">&#91;</span>remote <span class="st0">&quot;prod&quot;</span><span class="br0">&#93;</span>
+        url = your-ssh-username<span class="sy0">@</span>your-host:<span class="sy0">/</span>var<span class="sy0">/</span>www<span class="sy0">/</span>yoursite<span class="sy0">/</span></pre>
+
+<p>
+这样就算设置完成了。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "在本地git库中新增配置" [592-759] -->
+<h3 class="sectionedit4" id="推送操作">推送操作</h3>
+<div class="level3">
+
+<p>
+如果你想把本地的代码推送到远程服务器，下面简单的步骤就可以做到
+</p>
+<pre class="code bash"><span class="kw2">git pull</span>
+<span class="kw2">git push</span> prod</pre>
+
+</div>
+<!-- EDIT4 SECTION "推送操作" [760-917] -->
+<h3 class="sectionedit5" id="注意事项">注意事项</h3>
+<div class="level3">
+
+<p>
+ 如果远程服务器上git的配置目录.git暴露在外部可访问的位置，请在web服务器上设置这个目录不可见。
+</p>
+
+</div>
+<!-- EDIT5 SECTION "注意事项" [918-] -->

@@ -1,0 +1,2 @@
+<span class="br0">&#91;</span>remote <span class="st0">&quot;prod&quot;</span><span class="br0">&#93;</span>
+        url = your-ssh-username<span class="sy0">@</span>your-host:<span class="sy0">/</span>var<span class="sy0">/</span>www<span class="sy0">/</span>yoursite<span class="sy0">/</span>
