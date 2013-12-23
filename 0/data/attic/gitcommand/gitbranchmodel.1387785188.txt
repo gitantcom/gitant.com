@@ -1,8 +1,8 @@
 
-===== Git集中分支管理模式 =====
+===== Git中央集中式分支管理模式 =====
 
 
-[[gitcommand:git-workflow-svn|Git集中分支管理模式]]
+[[gitcommand:git-workflow-svn|Git中央集中式分支管理模式]]
 
 ----
 ===== GitFlow分支管理模式 =====

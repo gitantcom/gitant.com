@@ -79,3 +79,4 @@ gitcommand:git_checkout_diff
 wiki:vcs_history
 wiki:vcs
 wiki:git_origin
+gitcommand:git-feature-bracn
