@@ -1,0 +1,12 @@
+
+====modgit 工具 =====
+Shell script for Git module deployment with include/exclude filters. [[https://github.com/jreinke/modgit|modgit]]
+ 
+====git 简单push部署====
+用push实现php部署 [[wiki:git_push_website|git push 远端部署]]
+
+====Git archive 命令====
+Git 命令参数 archive ，无需检出全库。[[ gitcommand:git_archive| git archive git制作包 ]]
+
+====git 检出变化的文件夹？====
+git 检出增量[[gitcommand|git_checkout_diff|git检出变化文件]]

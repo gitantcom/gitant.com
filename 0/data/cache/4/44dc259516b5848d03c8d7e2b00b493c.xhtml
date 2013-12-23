@@ -77,4 +77,32 @@ Fast-forward
 $ <span class="kw2">git reset</span> <span class="re5">--hard</span> ORIG_HEAD       <span class="sy0">&lt;</span><span class="nu0">4</span><span class="sy0">&gt;</span></pre>
 
 </div>
-<!-- EDIT5 SECTION "放弃合并或者pull操作？" [1397-] -->
+<!-- EDIT5 SECTION "放弃合并或者pull操作？" [1397-1795] -->
+<h3 class="sectionedit6" id="别丢失head">别丢失HEAD？</h3>
+<div class="level3">
+
+<p>
+HEAD好似一个游标，通常指向最新提交，随最新提交向前移动。一些Git命令让你来移动 它。 例如：
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git reset</span> HEAD~<span class="nu0">3</span></pre>
+
+<p>
+将立即向回移动HEAD三个提交。这样所有Git命令都表现得好似你没有做那最后三个提交， 然而你的文件保持在现在的状态。具体应用参见帮助页。
+</p>
+
+<p>
+但如何回到将来呢？过去的提交对将来一无所知。
+</p>
+
+<p>
+如果你有原先Head的SHA1值，那么：
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git reset</span> 1b6d</pre>
+
+<p>
+但假设你从来没有记下呢？别担心，像这些命令，Git保存原先的Head为一个叫 ORGI_HEAD的标记，你可以安全体面的返回：
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git reset</span> ORIG_HEAD</pre>
+
+</div>
+<!-- EDIT6 SECTION "别丢失HEAD？" [1796-] -->

@@ -1,13 +1,3 @@
-1386926145	10.221.135.112	E	gitcommand:git_command	uahoo		
-1386926271	10.221.135.112	E	gitreset:gitreset	uahoo		
-1386926312	10.221.135.112	E	gitreset:gitreset	uahoo	[如何强迫保持本地master分支与远程仓库同步？] 	
-1386926418	10.221.135.112	E	gitreset:gitreset	uahoo		
-1386927008	10.221.135.112	E	gitcommand:git_command	uahoo		
-1386927095	10.221.135.112	C	gitcommand:gitcommitname	uahoo	创建	
-1386927300	10.221.135.112	E	gitcommand:git_command	uahoo		
-1386927326	10.221.135.112	C	gitcommand:git_diff	uahoo	创建	
-1386927482	10.221.135.112	E	gitcommand:git_diff	uahoo		
-1386927537	10.221.135.112	E	gitcommand:git_diff	uahoo		
 1387178636	10.221.135.120	C	分支模式	uahoo	创建	
 1387178939	10.221.135.120	E	分支模式	uahoo		
 1387179109	10.221.135.120	E	分支模式	uahoo		
@@ -100,3 +90,38 @@
 1387507796	10.221.135.120	E	wiki:git_push_website	uahoo		
 1387511033	10.221.135.120	E	wiki:git_codereview	uahoo		
 1387511048	10.221.135.120	E	wiki:git_codereview	uahoo	[Cgit 超快基于web的git仓库浏览] 	
+1387520878	10.221.135.120	E	gitcommand:git_release	uahoo		
+1387520931	10.221.135.120	C	gitcommand:git_archive	uahoo	创建	
+1387521057	10.221.135.120	E	gitreset:gitreset	uahoo		
+1387521086	10.221.135.120	E	gitreset:gitreset	uahoo	[别丢失HEAD] 	
+1387523158	10.221.135.120	E	gitcommand:git_release	uahoo		
+1387525784	10.221.135.120	E	gitcommand:git_release	uahoo	[git 检出变化的文件夹？] 	
+1387525922	10.221.135.120	C	gitcommand:git_checkout_diff	uahoo	创建	
+1387526200	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo		
+1387526222	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo	[使用git diff-tree] 	
+1387526248	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo		
+1387526351	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo		
+1387528353	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo	[一句变更列表制作tar包] 	
+1387528980	10.221.135.120	E	gitcommand:git_checkout_diff	uahoo		
+1387770243	10.209.88.250	E	start	uahoo		
+1387778996	10.209.88.250	C	wiki:vcs_history	uahoo	创建	
+1387779131	10.209.88.250	E	wiki:vcs_history	uahoo		
+1387779150	10.209.88.250	E	wiki:vcs_history	uahoo		
+1387779232	10.209.88.250	E	wiki:vcs_history	uahoo		
+1387779755	10.209.88.250	E	wiki:vcs_history	uahoo		
+1387780045	10.209.88.250	E	start	uahoo		
+1387780500	10.209.88.250	E	start	uahoo	[Git] 	
+1387780679	10.209.88.250	E	start	uahoo		
+1387780709	10.209.88.250	E	start	uahoo	[版本控制系统] 	
+1387780760	10.209.88.250	E	start	uahoo		
+1387780803	10.209.88.250	E	start	uahoo		
+1387780853	10.209.88.250	E	start	uahoo	[Git的起源和发展] 	
+1387780942	10.209.88.250	E	start	uahoo		
+1387780973	10.209.88.250	E	start	uahoo		
+1387781006	10.209.88.250	E	start	uahoo	[Git的起源和发展] 	
+1387781048	10.209.88.250	E	start	uahoo	[Git] 	
+1387781070	10.209.88.250	E	start	uahoo	[Git for Win 下载] 	
+1387781092	10.209.88.250	E	start	uahoo	[下载] 	
+1387782587	10.209.88.250	E	start	uahoo	[Git起源发展] 	
+1387782597	10.209.88.250	E	start	uahoo	[Git起源发展] 	
+1387782609	10.209.88.250	C	wiki:git_origin	uahoo	创建	

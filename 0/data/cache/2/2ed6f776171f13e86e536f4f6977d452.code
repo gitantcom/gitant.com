@@ -1,0 +1,1 @@
+<span class="kw2">git archive</span> <span class="re5">-o</span> patch.zip a9359f9 $<span class="br0">&#40;</span><span class="kw2">git diff</span> <span class="re5">--name-only</span> a9359f9^..a9359f9<span class="br0">&#41;</span>

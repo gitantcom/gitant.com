@@ -29,3 +29,7 @@ gitcommand:git_parallel
 wiki:git_howto_pull_request
 gitcommand:git_release
 wiki:git_push_website
+gitcommand:git_archive
+gitcommand:git_checkout_diff
+wiki:vcs_history
+wiki:git_origin

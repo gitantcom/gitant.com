@@ -1,4 +1,4 @@
-a:78:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:30:"如何回退本地的提交？";i:1;i:3;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:191:"
+a:99:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:30:"如何回退本地的提交？";i:1;i:3;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:191:"
     $ git commit ...              (1)
     $ git reset --soft 'HEAD^'    (2)
     $ edit                        (3)
@@ -25,4 +25,10 @@ $ git pull . topic/branch          <3>
 Updating from 41223... to 13134...
 Fast-forward
 $ git reset --hard ORIG_HEAD       <4>
-";i:1;s:4:"bash";i:2;N;}i:2;i:1444;}i:76;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1796;}i:77;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1796;}}
+";i:1;s:4:"bash";i:2;N;}i:2;i:1444;}i:76;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1796;}i:77;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:16:"别丢失HEAD？";i:1;i:3;i:2;i:1796;}i:2;i:1796;}i:78;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1796;}i:79;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1796;}i:80;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:129:"HEAD好似一个游标，通常指向最新提交，随最新提交向前移动。一些Git命令让你来移动 它。 例如：";}i:2;i:1821;}i:81;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1956;}i:82;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:20:"
+$ git reset HEAD~3
+";i:1;s:4:"bash";i:2;N;}i:2;i:1956;}i:83;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1956;}i:84;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:191:"将立即向回移动HEAD三个提交。这样所有Git命令都表现得好似你没有做那最后三个提交， 然而你的文件保持在现在的状态。具体应用参见帮助页。";}i:2;i:1990;}i:85;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2181;}i:86;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2181;}i:87;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:66:"但如何回到将来呢？过去的提交对将来一无所知。";}i:2;i:2183;}i:88;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2249;}i:89;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2249;}i:90;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:44:"如果你有原先Head的SHA1值，那么：";}i:2;i:2251;}i:91;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2301;}i:92;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:18:"
+$ git reset 1b6d
+";i:1;s:4:"bash";i:2;N;}i:2;i:2301;}i:93;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2301;}i:94;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:155:"但假设你从来没有记下呢？别担心，像这些命令，Git保存原先的Head为一个叫 ORGI_HEAD的标记，你可以安全体面的返回：";}i:2;i:2333;}i:95;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2494;}i:96;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:23:"
+$ git reset ORIG_HEAD
+";i:1;s:4:"bash";i:2;N;}i:2;i:2494;}i:97;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:2531;}i:98;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:2531;}}

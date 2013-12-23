@@ -1,0 +1,6 @@
+====源码发布====
+
+就我的项目而言，Git完全跟踪了我想打包并发布给用户的文件。创建一个源码包，我运 行：
+<code bash>
+$ git archive --format=tar --prefix=proj-1.2.3/ HEAD
+</code>

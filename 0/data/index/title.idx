@@ -1,4 +1,4 @@
-Git
+版本控制系统
 Formatting Syntax
 Welcome to your new DokuWiki
 命令举例
@@ -27,5 +27,9 @@ HTTPS 方式保存密码
 How do I reset/revert a specific file to a specific revision using Git?
 
 GitHub如何操作pull request？
-modgit
+modgit 工具
 用git部署php站点
+源码发布
+git 如何检出变更文件？
+本地版本控制系统
+

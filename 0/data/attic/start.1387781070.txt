@@ -1,0 +1,17 @@
+~~NOTOC~~
+===== 版本控制系统  =====
+  * [[ wiki:vcs|版本控制系统]]
+
+  * [[wiki:vcs_history|从rcs到git]]
+
+===== Git起源发展 =====
+
+   * Git是一个分布式版本控制／软件配置管理软件，原来是linux内核开发者林纳斯·托瓦兹（Linus Torvalds）为了更好地管理linux内核开发而创立的。
+
+
+
+  * [[wiki:git_history|Git的发展历史]]
+
+
+===== 下载 =====
+   * {{:wiki:logo_2x.png?100*50|}}  [[http://git-scm.com/download/win|{{:wiki:download-big.png|Git for Win 最新版}}]]

@@ -9,3 +9,6 @@ gitcommand:git-diff-help.png
 gitcommand:git-log-for-upload-smaller.png
 gitcommand:git-workflow-svn.png
 gitcommand:git-workflow-gitflow.png
+wiki:rcs.jpg
+wiki:svn.jpg
+wiki:git.jpg

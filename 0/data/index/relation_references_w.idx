@@ -73,3 +73,9 @@ gitcommand:git_parallel
 wiki:git_howto_pull_request
 wiki:using_pull_requests
 wiki:git_push_website
+gitcommand:git_archive
+gitcommand:gitcommand
+gitcommand:git_checkout_diff
+wiki:vcs_history
+wiki:vcs
+wiki:git_origin
