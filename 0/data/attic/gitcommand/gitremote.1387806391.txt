@@ -10,6 +10,3 @@ $ git remote set-url remote URL
 
 
  ==== 添加一个远端仓库到一个已经存在的git仓库上？====
-<code bash>
-$ git remote add --track master origin  https://github.com/user/repo.git
-</code>
