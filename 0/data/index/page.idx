@@ -34,3 +34,5 @@ gitcommand:git_checkout_diff
 wiki:vcs_history
 wiki:git_origin
 wiki:git_commit_range
+gitcommand:git-fork-branch
+wiki:vcs

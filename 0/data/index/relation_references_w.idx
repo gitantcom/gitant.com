@@ -81,3 +81,5 @@ wiki:vcs
 wiki:git_origin
 gitcommand:git-feature-bracn
 wiki:git_commit_range
+gitcommand:git-feature-branch
+gitcommand:git-fork-branch
