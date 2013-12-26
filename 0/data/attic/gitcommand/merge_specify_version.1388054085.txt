@@ -1,0 +1,57 @@
+====如何合并某个版本的分支？====
+ 
+
+在本地 master 分支上做了一个commit ( 38361a68138140827b31b72f8bbfd88b3705d77a ) ， 如何把它放到 本地 old_cc 分支上？
+----
+
+办法之一： 使用 cherry-pick.  根据git 文档：
+
+Apply the changes introduced by some existing commits
+
+就是对已经存在的commit 进行apply (可以理解为再次提交）
+
+简单用法：
+
+    git cherry-pick <commit id>
+
+
+
+例如：
+<code >
+$ git checkout old_cc
+$ git cherry-pick 38361a68     # 这个 38361a68 号码，位于：
+</code>
+<code> 
+
+    $ git log
+
+    commit 38361a68138140827b31b72f8bbfd88b3705d77a
+    Author: Siwei Shen <siwei.shen@focusbeijing.com>
+    Date:   Sat Dec 10 00:09:44 2011 +0800
+</code>
+
+1. 如果顺利，就会正常提交。结果：
+<code>
+    Finished one cherry-pick.
+    # On branch old_cc
+    # Your branch is ahead of 'origin/old_cc' by 3 commits.
+</code>
+
+2. 如果在cherry-pick 的过程中出现了冲突
+<code>
+    Automatic cherry-pick failed.  After resolving the conflicts,
+    mark the corrected paths with 'git add <paths>' or 'git rm <paths>'
+    and commit the result with:
+
+            git commit -c 15a2b6c61927e5aed6718de89ad9dafba939a90b
+
+</code>
+就跟普通的冲突一样，手工解决：
+2.1 $ git status    # 看哪些文件出现冲突
+
+    both modified:      app/models/user.rb
+
+
+2.2 $ vim app/models/user.rb  # 手动解决它。
+2.3 $ git add app/models/user.rb
+2.4 git commit -c <新的commit号码>

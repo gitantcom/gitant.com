@@ -1,15 +1,3 @@
-1387432781	10.209.91.187	E	sidebar	uahoo		
-1387432895	10.209.91.187	C	gitcommand:git_parallel	uahoo	创建	
-1387432910	10.209.91.187	E	gitcommand:git_parallel	uahoo		
-1387432940	10.209.91.187	E	gitcommand:git_parallel	uahoo		
-1387432991	10.209.91.187	C	wiki:git_howto_pull_request	uahoo	创建	
-1387433206	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387433237	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387433252	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387433267	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387433285	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387433389	10.209.91.187	E	wiki:git_howto_pull_request	uahoo		
-1387436189	10.209.91.187	C	gitcommand:git_release	uahoo	创建	
 1387449072	10.221.135.120	E	gitcommand:gitconfigpasswd	uahoo		
 1387449095	10.221.135.120	E	gitcommand:gitconfig	uahoo		
 1387449152	10.221.135.120	E	gitcommand:git_command	uahoo		
@@ -73,3 +61,12 @@
 1387855440	10.221.135.120	E	wiki:vcs	uahoo		
 1387855901	10.221.135.120	E	wiki:vcs	uahoo		
 1387855987	10.221.135.120	E	wiki:vcs	uahoo		
+1388052089	10.221.135.120	C	gitlog:gitlog	uahoo	创建	
+1388052239	10.221.135.120	C	gitcommand:git_cat_old_ver	uahoo	创建	
+1388052277	10.221.135.120	E	gitcommand:git_cat_old_ver	uahoo		
+1388052447	10.221.135.120	E	gitcommand:git_parallel	uahoo		
+1388052533	10.221.135.120	C	gitcommand:merge_specify_file	uahoo	创建	
+1388052571	10.221.135.120	E	gitcommand:merge_specify_file	uahoo		
+1388052587	10.221.135.120	E	gitcommand:merge_specify_file	uahoo		
+1388053764	10.221.135.120	E	gitcommand:git_parallel	uahoo		
+1388054085	10.221.135.120	C	gitcommand:merge_specify_version	uahoo	创建	

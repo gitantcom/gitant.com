@@ -36,3 +36,7 @@ git 如何检出变更文件？
 提交范围
 The project maintainer initializes the official repository
 版本控制系统 
+
+git 如何查看某一版本文件的内容？
+git中如何合并某个指定文件？
+如何合并某个版本的分支？

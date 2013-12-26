@@ -1,0 +1,3 @@
+<span class="re1">$git</span> checkout B_branch
+<span class="re1">$cd</span> path<span class="sy0">/</span>to<span class="sy0">/</span>f.txt
+<span class="re1">$git</span> checkout A_bracn  f.txt

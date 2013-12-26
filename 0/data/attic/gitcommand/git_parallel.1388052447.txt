@@ -1,0 +1,3 @@
+
+  *[[wiki:git_howto_pull_request|github 如何pull request ?]]
+  *[[gitcommand:merge_specify_file|如何合并某个指定文件？]]
