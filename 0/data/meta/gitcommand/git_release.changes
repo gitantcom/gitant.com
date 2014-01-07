@@ -4,3 +4,6 @@
 1387520878	10.221.135.120	E	gitcommand:git_release	uahoo		
 1387523158	10.221.135.120	E	gitcommand:git_release	uahoo		
 1387525784	10.221.135.120	E	gitcommand:git_release	uahoo	[git 检出变化的文件夹？] 	
+1387958201	127.0.0.1	E	gitcommand:git_release		外部编辑	
+1388373521	10.209.89.185	E	gitcommand:git_release	uahoo		
+1388373545	10.209.89.185	E	gitcommand:git_release	uahoo	[git 从远程仓库里检出某个指定的文件] 	

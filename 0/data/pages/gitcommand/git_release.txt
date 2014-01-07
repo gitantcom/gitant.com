@@ -10,3 +10,11 @@ Git 命令参数 archive ，无需检出全库。[[ gitcommand:git_archive| git 
 
 ====git 检出变化的文件夹？====
 git 检出增量 [[gitcommand:git_checkout_diff|git检出变化文件]]
+
+====git 从远程仓库里检出某个指定的文件====
+  * 使用gitweb,cgit,Gitorious,ginatra等，从界面获得
+  * git archive
+
+<code bash >
+$ git archive --remote=git@github.com:foo/bar.git --prefix=path/to/ HEAD:path/to/ |  tar xvf -
+ </code>

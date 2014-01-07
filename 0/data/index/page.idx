@@ -40,3 +40,4 @@ gitlog:gitlog
 gitcommand:git_cat_old_ver
 gitcommand:merge_specify_file
 gitcommand:merge_specify_version
+gitcommand:gitsubmodel

@@ -1,42 +1,9 @@
-1387770243	10.209.88.250	E	start	uahoo		
-1387778996	10.209.88.250	C	wiki:vcs_history	uahoo	创建	
-1387779131	10.209.88.250	E	wiki:vcs_history	uahoo		
-1387779150	10.209.88.250	E	wiki:vcs_history	uahoo		
-1387779232	10.209.88.250	E	wiki:vcs_history	uahoo		
-1387779755	10.209.88.250	E	wiki:vcs_history	uahoo		
-1387780045	10.209.88.250	E	start	uahoo		
-1387780500	10.209.88.250	E	start	uahoo	[Git] 	
-1387780679	10.209.88.250	E	start	uahoo		
-1387780709	10.209.88.250	E	start	uahoo	[版本控制系统] 	
-1387780760	10.209.88.250	E	start	uahoo		
-1387780803	10.209.88.250	E	start	uahoo		
-1387780853	10.209.88.250	E	start	uahoo	[Git的起源和发展] 	
-1387780942	10.209.88.250	E	start	uahoo		
-1387780973	10.209.88.250	E	start	uahoo		
-1387781006	10.209.88.250	E	start	uahoo	[Git的起源和发展] 	
-1387781048	10.209.88.250	E	start	uahoo	[Git] 	
-1387781070	10.209.88.250	E	start	uahoo	[Git for Win 下载] 	
-1387781092	10.209.88.250	E	start	uahoo	[下载] 	
-1387782587	10.209.88.250	E	start	uahoo	[Git起源发展] 	
-1387782597	10.209.88.250	E	start	uahoo	[Git起源发展] 	
-1387782609	10.209.88.250	C	wiki:git_origin	uahoo	创建	
-1387785188	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
-1387785208	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo	[Git中央集中式分支管理模式] 	
-1387785244	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo	[Git中央集中分支管理模式] 	
-1387803460	10.212.40.191	E	gitlocal:git_repo_localnet	uahoo		
-1387803867	10.212.40.191	E	gitcommand:git_diff	uahoo		
-1387804570	10.212.40.191	E	gitcommand:git_diff	uahoo	[diff时用到的参数] 	
-1387805651	10.212.40.191	E	gitcommand:git_diff	uahoo		
-1387805874	10.212.40.191	C	wiki:git_commit_range	uahoo	创建	
-1387806391	10.212.40.191	E	gitcommand:gitremote	uahoo		
-1387806819	10.212.40.191	E	gitcommand:gitremote	uahoo	[添加一个远端仓库到一个已经存在的git仓库上？] 	
-1387852492	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
-1387852511	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo	[Git Fork 分支管理模式] 	
-1387852789	10.221.135.120	C	gitcommand:git-fork-branch	uahoo	创建	
 1387855210	10.221.135.120	C	wiki:vcs	uahoo	创建	
 1387855440	10.221.135.120	E	wiki:vcs	uahoo		
 1387855901	10.221.135.120	E	wiki:vcs	uahoo		
 1387855987	10.221.135.120	E	wiki:vcs	uahoo		
+1387958201	127.0.0.1	E	gitcommand:git_command		外部编辑	
+1387958201	127.0.0.1	E	gitcommand:git_release		外部编辑	
 1388052089	10.221.135.120	C	gitlog:gitlog	uahoo	创建	
 1388052239	10.221.135.120	C	gitcommand:git_cat_old_ver	uahoo	创建	
 1388052277	10.221.135.120	E	gitcommand:git_cat_old_ver	uahoo		
@@ -46,6 +13,8 @@
 1388052587	10.221.135.120	E	gitcommand:merge_specify_file	uahoo		
 1388053764	10.221.135.120	E	gitcommand:git_parallel	uahoo		
 1388054085	10.221.135.120	C	gitcommand:merge_specify_version	uahoo	创建	
-1387958201	127.0.0.1	E	gitcommand:git_command		外部编辑	
 1388372692	10.209.89.185	E	gitcommand:git_command	uahoo		
 1388372749	10.209.89.185	E	gitcommand:git_command	uahoo	[个人开发者（单独开发）] 	
+1388373057	10.209.89.185	C	gitcommand:gitsubmodel	uahoo	创建	
+1388373521	10.209.89.185	E	gitcommand:git_release	uahoo		
+1388373545	10.209.89.185	E	gitcommand:git_release	uahoo	[git 从远程仓库里检出某个指定的文件] 	

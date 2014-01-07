@@ -1,0 +1,31 @@
+
+<h3 class="sectionedit1" id="如何合并两个仓库">如何合并两个仓库？</h3>
+<div class="level3">
+
+<p>
+Use git-subtree to import a branch of another repository into your main repository without losing its history. For example:
+git subtree add –prefix=rails git:<em>github.com/rails/rails.git master
+
+
+This will import the other repository&#039;s master branch into a rails subdirectory (specified by –prefix) in your main repository and you can see all of its commits in git-log afterward.
+
+Submodules
+
+Either copy repository A into separate directory in larger project B, or (perhaps better) clone repository A into subdirectory in project B. Then use git submodule to make this repository a submodule of a repository B.
+
+This is a good solution for loosely-coupled repositories, where development in repository A continues, and major portion of development is separate stand-alone development in A. See also SubmoduleSupport and GitSubmoduleTutorial pages on Git Wiki.
+
+Subtree merge
+
+You can merge repository A into a subdirectory of a project B using the subtree merge strategy. This is described in Subtree Merging and You by Markus Prinz.
+git remote add -f Bproject /path/to/B
+git merge -s ours –no-commit Bproject/master
+git read-tree –prefix=dir-B/ -u Bproject/master
+git commit -m “Merge B project as our subdirectory”
+git pull -s subtree Bproject master
+
+
+Or you can use git subtree tool (repository on github) by apenwarr (Avery Pennarun), announced for example in his blog post A new alternative to git submodules: git subtree.
+</p>
+
+</div>
