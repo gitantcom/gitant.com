@@ -5,112 +5,57 @@
 <p>
 单独的个人开发者不会与他人交换修补程序，只用到下列命令，独自在单独的代码库上工作：
 </p>
-<ul>
-<li class="level1"><div class="li"> <a href="https://www.kernel.org/pub/software/scm/git/docs/git-init.html" class="urlextern" title="https://www.kernel.org/pub/software/scm/git/docs/git-init.html"  rel="nofollow">git-init(1)</a>用来创建新代码库。 </div>
-</li>
-<li class="level1"><div class="li"> git-show-branch(1)用来查看你在哪里。 </div>
-</li>
-<li class="level1"><div class="li"> git-log(1)查看发生过什么。</div>
-</li>
-<li class="level1"><div class="li"> git-checkout(1)和git-branch(1)用来切换分支。</div>
-</li>
-<li class="level1"><div class="li"> git-add(1)用来管理索引文件。</div>
-</li>
-<li class="level1"><div class="li"> git-diff(1)和git-status(1)查看你正在做什么。 </div>
-</li>
-<li class="level1"><div class="li"> git-commit(1)将内容推进现分支 </div>
-</li>
-<li class="level1"><div class="li"> git-reset(1)和git-checkout(1)（带路径名 参数）放弃修改。 </div>
-</li>
-<li class="level1"><div class="li"> git-merge(1)用来合并本地分支 </div>
-</li>
-<li class="level1"><div class="li"> git-rebase(1)用来维护主题分支 </div>
-</li>
-<li class="level1"><div class="li"> git-tag(1)用来给已知点打标签 </div>
-</li>
-</ul>
+<pre class="code"> 
+     
+* git-init(1) 用来创建新代码库。 
+* git-show-branch(1)用来查看你在哪里。 
+* git-log(1)查看发生过什么。
+* git-checkout(1)和git-branch(1)用来切换分支。
+* git-add(1)用来管理索引文件。
+* git-diff(1)和git-status(1)查看你正在做什么。 
+* git-commit(1)将内容推进现分支 
+* git-reset(1)和git-checkout(1)（带路径名 参数）放弃修改。 
+* git-merge(1)用来合并本地分支 
+* git-rebase(1)用来维护主题分支 
+* git-tag(1)用来给已知点打标签 
+  </pre>
 
 </div>
-<!-- EDIT1 SECTION "个人开发者（单独开发）" [2-779] -->
+<!-- EDIT1 SECTION "个人开发者（单独开发）" [2-735] -->
 <h2 class="sectionedit2" id="个人开发者_参与开发">个人开发者（参与开发）</h2>
 <div class="level2">
 
-</div>
-<!-- EDIT2 SECTION "个人开发者（参与开发）" [780-824] -->
-<h2 class="sectionedit3" id="个人开发者_单独开发1">个人开发者（单独开发）</h2>
-<div class="level2">
+<p>
+作为在一个团体项目里参与角色的开发人员，需要学习如何与他人沟通，除了那些单独开发者需要掌握的命令以外，还要使用这些命令。
+</p>
+<pre class="code">  git-clone(1)从上游代码库填充你的本地代码库。
+  git-pull(1)和git-fetch(1)从“origin”得到最新的上游代码库。
+  git-push(1)用来共享代码库，如果你采用cvs风格的代码库工作流的话。
+  git-format-patch(1)用来准备e-mail提交，如果你使用Linux内核风格的公共论坛工作流的话。</pre>
 
 </div>
-<!-- EDIT3 SECTION "个人开发者（单独开发）" [825-869] -->
-<h2 class="sectionedit4" id="集成人员">集成人员</h2>
+<!-- EDIT2 SECTION "个人开发者（参与开发）" [736-1319] -->
+<h2 class="sectionedit3" id="集成人员">集成人员</h2>
 <div class="level2">
 
-</div>
-<!-- EDIT4 SECTION "集成人员" [870-893] -->
-<h2 class="sectionedit5" id="代码库管理">代码库管理</h2>
-<div class="level2">
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitconfig" class="wikilink1" title="gitcommand:gitconfig">Git的全局配置</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitcommitname" class="wikilink1" title="gitcommand:gitcommitname">Git的版本号</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitcommit" class="wikilink1" title="gitcommand:gitcommit">Git commit 提交</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitcheckout" class="wikilink1" title="gitcommand:gitcheckout">Git checkout 检出</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitconfigpasswd" class="wikilink1" title="gitcommand:gitconfigpasswd">https协议保存密码</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:git_changeset" class="wikilink2" title="gitcommand:git_changeset" rel="nofollow">git_changeset</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:git_merge" class="wikilink2" title="gitcommand:git_merge" rel="nofollow"> Git merge 的合并操作</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:git_how" class="wikilink1" title="gitcommand:git_how">git_how</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitsubmodel" class="wikilink1" title="gitcommand:gitsubmodel"> Git submodel 子模块操作</a>  </div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitreset:gitreset" class="wikilink1" title="gitreset:gitreset">Git reset 回退操作</a>  </div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitrevert" class="wikilink2" title="gitcommand:gitrevert" rel="nofollow"> Git revert 会退操作</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitlog:gitlog" class="wikilink1" title="gitlog:gitlog">Git log 的日志查看</a>  </div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitpush:gitpush" class="wikilink1" title="gitpush:gitpush">Git push 的远程推送</a> </div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:gitremote" class="wikilink1" title="gitcommand:gitremote"> Git remote的操作</a></div>
-</li>
-</ul>
-<ul>
-<li class="level1"><div class="li"> <a href="/0/doku.php?id=gitcommand:git_diff" class="wikilink1" title="gitcommand:git_diff"> Git的diff操作</a></div>
-</li>
-<li class="level1"><div class="li"> </div>
-</li>
-</ul>
+<p>
+在一个团队项目中担任集成者的是一名相当重要的人员，他接受别人的修改，评审并且集成并且发布结果，供他人使用；除了那些参与者需要的命令之外，还会使用这些命令。
+</p>
+<pre class="code">  git-am(1)用来采用你的贡献者发电邮寄来的补丁文件。
+  git-pull(1)用来从你的可信任的助手处合并内容。
+  git-format-patch(1)用来准备并向你的贡献者发送建议选项。
+  git-revert(1)用来撤销不好的提交。
+  git-push(1)用来发布最新的内容。
+ </pre>
 
 </div>
-<!-- EDIT5 SECTION "代码库管理" [894-] -->
+<!-- EDIT3 SECTION "集成人员" [1320-1894] -->
+<h2 class="sectionedit4" id="代码库管理">代码库管理</h2>
+<div class="level2">
+<pre class="code">  
+  代码库管理员使用下列工具来设置及维护开发者对代码库的访问。
+  git-daemon(1)允许匿名者从代码库下载
+  git-shell(1)可以被用作为限制登录shell，用于共享中央代码库的用户</pre>
+
+</div>
+<!-- EDIT4 SECTION "代码库管理" [1895-] -->

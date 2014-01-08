@@ -1,7 +1,8 @@
 
 
 ====  命令举例 ====
-  * [[gitcommand:git_command|GIt命令举例]]
+  * [[gitcommand:git_command|GIt命令检索]]
+  * [[gitcommand:git_command1|GIt命令学习]]
   * [[gitcommand:git_parallel|Git并行开发]]
   * [[gitcommand:git_release|Git发布部署]]
 
