@@ -1,14 +1,50 @@
 
 
 
-===== Git Basics=====
+===== 基本命令=====
+  * git init
+  * git clone
+  * git config
+  * git add
+  * git commit
+  * git status
+  * git log
 
 
-===== Undoing Changes=====
-===== Git Branches=====
 
-===== Rewriting Git History=====
-===== Remote Repositories=====
+===== 撤销变更 =====
+
+  * git checkout
+  * git revert
+  * git reset
+  * git clean
+
+
+
+
+===== 分支命令 =====
+  * git branch
+  * git checkout
+  * git merge
+
+
+
+
+===== 修改历史=====
+  * git commit --amend
+  * git rebase
+  * git rebase -i
+  * git reflog
+
+
+
+
+===== 远端仓库=====
+  * git remote
+  * git fetch
+  * git pull
+  * git push
+
 
 
 
