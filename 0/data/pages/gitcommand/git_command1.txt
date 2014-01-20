@@ -14,7 +14,7 @@
 
 ===== 撤销变更 =====
 
-  * git checkout
+  * [[gitcommand:gitcheckout|git checkout]] 
   * git revert
   * git reset
   * git clean
