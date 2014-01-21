@@ -87,3 +87,8 @@ gitcommand:git_cat_old_ver
 gitcommand:merge_specify_file
 gitcommand:merge_specify_version
 gitcommand:git_command1
+gitcommand:git_log_stage
+gitcommand:git_log_branch
+gitcommand:git_diff_arbitrary
+gitcommand:log_diff_branch
+gitcommand:git_diff_stage

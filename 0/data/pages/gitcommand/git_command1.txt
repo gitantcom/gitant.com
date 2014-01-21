@@ -1,16 +1,20 @@
 
 
 
-===== 基本命令=====
+===== 设置和初始化=====
   * git init
   * git clone
   * git config
+
+
+
+=====暂存与快照=====
   * git add
   * git commit
   * git status
-  * git log
-
-
+  * git  rm
+  * [[gitcommand:git_log_stage| git log]]
+  * [[gitcommand:git_diff_stage| git diff]]
 
 ===== 撤销变更 =====
 
@@ -22,10 +26,12 @@
 
 
 
-===== 分支命令 =====
+===== 分支合并 =====
   * git branch
   * git checkout
   * git merge
+  * [[gitcommand:git_log_branch| git log ]]
+  * [[gitcommand:log_diff_branch|git diff]]
 
 
 
@@ -44,8 +50,13 @@
   * git fetch
   * git pull
   * git push
-
-
+  * git submodle
+=====检查和比对=====
+  * git  log 
+  * [[ gitcommand:git_diff_arbitrary|git  diff]]
+  * git shortlog
+  * git desribe
+  * gitx
 
 
 
