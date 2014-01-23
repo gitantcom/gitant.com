@@ -3,18 +3,20 @@
 ====  命令举例 ====
   * [[gitcommand:git_command|GIt命令检索]]
   * [[gitcommand:git_command1|GIt命令学习]]
-  * [[gitcommand:git_parallel|Git并行开发]]
-  * [[gitcommand:git_release|Git发布部署]]
+
+
 
 
 ==== 代码评审 ====
   *  [[wiki:git_codereview|Git代码评审]]
 
 
-==== 分支模式 ====
+==== 并行开发 ====
+  * [[gitcommand:git_parallel|Git并行开发命令]]
   * [[gitcommand:gitbranchmodel|Git分支模式]]
 
 ==== 持续集成====
+  * [[gitcommand:git_release|Git发布部署]]
   * [[wiki:git_CI|Git持续集成]]
 
 

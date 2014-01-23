@@ -1,0 +1,14 @@
+==git log==
+<code>
+$ git log --oneline --graph
+</code>
+
+
+我们常用 -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：
+<code>
+$ git log -p -2
+</code>
+git 一行查看日志
+<code>
+$ git log --pretty=oneline
+</code>
