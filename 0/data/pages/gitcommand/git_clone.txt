@@ -1,0 +1,43 @@
+===克隆git仓库===
+<code>
+git clone url
+</code>
+
+===bare模式===
+git提供一种对外发布，供开发者克隆的一种空工作目录的bare方式。
+<code>
+git clone --bare url
+</code>
+
+===mirror模式===
+
+ 1 初次镜像远端仓库
+<code>
+git clone --mirror git://remote-repository-url
+</code>
+ 2 更新仓库;进入到项目中;
+<code>
+cd xx.git
+git remote update
+</code>
+
+===迁移git仓库===
+如果你想从别的 Git 托管服务那里复制一份源代码到新的 Git 托管服务器上的话，可以通过以下步骤来操作。
+  * 从原地址克隆一份裸版本库，比如原本托管于 GitHub。
+<code>
+    git clone --bare git://github.com/username/project.git
+</code>
+  * 然后到新的 Git 服务器上创建一个新项目，比如 GitCafe。以镜像推送的方式上传代码到 GitCafe 服务器上。
+<code>
+   cd project.git
+   git push --mirror git@gitcafe.com/username/newproject.git
+</code>
+  * 删除本地代码
+<code>
+cd ..
+rm -rf project.git
+</code>
+  * 到新服务器 GitCafe 上找到 Clone 地址，直接 Clone 到本地就可以了。
+<code>
+git clone git@gitcafe.com/username/newproject.git
+</code>

@@ -47,3 +47,5 @@ gitcommand:git_log_branch
 gitcommand:git_diff_arbitrary
 gitcommand:log_diff_branch
 gitcommand:git_diff_stage
+gitcommand:git_clone
+gitcommand:git_config

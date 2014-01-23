@@ -1,0 +1,26 @@
+===系统级别配置===
+所有用户下的所有仓库均遵守的配置信息。
+/etc/gitconfig
+<code>
+git config --system 
+</code>
+
+===用户级别配置===
+登录用户支持的配置信息。配置文件存放在主目录(home directory)一个叫~/.gitconfig 的文件中
+<code>
+$ git config --global user.name "Robin Hu"
+$ git config --global user.email "hudashi@gmail.com"
+$ git config --global core.editor vim #vim 默认编辑器
+</code>
+配置别名
+<code>
+# Add some SVN-like aliases
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.up rebase
+git config --global alias.ci commit
+</code>
+===仓库级别的配置===
+存在在仓库 ./git/config,对仓库有效。
+设置git仓库的trace的remote git 地址。

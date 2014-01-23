@@ -1,10 +1,8 @@
 
 
 ====  命令举例 ====
-  * [[gitcommand:git_command|GIt命令检索]]
-  * [[gitcommand:git_command1|GIt命令学习]]
-
-
+  * [[gitcommand:git_command|Git命令检索]]
+  * [[gitcommand:git_command1|Git命令实例]]
 
 
 ==== 代码评审 ====
@@ -12,7 +10,7 @@
 
 
 ==== 并行开发 ====
-  * [[gitcommand:git_parallel|Git并行开发命令]]
+  * [[gitcommand:git_parallel|Git并行实例]]
   * [[gitcommand:gitbranchmodel|Git分支模式]]
 
 ==== 持续集成====

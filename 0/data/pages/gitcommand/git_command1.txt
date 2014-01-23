@@ -1,10 +1,10 @@
 
 
 
-===== 设置和初始化=====
+===== 初始化与设置=====
   * git init
-  * git clone
-  * git config
+  *[[gitcommand:git_clone | git clone]]
+  *[[gitcommand:git_config | git config ]]
 
 
 
@@ -12,9 +12,9 @@
   * git add
   * git commit
   * git status
-  * git  rm
-  * [[gitcommand:git_log_stage| git log]]
-  * [[gitcommand:git_diff_stage| git diff]]
+  * git rm
+  * git shortlog
+  * git show
 
 ===== 撤销变更 =====
 
@@ -45,13 +45,15 @@
 
 
 
-===== 远端仓库=====
+===== 分享与更新=====
   * git remote
   * git fetch
   * git pull
   * git push
   * git submodle
 =====检查和比对=====
+  * [[gitcommand:git_log_stage| git log]]
+  * [[gitcommand:git_diff_stage| git diff]]
   * git  log 
   * [[ gitcommand:git_diff_arbitrary|git  diff]]
   * git shortlog
