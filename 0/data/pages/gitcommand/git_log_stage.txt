@@ -1,14 +1,42 @@
-==git log==
+===git log 日常用法===
+  * 只是显示sha版本号和commit log
 <code>
-$ git log --oneline --graph
+root@blog-test002 gitant.com]#  git log --oneline --graph
+* 21b5cb7  backup
+* 4e26248  backup
+* bb993a7  backup
+* 7162f48  new data
+* 9aec2d2  today
+* 20bbe70  back
 </code>
 
 
+  * 只显示近两次的更新
 我们常用 -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：
 <code>
 $ git log -p -2
 </code>
-git 一行查看日志
+  * git 一行查看日志
 <code>
 $ git log --pretty=oneline
+</code>
+
+
+===git log 命令缩写===
+非常好的例子，可以作为别名存入配置文件。
+<code>
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' 
+</code>
+结果如下:
+<code>
+[root@blog-test002 gitant.com]# git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' 
+* 21b5cb7 - (HEAD, origin/master, origin/HEAD, github/master, master)  backup (33 minutes ago) <Your Name>
+* 4e26248 -  backup (4 hours ago) <Your Name>
+* bb993a7 -  backup (2 days ago) <Your Name>
+* 7162f48 -  new data (3 days ago) <Your Name>
+* 9aec2d2 -  today (2 weeks ago) <Your Name>
+* 20bbe70 -  back (2 weeks ago) <Your Name>
+* 87591e4 -  back (2 weeks ago) <Your Name>
+* f9062b3 -  git category (3 weeks ago) <Your Name>
+* b196945 -  modify permission (4 weeks ago) <Your Name>
 </code>

@@ -1,16 +1,54 @@
 
-<h5 id="git_log">git log</h5>
-<div class="level5">
-<pre class="code">$ git log --oneline --graph</pre>
+<h4 id="git_log_日常用法">git log 日常用法</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> 只是显示sha版本号和commit log</div>
+</li>
+</ul>
+<pre class="code">root@blog-test002 gitant.com]#  git log --oneline --graph
+* 21b5cb7  backup
+* 4e26248  backup
+* bb993a7  backup
+* 7162f48  new data
+* 9aec2d2  today
+* 20bbe70  back</pre>
+<ul>
+<li class="level1"><div class="li"> 只显示近两次的更新</div>
+</li>
+</ul>
 
 <p>
 我们常用 -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：
 </p>
 <pre class="code">$ git log -p -2</pre>
+<ul>
+<li class="level1"><div class="li"> git 一行查看日志</div>
+</li>
+</ul>
+<pre class="code">$ git log --pretty=oneline</pre>
+
+</div>
+
+<h4 id="git_log_命令缩写">git log 命令缩写</h4>
+<div class="level4">
 
 <p>
-git 一行查看日志
+非常好的例子，可以作为别名存入配置文件。
 </p>
-<pre class="code">$ git log --pretty=oneline</pre>
+<pre class="code">git log --graph --pretty=format:&#039;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#039; </pre>
+
+<p>
+结果如下:
+</p>
+<pre class="code">[root@blog-test002 gitant.com]# git log --graph --pretty=format:&#039;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#039; 
+* 21b5cb7 - (HEAD, origin/master, origin/HEAD, github/master, master)  backup (33 minutes ago) &lt;Your Name&gt;
+* 4e26248 -  backup (4 hours ago) &lt;Your Name&gt;
+* bb993a7 -  backup (2 days ago) &lt;Your Name&gt;
+* 7162f48 -  new data (3 days ago) &lt;Your Name&gt;
+* 9aec2d2 -  today (2 weeks ago) &lt;Your Name&gt;
+* 20bbe70 -  back (2 weeks ago) &lt;Your Name&gt;
+* 87591e4 -  back (2 weeks ago) &lt;Your Name&gt;
+* f9062b3 -  git category (3 weeks ago) &lt;Your Name&gt;
+* b196945 -  modify permission (4 weeks ago) &lt;Your Name&gt;</pre>
 
 </div>
