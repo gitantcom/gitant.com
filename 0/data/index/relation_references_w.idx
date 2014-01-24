@@ -94,3 +94,4 @@ gitcommand:log_diff_branch
 gitcommand:git_diff_stage
 gitcommand:git_clone
 gitcommand:git_config
+gitcommand:git_version_number_desc

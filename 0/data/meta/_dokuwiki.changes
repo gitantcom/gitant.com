@@ -61,7 +61,6 @@
 1390457572	10.221.135.120	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
 1390460051	10.221.135.120	E	sidebar	uahoo		
 1390460627	10.221.135.120	E	sidebar	uahoo		
-1387958201	127.0.0.1	E	wiki:git_reference		外部编辑	
 1390460782	10.221.135.120	E	wiki:git_reference	uahoo	[Git 官方文档] 	
 1390460857	10.221.135.120	E	wiki:git_reference	uahoo	[Git 官方文档] 	
 1390461420	10.221.135.120	E	gitcommand:git_command1	uahoo	[远端仓库] 	
@@ -91,3 +90,15 @@
 1390473604	10.221.135.120	E	gitcommand:git_log_stage	uahoo		
 1390473870	10.221.135.120	E	gitcommand:git_log_stage	uahoo		
 1390474077	10.221.135.120	E	gitcommand:git_log_stage	uahoo		
+1390474272	10.221.135.120	E	gitcommand:git_log_stage	uahoo		
+1390474318	10.221.135.120	E	gitcommand:git_log_stage	uahoo		
+1390532066	10.221.135.120	E	sidebar	uahoo		
+1390532181	10.221.135.120	E	gitcommand:git_command1	uahoo	[命令例子集合] 	
+1390532595	10.221.135.120	E	gitcommand:git_command1	uahoo	[Git特性] 	
+1390543862	10.221.135.120	E	gitcommand:git_command	uahoo	[个人开发者（单独开发）] 	
+1390546869	10.221.135.120	E	gitcommand:git_command1	uahoo	[Git] 	
+1390547141	10.221.135.120	C	gitcommand:git_version_number_desc	uahoo	创建	
+1390547200	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo	[分支引用] 	
+1390547329	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo		
+1390547591	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo	[引用日志里的简称] 	
+1390548264	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo		

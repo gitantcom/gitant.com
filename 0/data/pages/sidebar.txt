@@ -1,6 +1,6 @@
 
 
-====  命令举例 ====
+====  命令详解 ====
   * [[gitcommand:git_command|Git命令检索]]
   * [[gitcommand:git_command1|Git命令实例]]
 
@@ -10,13 +10,12 @@
 
 
 ==== 并行开发 ====
-  * [[gitcommand:git_parallel|Git并行实例]]
-  * [[gitcommand:gitbranchmodel|Git分支模式]]
+    * [[gitcommand:gitbranchmodel|Git分支模式]]
+    * [[gitcommand:git_parallel|使用Git并行开发]]
 
 ==== 持续集成====
-  * [[gitcommand:git_release|Git发布部署]]
   * [[wiki:git_CI|Git持续集成]]
-
+  * [[gitcommand:git_release|Git发布部署]]
 
 
 ==== 代码托管 ====

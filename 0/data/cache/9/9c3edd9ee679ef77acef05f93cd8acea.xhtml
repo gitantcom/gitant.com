@@ -29,7 +29,23 @@
 
 </div>
 
-<h4 id="git_log_命令缩写">git log 命令缩写</h4>
+<h4 id="git_log_常用参数">git log 常用参数</h4>
+<div class="level4">
+<pre class="code">$ git log v2.5..        # commits since (not reachable from) v2.5
+$ git log test..master  # commits reachable from master but not test
+$ git log master..test  # commits reachable from test but not master
+$ git log master...test # commits reachable from either test or
+                        #    master, but not both
+$ git log --since=&quot;2 weeks ago&quot; # commits from the last 2 weeks
+$ git log Makefile      # commits that modify Makefile
+$ git log fs/           # commits that modify any file under fs/
+$ git log -S&#039;foo()&#039;     # commits that add or remove any file data
+                        # matching the string &#039;foo()&#039;
+$ git log --no-merges   # dont show merge commits</pre>
+
+</div>
+
+<h4 id="git_log_很好的参数组合">git log 很好的参数组合</h4>
 <div class="level4">
 
 <p>

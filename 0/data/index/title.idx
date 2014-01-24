@@ -1,7 +1,7 @@
 版本控制系统
 Formatting Syntax
 Welcome to your new DokuWiki
-命令举例
+命令详解
 DokuWiki
 
 git 如何保存用户名?
@@ -49,3 +49,4 @@ git分支比较
 
 克隆git仓库
 系统级别配置
+简短的SHA

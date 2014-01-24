@@ -13,6 +13,7 @@
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-merge.html|git-merge(1)]]用来合并本地分支 
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-rebase.html| git-rebase(1)]]用来维护主题分支 
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-tag.html| git-tag(1)]]用来给已知点打标签 
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html| git-rev-parse(1)]] 查询对象的SHA值
     
 
    

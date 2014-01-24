@@ -20,9 +20,23 @@ $ git log -p -2
 <code>
 $ git log --pretty=oneline
 </code>
+===git log 常用参数===
+<code>
+$ git log v2.5..        # commits since (not reachable from) v2.5
+$ git log test..master  # commits reachable from master but not test
+$ git log master..test  # commits reachable from test but not master
+$ git log master...test # commits reachable from either test or
+                        #    master, but not both
+$ git log --since="2 weeks ago" # commits from the last 2 weeks
+$ git log Makefile      # commits that modify Makefile
+$ git log fs/           # commits that modify any file under fs/
+$ git log -S'foo()'     # commits that add or remove any file data
+                        # matching the string 'foo()'
+$ git log --no-merges   # dont show merge commits
+</code>
 
 
-===git log 命令缩写===
+===git log 很好的参数组合===
 非常好的例子，可以作为别名存入配置文件。
 <code>
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' 

@@ -1,0 +1,22 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1390547141;s:8:"modified";i:1390548264;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1390548264;s:2:"ip";s:14:"10.221.135.120";s:4:"type";s:1:"E";s:2:"id";s:34:"gitcommand:git_version_number_desc";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:12:"简短的SHA";s:11:"description";a:2:{s:15:"tableofcontents";a:5:{i:0;a:4:{s:3:"hid";s:12:"简短的sha";s:5:"title";s:12:"简短的SHA";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:1;a:4:{s:3:"hid";s:12:"分支引用";s:5:"title";s:12:"分支引用";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:2;a:4:{s:3:"hid";s:24:"引用日志里的简称";s:5:"title";s:24:"引用日志里的简称";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:12:"祖先引用";s:5:"title";s:12:"祖先引用";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:4;a:4:{s:3:"hid";s:12:"提交范围";s:5:"title";s:12:"提交范围";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:635:"简短的SHA
+
+Git 每次提条根据内容生成一个HAS-1的值，这个值作为唯一标示符。
+
+例如，想要查看一次指定的提交，假设你运行 git log 命令并找到你增加了功能的那次提交：
+
+
+$ git log
+commit 734713bc047d87bf7eac9674765ae793478c50d3
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Fri Jan 2 18:32:33 2009 -0800
+
+    fixed refs handling, added gc auto, updated tests
+
+commit d921970aadf03b3cf0e71becdaab3147ba71cdef
+Merge: 1c002dd... 35cfb2b...
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 15:08:43 2008 -0800
+
+    Merge commit 'phedders/rdocs'
+
+commit 1c002dd4b536e…";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1390547141;s:8:"modified";i:1390548264;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1390548264;s:2:"ip";s:14:"10.221.135.120";s:4:"type";s:1:"E";s:2:"id";s:34:"gitcommand:git_version_number_desc";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}
