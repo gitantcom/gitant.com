@@ -1,20 +1,13 @@
 
 ===== Git集中分支管理模式 =====
-
-
 [[gitcommand:git-workflow-svn|Git集中分支管理模式]]
-
 ----
 ===== GitFlow分支管理模式 =====
-
-
 [[gitcommand:git-workflow-gitflow|GitFlow分支管理模式 ]]
 ----
-
 ===== Git特性分支管理模式 =====
 [[gitcommand:git-feature-branch|Git特性支管理模式 ]]
 ----
-
 ===== Git Fork 分支管理模式 =====
 [[gitcommand:git-fork-branch| Git Fork分支管理模式]]
 ----

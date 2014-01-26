@@ -1,16 +1,8 @@
 
-<h5 id="git分支比较">git分支比较</h5>
-<div class="level5">
-<pre class="code">    $ git diff topic master    &lt;1&gt;
-    $ git diff topic..master   &lt;2&gt;
-    $ git diff topic...master  &lt;3&gt;</pre>
-<ul>
-<li class="level1"><div class="li"> Changes between the tips of the topic and the master branches.</div>
-</li>
-<li class="level1"><div class="li"> Same as above.</div>
-</li>
-<li class="level1"><div class="li"> Changes that occurred on the master branch since when the topic branch was started off it.</div>
-</li>
-</ul>
+<h4 id="查询分支之间的差异">查询分支之间的差异</h4>
+<div class="level4">
+<pre class="code">$git diff master..branch
+$git log master..branch
+$git shortlog master..branch</pre>
 
 </div>

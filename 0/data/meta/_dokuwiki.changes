@@ -102,3 +102,31 @@
 1390547329	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo		
 1390547591	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo	[引用日志里的简称] 	
 1390548264	10.221.135.120	E	gitcommand:git_version_number_desc	uahoo		
+1390549664	10.221.135.120	C	gitcommand:git_log_branch	uahoo	创建	
+1390550013	10.221.135.120	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1390550066	10.221.135.120	C	gitcommnad:git_rev_list	uahoo	创建	
+1390550158	10.221.135.120	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
+1390550252	10.221.135.120	C	gitcommand:git_short_log:git_shortlog	uahoo	创建	
+1390715652	10.221.135.120	C	gitcommand:git-feature-branch	uahoo	创建	
+1390716142	10.221.135.120	E	gitcommand:git-feature-branch	uahoo		
+1390716956	10.221.135.120	E	gitcommand:git-feature-branch	uahoo	[特性分支模式] 	
+1390717591	10.221.135.120	E	gitcommand:git-feature-branch	uahoo	[特性分支模式] 	
+1390717684	10.221.135.120	E	gitcommand:git-feature-branch	uahoo		
+1387958201	127.0.0.1	E	gitcommand:git-workflow-gitflow		外部编辑	
+1390727604	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1388116323	127.0.0.1	E	gitcommand:git_parallel		外部编辑	
+1390727659	10.221.135.120	E	gitcommand:git_parallel	uahoo		
+1390727670	10.221.135.120	C	gitcommand:git_flow	uahoo	创建	
+1390727722	10.221.135.120	E	sidebar	uahoo		
+1390728064	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390728262	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390728291	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390728491	10.221.135.120	E	gitcommand:git-feature-branch	uahoo		
+1390729034	10.221.135.120	C	gitcommand:git-workflow-svn	uahoo	创建	
+1387958201	127.0.0.1	E	gitcommand:gitbranchmodel		外部编辑	
+1390729075	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
+1390729950	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390730016	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390730065	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390730110	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390730201	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		

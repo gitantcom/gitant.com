@@ -21,7 +21,7 @@ HTTPS 方式保存密码
 直接定义
 diff时用到的参数
 
-
+Gitflow Workflow
 Git集中分支管理模式
 如何只提交部分文件？
 How do I reset/revert a specific file to a specific revision using Git?
@@ -43,10 +43,15 @@ git中如何合并某个指定文件？
 如何合并两个仓库？
 初始化与设置
 git log 日常用法
-
+查询分支之间的差异
 比对任意提交
 git分支比较
 
 克隆git仓库
 系统级别配置
 简短的SHA
+计算每次commit的唯一序数号
+统计每个人的提交次数
+特性分支模式
+
+Centralized Workflow

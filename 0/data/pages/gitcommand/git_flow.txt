@@ -1,0 +1,279 @@
+
+
+
+Git flow 0.4
+
+用法:
+git flow <subcommand>
+
+Available subcommands are:
+
+init Initialize a new git repo with support for the branching model.
+feature Manage your feature branches.
+release Manage your release branches.
+hotfix Manage your hotfix branches.
+support Manage your support branches.
+version Shows version information.
+
+Git flow的分支类型
+长期分支
+
+master
+用途: 稳定版本的分支,产品发布的分支
+位置: remote,local
+
+develop
+用途: 开发版本
+位置: remote,local
+
+短期分支
+
+feature
+用途: 特性/功能开发
+位置: local,remote*(可以通过feature publish发布到remote上,供团队协作)
+分支建立: 从develop分支建立,可以指定起始点
+分支合并: 合并回develop分支
+
+release
+用途: 版本发布的准备分支
+位置: local,remote*(可以通过release publish发布到remote上,供团队协作)
+分支建立: 从develop分支建立,可以指定起始点
+分支合并: 合并回develop和master分支
+
+hotfix
+用途: 紧急Bug修复
+位置:local
+分支建立: 从master建立分支
+分支合并: 合并回master和develop
+
+子命令
+feature
+
+用法:
+git flow feature [list] [-v]
+
+git flow feature start [-F] <name> [<base>]
+git flow feature finish [-rFk] <name|nameprefix>
+git flow feature publish <name>
+git flow feature track <name>
+git flow feature diff [<name|nameprefix>]
+git flow feature rebase [-i] [<name|nameprefix>]
+git flow feature checkout [<name|nameprefix>]
+git flow feature pull <remote> [<name>]
+
+
+feature start
+
+用法: git flow feature start [-F] <name> [<base>]
+功能: 以指定的commit名称(由base参数指定)创建一个feature分支
+参数: -F 
+'fetch from origin before performing local operation' (建立分支前先从origin下载数据) 默认为false 
+该参数在0.4版本有bug,不可用,可以使用 git fetch -q orgin develop代替
+
+name 
+feature的名称,对应的分支名称为feature/name
+
+base 
+建立feature的start point,默认为develop分支
+
+等价的Git 命令:
+1. git fetch -q origin develop //当 -F 设置的时候执行,只是更新.git中的remote内容,不做merge操作
+2. 检查本地的develop分支和远程的develop分支是否一致,即refs/develop 和 refs/remote/origin/develop(建议先执行git pull origin develop或者git fetch origin develop)
+3. git checkout -b feature/name develop //建立分支
+
+例子:
+git flow feature start story_1
+
+
+feature publish
+
+用法: git flow feature publish <name>
+功能: 将一个本地的feature分支push到远程的仓库中,该命令可用于与团队其他成员合作开发或者备份自己的代码
+参数: name
+本地feature的名称
+
+等价的Git命令:
+1. 检查本地的工作目录及分支
+2. git fetch -q origin
+3. git push origin feature///name://refs/heads/feature///name//
+4. git fetch -q origin
+5. git checkout feature/name 例子:
+git feature publish story_1
+
+feature track
+
+用法: git flow feature track <name>
+功能: 将由feature publish发布的feature分支从远程仓库下载到本地,并建立同名分支
+参数: name
+远程feature的名称,对应feature publish的名称
+
+等价的Git命令:
+1. 检查本地的工作目录是否"干净";检查分支是否已经存在,如果已经存在,则报错退出
+2. git fetch -q origin 
+3. git checkout -b name origin/feature/name 例子:
+git feature track name
+feature pull
+
+用法: git flow feature pull <remote> [<name>]
+功能: 将由feature publish发布的feature分支从远程仓库下载到本地,并建立同名分支;如果本地已经有同名分支,则对其执行pull操作
+参数: name
+远程feature的名称,对应feature publish的名称
+
+等价的Git命令:
+a. 如果本地已有name分支
+1. git pull -q origin feature/name
+
+b. 如果本地没有name分支
+1. git fetch -q origin feature/name
+2. git branch --no-track feature/name
+3. git checkout -q feature/name 例子:
+git flow feature pull origin story_1
+
+feature finish
+
+用法: git flow feature finish [-rFk] <name|nameprefix>
+功能: 完成由name指定的feature分支的开发,将其合并到本地的develop分支,合并成功后删除该分支
+参数: -r 
+在合并到develop分子时,使用rebase机制,而不是merge
+
+-F
+在执行finish操作前,先执行fetch,从远程仓库下载更新
+
+-k
+执行完finsh后,保留feature分支,即不删除分支
+
+name
+feature的名称,对应feature start的名称
+
+等价的Git命令:
+1. git fetch -q origin feature/name #当参数中设置了-F时
+2. git flow feature rebase name develop #当参数中设置了-r时
+3. git checkout develop
+4. git merge feature/name #根据develop分支和feature/name分支之间的提交的个数决定是否设置--no--ff
+5. #如果设置了-F参数,则删除远程的分支 git push origin :ref/heads/feature/name 
+6. #如果没有设置-k参数,则删除本地的分支
+
+例子:
+git flow feature finish story_1
+
+
+feature rebase
+
+用法: git flow feature rebase [-i] [<name|nameprefix>]
+功能: 以develop分支作为upstream,对指定的feature分支执行rebase操作
+参数: -i 
+等价与rebase -i
+
+name
+feature的名称
+
+等价的Git命令:
+1. git checkout -q feature/name
+2. git rebase develop
+
+例子:
+git flow feature rebase -i story_1
+
+release
+
+用法:
+git flow release [list] [-v]
+git flow release start [-F] <version>
+git flow release finish [-Fsumpk] <version>
+git flow release publish <name>
+git flow release track <name>
+
+release start
+
+用法: git flow release start [-F] <version> [<base>]
+功能: 从develop分支指定的起始点(可选,默认为HEAD)建立版本发布的分支
+参数: version
+版本号
+
+base
+建立分支的起始点,可选参数,默认为develop HEAD
+
+等价的Git命令:
+1. git checkout -b release/version develop
+
+例子:
+git flow release start v0.1
+
+release publish
+
+用法: git flow release publish <name>
+功能: 将release分支发布的远程仓库,供团队协作
+参数: name
+release名称,与start 中的version相对应
+
+等价的Git命令:
+1. git fetch -q origin
+2. git push origin release/name:refs/heads/release/name 例子:
+git flow release publish v0.1
+
+release track
+
+用法: git flow release track <name>
+功能: 将由 publish发布的feature分支从远程仓库下载到本地,并建立同名分支,供团队协作
+参数: name
+远程feature的名称,对应feature publish的名称
+
+等价的Git命令:
+1. git fetch -q origin
+2. git checkout -b release/name origin/release/name 例子:
+git flow release track v0.1
+
+
+release finish
+
+用法: git flow release finish [-Fsumpk] <version>
+功能: 完成由version指定的release分支的开发,将其合并到develop和master分支,并为该分支创建一个tag
+参数: -F 
+执行操作前先执行fetch
+
+-s
+对新建的tag签名
+
+-u
+签名使用的GPG-key
+
+-m
+使用指定的注释作为tag的注释
+
+-p
+当操作结束后,push到远程仓库中
+
+-k
+保留分支
+
+-n
+不创建tag
+
+version
+版本号
+
+等价的Git命令:
+1. 如果设置了 -F 参数,下载更新
+1.1 git fetch -q origin master
+1.2 git fetch -q origin develop
+
+2. 合并回master分支
+2.1 git checkout master
+2.2 git merge --no-ff release/version
+
+3. 如果没有设置 -n 参数,创建tag
+3.1 git tag 
+
+4. 合并回develop分支
+4.1 git checkout develop
+4.2 git merge --no-ff release/version
+
+5. 如果没有设置 -k 参数
+5.1 git branch -d release/version
+
+6. 如果设置 -p 参数
+6.1 git push origin develop
+6.2 git push origin master
+6.3 git push --tags origin
+6.4 git push orign :release/version #删除远程仓库中的release分支 例子:
+git flow release finish -p v0.1

@@ -50,3 +50,8 @@ gitcommand:git_diff_stage
 gitcommand:git_clone
 gitcommand:git_config
 gitcommand:git_version_number_desc
+gitcommnad:git_rev_list
+gitcommand:git_short_log:git_shortlog
+gitcommand:git-feature-branch
+gitcommand:git_flow
+gitcommand:git-workflow-svn

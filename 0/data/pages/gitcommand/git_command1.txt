@@ -13,7 +13,7 @@
   * git commit
   * git status
   * git rm
-  * git shortlog
+  * [[gitcommand:git_short_log: git shortlog]]
   * git show
 
 ===== 撤销变更 =====
@@ -57,6 +57,8 @@
   * git  log 
   * [[ gitcommand:git_diff_arbitrary|git  diff]]
   * git shortlog
+  * [[gitcommnad:git_rev_list| git revlist]]
+  * [[gitcommand:git_rev_parse| git rev-pare]]
   * git desribe
   * gitx
 

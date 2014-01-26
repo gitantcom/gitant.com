@@ -1,0 +1,4 @@
+===计算每次commit的唯一序数号===
+<code>
+$git rev-list HEAD --count
+</code>

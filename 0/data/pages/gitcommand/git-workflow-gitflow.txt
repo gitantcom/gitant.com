@@ -1,276 +1,157 @@
-Git flow 0.4
+======Gitflow Workflow======
 
-用法:
-git flow <subcommand>
+The Gitflow Workflow section below is derived from Vincent Driessen at nvie. 
 
-Available subcommands are:
+The Gitflow Workflow defines a strict branching model designed around the project release. While somewhat more complicated than the Feature Branch Workflow, this provides a robust framework for managing larger projects.
 
-init Initialize a new git repo with support for the branching model.
-feature Manage your feature branches.
-release Manage your release branches.
-hotfix Manage your hotfix branches.
-support Manage your support branches.
-version Shows version information.
-
-Git flow的分支类型
-长期分支
-
-master
-用途: 稳定版本的分支,产品发布的分支
-位置: remote,local
-
-develop
-用途: 开发版本
-位置: remote,local
-
-短期分支
-
-feature
-用途: 特性/功能开发
-位置: local,remote*(可以通过feature publish发布到remote上,供团队协作)
-分支建立: 从develop分支建立,可以指定起始点
-分支合并: 合并回develop分支
-
-release
-用途: 版本发布的准备分支
-位置: local,remote*(可以通过release publish发布到remote上,供团队协作)
-分支建立: 从develop分支建立,可以指定起始点
-分支合并: 合并回develop和master分支
-
-hotfix
-用途: 紧急Bug修复
-位置:local
-分支建立: 从master建立分支
-分支合并: 合并回master和develop
+This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
 
-子命令
-feature
-
-用法:
-git flow feature [list] [-v]
-
-git flow feature start [-F] <name> [<base>]
-git flow feature finish [-rFk] <name|nameprefix>
-git flow feature publish <name>
-git flow feature track <name>
-git flow feature diff [<name|nameprefix>]
-git flow feature rebase [-i] [<name|nameprefix>]
-git flow feature checkout [<name|nameprefix>]
-git flow feature pull <remote> [<name>]
+=====How It Works=====
 
+The Gitflow Workflow still uses a central repository as the communication hub for all developers. And, as in the other workflows, developers work locally and push branches to the central repo. The only difference is the branch structure of the project.
 
-feature start
-
-用法: git flow feature start [-F] <name> [<base>]
-功能: 以指定的commit名称(由base参数指定)创建一个feature分支
-参数: -F 
-'fetch from origin before performing local operation' (建立分支前先从origin下载数据) 默认为false 
-该参数在0.4版本有bug,不可用,可以使用 git fetch -q orgin develop代替
+====Historical Branches====
 
-name 
-feature的名称,对应的分支名称为feature/name
+Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. It's also convenient to tag all commits in the master branch with a version number.
 
-base 
-建立feature的start point,默认为develop分支
+The rest of this workflow revolves around the distinction between these two branches.
 
-等价的Git 命令:
-1. git fetch -q origin develop //当 -F 设置的时候执行,只是更新.git中的remote内容,不做merge操作
-2. 检查本地的develop分支和远程的develop分支是否一致,即refs/develop 和 refs/remote/origin/develop(建议先执行git pull origin develop或者git fetch origin develop)
-3. git checkout -b feature/name develop //建立分支
+====Feature Branches====
 
-例子:
-git flow feature start story_1
+Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration. But, instead of branching off of master, feature branches use develop as their parent branch. When a feature is complete, it gets merged back into develop. Features should never interact directly with master.
 
+Note that feature branches combined with the develop branch is, for all intents and purposes, the Feature Branch Workflow. But, the Gitflow Workflow doesn’t stop there.
 
-feature publish
+====Release Branches====
 
-用法: git flow feature publish <name>
-功能: 将一个本地的feature分支push到远程的仓库中,该命令可用于与团队其他成员合作开发或者备份自己的代码
-参数: name
-本地feature的名称
+Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop. Creating this branch starts the next release cycle, so no new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it's ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop, which may have progressed since the release was initiated.
 
-等价的Git命令:
-1. 检查本地的工作目录及分支
-2. git fetch -q origin
-3. git push origin feature///name://refs/heads/feature///name//
-4. git fetch -q origin
-5. git checkout feature/name 例子:
-git feature publish story_1
+Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release. It also creates well-defined phases of development (e.g., it's easy to say, “this week we're preparing for version 4.0” and to actually see it in the structure of the repository).
 
-feature track
+Common conventions:
 
-用法: git flow feature track <name>
-功能: 将由feature publish发布的feature分支从远程仓库下载到本地,并建立同名分支
-参数: name
-远程feature的名称,对应feature publish的名称
+    branch off: develop
+    merge into: master
+    naming convention: release-* or release/*
 
-等价的Git命令:
-1. 检查本地的工作目录是否"干净";检查分支是否已经存在,如果已经存在,则报错退出
-2. git fetch -q origin 
-3. git checkout -b name origin/feature/name 例子:
-git feature track name
-feature pull
 
-用法: git flow feature pull <remote> [<name>]
-功能: 将由feature publish发布的feature分支从远程仓库下载到本地,并建立同名分支;如果本地已经有同名分支,则对其执行pull操作
-参数: name
-远程feature的名称,对应feature publish的名称
 
-等价的Git命令:
-a. 如果本地已有name分支
-1. git pull -q origin feature/name
+====Maintenance Branches====
 
-b. 如果本地没有name分支
-1. git fetch -q origin feature/name
-2. git branch --no-track feature/name
-3. git checkout -q feature/name 例子:
-git flow feature pull origin story_1
+Maintenance or “hotfix” branches are used to quickly patch production releases. This is the only branch that should fork directly off of master. As soon as the fix is complete, it should be merged into both master and develop (or the current release branch), and master should be tagged with an updated version number.
 
-feature finish
+Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle. You can think of maintenance branches as ad hoc release branches that work directly with master.
 
-用法: git flow feature finish [-rFk] <name|nameprefix>
-功能: 完成由name指定的feature分支的开发,将其合并到本地的develop分支,合并成功后删除该分支
-参数: -r 
-在合并到develop分子时,使用rebase机制,而不是merge
 
--F
-在执行finish操作前,先执行fetch,从远程仓库下载更新
+=====Example=====
 
--k
-执行完finsh后,保留feature分支,即不删除分支
+The example below demonstrates how this workflow can be used to manage a single release cycle. We’ll assume you have already created a central repository.
 
-name
-feature的名称,对应feature start的名称
 
-等价的Git命令:
-1. git fetch -q origin feature/name #当参数中设置了-F时
-2. git flow feature rebase name develop #当参数中设置了-r时
-3. git checkout develop
-4. git merge feature/name #根据develop分支和feature/name分支之间的提交的个数决定是否设置--no--ff
-5. #如果设置了-F参数,则删除远程的分支 git push origin :ref/heads/feature/name 
-6. #如果没有设置-k参数,则删除本地的分支
+====Create a develop branch====  
 
-例子:
-git flow feature finish story_1
+The first step is to complement the default master with a develop branch. A simple way to do this is for one developer to create an empty develop branch locally and push it to the server:  
+<code>
+git branch develop
+git push -u origin develop
+</code>
 
+This branch will contain the complete history of the project, whereas master will contain an abridged version. Other developers should now clone the central repository and create a tracking branch for develop:
+<code>
+git clone ssh://user@host/path/to/repo.git
+git checkout -b develop origin/develop
+</code>
+Everybody now has a local copy of the historical branches set up.   
+   
+====Mary and John begin new features====
+  
+Our example starts with John and Mary working on separate features. They both need to create separate branches for their respective features. Instead of basing it on master, they should both base their feature branches on develop:
 
-feature rebase
+git checkout -b some-feature develop
 
-用法: git flow feature rebase [-i] [<name|nameprefix>]
-功能: 以develop分支作为upstream,对指定的feature分支执行rebase操作
-参数: -i 
-等价与rebase -i
+Both of them add commits to the feature branch in the usual fashion: edit, stage, commit:
 
-name
-feature的名称
+git status
+git add <some-file>
+git commit
 
-等价的Git命令:
-1. git checkout -q feature/name
-2. git rebase develop
 
-例子:
-git flow feature rebase -i story_1
+====Mary finishes her feature====
 
-release
+After adding a few commits, Mary decides her feature is ready. If her team is using pull requests, this would be an appropriate time to open one asking to merge her feature into develop. Otherwise, she can merge it into her local develop and push it to the central repository, like so:
 
-用法:
-git flow release [list] [-v]
-git flow release start [-F] <version>
-git flow release finish [-Fsumpk] <version>
-git flow release publish <name>
-git flow release track <name>
+git pull origin develop
+git checkout develop
+git merge some-feature
+git push
+git branch -d some-feature
 
-release start
+The first command makes sure the develop branch is up to date before trying to merge in the feature. Note that features should never be merged directly into master. Conflicts can be resolved in the same way as in the Centralized Workflow.
 
-用法: git flow release start [-F] <version> [<base>]
-功能: 从develop分支指定的起始点(可选,默认为HEAD)建立版本发布的分支
-参数: version
-版本号
 
-base
-建立分支的起始点,可选参数,默认为develop HEAD
+====Mary begins to prepare a release====
 
-等价的Git命令:
-1. git checkout -b release/version develop
+While John is still working on his feature, Mary starts to prepare the first official release of the project. Like feature development, she uses a new branch to encapsulate the release preparations. This step is also where the release’s version number is established:
 
-例子:
-git flow release start v0.1
+git checkout -b release-0.1 develop
 
-release publish
+This branch is a place to clean up the release, test everything, update the documentation, and do any other kind of preparation for the upcoming release. It’s like a feature branch dedicated to polishing the release.
 
-用法: git flow release publish <name>
-功能: 将release分支发布的远程仓库,供团队协作
-参数: name
-release名称,与start 中的version相对应
+As soon as Mary creates this branch and pushes it to the central repository, the release is feature-frozen. Any functionality that isn’t already in develop is postponed until the next release cycle.
 
-等价的Git命令:
-1. git fetch -q origin
-2. git push origin release/name:refs/heads/release/name 例子:
-git flow release publish v0.1
 
-release track
+====Mary finishes the release====
 
-用法: git flow release track <name>
-功能: 将由 publish发布的feature分支从远程仓库下载到本地,并建立同名分支,供团队协作
-参数: name
-远程feature的名称,对应feature publish的名称
+Once the release is ready to ship, Mary merges it into master and develop, then deletes the release branch. It’s important to merge back into develop because critical updates may have been added to the release branch and they need to be accessible to new features. Again, if Mary’s organization stresses code review, this would be an ideal place for a pull request.
 
-等价的Git命令:
-1. git fetch -q origin
-2. git checkout -b release/name origin/release/name 例子:
-git flow release track v0.1
+git checkout master
+git merge release-0.1
+git push
+git checkout develop
+git merge release-0.1
+git push
+git branch -d release-0.1
 
+Release branches act as a buffer between feature development (develop) and public releases (master). Whenever you merge something into master, you should tag the commit for easy reference:
 
-release finish
+git tag -a 0.1 -m "Initial public release" master
+git push --tags
 
-用法: git flow release finish [-Fsumpk] <version>
-功能: 完成由version指定的release分支的开发,将其合并到develop和master分支,并为该分支创建一个tag
-参数: -F 
-执行操作前先执行fetch
+Git comes with several hooks, which are scripts that execute whenever a particular event occurs within a repository. It’s possible to configure a hook to automatically build a public release whenever you push the master branch to the central repository or push a tag.
 
--s
-对新建的tag签名
 
--u
-签名使用的GPG-key
+====End-user discovers a bug====
 
--m
-使用指定的注释作为tag的注释
+After shipping the release, Mary goes back to developing features for the next release with John. That is, until an end-user opens a ticket complaining about a bug in the current release. To address the bug, Mary (or John) creates a maintenance branch off of master, fixes the issue with as many commits as necessary, then merges it directly back into master.
 
--p
-当操作结束后,push到远程仓库中
+git checkout -b issue-#001 master
+# Fix the bug
+git checkout master
+git merge issue-#001
+git push
 
--k
-保留分支
+Like release branches, maintenance branches contain important updates that need to be included in develop, so Mary needs to perform that merge as well. Then, she’s free to delete the branch:
 
--n
-不创建tag
+git checkout develop
+git merge issue-#001
+git push
+git branch -d issue-#001
 
-version
-版本号
 
-等价的Git命令:
-1. 如果设置了 -F 参数,下载更新
-1.1 git fetch -q origin master
-1.2 git fetch -q origin develop
+=====Where To Go From Here=====
 
-2. 合并回master分支
-2.1 git checkout master
-2.2 git merge --no-ff release/version
+By now, you’re hopefully quite comfortable with the Centralized Workflow, the Feature Branch Workflow, and the Gitflow Workflow. You should also have a solid grasp on the potential of local repositories, the push/pull pattern, and Git's robust branching and merging model.
 
-3. 如果没有设置 -n 参数,创建tag
-3.1 git tag 
+Remember that the workflows presented here are merely examples of what’s possible—they are not hard-and-fast rules for using Git in the workplace. So, don't be afraid to adopt some aspects of a workflow and disregard others. The goal should always be to make Git work for you, not the other way around.
 
-4. 合并回develop分支
-4.1 git checkout develop
-4.2 git merge --no-ff release/version
 
-5. 如果没有设置 -k 参数
-5.1 git branch -d release/version
 
-6. 如果设置 -p 参数
-6.1 git push origin develop
-6.2 git push origin master
-6.3 git push --tags origin
-6.4 git push orign :release/version #删除远程仓库中的release分支 例子:
-git flow release finish -p v0.1
+
+
+
+
+
+
+
+
+

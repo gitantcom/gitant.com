@@ -1,0 +1,7 @@
+===统计每个人的提交次数===
+<code>
+$git shortlog -s
+    18  Your Name
+     2  gitsvn
+    48  lixin
+</code>
