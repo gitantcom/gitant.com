@@ -112,9 +112,7 @@
 1390716956	10.221.135.120	E	gitcommand:git-feature-branch	uahoo	[特性分支模式] 	
 1390717591	10.221.135.120	E	gitcommand:git-feature-branch	uahoo	[特性分支模式] 	
 1390717684	10.221.135.120	E	gitcommand:git-feature-branch	uahoo		
-1387958201	127.0.0.1	E	gitcommand:git-workflow-gitflow		外部编辑	
 1390727604	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
-1388116323	127.0.0.1	E	gitcommand:git_parallel		外部编辑	
 1390727659	10.221.135.120	E	gitcommand:git_parallel	uahoo		
 1390727670	10.221.135.120	C	gitcommand:git_flow	uahoo	创建	
 1390727722	10.221.135.120	E	sidebar	uahoo		
@@ -123,10 +121,72 @@
 1390728291	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
 1390728491	10.221.135.120	E	gitcommand:git-feature-branch	uahoo		
 1390729034	10.221.135.120	C	gitcommand:git-workflow-svn	uahoo	创建	
-1387958201	127.0.0.1	E	gitcommand:gitbranchmodel		外部编辑	
 1390729075	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
 1390729950	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
 1390730016	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
 1390730065	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
 1390730110	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
 1390730201	10.221.135.120	E	gitcommand:git-workflow-gitflow	uahoo		
+1390807355	10.221.135.120	E	gitcommand:git-workflow-svn	uahoo		
+1390807436	10.221.135.120	E	gitcommand:git-workflow-svn	uahoo		
+1390807490	10.221.135.120	E	gitcommand:git-workflow-svn	uahoo		
+1390807704	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
+1390807785	10.221.135.120	D	gitcommand:git-workflow-svn	uahoo	移除	
+1390807818	10.221.135.120	E	gitcommand:gitbranchmodel	uahoo		
+1390807834	10.221.135.120	C	git_branch_modle:git-workflow-central	uahoo	创建	
+1390807864	10.221.135.120	D	gitcommand:git-feature-branch	uahoo	移除	
+1390807883	10.221.135.120	C	git_branch_modle:git-feature-branch	uahoo	创建	
+1390807954	10.221.135.120	D	gitcommand:git-workflow-gitflow	uahoo	移除	
+1390807976	10.221.135.120	C	git_branch_modle:git-workflow-gitflow	uahoo	创建	
+1387958201	127.0.0.1	E	gitcommand:git-fork-branch		外部编辑	
+1390808020	10.221.135.120	D	gitcommand:git-fork-branch	uahoo	移除	
+1390808038	10.221.135.120	C	git_branch_modle:git-fork-branch	uahoo	创建	
+1390808132	10.221.135.120	E	git_branch_modle:git-fork-branch	uahoo		
+1390808404	10.221.135.120	E	git_branch_modle:git-fork-branch	uahoo		
+1390808950	10.221.135.120	E	sidebar	uahoo		
+1390808974	10.221.135.120	C	git_ci:git_ci	uahoo	创建	
+1390809096	10.221.135.120	E	sidebar	uahoo		
+1390809178	10.221.135.120	D	gitcommand:gitbranchmodel	uahoo	移除	
+1390809191	10.221.135.120	C	git_branch_model:gitbranchmodel	uahoo	创建	
+1390809245	10.221.135.120	D	gitcommand:git_parallel	uahoo	移除	
+1390809254	10.221.135.120	C	git_branch_model:git_parallel	uahoo	创建	
+1390809461	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo		
+1390809612	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[How It Works] 	
+1390809705	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary tries to publish her feature] 	
+1390809741	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[John publishes his feature] 	
+1390809782	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390809853	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390809933	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary resolves a merge conflict] 	
+1390810032	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390810113	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390810192	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary resolves a merge conflict] 	
+1390810255	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary resolves a merge conflict] 	
+1390810284	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary successfully publishes her feature] 	
+1390810368	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Everybody clones the central repository] 	
+1390810426	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary tries to publish her feature] 	
+1390810461	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary tries to publish her feature] 	
+1390810507	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary tries to publish her feature] 	
+1390810586	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390810639	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390810809	10.221.135.120	E	git_branch_modle:git-workflow-central	uahoo	[Mary rebases on top of John’s commit(s)] 	
+1390811041	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo	[特性分支模式] 	
+1390811947	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo	[How It Works] 	
+1390812112	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo	[How It Works] 	
+1390812423	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo	[How It Works] 	
+1390812450	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo	[Pull Requests] 	
+1390812485	10.221.135.120	E	git_branch_modle:git-feature-branch	uahoo		
+1390814014	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Gitflow Workflow] 	
+1390814074	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Historical Branches] 	
+1390814144	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Feature Branches] 	
+1390814226	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Release Branches] 	
+1390814351	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Maintenance Branches] 	
+1390814390	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Create a develop branch] 	
+1390814432	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary and John begin new features] 	
+1390814462	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary and John begin new features] 	
+1390814498	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary finishes her feature] 	
+1390814551	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary finishes her feature] 	
+1390814583	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary begins to prepare a release] 	
+1390814605	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary begins to prepare a release] 	
+1390814638	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary finishes the release] 	
+1390814670	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[Mary finishes the release] 	
+1390814730	10.221.135.120	E	git_branch_modle:git-workflow-gitflow	uahoo	[End-user discovers a bug] 	

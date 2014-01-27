@@ -55,3 +55,10 @@ gitcommand:git_short_log:git_shortlog
 gitcommand:git-feature-branch
 gitcommand:git_flow
 gitcommand:git-workflow-svn
+git_branch_modle:git-workflow-central
+git_branch_modle:git-feature-branch
+git_branch_modle:git-workflow-gitflow
+git_branch_modle:git-fork-branch
+git_ci:git_ci
+git_branch_model:gitbranchmodel
+git_branch_model:git_parallel

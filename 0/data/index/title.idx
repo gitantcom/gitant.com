@@ -21,8 +21,8 @@ HTTPS 方式保存密码
 直接定义
 diff时用到的参数
 
-Gitflow Workflow
-Git集中分支管理模式
+
+
 如何只提交部分文件？
 How do I reset/revert a specific file to a specific revision using Git?
 
@@ -34,7 +34,7 @@ git 如何检出变更文件？
 本地版本控制系统
 
 提交范围
-The project maintainer initializes the official repository
+
 版本控制系统 
 
 git 如何查看某一版本文件的内容？
@@ -52,6 +52,13 @@ git分支比较
 简短的SHA
 计算每次commit的唯一序数号
 统计每个人的提交次数
-特性分支模式
+
+
 
 Centralized Workflow
+任务分支模式
+Gitflow Workflow
+Forking Workflow
+持续集成
+Git集中分支管理模式
+

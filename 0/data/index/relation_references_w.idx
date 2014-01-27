@@ -99,3 +99,11 @@ gitcommnad:git_rev_list
 gitcommand:git_rev_parse
 gitcommand:git_short_log:git_shortlog
 gitcommand:git_flow
+git_branch_modle:git-workflow-svn
+git_branch_modle:git-workflow-gitflow
+git_branch_modle:git-feature-branch
+git_branch_modle:git-fork-branch
+git_branch_modle:git-workflow-central
+git_ci:git_ci
+git_branch_model:gitbranchmodel
+git_branch_model:git_parallel

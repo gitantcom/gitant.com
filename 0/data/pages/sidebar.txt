@@ -5,8 +5,8 @@
   * [[gitcommand:git_command1|Git命令实例]]
 
 ==== 并行开发 ====
-    * [[gitcommand:gitbranchmodel|Git分支模式]]
-    * [[gitcommand:git_parallel|使用Git并行开发]]
+    * [[git_branch_model:gitbranchmodel|Git分支模式]]
+    * [[git_branch_model:git_parallel|使用Git并行开发]]
 
 
 
@@ -16,7 +16,7 @@
 
 
 ==== 持续集成====
-  * [[wiki:git_CI|Git持续集成]]
+  * [[git_CI:git_CI|Git持续集成]]
   * [[gitcommand:git_release|Git发布部署]]
 
 

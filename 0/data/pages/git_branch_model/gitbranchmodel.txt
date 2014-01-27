@@ -1,0 +1,16 @@
+
+===== Git集中分支管理模式 =====
+[[git_branch_modle:git-workflow-central|Git集中分支管理模式]]
+----
+===== GitFlow分支管理模式 =====
+[[git_branch_modle:git-workflow-gitflow|GitFlow分支管理模式 ]]
+----
+===== Git特性分支管理模式 =====
+[[git_branch_modle:git-feature-branch|Git特性支管理模式 ]]
+----
+===== Git Fork 分支管理模式 =====
+[[git_branch_modle:git-fork-branch| Git Fork分支管理模式]]
+----
+{{wiki:dokuwiki-128.png }}
+{{ wiki:dokuwiki-128.png }}
+
