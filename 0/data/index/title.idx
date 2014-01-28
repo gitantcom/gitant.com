@@ -1,7 +1,7 @@
 版本控制系统
 Formatting Syntax
 Welcome to your new DokuWiki
-命令详解
+命令
 DokuWiki
 
 git 如何保存用户名?
@@ -63,8 +63,8 @@ git分支比较
 Git集中分支管理模式
 
 如何回退到某个指定版本提交？
-How do I reset/revert a specific file to a specific revision using Git?
-如何只提交部分文件？
+放弃没有缓存的的文件变更？
+
 Git Push
 Git remote
 计算每次commit的唯一序数号
@@ -80,9 +80,16 @@ Windows 平台
 Git 官方文档
 使用git subtree集成项目到子目录
 统计每个人的提交次数
-
+a
 提交范围
 版本控制系统
 本地版本控制系统
+
+
+如何只提交部分文件？
+本地新分支？
+git版本号
+git pull and rebase
+
 
 

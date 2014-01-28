@@ -11,7 +11,7 @@
 
 
 =====暂存与快照=====
-  * git add
+  * [[gitcommand:git_add|git add]]
   * [[gitcommand:git_commit|git commit ]]
   * git status
   * git rm
@@ -29,8 +29,7 @@
 
 
 ===== 分支合并 =====
-  * git branch
-  * git checkout
+  * [[gitcommand:git_branch|git branch]]
   * git merge
   * [[gitcommand:git_log_branch| git log ]]
   * [[gitcommand:log_diff_branch|git diff]]
@@ -69,22 +68,7 @@
 
 
 ===== Git=====
-   * [[gitcommand:git_version_number_desc|选择git的版本号]]
-   * [[gitcommand:git_version_range| git 的版本范围]]
-
-   * [[gitcommand:gitconfig|Git的全局配置]]
-
-  * [[gitcommand:gitcommitname|Git的版本号]]
-
-  * [[gitcommand:gitcommit|Git commit 提交]]
-
-  * [[gitcommand:gitcheckout|Git checkout 检出]]
-
-  * [[gitcommand:gitconfigpasswd|https协议保存密码]]
-
-   * [[ gitcommand:git_changeset ]]
-
-   * [[gitcommand:git_merge| Git merge 的合并操作]]
+  
 
    * [[gitcommand:git_how]]
 

@@ -1,9 +1,22 @@
+-----
+====放弃没有缓存的的文件变更？====
+修改为文件变更，没有执行缓存(git add)，如何放弃这些修改？
+<code bash>
+#For a specific file use:
+$git checkout path/to/file/to/revert
+
+#For all unstaged files use:
+$git checkout -- .
+</code>
+
+
+----
 ==== How do I reset/revert a specific file to a specific revision using Git? ====
 Assuming the commit you want is "abcde"
 <code bash >
 $ git checkout abcde file/to/restore  #恢复某个文件到指定版本
 </code>
-
+----
 ==== git 检出某个旧版本的文件? ====
   * 查看文件日志
     <code bash >
@@ -33,3 +46,4 @@ $ git checkout abcde file/to/restore  #恢复某个文件到指定版本
     <code bash>
      $git checkout master
      </code>
+-----

@@ -1,6 +1,0 @@
-==== 如何只提交部分文件？====
-<code bash >
-$git add --interactive  <file>  #方法1
-
-$git add -p <file>  #方法2
-</code>

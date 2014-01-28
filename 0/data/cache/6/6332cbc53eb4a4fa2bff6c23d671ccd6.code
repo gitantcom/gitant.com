@@ -1,0 +1,2 @@
+$ <span class="kw2">git push</span> <span class="re5">-u</span> origin new_branch <span class="co0">#创建远端新分支</span>
+$ <span class="kw2">git push</span> origin :old_branch   <span class="co0">#删除旧分支</span>

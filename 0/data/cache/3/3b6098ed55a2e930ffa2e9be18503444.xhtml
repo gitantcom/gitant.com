@@ -1,15 +1,32 @@
+<hr />
 
-<h3 class="sectionedit1" id="how_do_i_reset_revert_a_specific_file_to_a_specific_revision_using_git">How do I reset/revert a specific file to a specific revision using Git?</h3>
+<h3 class="sectionedit1" id="放弃没有缓存的的文件变更">放弃没有缓存的的文件变更？</h3>
+<div class="level3">
+
+<p>
+修改为文件变更，没有执行缓存(git add)，如何放弃这些修改？
+</p>
+<pre class="code bash"><span class="co0">#For a specific file use:</span>
+<span class="re1">$git</span> checkout path<span class="sy0">/</span>to<span class="sy0">/</span>file<span class="sy0">/</span>to<span class="sy0">/</span>revert
+&nbsp;
+<span class="co0">#For all unstaged files use:</span>
+<span class="re1">$git</span> checkout <span class="re5">--</span> .</pre>
+<hr />
+
+</div>
+<!-- EDIT1 SECTION "放弃没有缓存的的文件变更？" [7-275] -->
+<h3 class="sectionedit2" id="how_do_i_reset_revert_a_specific_file_to_a_specific_revision_using_git">How do I reset/revert a specific file to a specific revision using Git?</h3>
 <div class="level3">
 
 <p>
 Assuming the commit you want is “abcde”
 </p>
 <pre class="code bash"><span class="co4">$ </span><span class="kw2">git checkout</span> abcde file<span class="sy0">/</span>to<span class="sy0">/</span>restore  <span class="co0">#恢复某个文件到指定版本</span></pre>
+<hr />
 
 </div>
-<!-- EDIT1 SECTION "How do I reset/revert a specific file to a specific revision using Git?" [1-217] -->
-<h3 class="sectionedit2" id="git_检出某个旧版本的文件">git 检出某个旧版本的文件?</h3>
+<!-- EDIT2 SECTION "How do I reset/revert a specific file to a specific revision using Git?" [276-496] -->
+<h3 class="sectionedit3" id="git_检出某个旧版本的文件">git 检出某个旧版本的文件?</h3>
 <div class="level3">
 <ul>
 <li class="level1"><div class="li"> 查看文件日志</div>
@@ -45,6 +62,7 @@ Assuming the commit you want is “abcde”
 </ul>
 <pre class="code bash">     <span class="re1">$git</span> checkout master
 &nbsp;</pre>
+<hr />
 
 </div>
-<!-- EDIT2 SECTION "git 检出某个旧版本的文件?" [218-] -->
+<!-- EDIT3 SECTION "git 检出某个旧版本的文件?" [497-] -->

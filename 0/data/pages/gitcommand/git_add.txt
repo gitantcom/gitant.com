@@ -1,0 +1,20 @@
+
+-----
+==== 如何只提交部分文件？====
+<code bash >
+$git add --interactive  <file>  #方法1
+
+$git add -p <file>  #方法2
+</code>
+-----
+==== 如何取消已经执行缓存(git add)的变更？====
+已经执行了git add，如何取消缓存状态？
+<code?>
+ git reset HEAD <file>
+</code>
+
+或者新方法：
+<code>
+git rm --cached <added_file_to_undo>
+</code>
+-----

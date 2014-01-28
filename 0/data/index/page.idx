@@ -86,3 +86,10 @@ git_news:vcs
 git_news:vcs_history
 git_news:git_origin
 git_news:git_history
+gitcommand:git_add
+gitcommand:git_branch
+gitcommand:git_concept
+git_branch_model:git_parallel_concept
+git_branch_model:git_pull_rebase
+git_branch_model:start
+gitcommand:start
