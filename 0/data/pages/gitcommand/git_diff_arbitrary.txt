@@ -1,4 +1,5 @@
-==比对任意提交==
+-----
+====比对任意提交====
 <code>
     $ git diff test            <1>
     $ git diff HEAD -- ./test  <2>
@@ -9,7 +10,8 @@
   * Instead of comparing with the tip of "test" branch, compare with the tip of the current branch, but limit the comparison to the file "test".
   * Compare the version before the last commit and the last commit.
 
-==比对标签==
+-----
+====比对标签====
 <code>
 $ git diff v0.9
 </code>
@@ -21,7 +23,8 @@ $ git diff v0.9 --stat
  2 files changed, 3 insertions(+), 3 deletions(-)
 </code>
 
-==对比分支==
+----
+====对比分支====
 
  要比较两个不同的分支，你可以执行类似 git diff branchA branchB 的命令。 不过它的问题在于它会完完全全按你说的作 —— 它会直接给你个补丁文件，该补丁能够将甲分支的最新快照变成乙分支的最新快照的样子。 这意味着如果两个分支已经产生分歧 —— 奔往两个不同方向了 —— 它会移除甲分支中引入的所有工作，然后累加乙分支中的所有工作。 这大概不是你要的吧 —— 你想要不在甲分支中的乙分支的改动。所以你真的需要的是两个分支叉开去时，和最新的乙分支的差别。 所以，如果我们的历史记录看起来像这样：
 <code>
@@ -79,4 +82,13 @@ $ git diff --stat $(git merge-base master erlang) erlang
 当然，我会推荐简单点的那个。
 
 简而言之 使用 git diff 查看某一分支自它偏离出来起与过去某一点之间项目的改动。 总是使用 git diff branchA...branchB 来查看 branchB 与 branchA 的相对差值，这会让事情简单点。 
+
+-----
+====diff时用到的参数====
+  * [[wiki:git_commit_range|比较的范围]]
+
+-----
+====本地仓库diff====
+-----
+====本地与远程仓库之间diff====
 

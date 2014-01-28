@@ -5,43 +5,43 @@ Welcome to your new DokuWiki
 DokuWiki
 
 git 如何保存用户名?
-搭建自己的Git代码托管仓库
-Git 官方文档
-Windows 平台
-Gerrit
-Github
+
+
+
+
+
 个人开发者（单独开发）
 输出最后一次提交的改变
-使用git subtree集成项目到子目录
-Git Push
-Git remote
-如何回退本地的提交？
+
+
+
+
 配置用户名
 HTTPS 方式保存密码
 直接定义
-diff时用到的参数
 
 
 
-如何只提交部分文件？
-How do I reset/revert a specific file to a specific revision using Git?
+
+
+
 
 GitHub如何操作pull request？
-modgit 工具
+
 用git部署php站点
 源码发布
 git 如何检出变更文件？
-本地版本控制系统
 
-提交范围
 
-版本控制系统 
 
-git 如何查看某一版本文件的内容？
+
+
+
+
 git中如何合并某个指定文件？
 如何合并某个版本的分支？
 如何合并两个仓库？
-初始化与设置
+Git命令实例
 git log 日常用法
 查询分支之间的差异
 比对任意提交
@@ -50,15 +50,39 @@ git分支比较
 克隆git仓库
 系统级别配置
 简短的SHA
+
+
+
+
+
+
+
+
+
+持续集成
+Git集中分支管理模式
+
+如何回退到某个指定版本提交？
+How do I reset/revert a specific file to a specific revision using Git?
+如何只提交部分文件？
+Git Push
+Git remote
 计算每次commit的唯一序数号
-统计每个人的提交次数
-
-
-
 Centralized Workflow
 任务分支模式
 Gitflow Workflow
 Forking Workflow
-持续集成
-Git集中分支管理模式
+Gerrit
+modgit 工具
+Github
+搭建自己的Git代码托管仓库
+Windows 平台
+Git 官方文档
+使用git subtree集成项目到子目录
+统计每个人的提交次数
+
+提交范围
+版本控制系统
+本地版本控制系统
+
 

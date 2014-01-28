@@ -4,3 +4,5 @@
 1387803867	10.212.40.191	E	gitcommand:git_diff	uahoo		
 1387804570	10.212.40.191	E	gitcommand:git_diff	uahoo	[diff时用到的参数] 	
 1387805651	10.212.40.191	E	gitcommand:git_diff	uahoo		
+1387958201	127.0.0.1	E	gitcommand:git_diff		外部编辑	
+1390836726	10.212.40.205	D	gitcommand:git_diff	uahoo	移除	

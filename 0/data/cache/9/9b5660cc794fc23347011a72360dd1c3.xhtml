@@ -1,6 +1,7 @@
+<hr />
 
-<h5 id="比对任意提交">比对任意提交</h5>
-<div class="level5">
+<h3 class="sectionedit1" id="比对任意提交">比对任意提交</h3>
+<div class="level3">
 <pre class="code">    $ git diff test            &lt;1&gt;
     $ git diff HEAD -- ./test  &lt;2&gt;
     $ git diff HEAD^ HEAD      &lt;3&gt;</pre>
@@ -12,11 +13,12 @@
 <li class="level1"><div class="li"> Compare the version before the last commit and the last commit.</div>
 </li>
 </ul>
+<hr />
 
 </div>
-
-<h5 id="比对标签">比对标签</h5>
-<div class="level5">
+<!-- EDIT1 SECTION "比对任意提交" [7-465] -->
+<h3 class="sectionedit2" id="比对标签">比对标签</h3>
+<div class="level3">
 <pre class="code">$ git diff v0.9</pre>
 
 <p>
@@ -26,11 +28,12 @@
  README  |    2 +-
  ruby.rb |    4 ++--
  2 files changed, 3 insertions(+), 3 deletions(-)</pre>
+<hr />
 
 </div>
-
-<h5 id="对比分支">对比分支</h5>
-<div class="level5">
+<!-- EDIT2 SECTION "比对标签" [466-692] -->
+<h3 class="sectionedit3" id="对比分支">对比分支</h3>
+<div class="level3">
 
 <p>
  要比较两个不同的分支，你可以执行类似 git diff branchA branchB 的命令。 不过它的问题在于它会完完全全按你说的作 —— 它会直接给你个补丁文件，该补丁能够将甲分支的最新快照变成乙分支的最新快照的样子。 这意味着如果两个分支已经产生分歧 —— 奔往两个不同方向了 —— 它会移除甲分支中引入的所有工作，然后累加乙分支中的所有工作。 这大概不是你要的吧 —— 你想要不在甲分支中的乙分支的改动。所以你真的需要的是两个分支叉开去时，和最新的乙分支的差别。 所以，如果我们的历史记录看起来像这样：
@@ -95,5 +98,28 @@ $ git diff --stat master...erlang
 <p>
 简而言之 使用 git diff 查看某一分支自它偏离出来起与过去某一点之间项目的改动。 总是使用 git diff branchA…branchB 来查看 branchB 与 branchA 的相对差值，这会让事情简单点。 
 </p>
+<hr />
 
 </div>
+<!-- EDIT3 SECTION "对比分支" [693-4016] -->
+<h3 class="sectionedit4" id="diff时用到的参数">diff时用到的参数</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="/0/doku.php?id=wiki:git_commit_range" class="wikilink1" title="wiki:git_commit_range">比较的范围</a></div>
+</li>
+</ul>
+<hr />
+
+</div>
+<!-- EDIT4 SECTION "diff时用到的参数" [4017-4100] -->
+<h3 class="sectionedit5" id="本地仓库diff">本地仓库diff</h3>
+<div class="level3">
+<hr />
+
+</div>
+<!-- EDIT5 SECTION "本地仓库diff" [4101-4131] -->
+<h3 class="sectionedit6" id="本地与远程仓库之间diff">本地与远程仓库之间diff</h3>
+<div class="level3">
+
+</div>
+<!-- EDIT6 SECTION "本地与远程仓库之间diff" [4132-] -->

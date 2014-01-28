@@ -13,3 +13,5 @@
 1386666247	10.221.135.112	E	gitlocal:git_repo_localnet	uahoo	[gitolite] 	
 1386728308	10.209.88.254	E	gitlocal:git_repo_localnet	uahoo	[Gitolite] 	
 1387803460	10.212.40.191	E	gitlocal:git_repo_localnet	uahoo		
+1387958201	127.0.0.1	E	gitlocal:git_repo_localnet		外部编辑	
+1390880693	10.221.135.120	D	gitlocal:git_repo_localnet	uahoo	移除	

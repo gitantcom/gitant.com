@@ -1,10 +1,1 @@
-a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1387855210;s:8:"modified";i:1387855987;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:20:"版本控制系统 ";s:11:"description";a:2:{s:15:"tableofcontents";a:5:{i:0;a:4:{s:3:"hid";s:18:"版本控制系统";s:5:"title";s:20:"版本控制系统 ";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:1;a:4:{s:3:"hid";s:12:"版本控制";s:5:"title";s:12:"版本控制";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:2;a:4:{s:3:"hid";s:27:"为什么要用版本控制";s:5:"title";s:29:"为什么要用版本控制 ";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:33:"版本控制系统的发展历史";s:5:"title";s:33:"版本控制系统的发展历史";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:4;a:4:{s:3:"hid";s:24:"常见版本控制系统";s:5:"title";s:24:"常见版本控制系统";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:924:"版本控制系统 
-
-版本控制
-
-版本控制(Revision control)是一种软件工程技巧，籍以在开发的过程中，确保由不同人所编辑的同一档案都得到更新。 
-版本控制透过文档控制（documentation control）记录程序各个模组的改动，并为每次改动编上序号。 
-这种方法是工程图维护（maintenance of engineering drawings）的标准做法， 它伴随着工程图从图的诞生一直到图的定型。 
-一种简单的版本控制形式，例如，赋给图的初版一个版本等级“A”。 
-当做了第一次改变后，版本等级改为“B”，以此类推。 不仅存在着保存着工程图或者软件源代码的文本文件版本控制管理，而实际上，你可以对任何类型的文件进行版本控制。 
-版本控制系统用于维护文件的所有版本，随着时间的推移，系统逐渐产生这些版本。 …";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1387855210;s:8:"modified";i:1387855987;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}
+a:2:{s:7:"current";a:9:{s:4:"date";s:0:"";s:7:"creator";s:0:"";s:4:"user";s:0:"";s:11:"last_change";s:0:"";s:11:"contributor";s:0:"";s:5:"title";s:0:"";s:11:"description";s:0:"";s:8:"internal";s:0:"";s:8:"relation";s:0:"";}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1387855210;s:8:"modified";i:1387958201;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1387958201;s:2:"ip";s:9:"127.0.0.1";s:4:"type";s:1:"E";s:2:"id";s:8:"wiki:vcs";s:4:"user";s:0:"";s:3:"sum";s:12:"外部编辑";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

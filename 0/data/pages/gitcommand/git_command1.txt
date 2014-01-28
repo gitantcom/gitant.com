@@ -1,6 +1,8 @@
 
 
 
+=====Git命令实例=====
+-----
 ===== 初始化与设置=====
   * git init
   *[[gitcommand:git_clone | git clone]]
@@ -10,17 +12,17 @@
 
 =====暂存与快照=====
   * git add
-  * git commit
+  * [[gitcommand:git_commit|git commit ]]
   * git status
   * git rm
-  * [[gitcommand:git_short_log: git shortlog]]
+  * [[gitcommand:git_short_log| git shortlog]]
   * git show
 
 ===== 撤销变更 =====
 
-  * [[gitcommand:gitcheckout|git checkout]] 
+  * [[gitcommand:git_checkout|git checkout]] 
   * git revert
-  * git reset
+  * [[gitcommand:git_rest|git reset]]
   * git clean
 
 
@@ -46,18 +48,19 @@
 
 
 ===== 分享与更新=====
-  * git remote
+  * [[gitcommand:git_remote|git remote]]
   * git fetch
   * git pull
-  * git push
+  * [[gitcommand:git_push|git push]]
   * git submodle
+  * [[gitcommand:git_subtree| git_subtree]]
 =====检查和比对=====
   * [[gitcommand:git_log_stage| git log]]
   * [[gitcommand:git_diff_stage| git diff]]
   * git  log 
   * [[ gitcommand:git_diff_arbitrary|git  diff]]
   * git shortlog
-  * [[gitcommnad:git_rev_list| git revlist]]
+  * [[gitcommand:git_rev_list| git revlist]]
   * [[gitcommand:git_rev_parse| git rev-pare]]
   * git desribe
   * gitx
@@ -67,6 +70,7 @@
 
 ===== Git=====
    * [[gitcommand:git_version_number_desc|选择git的版本号]]
+   * [[gitcommand:git_version_range| git 的版本范围]]
 
    * [[gitcommand:gitconfig|Git的全局配置]]
 
@@ -86,14 +90,4 @@
 
    * [[gitcommand:gitsubmodel| Git submodel 子模块操作]]  
 
-   * [[gitreset:gitreset|Git reset 回退操作]]  
-
-   * [[gitcommand:gitrevert| Git revert 会退操作]]
-
-   * [[gitlog:gitlog|Git log 的日志查看]]  
-
-   * [[gitpush:gitpush|Git push 的远程推送]] 
-
-  * [[gitcommand:gitremote| Git remote的操作]]
-
-  * [[gitcommand:git_diff| Git的diff操作]]
+ 

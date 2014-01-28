@@ -2,3 +2,5 @@
 1387346947	10.221.135.120	E	gitcommand:gitcheckout	uahoo		
 1387354029	10.221.135.120	E	gitcommand:gitcheckout	uahoo		
 1387354152	10.221.135.120	E	gitcommand:gitcheckout	uahoo	[git 检出某个旧版本的文件?] 	
+1387958201	127.0.0.1	E	gitcommand:gitcheckout		外部编辑	
+1390836201	10.212.40.205	D	gitcommand:gitcheckout	uahoo	移除	

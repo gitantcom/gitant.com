@@ -1,34 +1,29 @@
 
-
 ====  命令详解 ====
   * [[gitcommand:git_command|Git命令检索]]
   * [[gitcommand:git_command1|Git命令实例]]
 
 ==== 并行开发 ====
-    * [[git_branch_model:gitbranchmodel|Git分支模式]]
-    * [[git_branch_model:git_parallel|使用Git并行开发]]
-
-
+  * [[git_branch_model:gitbranchmodel|Git分支模式]]
+  * [[git_branch_model:git_parallel|使用Git并行开发]]
 
 ==== 代码评审 ====
-  *  [[wiki:git_codereview|Git代码评审]]
-
-
+  *  [[git_codereview:git_codereview|Git代码评审]]
 
 ==== 持续集成====
   * [[git_CI:git_CI|Git持续集成]]
-  * [[gitcommand:git_release|Git发布部署]]
+  * [[git_CI:git_release|Git发布部署]]
 
 
 ==== 代码托管 ====
-  * [[gitlocal:git_repo_localnet|搭建Git托管]]
-  * [[gitonline:git_repo_online|选择Git托管]]
+  * [[git_host:git_repo_localnet|搭建Git托管]]
+  * [[git_host:git_repo_online|选择Git托管]]
 
 ==== 客户端====
-  * [[gitclient:git_client|选择Git 客户端]]
+  * [[git_tools:git_client|选择Git 客户端]]
 
 ==== 文档 ====
-  *  [[wiki:git_reference|Git资料]]
+  *  [[git_doc:git_reference|Git资料]]
 
 ==== wiki帮助 ====
   * [[wiki:welcome|welcome]]

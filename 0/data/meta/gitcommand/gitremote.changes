@@ -3,3 +3,5 @@
 1386749028	10.221.135.112	E	gitcommand:gitremote	uahoo		
 1387806391	10.212.40.191	E	gitcommand:gitremote	uahoo		
 1387806819	10.212.40.191	E	gitcommand:gitremote	uahoo	[添加一个远端仓库到一个已经存在的git仓库上？] 	
+1387958201	127.0.0.1	E	gitcommand:gitremote		外部编辑	
+1390836925	10.212.40.205	D	gitcommand:gitremote	uahoo	移除	

@@ -1,0 +1,97 @@
+-----
+====如何回退到某个指定版本提交？====
+如下版本号，如何恢复到此提交?
+<code>
+commit 4a155e5b3b4548f5f8139b5210b9bb477fa549de
+Author: John Doe <Doe.John.10@gmail.com>
+Date:   Thu Jul 21 20:51:38 2011 -0500
+</code>
+执行如下操作，但是也将失去当前版本到指定版本之间的数据！
+<code>
+git reset --hard 4a155e5
+</code>
+
+
+-----
+==== 如何回退本地最新的一次提交？ ====
+
+<code bash>
+    $ git commit ...              (1)
+    $ git reset --soft 'HEAD^'    (2)
+    $ edit                        (3)
+    $ git add ....                (4)
+    $ git commit -c ORIG_HEAD     (5)
+</code>
+
+  - This is what you want to undo
+  - This is most often done when you remembered what you just committed is incomplete, or you misspelled your commit message, or both. Leaves working tree as it was before "reset". (The quotes may or may not be required in your shell)
+  - Make corrections to working tree files
+  - Stage changes for commit
+  - reset" copies the old head to .git/ORIG_HEAD; redo the commit by starting with its log message. If you do not need to edit the message further, you can give -C option instead
+
+
+-----
+==== 如何强迫保持本地master分支与远程仓库同步？ ====
+  * 首先创建分支，保留当前工作状态
+<code bash >
+$ git commit -a -m "Saving my work, just in case"
+$ git branch my-saved-work
+</code>
+
+  * 然后强制同步远端master分支；
+
+<code bash >
+$ git fetch origin
+$ git reset --hard origin/master
+</code>
+
+-----
+
+==== 放弃最后一次提交？ ====
+你做了一次提交后，你想取消刚才的提交？
+<code bash>
+$ git reset HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis
+</code>
+
+-----
+==== 放弃某一次提交？ ====
+使用~符号，HEAD~1是上两次提交。
+
+$ git reset HEAD~3
+
+-----
+====放弃合并或者pull操作？ ====
+
+<code bash >
+$ git pull                         <1>
+Auto-merging nitfol
+CONFLICT (content): Merge conflict in nitfol
+Automatic merge failed; fix conflicts and then commit the result.
+$ git reset --hard                 <2>
+$ git pull . topic/branch          <3>
+Updating from 41223... to 13134...
+Fast-forward
+$ git reset --hard ORIG_HEAD       <4>
+</code>
+
+----
+====别丢失HEAD？====
+HEAD好似一个游标，通常指向最新提交，随最新提交向前移动。一些Git命令让你来移动 它。 例如：
+<code bash>
+$ git reset HEAD~3
+</code>
+将立即向回移动HEAD三个提交。这样所有Git命令都表现得好似你没有做那最后三个提交， 然而你的文件保持在现在的状态。具体应用参见帮助页。
+
+但如何回到将来呢？过去的提交对将来一无所知。
+
+如果你有原先Head的SHA1值，那么：
+<code bash>
+$ git reset 1b6d
+</code>
+但假设你从来没有记下呢？别担心，像这些命令，Git保存原先的Head为一个叫 ORGI_HEAD的标记，你可以安全体面的返回：
+<code bash>
+$ git reset ORIG_HEAD
+</code>
