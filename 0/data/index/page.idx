@@ -93,3 +93,8 @@ git_branch_model:git_parallel_concept
 git_branch_model:git_pull_rebase
 git_branch_model:start
 gitcommand:start
+git_concept:git_history
+git_concept:git_origin
+git_concept:vcs_history
+git_concept:vcs
+git_doc:git_index_folder_list
