@@ -3,8 +3,8 @@
 [[git_branch_model:git-workflow-central|Git集中分支管理模式]]
 ----
 
-===== Git任务分支管理模式 =====
-[[git_branch_model:git-feature-branch|Git任务支管理模式 ]]
+===== Pull Request分支管理模式 =====
+[[git_branch_model:git-feature-branch|Pull Request分支管理模式 ]]
 
 ----
 ===== GitFlow分支管理模式 =====

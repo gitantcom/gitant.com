@@ -1,2 +1,5 @@
+====分支类型====
+[[git_branch_model:git_branch_style|分支类型]]
+
 ====git 衍和====
 [[git_branch_model:git_pull_rebase|合并主干到分支]]

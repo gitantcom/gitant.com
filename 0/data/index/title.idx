@@ -68,7 +68,7 @@ Git集中分支管理模式
 Git Push
 Git remote
 计算每次commit的唯一序数号
-Centralized Workflow
+集中式开发流程
 任务分支模式
 Gitflow Workflow
 Forking Workflow
@@ -89,12 +89,14 @@ a
 如何只提交部分文件？
 本地新分支？
 版本控制系统
-git 衍和
+分支类型
 
 
 
 
-
+Git 简史
 本地版本控制系统
 版本控制系统
 
+
+长期分支

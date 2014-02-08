@@ -98,3 +98,5 @@ git_concept:git_origin
 git_concept:vcs_history
 git_concept:vcs
 git_doc:git_index_folder_list
+git_concept:git_three_stage
+git_branch_model:git_branch_style

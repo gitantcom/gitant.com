@@ -28,6 +28,8 @@ In addition, feature branches can (and should) be pushed to the central reposito
 合并请求
 Aside from isolating feature development, branches make it possible to discuss changes via pull requests. Once someone completes a feature, they don’t immediately merge it into master. Instead, they push the feature branch to the central server and file a pull request asking to merge their additions into master. This gives other developers an opportunity to review the changes before they become a part of the main codebase.
 
+除了孤立的特性开发，通过pull request 也使得讨论变更成为可能。一旦完成了某个任务， 你不能立即把它合并回主干。相反的，你发起一个合并请求，要求合并到主干上。这给了其他开发者有机会评审你的代码，然后才能合并回主干。
+
 Code review is a major benefit of pull requests, but they’re actually designed to be a generic way to talk about code. You can think of pull requests as a discussion dedicated to a particular branch. This means that they can also be used much earlier in the development process. For example, if a developer needs help with a particular feature, all they have to do is file a pull request. Interested parties will be notified automatically, and they’ll be able to see the question right next to the relevant commits.
 
 Once a pull request is accepted, the actual act of publishing a feature is much the same as in the Centralized Workflow. First, you need to make sure your local master is synchronized with the upstream master. Then, you merge the feature branch into master and push the updated master back to the central repository.

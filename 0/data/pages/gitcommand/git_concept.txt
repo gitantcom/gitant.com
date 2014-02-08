@@ -19,3 +19,4 @@
    * [[gitcommand:gitcommitname|Git的版本号]]
    * [[gitcommand:gitconfigpasswd|https协议保存密码]]
 ====git的3种状态====
+  * [[git_concept:git_three_stage| git 的3种工作状态]]
