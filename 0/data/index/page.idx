@@ -100,3 +100,6 @@ git_concept:vcs
 git_doc:git_index_folder_list
 git_concept:git_three_stage
 git_branch_model:git_branch_style
+gitcommand:git_stash
+gitcommand:git_rev_parse
+gitcommand:git_cherry_pick

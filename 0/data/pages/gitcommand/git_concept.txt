@@ -8,7 +8,7 @@
   * [[git_concept:git_history|Git的发展]]
 
 
-===== 最新下载 =====
+==== 最新下载 ====
    * {{:wiki:logo_2x.png?100*50|}}  [[http://git-scm.com/download/win|{{:wiki:download-big.png|Git for Win 最新版}}]]
 
 ====版本控制====

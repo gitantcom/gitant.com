@@ -17,6 +17,7 @@
   * git rm
   * [[gitcommand:git_short_log| git shortlog]]
   * git show
+  * [[gitcommand:git_stash|git stash]]
 
 ===== 撤销变更 =====
 
@@ -33,6 +34,7 @@
   * git merge
   * [[gitcommand:git_log_branch| git log ]]
   * [[gitcommand:log_diff_branch|git diff]]
+  * [[gitcommand:git_cherry_pick| git cherry pick ]]
 
 
 
@@ -60,8 +62,8 @@
   * [[ gitcommand:git_diff_arbitrary|git  diff]]
   * git shortlog
   * [[gitcommand:git_rev_list| git revlist]]
-  * [[gitcommand:git_rev_parse| git rev-pare]]
-  * git desribe
+  * [[gitcommand:git_rev_parse| git rev-parse]]
+  * git describ
   * gitx
 
 

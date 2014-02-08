@@ -2,7 +2,7 @@
 
 The Forking Workflow is fundamentally different than the other workflows discussed in this tutorial. Instead of using a single server-side repository to act as the “central” codebase, it gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.
 
- Git Workflows: Forking
+{{ :git_branch_model:git-workflows-forking.png | Git Workflows: Forking}}
 
 The main advantage of the Forking Workflow is that contributions can be integrated without the need for everybody to push to a single central repository. Developers push to their own server-side repositories, and only the project maintainer can push to the official repository. This allows the maintainer to accept commits from any developer without giving them write access to the official codebase.
 
@@ -12,7 +12,12 @@ The result is a distributed workflow that provides a flexible way for large, org
 
 As in the other Git workflows, the Forking Workflow begins with an official public repository stored on a server. But when a new developer wants to start working on the project, they do not directly clone the official repository.
 
+开始项目时，并不直接克隆仓库。
+
 Instead, they fork the official repository to create copy of it on the server. This new copy serves as their personal public repository—no other developers are allowed to push to it, but they can pull changes from it (we’ll see why this is important in a moment). After they have created their server-side copy, the developer performs a git clone to get a copy of it onto their local machine. This serves as their private development environment, just like in the other workflows.
+
+相反，工程师复刻官方仓库。新拷贝作为工程师个人的公开仓库，但是其他人不能提交。
+
 
 When they're ready to publish a local commit, they push the the commit to their own public repository—not the official one. Then, they file a pull request with the main repository, which lets the project maintainer know that an update is ready to be integrated. The pull request also serves as a convenient discussion thread if there are issues with the contributed code.
 
@@ -30,7 +35,7 @@ All of these personal public repositories are really just a convenient way to sh
 
 ====The project maintainer initializes the official repository====
 
-Forking Workflow: Shared Repository
+{{ :git_branch_model:git-workflows-forking-1.png |Forking Workflow: Shared Repository}}
 
 As with any Git-based project, the first step is to create an official repository on a server accessible to all of the team members. Typically, this repository will also serve as the public repository of the project maintainer.
 
@@ -42,7 +47,7 @@ git init --bare /path/to/repo.git
 Bitbucket and Stash also provide a convenient GUI alternative to the above commands. This is the exact same process as setting up a central repository for the other workflows in this tutorial. The maintainer should also push the existing codebase to this repository, if necessary.
 Developers fork the official repository
 
-Forking Workflow: Forking the official repository.
+{{ :git_branch_model:git-workflows-forking-2.png |Forking Workflow: Forking the official repository.}}
 
 Next, all of the other developers need to fork this official repository. It’s possible to do this by SSH’ing into the server and running git clone to copy it to another location on the server—yes, forking is basically just a server-side clone. But again, Bitbucket and Stash let developers fork a repository with the click of a button.
 
@@ -50,7 +55,7 @@ After this step, every developer should have their own server-side repository. L
 
 ====Developers clone their forked repositories====
 
-Forking Workflow: Cloning the forked repositories
+{{ :git_branch_model:git-workflows-forking-3.png |Forking Workflow: Cloning the forked repositories}}
 
 Next each developer needs to clone their own public repository. They can do with the familiar git clone command.
 
@@ -70,7 +75,7 @@ This requires users to supply a valid password before cloning or pulling from th
 
 ====Developers work on their features====
 
-Forking Workflow: Developers work on features
+{{ :git_branch_model:git-workflows-forking-4.png |Forking Workflow: Developers work on features}}
 
 In the local repositories that they just cloned, developers can edit code, commit changes, and create branches just like they did in the other workflows:
 
@@ -86,7 +91,7 @@ Since developers should be working in a dedicated feature branch, this should ge
 
 ====Developers publish their features====
 
-Forking Workflow: Developers publish features
+{{ :git_branch_model:git-workflows-forking-5.png |Forking Workflow: Developers publish features}}
 
 Once a developer is ready to share their new feature, they need to do two things. First, they have to make their contribution accessible to other developers by pushing it to their public repository. Their origin remote should already be set up, so all they should have to do is the following:
 
@@ -98,8 +103,8 @@ Second, they need to notify the project maintainer that they want to merge their
 
 ====The project maintainer integrates their features====
 
-
-Forking Workflow: Integrate Features
+{{ :git_branch_model:git-workflows-forking-6.png |
+Forking Workflow: Integrate Features}}
 
 When the project maintainer receives the pull request, their job is to decide whether or not to integrate it into the official codebase. They can do this in one of two ways:
 
@@ -122,8 +127,8 @@ Remember that the maintainer's origin points to their public repository, which a
 
 ====Developers synchronize with the official repository====
 
-Forking Workflow: Synchronize with the official repository
-
+{{ :git_branch_model:git-workflows-forking-7.png |Forking Workflow: Synchronize with the official repository
+}}
 Since the main codebase has moved forward, other developers should synchronize with the official repository:
 
 git pull upstream master

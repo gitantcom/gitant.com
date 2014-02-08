@@ -1,1 +1,11 @@
 1390837451	10.212.40.205	C	git_branch_model:git-fork-branch	uahoo	创建	
+1391838745	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Forking Workflow] 	
+1391839553	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The project maintainer initializes the official repository] 	
+1391839589	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers clone their forked repositories] 	
+1391839778	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers clone their forked repositories] 	
+1391839809	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The project maintainer initializes the official repository] 	
+1391839841	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers work on their features] 	
+1391839895	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers publish their features] 	
+1391839926	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The project maintainer integrates their features] 	
+1391840132	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers synchronize with the official repository] 	
+1391843514	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[How It Works] 	

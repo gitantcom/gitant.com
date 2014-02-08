@@ -1,0 +1,8 @@
+----
+====获得sha值====
+git 的低端命令
+<code>
+git rev-parse  HEAD
+git rev-parse  HEAD~1
+
+</code>

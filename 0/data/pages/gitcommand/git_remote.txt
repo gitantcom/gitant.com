@@ -1,3 +1,4 @@
+-----
 ==== Git remote ==== 
  
 
@@ -8,8 +9,16 @@
 $ git remote set-url remote URL
 </code>
 
-
+----
  ==== 添加一个远端仓库到一个已经存在的git仓库上？====
 <code bash>
 $ git remote add --track master origin  https://github.com/user/repo.git
+</code>
+----
+==== 设置跟踪远端分支和取消跟踪远端分支====
+<code>
+$ git remote set-url remote URL
+#设置跟踪远端分支
+$ git remote set-url remote URL
+#取消跟踪远端分支
 </code>

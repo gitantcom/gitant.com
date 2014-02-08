@@ -116,3 +116,13 @@ git cat-file -p dfba7afb79b6c5fb86c161e65b5afaa9d02fdb6
 </code>
 
 ----
+====git log 查看每次提交变更的文件清单？====
+
+查看文件变更清单
+<code>
+git log -p shows the complete patch for each commit it lists,
+while these options summarize the changes in different ways:
+$ git log --name-status
+$ git log --stat
+</code>
+----

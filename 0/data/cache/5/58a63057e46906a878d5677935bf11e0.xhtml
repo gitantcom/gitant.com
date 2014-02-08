@@ -7,7 +7,7 @@ The Forking Workflow is fundamentally different than the other workflows discuss
 </p>
 
 <p>
- Git Workflows: Forking
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking.png" class="media" title="git_branch_model:git-workflows-forking.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking.png" class="mediacenter" title=" Git Workflows: Forking" alt=" Git Workflows: Forking" /></a>
 </p>
 
 <p>
@@ -19,7 +19,7 @@ The result is a distributed workflow that provides a flexible way for large, org
 </p>
 
 </div>
-<!-- EDIT1 SECTION "Forking Workflow" [1-1035] -->
+<!-- EDIT1 SECTION "Forking Workflow" [1-1085] -->
 <h2 class="sectionedit2" id="how_it_works">How It Works</h2>
 <div class="level2">
 
@@ -28,7 +28,15 @@ As in the other Git workflows, the Forking Workflow begins with an official publ
 </p>
 
 <p>
+开始项目时，并不直接克隆仓库。
+</p>
+
+<p>
 Instead, they fork the official repository to create copy of it on the server. This new copy serves as their personal public repository—no other developers are allowed to push to it, but they can pull changes from it (we’ll see why this is important in a moment). After they have created their server-side copy, the developer performs a git clone to get a copy of it onto their local machine. This serves as their private development environment, just like in the other workflows.
+</p>
+
+<p>
+相反，工程师复刻官方仓库。新拷贝作为工程师个人的公开仓库，但是其他人不能提交。
 </p>
 
 <p>
@@ -40,7 +48,7 @@ To integrate the feature into the official codebase, the maintainer pulls the co
 </p>
 
 </div>
-<!-- EDIT2 SECTION "How It Works" [1036-2595] -->
+<!-- EDIT2 SECTION "How It Works" [1086-2812] -->
 <h3 class="sectionedit3" id="the_official_repository">The Official Repository</h3>
 <div class="level3">
 
@@ -49,7 +57,7 @@ It’s important to understand that the notion of an “official” repository i
 </p>
 
 </div>
-<!-- EDIT3 SECTION "The Official Repository" [2596-3020] -->
+<!-- EDIT3 SECTION "The Official Repository" [2813-3237] -->
 <h3 class="sectionedit4" id="branching_in_the_forking_workflow">Branching in the Forking Workflow</h3>
 <div class="level3">
 
@@ -58,17 +66,17 @@ All of these personal public repositories are really just a convenient way to sh
 </p>
 
 </div>
-<!-- EDIT4 SECTION "Branching in the Forking Workflow" [3021-3555] -->
+<!-- EDIT4 SECTION "Branching in the Forking Workflow" [3238-3772] -->
 <h2 class="sectionedit5" id="example">Example</h2>
 <div class="level2">
 
 </div>
-<!-- EDIT5 SECTION "Example" [3556-3574] -->
+<!-- EDIT5 SECTION "Example" [3773-3791] -->
 <h3 class="sectionedit6" id="the_project_maintainer_initializes_the_official_repository">The project maintainer initializes the official repository</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Shared Repository
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-1.png" class="media" title="git_branch_model:git-workflows-forking-1.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-1.png" class="mediacenter" title="Forking Workflow: Shared Repository" alt="Forking Workflow: Shared Repository" /></a>
 </p>
 
 <p>
@@ -90,7 +98,7 @@ Developers fork the official repository
 </p>
 
 <p>
-Forking Workflow: Forking the official repository.
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-2.png" class="media" title="git_branch_model:git-workflows-forking-2.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-2.png" class="mediacenter" title="Forking Workflow: Forking the official repository." alt="Forking Workflow: Forking the official repository." /></a>
 </p>
 
 <p>
@@ -102,12 +110,12 @@ After this step, every developer should have their own server-side repository. L
 </p>
 
 </div>
-<!-- EDIT6 SECTION "The project maintainer initializes the official repository" [3575-5039] -->
+<!-- EDIT6 SECTION "The project maintainer initializes the official repository" [3792-5360] -->
 <h3 class="sectionedit7" id="developers_clone_their_forked_repositories">Developers clone their forked repositories</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Cloning the forked repositories
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-3.png" class="media" title="git_branch_model:git-workflows-forking-3.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-3.png" class="mediacenter" title="Forking Workflow: Cloning the forked repositories" alt="Forking Workflow: Cloning the forked repositories" /></a>
 </p>
 
 <p>
@@ -143,12 +151,12 @@ This requires users to supply a valid password before cloning or pulling from th
 </p>
 
 </div>
-<!-- EDIT7 SECTION "Developers clone their forked repositories" [5040-6557] -->
+<!-- EDIT7 SECTION "Developers clone their forked repositories" [5361-6930] -->
 <h3 class="sectionedit8" id="developers_work_on_their_features">Developers work on their features</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Developers work on features
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-4.png" class="media" title="git_branch_model:git-workflows-forking-4.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-4.png" class="mediacenter" title="Forking Workflow: Developers work on features" alt="Forking Workflow: Developers work on features" /></a>
 </p>
 
 <p>
@@ -174,12 +182,12 @@ Since developers should be working in a dedicated feature branch, this should ge
 </p>
 
 </div>
-<!-- EDIT8 SECTION "Developers work on their features" [6558-7232] -->
+<!-- EDIT8 SECTION "Developers work on their features" [6931-7657] -->
 <h3 class="sectionedit9" id="developers_publish_their_features">Developers publish their features</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Developers publish features
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-5.png" class="media" title="git_branch_model:git-workflows-forking-5.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-5.png" class="mediacenter" title="Forking Workflow: Developers publish features" alt="Forking Workflow: Developers publish features" /></a>
 </p>
 
 <p>
@@ -199,12 +207,14 @@ Second, they need to notify the project maintainer that they want to merge their
 </p>
 
 </div>
-<!-- EDIT9 SECTION "Developers publish their features" [7233-8178] -->
+<!-- EDIT9 SECTION "Developers publish their features" [7658-8655] -->
 <h3 class="sectionedit10" id="the_project_maintainer_integrates_their_features">The project maintainer integrates their features</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Integrate Features
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-6.png" class="media" title="git_branch_model:git-workflows-forking-6.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-6.png" class="mediacenter" title="
+Forking Workflow: Integrate Features" alt="
+Forking Workflow: Integrate Features" /></a>
 </p>
 
 <p>
@@ -243,15 +253,14 @@ Remember that the maintainer&#039;s origin points to their public repository, wh
 </p>
 
 </div>
-<!-- EDIT10 SECTION "The project maintainer integrates their features" [8179-9509] -->
+<!-- EDIT10 SECTION "The project maintainer integrates their features" [8656-10038] -->
 <h3 class="sectionedit11" id="developers_synchronize_with_the_official_repository">Developers synchronize with the official repository</h3>
 <div class="level3">
 
 <p>
-Forking Workflow: Synchronize with the official repository
-</p>
-
-<p>
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-7.png" class="media" title="git_branch_model:git-workflows-forking-7.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-7.png" class="mediacenter" title="Forking Workflow: Synchronize with the official repository
+" alt="Forking Workflow: Synchronize with the official repository
+" /></a>
 Since the main codebase has moved forward, other developers should synchronize with the official repository:
 </p>
 
@@ -260,7 +269,7 @@ git pull upstream master
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Developers synchronize with the official repository" [9510-9766] -->
+<!-- EDIT11 SECTION "Developers synchronize with the official repository" [10039-10347] -->
 <h2 class="sectionedit12" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -277,4 +286,4 @@ This makes the Forking Workflow a very powerful tool for loosely-knit teams. Any
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Where To Go From Here" [9767-] -->
+<!-- EDIT12 SECTION "Where To Go From Here" [10348-] -->

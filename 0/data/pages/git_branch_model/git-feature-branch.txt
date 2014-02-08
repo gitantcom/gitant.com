@@ -1,5 +1,5 @@
 ======任务分支模式======
-
+{{ :git_branch_model:git-workflow-feature-branch-1.png |}}
 Once you've got the hang of the Centralized Workflow, adding feature branches to your development process is an easy way to encourage collaboration and streamline communication between developers.
 
 一旦熟悉了集中式的git开发流程，再使用特性分支开发就容易多了，并加强了协作性而且简便了沟通。
@@ -41,7 +41,7 @@ Pull requests can be facilitated by product repository management solutions like
 The example included below demonstrates a pull request as a form of code review, but remember that they can serve many other purposes.
 
 ====Mary begins a new feature====
-
+{{ :git_branch_model:git-workflow-feature-branch-2.png |}}
 Before she starts developing a feature, Mary needs an isolated branch to work on. She can request a new branch with the following command:
 
 git checkout -b marys-feature master
@@ -54,7 +54,7 @@ git commit
 
 ====Mary goes to lunch====
 
-Git Workflows: Feature Commits
+{{ :git_branch_model:git-workflow-feature-branch-3.png |Git Workflows: Feature Commits}}
 
 Mary adds a few commits to her feature over the course of the morning. Before she leaves for lunch, it’s a good idea to push her feature branch up to the central repository. This serves as a convenient backup, but if Mary was collaborating with other developers, this would also give them access to her initial commits.
 
@@ -64,7 +64,7 @@ This command pushes marys-feature to the central repository (origin), and the -u
 
 ====Mary finishes her feature====
 
-Git Workflows: Pull Request
+{{ :git_branch_model:git-workflow-feature-branch-4.png |Git Workflows: Pull Request}}
 
 When Mary gets back from lunch, she completes her feature. Before merging it into master, she needs to file a pull request letting the rest of the team know she's done. But first, she should make sure the central repository has her most recent commits:
 
@@ -73,20 +73,20 @@ git push
 Then, she files the pull request in her Git GUI asking to merge marys-feature into master, and team members will be notified automatically. The great thing about pull requests is that they show comments right next to their related commits, so it's easy to ask questions about specific changesets.
 
 ====Bill receives the pull request====
-
-Git Workflows: Feature Pull Requests
+{{ :git_branch_model:git-workflow-feature-branch-5.png |
+Git Workflows: Feature Pull Requests}}
 
 Bill gets the pull request and takes a look at marys-feature. He decides he wants to make a few changes before integrating it into the official project, and he and Mary have some back-and-forth via the pull request.
 
 ====Mary makes the changes====
 
-Git Workflows: Central Repository Push
+{{ :git_branch_model:git-workflow-feature-branch-6.png |Git Workflows: Central Repository Push}}
 
 To make the changes, Mary uses the exact same process as she did to create the first iteration of her feature. She edits, stages, commits, and pushes updates to the central repository. All her activity shows up in the pull request, and Bill can still make comments along the way.
 
 If he wanted, Bill could pull marys-feature into his local repository and work on it on his own. Any commits he added would also show up in the pull request.
 ====Mary publishes her feature====
-
+{{ :git_branch_model:git-workflow-feature-branch-7.png |}}
 Once Bill is ready to accept the pull request, someone needs to merge the feature into the stable project (this can be done by either Bill or Mary):
 
 git checkout master

@@ -1,16 +1,16 @@
 -----
-===== Git集中分支管理模式 =====
-[[git_branch_model:git-workflow-central|Git集中分支管理模式]]
+===== 中央集中式 =====
+[[git_branch_model:git-workflow-central|中央集中式]]
 ----
 
-===== Pull Request分支管理模式 =====
-[[git_branch_model:git-feature-branch|Pull Request分支管理模式 ]]
+===== 任务分支模式 =====
+[[git_branch_model:git-feature-branch|任务分支模式 ]]
 
 ----
-===== GitFlow分支管理模式 =====
-[[git_branch_model:git-workflow-gitflow|GitFlow分支管理模式 ]]
+===== 多任务分支模式 =====
+[[git_branch_model:git-workflow-gitflow|GitFlow多任务分支模式（GitFlow） ]]
 ----
 
-===== Git Fork 分支管理模式 =====
-[[git_branch_model:git-fork-branch| Git Fork分支管理模式]]
+===== 复刻模式 =====
+[[git_branch_model:git-fork-branch| 复刻模式]]
 ----

@@ -1,4 +1,4 @@
-a:96:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:0;}i:2;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:20:"git log 日常用法";i:1;i:3;i:2;i:6;}i:2;i:6;}i:3;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:6;}i:4;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:34;}i:5;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:34;}i:6;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:34;}i:7;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:38:" 只是显示sha版本号和commit log";}i:2;i:38;}i:8;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:76;}i:9;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:76;}i:10;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:76;}i:11;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:166:"
+a:104:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:0;}i:2;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:20:"git log 日常用法";i:1;i:3;i:2;i:6;}i:2;i:6;}i:3;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:6;}i:4;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:34;}i:5;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:34;}i:6;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:34;}i:7;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:38:" 只是显示sha版本号和commit log";}i:2;i:38;}i:8;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:76;}i:9;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:76;}i:10;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:76;}i:11;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:166:"
 root@blog-test002 gitant.com]#  git log --oneline --graph
 * 21b5cb7  backup
 * 4e26248  backup
@@ -58,4 +58,9 @@ git ls-tree 8dbd87bcada6f5ac8ece519a
 ";i:1;s:4:"bash";i:2;N;}i:2;i:3293;}i:89;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:3293;}i:90;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:30:"查看老版本文件的内容";}i:2;i:3422;}i:91;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:3452;}i:92;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:59:"
 	
 git cat-file -p dfba7afb79b6c5fb86c161e65b5afaa9d02fdb6
-";i:1;N;i:2;N;}i:2;i:3459;}i:93;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:3527;}i:94;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:3533;}i:95;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:3533;}}
+";i:1;N;i:2;N;}i:2;i:3459;}i:93;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:3527;}i:94;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:3533;}i:95;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:50:"git log 查看每次提交变更的文件清单？";i:1;i:3;i:2;i:3533;}i:2;i:3533;}i:96;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:3533;}i:97;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:3533;}i:98;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:24:"查看文件变更清单";}i:2;i:3593;}i:99;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:3623;}i:100;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:165:"
+git log -p shows the complete patch for each commit it lists,
+while these options summarize the changes in different ways:
+$ git log --name-status
+$ git log --stat
+";i:1;N;i:2;N;}i:2;i:3623;}i:101;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:3796;}i:102;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:3802;}i:103;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:3802;}}

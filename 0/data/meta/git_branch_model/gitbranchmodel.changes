@@ -9,3 +9,11 @@
 1390881241	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo		
 1391767413	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[Git任务分支管理模式] 	
 1391767454	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[Pull Qequest分支管理模式] 	
+1391840309	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[Pull Request分支管理模式] 	
+1391840356	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[Git集中分支管理模式] 	
+1391840380	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[中央集中式管理模式] 	
+1391840427	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[任务分支管理模式] 	
+1391840486	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[GitFlow分支管理模式] 	
+1391841379	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[GitFlow多分支模式] 	
+1391842177	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[Git Fork 分支管理模式] 	
+1391842268	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[GitFlow多任务分支模式] 	
