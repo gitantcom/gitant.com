@@ -2,9 +2,9 @@
 ==== Git 官方文档 ====
   * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|git官方文档]]
 
-===Git 文档====
+====Git 文档====
   * [[ http://githowto.com/ | git how to ]]
   * [[https://www.atlassian.com/dms/wac/images/landing/git/atlassian_git_cheatsheet.pdf | git  命令速查卡片]]
 
-===Github上的Free书籍===
+====Github上的Free书籍====
   * [[https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md|Free的中文书籍]]

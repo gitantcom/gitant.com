@@ -1,0 +1,2 @@
+$ <span class="kw2">git archive</span> <span class="re5">--remote</span>=<span class="kw2">git</span><span class="sy0">@</span>github.com:foo<span class="sy0">/</span>bar.git <span class="re5">--prefix</span>=path<span class="sy0">/</span>to<span class="sy0">/</span> HEAD:path<span class="sy0">/</span>to<span class="sy0">/</span> <span class="sy0">|</span>  <span class="kw2">tar</span> xvf -
+&nbsp;

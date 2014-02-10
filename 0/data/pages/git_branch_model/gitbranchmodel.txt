@@ -1,15 +1,15 @@
------
+
 ===== 中央集中式 =====
 [[git_branch_model:git-workflow-central|中央集中式]]
-----
+
 
 ===== 任务分支模式 =====
 [[git_branch_model:git-feature-branch|任务分支模式 ]]
 
-----
+
 ===== 多任务分支模式 =====
 [[git_branch_model:git-workflow-gitflow|多任务分支模式（GitFlow） ]]
-----
+
 
 ===== 复刻模式 =====
 [[git_branch_model:git-fork-branch| 复刻模式]]

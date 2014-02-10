@@ -1,0 +1,50 @@
+
+<h3 class="sectionedit1" id="modgit_工具">modgit 工具</h3>
+<div class="level3">
+
+<p>
+Shell script for Git module deployment with include/exclude filters. <a href="https://github.com/jreinke/modgit" class="urlextern" title="https://github.com/jreinke/modgit"  rel="nofollow">modgit</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "modgit 工具" [2-141] -->
+<h3 class="sectionedit2" id="git_简单push部署">git 简单push部署</h3>
+<div class="level3">
+
+<p>
+用push实现php部署 <a href="/0/doku.php?id=wiki:git_push_website" class="wikilink1" title="wiki:git_push_website">git push 远端部署</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "git 简单push部署" [142-242] -->
+<h3 class="sectionedit3" id="git_archive_命令">Git archive 命令</h3>
+<div class="level3">
+
+<p>
+Git 命令参数 archive ，无需检出全库。<a href="/0/doku.php?id=gitcommand:git_archive" class="wikilink1" title="gitcommand:git_archive"> git archive git制作包 </a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Git archive 命令" [243-374] -->
+<h3 class="sectionedit4" id="git_检出变化的文件夹">git 检出变化的文件夹？</h3>
+<div class="level3">
+
+<p>
+git 检出增量 <a href="/0/doku.php?id=gitcommand:git_checkout_diff" class="wikilink1" title="gitcommand:git_checkout_diff">git检出变化文件</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "git 检出变化的文件夹？" [375-487] -->
+<h3 class="sectionedit5" id="git_从远程仓库里检出某个指定的文件">git 从远程仓库里检出某个指定的文件</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> 使用gitweb,cgit,Gitorious,ginatra等，从界面获得</div>
+</li>
+<li class="level1"><div class="li"> git archive</div>
+</li>
+</ul>
+<pre class="code bash">$ <span class="kw2">git archive</span> <span class="re5">--remote</span>=<span class="kw2">git</span><span class="sy0">@</span>github.com:foo<span class="sy0">/</span>bar.git <span class="re5">--prefix</span>=path<span class="sy0">/</span>to<span class="sy0">/</span> HEAD:path<span class="sy0">/</span>to<span class="sy0">/</span> <span class="sy0">|</span>  <span class="kw2">tar</span> xvf -
+&nbsp;</pre>
+
+</div>
+<!-- EDIT5 SECTION "git 从远程仓库里检出某个指定的文件" [488-] -->
