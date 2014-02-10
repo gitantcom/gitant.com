@@ -1,0 +1,17 @@
+~~NOTOC~~ 
+**<fc #000080>Git</fc>**是一个分布式版本控制／软件配置管理软件，原来是linux内核开发者林纳斯·托瓦兹（Linus Torvalds）为了更好地管理linux内核开发而创立的。
+
+**<fc #000080>Git</fc>**是用于Linux内核开发的版本控制工具。与CVS、Subversion一类的集中式版本控制工具不同，它采用了分布式版本库的作法，不需要服务器端软件，就可以运作版本控制，使得源代码的发布和交流极其方便。
+
+**<fc #000080>Git</fc>**的速度很快，
+
+**<fc #000080>Git</fc>**最为出色的是它的合并追踪（merge tracing）能力。
+
+
+
+-----
+
+|{{page>wiki:sectionA&nofooter&noeditbutton}}|{{page>wiki:sectionB&nofooter&noeditbutton}}|{{page>wiki:sectionC&nofooter&noeditbutton}}  | 
+
+
+----

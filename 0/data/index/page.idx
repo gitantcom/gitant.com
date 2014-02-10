@@ -104,3 +104,8 @@ gitcommand:git_stash
 gitcommand:git_rev_parse
 gitcommand:git_cherry_pick
 git_branch_model:git_merge_noff
+wiki:menu
+wiki:sectiona
+wiki:sectionb
+wiki:sectionc
+wiki:sectiond
