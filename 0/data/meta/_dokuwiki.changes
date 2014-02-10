@@ -91,3 +91,12 @@
 1391843514	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[How It Works] 	
 1391846265	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[多任务分支模式] 	
 1391851685	10.221.135.120	E	sidebar	uahoo		
+1391851790	127.0.0.1	E	start		外部编辑	
+1391854117	61.135.152.211	E	start	uahoo		
+1391864884	123.114.60.120	E	start	uahoo		
+1391936754	123.114.62.187	E	start	uahoo		
+1391936896	123.114.62.187	D	start	uahoo	移除	
+1391851790	127.0.0.1	E	git_branch_model:git-workflow-central		外部编辑	
+1391937828	123.114.62.187	E	git_branch_model:git-workflow-central	uahoo	[集中式开发流程] 	
+1391851848	127.0.0.1	E	sidebar		外部编辑	
+1391997698	61.135.152.218	E	sidebar	uahoo		

@@ -1,3 +1,0 @@
-<color blue/lightgrey>text</color>
-<color #FF0000>text</color>
-<fc #000000>ggdfg</fc> 

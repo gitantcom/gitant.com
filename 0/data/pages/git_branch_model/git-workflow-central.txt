@@ -1,10 +1,10 @@
-======集中式开发流程======
+======中央集中式开发流程======
 
 {{ :git_branch_model:git-workflow-svn.png |Git Workflows: SVN-style Workflow}}
 
 Transitioning to a distributed version control system may seem like a daunting task, but you don’t have to change your existing workflow to take advantage of Git. Your team can develop projects in the exact same way as they do with Subversion.
 
-为了用到git的好处，你可以将用于svn的开发流程同样用于git。
+对于git的新特性，迁移到分布式版本控制系统似乎让气馁。那么你可以像SVN的工作流程使用git，这样就可以使用git的新功能而不必调整现有的工作流程。
 
 However, using Git to power your development workflow presents a few advantages over SVN. First, it gives every developer their own local copy of the entire project. This isolated environment lets each developer work independently of all other changes to a project—they can add commits to their local repository and completely forget about upstream developments until it's convenient for them.
 

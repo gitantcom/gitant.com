@@ -36,8 +36,9 @@
 
 
 ==== 文档 ====
-  * [[git_doc:git_reference|Git资料]]
-  * [[git_doc:git_index_folder_list|文件索引]]
+  * [[git_doc:git_index_folder_list|全站索引]]
+  * [[git_doc:git_reference|Git文档收集]]
+ 
                                
                                
 ==== wiki帮助 ====
