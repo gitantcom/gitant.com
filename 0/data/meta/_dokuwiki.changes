@@ -100,3 +100,36 @@
 1391937828	123.114.62.187	E	git_branch_model:git-workflow-central	uahoo	[集中式开发流程] 	
 1391851848	127.0.0.1	E	sidebar		外部编辑	
 1391997698	61.135.152.218	E	sidebar	uahoo		
+1391998852	127.0.0.1	E	sidebar		外部编辑	
+1391999863	10.221.135.120	E	sidebar	uahoo		
+1391999899	10.221.135.120	E	sidebar	uahoo		
+1392000018	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001039	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001075	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001148	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001161	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001213	10.221.135.120	E	git_branch_model:git_branch_style	uahoo		
+1392001259	10.221.135.120	E	sidebar	uahoo		
+1392001408	10.221.135.120	E	git_branch_model:git_parallel_concept	uahoo		
+1392001453	10.221.135.120	C	git_branch_model:git_merge_noff	uahoo	创建	
+1392001548	10.221.135.120	E	git_branch_model:git_merge_noff	uahoo		
+1392001647	10.221.135.120	E	git_branch_model:git_merge_noff	uahoo		
+1391998852	127.0.0.1	E	git_branch_model:git-workflow-central		外部编辑	
+1392001924	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[解决冲突] 	
+1392002308	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[解决冲突] 	
+1392002404	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[演示] 	
+1392002463	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Someone initializes the central repository] 	
+1392002500	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[初始化项目仓库Someone initializes the central repository] 	
+1392002551	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[初始化项目仓库Someone initializes the central repository] 	
+1392002699	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Everybody clones the central repository] 	
+1392004010	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[项目成员克隆中央仓库] 	
+1392004027	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[项目成员克隆中央仓库] 	
+1392004082	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[John works on his feature] 	
+1392004403	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[John 在本地开发新功能] 	
+1392004444	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary works on her feature] 	
+1392004489	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[John publishes his feature] 	
+1392004568	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary resolves a merge conflict] 	
+1392004639	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary successfully publishes her feature] 	
+1392004919	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary works on her feature] 	
+1392004950	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[John publishes his feature] 	
+1392004985	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary tries to publish her feature] 	

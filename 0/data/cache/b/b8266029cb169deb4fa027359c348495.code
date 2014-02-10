@@ -1,2 +1,0 @@
-$ <span class="kw2">git commit</span> <span class="re5">-a</span> <span class="re5">-m</span> <span class="st0">&quot;Saving my work, just in case&quot;</span>
-$ <span class="kw2">git branch</span> my-saved-work

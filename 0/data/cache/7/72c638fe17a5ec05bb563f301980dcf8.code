@@ -1,9 +1,0 @@
-$ <span class="kw2">git pull</span>                         <span class="sy0">&lt;</span><span class="nu0">1</span><span class="sy0">&gt;</span>
-Auto-merging nitfol
-CONFLICT <span class="br0">&#40;</span>content<span class="br0">&#41;</span>: Merge conflict <span class="kw1">in</span> nitfol
-Automatic merge failed; fix conflicts and <span class="kw1">then</span> commit the result.
-$ <span class="kw2">git reset</span> <span class="re5">--hard</span>                 <span class="sy0">&lt;</span><span class="nu0">2</span><span class="sy0">&gt;</span>
-$ <span class="kw2">git pull</span> . topic<span class="sy0">/</span>branch          <span class="sy0">&lt;</span><span class="nu0">3</span><span class="sy0">&gt;</span>
-Updating from <span class="nu0">41223</span>... to <span class="nu0">13134</span>...
-Fast-forward
-$ <span class="kw2">git reset</span> <span class="re5">--hard</span> ORIG_HEAD       <span class="sy0">&lt;</span><span class="nu0">4</span><span class="sy0">&gt;</span>

@@ -1,1 +1,0 @@
-<span class="co4">$</span><span class="kw2">git diff-tree</span> <span class="re5">-r</span> <span class="re5">--no-commit-id</span> <span class="re5">--name-only</span> <span class="re5">--diff-filter</span>=ACMRT <span class="re1">$commit_id</span> <span class="sy0">|</span> <span class="kw2">xargs</span> <span class="kw2">tar</span> <span class="re5">-rf</span> mytarfile.tar

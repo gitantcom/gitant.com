@@ -1,5 +1,0 @@
-    $ <span class="kw2">git commit</span> ...              <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
-    $ <span class="kw2">git reset</span> <span class="re5">--soft</span> <span class="st_h">'HEAD^'</span>    <span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span>
-    $ edit                        <span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span>
-    $ <span class="kw2">git add</span> ....                <span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span>
-    $ <span class="kw2">git commit</span> <span class="re5">-c</span> ORIG_HEAD     <span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span>

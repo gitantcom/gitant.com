@@ -1,5 +1,5 @@
 
-<h1 class="sectionedit1" id="集中式开发流程">集中式开发流程</h1>
+<h1 class="sectionedit1" id="中央集中式开发流程">中央集中式开发流程</h1>
 <div class="level1">
 
 <p>
@@ -11,7 +11,7 @@ Transitioning to a distributed version control system may seem like a daunting t
 </p>
 
 <p>
-为了用到git的好处，你可以将用于svn的开发流程同样用于git。
+对于git的新特性，迁移到分布式版本控制系统似乎让气馁。那么你可以像SVN的工作流程使用git，这样就可以使用git的新功能而不必调整现有的工作流程。
 </p>
 
 <p>
@@ -32,7 +32,7 @@ Second, it gives you access to Git’s robust branching and merging model. Unlik
 </p>
 
 </div>
-<!-- EDIT1 SECTION "集中式开发流程" [1-1189] -->
+<!-- EDIT1 SECTION "中央集中式开发流程" [1-1315] -->
 <h2 class="sectionedit2" id="工作机制">工作机制</h2>
 <div class="level2">
 
@@ -65,27 +65,36 @@ To publish changes to the official project, developers “push” their local ma
 </p>
 
 </div>
-<!-- EDIT2 SECTION "工作机制" [1190-2822] -->
+<!-- EDIT2 SECTION "工作机制" [1316-2948] -->
 <h3 class="sectionedit3" id="解决冲突">解决冲突</h3>
 <div class="level3">
 
 <p>
 The central repository represents the official project, so its commit history should be treated as sacred and immutable. If a developer’s local commits diverge from the central repository, Git will refuse to push his changes because this would overwrite official commits.
 </p>
-<pre class="code">中央仓库一般是官方的代码库了，所以要认真和严肃点。</pre>
+
+<p>
+中央仓库一般是官方的代码库了，所以要认真和严肃点。本地开发和中央仓库代码不一致，git就不允许提交本地变更到中央，这样你就破坏了官方的版本。
+</p>
 
 <p>
 Before the developer can publish his feature, he needs to fetch the updated central commits and rebase his changes on top of them. This is like saying, “I want to add my changes to what everyone else has already done.” The result is a perfectly linear history, just like in traditional SVN workflows.
 </p>
-<pre class="code">在工程师能向中央库提交代码前，他需要先从中央库取回其他人的提交，并且rebase自己提交到中央仓库。这等于说， 我想增加变更”。这使得仓库的历史是线性的，就像传统的svn的工作流。</pre>
+
+<p>
+在工程师能向中央库提交代码前，他需要先从中央库取回其他人的提交，并且在本人的基础上rebase自己的提交。这等于说， 我想增加变更”。这使得仓库的历史是线性的，就像传统的svn的工作流。
+</p>
 
 <p>
 If local changes directly conflict with upstream commits, Git will pause the rebasing process and give you a chance to manually resolve the conflicts. The nice thing about Git is that it uses the same git status and git add commands for both generating commits and resolving merge conflicts. This makes it easy for new developers to manage their own merges. Plus, if they get themselves into trouble, Git makes it very easy to abort the entire rebase and try again (or go find help).
 </p>
-<pre class="code">如果本地变更直接与上游提交冲突，git将暂停rebase过程，并让工程师手动解决冲突。</pre>
+
+<p>
+如果本地变更直接与上游提交冲突，git将暂停rebase过程，并让工程师手动解决冲突。git 比较高级的是用 git status 和 git add 的命令解决合并冲突。 新人方便的合并冲突。如果合并陷入麻烦，git中断整个衍和，然后再来一次合并操作。
+</p>
 
 </div>
-<!-- EDIT3 SECTION "解决冲突" [2823-4359] -->
+<!-- EDIT3 SECTION "解决冲突" [2949-4811] -->
 <h2 class="sectionedit4" id="演示">演示</h2>
 <div class="level2">
 
@@ -93,13 +102,17 @@ If local changes directly conflict with upstream commits, Git will pause the reb
 Let’s take a step-by-step look at how a typical small team would collaborate using this workflow. We’ll see how two developers, John and Mary, can work on separate features and share their contributions via a centralized repository.
 </p>
 
+<p>
+让我们一步步地演示如何使用这个流程吧。看看两个工程师 John和Mary如何在中央集中仓库完成功能开发和协作。
+</p>
+
 </div>
-<!-- EDIT4 SECTION "演示" [4360-4619] -->
-<h3 class="sectionedit5" id="someone_initializes_the_central_repository">Someone initializes the central repository</h3>
+<!-- EDIT4 SECTION "演示" [4812-5217] -->
+<h3 class="sectionedit5" id="初始化中央项目仓库">初始化中央项目仓库</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Initialize Central Bare Repository
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-initialize.png" class="media" title="git_branch_model:git-workflow-svn-initialize.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-initialize.png" class="mediacenter" title="Git Workflows: Initialize Central Bare Repository" alt="Git Workflows: Initialize Central Bare Repository" /></a>
 </p>
 
 <p>
@@ -109,19 +122,16 @@ First, someone needs to create the central repository on a server. If it’s a n
 <p>
 Central repositories should always be bare repositories (they shouldn’t have a working directory), which can be created as follows:
 </p>
-
-<p>
-ssh user@host
-git init –bare /path/to/repo.git
-</p>
+<pre class="code">ssh user@host
+git init --bare /path/to/repo.git</pre>
 
 <p>
 Be sure to use a valid SSH username for user, the domain or IP address of your server for host, and the location where you&#039;d like to store your repo for /path/to/repo.git. Note that the .git extension is conventionally appended to the repository name to indicate that it’s a bare repository.
 </p>
 
 </div>
-<!-- EDIT5 SECTION "Someone initializes the central repository" [4620-5408] -->
-<h3 class="sectionedit6" id="everybody_clones_the_central_repository">Everybody clones the central repository</h3>
+<!-- EDIT5 SECTION "初始化中央项目仓库" [5218-6060] -->
+<h3 class="sectionedit6" id="项目成员克隆中央仓库">项目成员克隆中央仓库</h3>
 <div class="level3">
 
 <p>
@@ -130,9 +140,7 @@ Be sure to use a valid SSH username for user, the domain or IP address of your s
 
 <p>
 Next, each developer creates a local copy of the entire project. 
-</p>
-
-<p>
+项目成员创建本地库。
 This is accomplished via the git clone command:
 </p>
 <pre class="code">  
@@ -142,13 +150,17 @@ git clone ssh://user@host/path/to/repo.git</pre>
 When you clone a repository, Git automatically adds a shortcut called origin that points back to the “parent” repository, under the assumption that you&#039;ll want to interact with it further on down the road.
 </p>
 
+<p>
+你克隆中央库，Git自动创建一个名称origin指向远端仓库。
+</p>
+
 </div>
-<!-- EDIT6 SECTION "Everybody clones the central repository" [5409-5937] -->
-<h3 class="sectionedit7" id="john_works_on_his_feature">John works on his feature</h3>
+<!-- EDIT6 SECTION "项目成员克隆中央仓库" [6061-6687] -->
+<h3 class="sectionedit7" id="john_在本地开发新功能">John 在本地开发新功能</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Edit Stage Commit Feature Process
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-1.png" class="media" title="git_branch_model:git-workflow-svn-1.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-1.png" class="mediacenter" title="Git Workflows: Edit Stage Commit Feature Process" alt="Git Workflows: Edit Stage Commit Feature Process" /></a>
 </p>
 
 <p>
@@ -163,12 +175,12 @@ Remember that since these commands create local commits, John can repeat this pr
 </p>
 
 </div>
-<!-- EDIT7 SECTION "John works on his feature" [5938-6769] -->
-<h3 class="sectionedit8" id="mary_works_on_her_feature">Mary works on her feature</h3>
+<!-- EDIT7 SECTION "John 在本地开发新功能" [6688-7570] -->
+<h3 class="sectionedit8" id="mary_在本地修改她的代码">Mary 在本地修改她的代码</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Edit Stage Commit Feature
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-2.png" class="media" title="git_branch_model:git-workflow-svn-2.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-2.png" class="mediacenter" title="Git Workflows: Edit Stage Commit Feature" alt="Git Workflows: Edit Stage Commit Feature" /></a>
 </p>
 
 <p>
@@ -176,12 +188,12 @@ Meanwhile, Mary is working on her own feature in her own local repository using 
 </p>
 
 </div>
-<!-- EDIT8 SECTION "Mary works on her feature" [6770-7160] -->
-<h3 class="sectionedit9" id="john_publishes_his_feature">John publishes his feature</h3>
+<!-- EDIT8 SECTION "Mary 在本地修改她的代码" [7571-8015] -->
+<h3 class="sectionedit9" id="john_提交他的代码">John 提交他的代码</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Publish Feature
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-3.png" class="media" title="git_branch_model:git-workflow-svn-3.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-3.png" class="mediacenter" title="Git Workflows: Publish Feature" alt="Git Workflows: Publish Feature" /></a>
 </p>
 
 <p>
@@ -194,8 +206,8 @@ Remember that origin is the remote connection to the central repository that Git
 </p>
 
 </div>
-<!-- EDIT9 SECTION "John publishes his feature" [7161-7822] -->
-<h3 class="sectionedit10" id="mary_tries_to_publish_her_feature">Mary tries to publish her feature</h3>
+<!-- EDIT9 SECTION "John 提交他的代码" [8016-8721] -->
+<h3 class="sectionedit10" id="mary_尝试提交她的代码">Mary 尝试提交她的代码</h3>
 <div class="level3">
 
 <p>
@@ -221,7 +233,7 @@ This prevents Mary from overwriting official commits. She needs to pull John’s
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Mary tries to publish her feature" [7823-8797] -->
+<!-- EDIT10 SECTION "Mary 尝试提交她的代码" [8722-9692] -->
 <h3 class="sectionedit11" id="mary_rebases_on_top_of_john_s_commit_s">Mary rebases on top of John’s commit(s)</h3>
 <div class="level3">
 
@@ -241,12 +253,14 @@ The pull would still work if you forgot this option, but you would wind up with 
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Mary rebases on top of John’s commit(s)" [8798-9714] -->
+<!-- EDIT11 SECTION "Mary rebases on top of John’s commit(s)" [9693-10609] -->
 <h3 class="sectionedit12" id="mary_resolves_a_merge_conflict">Mary resolves a merge conflict</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Rebasing on Commits
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-7.png" class="media" title="git_branch_model:git-workflow-svn-7.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-7.png" class="mediacenter" title="
+Git Workflows: Rebasing on Commits" alt="
+Git Workflows: Rebasing on Commits" /></a>
 </p>
 
 <p>
@@ -284,12 +298,12 @@ If you get to this point and realize and you have no idea what’s going on, don
 <pre class="code">git rebase --abort</pre>
 
 </div>
-<!-- EDIT12 SECTION "Mary resolves a merge conflict" [9715-11648] -->
+<!-- EDIT12 SECTION "Mary resolves a merge conflict" [10610-12590] -->
 <h3 class="sectionedit13" id="mary_successfully_publishes_her_feature">Mary successfully publishes her feature</h3>
 <div class="level3">
 
 <p>
-Git Workflows: Synchronize Central Repo
+<a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-9.png" class="media" title="git_branch_model:git-workflow-svn-9.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-9.png" class="mediacenter" title="Git Workflows: Synchronize Central Repo" alt="Git Workflows: Synchronize Central Repo" /></a>
 </p>
 
 <p>
@@ -298,7 +312,7 @@ After she’s done synchronizing with the central repository, Mary will be able 
 <pre class="code">git push origin master</pre>
 
 </div>
-<!-- EDIT13 SECTION "Mary successfully publishes her feature" [11649-11893] -->
+<!-- EDIT13 SECTION "Mary successfully publishes her feature" [12591-12882] -->
 <h2 class="sectionedit14" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -311,4 +325,4 @@ If your team is comfortable with the Centralized Workflow but wants to streamlin
 </p>
 
 </div>
-<!-- EDIT14 SECTION "Where To Go From Here" [11894-] -->
+<!-- EDIT14 SECTION "Where To Go From Here" [12883-] -->

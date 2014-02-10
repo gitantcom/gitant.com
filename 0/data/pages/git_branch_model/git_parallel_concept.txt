@@ -3,3 +3,6 @@
 
 ====git 衍和====
 [[git_branch_model:git_pull_rebase|合并主干到分支]]
+
+====git 快进式合并====
+[[git_branch_model:git_merge_noff|快进式合并]]

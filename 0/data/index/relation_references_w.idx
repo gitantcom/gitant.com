@@ -145,3 +145,4 @@ git_concept:git_three_stage
 git_branch_model:git_branch_style
 gitcommand:git_stash
 gitcommand:git_cherry_pick
+git_branch_model:git_merge_noff

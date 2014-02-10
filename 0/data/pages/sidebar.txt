@@ -8,8 +8,8 @@
 
 ==== 并行开发 ====
   * [[git_branch_model:git_parallel_concept| 主干与分支 ]]
-  * [[git_branch_model:gitbranchmodel| Git分支模式 ]]
-  * [[git_branch_model:git_parallel| 合并Git分支 ]]
+  * [[git_branch_model:gitbranchmodel| Git分支模式 ]] 
+  * [[git_branch_model:git_parallel| 合并Git分支 ]] 
 
 
 
@@ -31,7 +31,7 @@
 
 
 ==== 客户端====
-  * [[git_tools:git_client|选择Git 客户端]]
+  * [[git_tools:git_client|Git 客户端]]
 
 
 
