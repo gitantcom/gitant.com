@@ -97,19 +97,32 @@ Meanwhile, Mary is working on her own feature in her own local repository using 
 {{ :git_branch_model:git-workflow-svn-3.png |Git Workflows: Publish Feature}}
 
 Once John finishes his feature, he should publish his local commits to the central repository so other team members can access it. He can do this with the git push command, like so:
+
+John完成了代码开发，他想把代码提交中央项目库，可以执行如下命令：
+
 <code>
 git push origin master
 </code>
-Remember that origin is the remote connection to the central repository that Git created when John cloned it. The master argument tells Git to try to make the origin’s master branch look like his local master branch. Since the central repository hasn’t been updated since John cloned it, this won’t result in any conflicts and the push will work as expected.   
+Remember that origin is the remote connection to the central repository that Git created when John cloned it. The master argument tells Git to try to make the origin’s master branch look like his local master branch. Since the central repository hasn’t been updated since John cloned it, this won’t result in any conflicts and the push will work as expected. 
+
+origin 是执行clone时，系统默认名称，指向远端中心仓库的master分支。这样 想 origin master 提交，就想对本地master提交的动作一样。 在John 克隆中央仓库，在本地修改后，还没人提交过新代码，所以John 的push动作不会有冲突，而且提交动作会顺利执行。
    
 ====Mary 尝试提交她的代码====
  {{ :git_branch_model:git-workflow-svn-4.png | Git Workflows: Push Command Error}}
 
 Let’s see what happens if Mary tries to push her feature after John has successfully published his changes to the central repository. She can use the exact same push command:
+
+在John成功向中央项目仓库提交他的变更后，Mary 也要向项目库提交代码，她是这样做的：
+
 <code>
 git push origin master
 </code>
+
 But, since her local history has diverged from the central repository, Git will refuse the request with a rather verbose error message:
+
+然而，她本地的Git历史已经和中央项目库分叉了，Git 拒绝合并，并给出了详细的出错信息：
+
+
 <code>
 error: failed to push some refs to '/path/to/repo.git'
 hint: Updates were rejected because the tip of your current branch is behind
@@ -117,31 +130,55 @@ hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
 hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </code>
+
 This prevents Mary from overwriting official commits. She needs to pull John’s updates into her repository, integrate them with her local changes, and then try again.   
   
-====Mary rebases on top of John’s commit(s)====
+拒绝的目的是防止Mary 覆盖该其他人已有的提交。 Mary 需要首先从中央项目库中取回（pull)John的变更，合并到自己的本地库中。  
+====Mary 衍合（变基）John的变更 rebases on top of John’s commit(s)====
  {{ :git_branch_model:git-workflow-svn-5.png |Git Workflows: Git Pull Rebase}}
 
 Mary can use git pull to incorporate upstream changes into her repository. This command is sort of like svn update—it pulls the entire upstream commit history into Mary’s local repository and tries to integrate it with her local commits:
+
+Mary 能用git pull 合并变更到本地库。 这个有点像 svn 的update 去合并所有的变更到Mary本地目录一样。
+
+
 <code>
 git pull --rebase origin master
 </code>
+
 The --rebase option tells Git to move all of Mary’s commits to the tip of the master branch after synchronising it with the changes from the central repository, as shown below:
+
+The --rebase选项告诉git在同步本地和中心仓库的提交后，移动所有Mary的提交到主干分支的顶端。
+
 {{ :git_branch_model:git-workflow-svn-6.png |}}
+
 The pull would still work if you forgot this option, but you would wind up with a superfluous “merge commit” every time someone needed to synchronize with the central repository. For this workflow, it’s always better to rebase instead of generating a merge commit.
-====Mary resolves a merge conflict====
+
+如果没有rebase选项，pull可能任然工作，那就会产生合并提交。 对于git的流程来说，用rebase合并而不是一次合并提交，会让合并历史更清晰。
+
+
+====Mary 解决合并冲突====
 {{ :git_branch_model:git-workflow-svn-7.png |
 Git Workflows: Rebasing on Commits}}
 
 Rebasing works by transferring each local commit to the updated master branch one at a time. This means that you catch merge conflicts on a commit-by-commit basis rather than resolving all of them in one massive merge commit. This keeps your commits as focused as possible and makes for a clean project history. In turn, this makes it much easier to figure out where bugs were introduced and, if necessary, to roll back changes with minimal impact on the project.
 
+<fc #0000EE>衍合就是把每次本地提交都表现到主分支上。这样你能发现每次本地提交与远端主干发生了什么样的冲突，而不是在一次合并提交时，解决所有人大量的合并冲突。这样做，就把你在本地对项目的改变历史也体现在中央仓库历史上。 而且，这样可以方便地找到缺陷是生么时候带进来的。回退的时候可以只会有错误代码，无关其他代码的合并。</fc>
+
 If Mary and John are working on unrelated features, it’s unlikely that the rebasing process will generate conflicts. But if it does, Git will pause the rebase at the current commit and output the following message, along with some relevant instructions:
+
+如果Mary 和 John  开发的代码相关性不大，那么衍和(rebase)过程中产生冲突的可能性不大。如果发生了冲突，Git 会暂停衍合在出现问题的提交上，并给出相关的指示：
+
 <code>
 CONFLICT (content): Merge conflict in <some-file>
 </code>
 
 {{ :git_branch_model:git-workflow-svn-8.png |}}
+
 The great thing about Git is that anyone can resolve their own merge conflicts. In our example, Mary would simply run a git status to see where the problem is. Conflicted files will appear in the Unmerged paths section:
+
+Git 的特点之一就是任何人都可以自己解决合并冲突。Mary 只是运行 "git status" 就可以知道合并时问题出在那里，合并失败的文件会明白的告诉你:
+
 <code>
 # Unmerged paths:
 # (use "git reset HEAD <some-file>..." to unstage)
@@ -150,27 +187,46 @@ The great thing about Git is that anyone can resolve their own merge conflicts. 
 # both modified: <some-file>>
 </code>
 Then, she’ll edit the file(s) to her liking. Once she’s happy with the result, she can stage the file(s) in the usual fashion and let git rebase do the rest:
+
+接着，Mary 修改文件，如果修改结果测试正确，她就会git add 这个文件，然后继续执行rebase的合并操作。
+
 <code>
 git add <some-file>
 git rebase --continue </some-file>
 </code>
+
 And that’s all there is to it. Git will move on to the next commit and repeat the process for any other commits that generate conflicts.
 
+这就是全部，Git继续合并提交，直到遇见下一次合并冲突。 
+
+
+
 If you get to this point and realize and you have no idea what’s going on, don’t panic. Just execute the following command and you’ll be right back to where you started before you ran git pull --rebase:
+
+也许你不理解，不想继续执行这种合并。不要怕，只要执行下面的命令，你就回到刚开始执行合并时的状态：
+
 <code>
 git rebase --abort
 </code>
  
-====Mary successfully publishes her feature====
+====Mary成功向项目仓库提交代码====
 
 {{ :git_branch_model:git-workflow-svn-9.png |Git Workflows: Synchronize Central Repo}}
 
 After she’s done synchronizing with the central repository, Mary will be able to publish her changes successfully:
+
+<fc #0000EE>在执行完同步命令后，Mary就可以提交她的代码了，如下命令：</fc>
+
 <code>
 git push origin master
 </code>
-=====Where To Go From Here=====
+=====继续前进=====
 
-As you can see, it’s possible to replicate a traditional Subversion development environment using only a handful of Git commands. This is great for transitioning teams off of SVN, but it doesn’t leverage the distributed nature of Git.
+As you can see, it’s possible to replicate a traditional Subversion development environment using only a handful of Git commands. This is great for transitioning teams off of SVN, but it doesn’t leverage the distributed nature of Git.\\
+<fc #0000EE>
+如上所述，只用了几个git命令，我们就实现了SVN的工作流程。这方便了熟悉SVN的团队，但是这并没有利用到Git的分布式特性。</fc>
 
 If your team is comfortable with the Centralized Workflow but wants to streamline its collaboration efforts, it's definitely worth exploring the benefits of the Feature Branch Workflow. By dedicating an isolated branch to each feature, it’s possible to initiate in-depth discussions around new additions before integrating them into the official project.
+
+
+如果你的团队是舒适与集中式工作流但希望简化其合作的努力，这绝对是值得探索的特性分支工作流的好处。通过一个孤立的分支的每个特征，进行深入的讨论在新增加的前将他们整合到正式的项目是可能的。

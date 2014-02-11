@@ -32,9 +32,16 @@ Aside from isolating feature development, branches make it possible to discuss c
 
 Code review is a major benefit of pull requests, but they’re actually designed to be a generic way to talk about code. You can think of pull requests as a discussion dedicated to a particular branch. This means that they can also be used much earlier in the development process. For example, if a developer needs help with a particular feature, all they have to do is file a pull request. Interested parties will be notified automatically, and they’ll be able to see the question right next to the relevant commits.
 
+pull requests 的主要好处是代码评审。但它最初的应用是讨论代码。
+
 Once a pull request is accepted, the actual act of publishing a feature is much the same as in the Centralized Workflow. First, you need to make sure your local master is synchronized with the upstream master. Then, you merge the feature branch into master and push the updated master back to the central repository.
 
+一旦pull reques 被接受了，提交代码的功能和中央集中式工作流程一样。
+
 Pull requests can be facilitated by product repository management solutions like Bitbucket or Stash. View the Stash pull requests documentation for an example.
+
+对于一些git托管系统，pull request是非常有用的工具。
+
 
 =====Example=====
 
