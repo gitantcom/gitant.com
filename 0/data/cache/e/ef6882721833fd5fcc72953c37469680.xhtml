@@ -24,11 +24,11 @@ Encapsulating feature development also makes it possible to leverage pull reques
 </p>
 
 <p>
-每个需求都用分支来开发，需要用pull request这个特性来发起代码合并评审。pull request 让其他开发者在合并代码前，评审代码。
+每个需求都用分支来开发，这样就可以在分支上发起讨论，在分支合并入项目主库前，其他工程师也有机会广播这个特性。如果对这个需求你还有一些想法，你可以创建一个pull request咨询你的同事。 。pull request 让其他开发者在合并代码前，评审代码。
 </p>
 
 </div>
-<!-- EDIT1 SECTION "任务分支模式" [1-1708] -->
+<!-- EDIT1 SECTION "任务分支模式" [1-1874] -->
 <h2 class="sectionedit2" id="how_it_works">How It Works</h2>
 <div class="level2">
 
@@ -45,12 +45,19 @@ Git makes no technical distinction between the master branch and feature branche
 </p>
 
 <p>
+对于Git来说，master分支和任务分支在功能上没有什么不一样。 工程师在任务分支上的活动和在中央集中式的流程一样。
+</p>
+
+<p>
 In addition, feature branches can (and should) be pushed to the central repository. This makes it possible to share a feature with other developers without touching any official code. Since master is the only “special” branch, storing several feature branches on the central repository doesn’t pose any problems. Of course, this is also a convenient way to back up everybody’s local commits.
-任务分支在本地每天提交后，也需要同步到中央仓库，作为本地的备份。
+</p>
+
+<p>
+任务分支在本地每天提交后，也需要同步到中央仓库，其他工程师不用动稳定代码，就可以看到新功能的代码。作为本地的备份。
 </p>
 
 </div>
-<!-- EDIT2 SECTION "How It Works" [1709-3094] -->
+<!-- EDIT2 SECTION "How It Works" [1875-3494] -->
 <h3 class="sectionedit3" id="pull_requests">Pull Requests</h3>
 <div class="level3">
 
@@ -88,7 +95,7 @@ Pull requests can be facilitated by product repository management solutions like
 </p>
 
 </div>
-<!-- EDIT3 SECTION "Pull Requests" [3095-5124] -->
+<!-- EDIT3 SECTION "Pull Requests" [3495-5524] -->
 <h2 class="sectionedit4" id="example">Example</h2>
 <div class="level2">
 
@@ -97,8 +104,8 @@ The example included below demonstrates a pull request as a form of code review,
 </p>
 
 </div>
-<!-- EDIT4 SECTION "Example" [5125-5279] -->
-<h3 class="sectionedit5" id="mary_begins_a_new_feature">Mary begins a new feature</h3>
+<!-- EDIT4 SECTION "Example" [5525-5679] -->
+<h3 class="sectionedit5" id="mary_开始新任务开发">Mary 开始新任务开发</h3>
 <div class="level3">
 
 <p>
@@ -107,22 +114,24 @@ Before she starts developing a feature, Mary needs an isolated branch to work on
 </p>
 
 <p>
-git checkout -b marys-feature master
+Mary 首先创建一个新的任务分支：
 </p>
+<pre class="code">git checkout -b marys-feature master</pre>
 
 <p>
 This checks out a branch called marys-feature based on master, and the -b flag tells Git to create the branch if it doesn’t already exist. On this branch, Mary edits, stages, and commits changes in the usual fashion, building up her feature with as many commits as necessary:
 </p>
 
 <p>
-git status
-git add &lt;some-file&gt;
-git commit
+在这个分支，Mary完成开发工作。
 </p>
+<pre class="code">git status
+git add &lt;some-file&gt;
+git commit</pre>
 
 </div>
-<!-- EDIT5 SECTION "Mary begins a new feature" [5280-5872] -->
-<h3 class="sectionedit6" id="mary_goes_to_lunch">Mary goes to lunch</h3>
+<!-- EDIT5 SECTION "Mary 开始新任务开发" [5680-6391] -->
+<h3 class="sectionedit6" id="mary_每日提交">Mary 每日提交</h3>
 <div class="level3">
 
 <p>
@@ -134,16 +143,21 @@ Mary adds a few commits to her feature over the course of the morning. Before sh
 </p>
 
 <p>
-git push -u origin marys-feature
+Mary 清晨开始了一些提交，午餐是，她最好能把任务分支提交到中央项目库。这也是一种备份方式。
 </p>
+<pre class="code">git push -u origin marys-feature</pre>
 
 <p>
 This command pushes marys-feature to the central repository (origin), and the -u flag adds it as a remote tracking branch. After setting up the tracking branch, Mary can call git push without any parameters to push her feature.
 </p>
 
+<p>
+Mary利用这里命令在中央仓库创建了自己的分支。
+</p>
+
 </div>
-<!-- EDIT6 SECTION "Mary goes to lunch" [5873-6576] -->
-<h3 class="sectionedit7" id="mary_finishes_her_feature">Mary finishes her feature</h3>
+<!-- EDIT6 SECTION "Mary 每日提交" [6392-7307] -->
+<h3 class="sectionedit7" id="mary_的任务开发完成">Mary 的任务开发完成</h3>
 <div class="level3">
 
 <p>
@@ -155,16 +169,24 @@ When Mary gets back from lunch, she completes her feature. Before merging it int
 </p>
 
 <p>
+当Mary 午餐后，她完成了开发。在合并到中央仓库前，她需要发起了一个pull request让团队其他人了解她的工作。但是首先，她要向中央仓库分支提交代码： 
+&lt;code&gt;
 git push
-</p>
-
-<p>
+&lt;code&gt;
 Then, she files the pull request in her Git <abbr title="Graphical User Interface">GUI</abbr> asking to merge marys-feature into master, and team members will be notified automatically. The great thing about pull requests is that they show comments right next to their related commits, so it&#039;s easy to ask questions about specific changesets.
 </p>
 
+<p>
+然后，她发起一个pull request,要求合并Marry的分支到主干分支，团队其他成员也会自动收到提示。 pull request 的特点之一就是可以在相关提交写下评语。所以对于某个代码片段可以容易地发起评审。
+</p>
+
+<p>
+ranhou 
+</p>
+
 </div>
-<!-- EDIT7 SECTION "Mary finishes her feature" [6577-7260] -->
-<h3 class="sectionedit8" id="bill_receives_the_pull_request">Bill receives the pull request</h3>
+<!-- EDIT7 SECTION "Mary 的任务开发完成" [7308-8477] -->
+<h3 class="sectionedit8" id="bill_接受合并请求">Bill 接受合并请求</h3>
 <div class="level3">
 
 <p>
@@ -177,8 +199,12 @@ Git Workflows: Feature Pull Requests" /></a>
 Bill gets the pull request and takes a look at marys-feature. He decides he wants to make a few changes before integrating it into the official project, and he and Mary have some back-and-forth via the pull request.
 </p>
 
+<p>
+Bill收到合并请求，看到了Marry的分支。
+</p>
+
 </div>
-<!-- EDIT8 SECTION "Bill receives the pull request" [7261-7613] -->
+<!-- EDIT8 SECTION "Bill 接受合并请求" [8478-8876] -->
 <h3 class="sectionedit9" id="mary_makes_the_changes">Mary makes the changes</h3>
 <div class="level3">
 
@@ -195,7 +221,7 @@ If he wanted, Bill could pull marys-feature into his local repository and work o
 </p>
 
 </div>
-<!-- EDIT9 SECTION "Mary makes the changes" [7614-8182] -->
+<!-- EDIT9 SECTION "Mary makes the changes" [8877-9445] -->
 <h3 class="sectionedit10" id="mary_publishes_her_feature">Mary publishes her feature</h3>
 <div class="level3">
 
@@ -224,7 +250,7 @@ Some GUI’s will automate the pull request acceptance process by running all of
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Mary publishes her feature" [8183-9533] -->
+<!-- EDIT10 SECTION "Mary publishes her feature" [9446-10796] -->
 <h3 class="sectionedit11" id="meanwhile_john_is_doing_the_exact_same_thing">Meanwhile, John is doing the exact same thing</h3>
 <div class="level3">
 
@@ -233,7 +259,7 @@ While Mary and Bill are working on marys-feature and discussing it in her pull r
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Meanwhile, John is doing the exact same thing" [9534-9900] -->
+<!-- EDIT11 SECTION "Meanwhile, John is doing the exact same thing" [10797-11163] -->
 <h2 class="sectionedit12" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -246,4 +272,4 @@ The Feature Branch Workflow is an incredibly flexible way to develop a project. 
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Where To Go From Here" [9901-] -->
+<!-- EDIT12 SECTION "Where To Go From Here" [11164-] -->

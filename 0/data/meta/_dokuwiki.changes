@@ -210,3 +210,12 @@
 1392107356	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary 解决合并冲突] 	
 1392108688	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo		
 1392108754	10.221.135.120	E	git_branch_model:git-workflow-central	uahoo	[Mary 解决合并冲突] 	
+1392112704	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[任务分支模式] 	
+1392113181	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[How It Works] 	
+1392113261	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary begins a new feature] 	
+1392113373	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary 开始新任务开发] 	
+1392113564	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary goes to lunch] 	
+1392113596	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary 中断开发] 	
+1392113688	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary finishes her feature] 	
+1392114788	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Mary 的任务开发完成] 	
+1392114844	10.221.135.120	E	git_branch_model:git-feature-branch	uahoo	[Bill receives the pull request] 	
