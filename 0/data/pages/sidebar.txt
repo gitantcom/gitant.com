@@ -7,9 +7,9 @@
 
 
 ==== 并行开发 ====
-  * [[git_branch_model:git_parallel_concept|主干与分支]]
-  * [[git_branch_model:gitbranchmodel|分支模式]] 
-  * [[git_branch_model:git_parallel|合并分支]]
+  * [[git_branch_model:git_parallel_concept|分支与合并]]
+  * [[git_branch_model:gitbranchmodel|Git分支模式]] 
+
 
 
 

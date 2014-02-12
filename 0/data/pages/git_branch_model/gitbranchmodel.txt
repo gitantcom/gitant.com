@@ -7,8 +7,8 @@
 [[git_branch_model:git-feature-branch|任务分支模式 ]]
 
 
-===== 多任务分支模式 =====
-[[git_branch_model:git-workflow-gitflow|多任务分支模式（GitFlow） ]]
+===== 发布分支模式(GitFlow) =====
+[[git_branch_model:git-workflow-gitflow|发布分支模式（GitFlow） ]]
 
 
 ===== 复刻模式 =====

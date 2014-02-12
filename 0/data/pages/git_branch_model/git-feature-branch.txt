@@ -2,84 +2,86 @@
 {{ :git_branch_model:git-workflow-feature-branch-1.png |}}
 Once you've got the hang of the Centralized Workflow, adding feature branches to your development process is an easy way to encourage collaboration and streamline communication between developers.
 
-一旦熟悉了集中式的git开发流程，再使用特性分支开发就容易多了，并加强了协作性而且简便了沟通。
-
+<fc #0000EE>一旦熟悉了集中式的git开发流程，再使用特性分支开发就容易多了，并加强了协作性而且简便了沟通。
+</fc>
 The core idea behind the Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the master branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the master branch will never contain broken code, which is a huge advantage for continuous integration environments.
 
-特性分支流程的核心就是所有新需求都在分支上开发。大家都在不同的分支上开发，互相不干扰，主干（master)不会有无法编译的代码，持续集成就需要这种的特性。
+<fc #0000EE>特性分支流程的核心就是所有新需求都在分支上开发。大家都在不同的分支上开发，互相不干扰，主干（master)不会有无法编译的代码，持续集成就需要这种的特性。</fc>
 
 Encapsulating feature development also makes it possible to leverage pull requests, which are a way to initiate discussions around a branch. They give other developers the opportunity to sign off on a feature before it gets integrated into the official project. Or, if you get stuck in the middle of a feature, you can open a pull request asking for suggestions from your colleagues. The point is, pull requests make it incredibly easy for your team to comment on each other’s work.
 
-每个需求都用分支来开发，这样就可以在分支上发起讨论，在分支合并入项目主库前，其他工程师也有机会广播这个特性。如果对这个需求你还有一些想法，你可以创建一个pull request咨询你的同事。 。pull request 让其他开发者在合并代码前，评审代码。
+<fc #0000EE>每个需求都用分支来开发，这样就可以在分支上发起讨论，在分支合并入项目主库前，其他工程师也有机会广播这个特性。如果对这个需求你还有一些想法，你可以创建一个pull request咨询你的同事。 pull request 让其他开发者在合并代码前，评审代码。</fc>
 
-=====How It Works=====
+=====流程描述=====
 
 The Feature Branch Workflow still uses a central repository, and master still represents the official project history. But, instead of committing directly on their local master branch, developers create a new branch every time they start work on a new feature. Feature branches should have descriptive names, like animated-menu-items or issue-#1061. The idea is to give a clear, highly-focused purpose to each branch.
 
-任务分支模式任然需要一个中央仓库，master分支存放的是稳定的生产版本。每当有新任务的时候，工程师在本地创建新分支。分支的名字应该能说清楚分支的目的。比如分支Issue-#1061。
+<fc #0000EE>任务分支模式任然需要一个中央仓库，master分支存放的是稳定的生产版本。每当有新任务的时候，工程师在本地创建新分支。分支的名字应该能说清楚分支的目的。比如分支Issue-#1061。</fc>
 
 Git makes no technical distinction between the master branch and feature branches, so developers can edit, stage, and commit changes to a feature branch just as they did in the Centralized Workflow.
 
-对于Git来说，master分支和任务分支在功能上没有什么不一样。 工程师在任务分支上的活动和在中央集中式的流程一样。
+<fc #0000EE>对于Git来说，master分支和任务分支在功能上没有什么不一样。 工程师在任务分支上的活动和在中央集中式的流程一样。</fc>
 
 In addition, feature branches can (and should) be pushed to the central repository. This makes it possible to share a feature with other developers without touching any official code. Since master is the only “special” branch, storing several feature branches on the central repository doesn’t pose any problems. Of course, this is also a convenient way to back up everybody’s local commits.
 
-任务分支在本地每天提交后，也需要同步到中央仓库，其他工程师不用动稳定代码，就可以看到新功能的代码。作为本地的备份。
+<fc #0000EE>任务分支在本地每天提交后，也需要同步到中央仓库，其他工程师不用动稳定代码，就可以看到新功能的代码。作为本地的备份。</fc>
 
-====Pull Requests====
-合并请求
+====合并请求(Pull Requests)====
+
 Aside from isolating feature development, branches make it possible to discuss changes via pull requests. Once someone completes a feature, they don’t immediately merge it into master. Instead, they push the feature branch to the central server and file a pull request asking to merge their additions into master. This gives other developers an opportunity to review the changes before they become a part of the main codebase.
 
-除了孤立的特性开发，通过pull request 也使得讨论变更成为可能。一旦完成了某个任务， 你不能立即把它合并回主干。相反的，你发起一个合并请求，要求合并到主干上。这给了其他开发者有机会评审你的代码，然后才能合并回主干。
+<fc #0000EE> 除了孤立的特性开发，通过pull request 也使得讨论变更成为可能。一旦完成了某个任务， 你不能立即把它合并回主干。相反的，你发起一个合并请求，要求合并到主干上。这给了其他开发者有机会评审你的代码，然后才能合并回主干。</fc>
 
 Code review is a major benefit of pull requests, but they’re actually designed to be a generic way to talk about code. You can think of pull requests as a discussion dedicated to a particular branch. This means that they can also be used much earlier in the development process. For example, if a developer needs help with a particular feature, all they have to do is file a pull request. Interested parties will be notified automatically, and they’ll be able to see the question right next to the relevant commits.
 
-pull requests 的主要好处是代码评审。但它最初的应用是讨论代码。
+<fc #0000EE> pull requests 的主要好处是代码评审。但它最初的应用是讨论代码。</fc>
 
 Once a pull request is accepted, the actual act of publishing a feature is much the same as in the Centralized Workflow. First, you need to make sure your local master is synchronized with the upstream master. Then, you merge the feature branch into master and push the updated master back to the central repository.
 
-一旦pull reques 被接受了，提交代码的功能和中央集中式工作流程一样。
+<fc #0000EE> 一旦pull reques 被接受了，提交代码的功能和中央集中式工作流程一样。</fc>
 
 Pull requests can be facilitated by product repository management solutions like Bitbucket or Stash. View the Stash pull requests documentation for an example.
 
-对于一些git托管系统，pull request是非常有用的工具。
+<fc #0000EE> 对于一些git托管系统，pull request是非常有用的工具。</fc>
 
 
-=====Example=====
+=====演示=====
 
 The example included below demonstrates a pull request as a form of code review, but remember that they can serve many other purposes.
+
+本演示用pull request作为代码评审的形式之一，但要明白pull request 有很多用途。
 
 ====Mary 开始新任务开发====
 {{ :git_branch_model:git-workflow-feature-branch-2.png |}}
 Before she starts developing a feature, Mary needs an isolated branch to work on. She can request a new branch with the following command:
 
-Mary 首先创建一个新的任务分支：
+<fc #0000EE> Mary 首先创建一个新的任务分支：</fc>
 
 <code>
 git checkout -b marys-feature master
 </code>
 This checks out a branch called marys-feature based on master, and the -b flag tells Git to create the branch if it doesn’t already exist. On this branch, Mary edits, stages, and commits changes in the usual fashion, building up her feature with as many commits as necessary:
 
-在这个分支，Mary完成开发工作。
+<fc #0000EE> 在这个分支，Mary完成开发工作。</fc>
 <code>
 git status
 git add <some-file>
 git commit
 </code>
-====Mary 每日提交====
+====Mary 要去午餐====
 
 {{ :git_branch_model:git-workflow-feature-branch-3.png |Git Workflows: Feature Commits}}
 
 Mary adds a few commits to her feature over the course of the morning. Before she leaves for lunch, it’s a good idea to push her feature branch up to the central repository. This serves as a convenient backup, but if Mary was collaborating with other developers, this would also give them access to her initial commits.
 
-Mary 清晨开始了一些提交，午餐是，她最好能把任务分支提交到中央项目库。这也是一种备份方式。
+<fc #0000EE> Mary 清晨开始了一些提交，午餐时，她最好能把任务分支提交到中央项目库。这也是一种备份方式。</fc>
 <code>
 git push -u origin marys-feature
 </code>
 
 This command pushes marys-feature to the central repository (origin), and the -u flag adds it as a remote tracking branch. After setting up the tracking branch, Mary can call git push without any parameters to push her feature.
 
-Mary利用这里命令在中央仓库创建了自己的分支。
+<fc #0000EE> Mary利用这里命令在中央仓库创建了自己的分支。</fc>
 
 ====Mary 的任务开发完成====
 
@@ -87,45 +89,56 @@ Mary利用这里命令在中央仓库创建了自己的分支。
 
 When Mary gets back from lunch, she completes her feature. Before merging it into master, she needs to file a pull request letting the rest of the team know she's done. But first, she should make sure the central repository has her most recent commits:
 
-当Mary 午餐后，她完成了开发。在合并到中央仓库前，她需要发起了一个pull request让团队其他人了解她的工作。但是首先，她要向中央仓库分支提交代码： 
+<fc #0000EE> 当Mary 午餐后，她完成了开发。为了让团队其他人了解她的工作，她先要向中央仓库分支提交代码： </fc>
+
 <code>
 git push
-<code>
+</code>
+
 Then, she files the pull request in her Git GUI asking to merge marys-feature into master, and team members will be notified automatically. The great thing about pull requests is that they show comments right next to their related commits, so it's easy to ask questions about specific changesets.
 
-然后，她发起一个pull request,要求合并Marry的分支到主干分支，团队其他成员也会自动收到提示。 pull request 的特点之一就是可以在相关提交写下评语。所以对于某个代码片段可以容易地发起评审。
+<fc #0000EE> 然后，在她的Git工具中，发起一个pull request,要求合并她的代码到主干，团队其他成员也会自动收到提示。 pull request 的特点之一就是可以在相关提交里写下评语。所以对于某个代码片段可以容易地发起评审。</fc>
 
-ranhou 
-====Bill 接受合并请求====
+
+====Bill 收到了合并请求====
 {{ :git_branch_model:git-workflow-feature-branch-5.png |
 Git Workflows: Feature Pull Requests}}
 
 Bill gets the pull request and takes a look at marys-feature. He decides he wants to make a few changes before integrating it into the official project, and he and Mary have some back-and-forth via the pull request.
 
-Bill收到合并请求，看到了Marry的分支。
+<fc #0000EE> Bill收到合并请求，看到了Marry的分支。在合并Marry的代码前，Bill还要做一些变更，所以通过pull request和Marry做了一些沟通。</fc>
 
-====Mary makes the changes====
+====Mary 继续修改代码====
 
 {{ :git_branch_model:git-workflow-feature-branch-6.png |Git Workflows: Central Repository Push}}
 
 To make the changes, Mary uses the exact same process as she did to create the first iteration of her feature. She edits, stages, commits, and pushes updates to the central repository. All her activity shows up in the pull request, and Bill can still make comments along the way.
 
+<fc #0000EE> Mary 就像第一轮过程，重复执行了编码，git add，git commit，git push 的工作。把代码提交到中央项目库分支。她的所有的变更历史都体现在pull request里，Bill 任然继续在pull request里执行代码评审。</fc>
+
+
 If he wanted, Bill could pull marys-feature into his local repository and work on it on his own. Any commits he added would also show up in the pull request.
-====Mary publishes her feature====
+
+<fc #0000EE> 如果有必要，Bill会 pull mary的代码分支进入他本地仓库，基于其上，继续工作。当让，任何Bill增加的提交都会想在pull request上。</fc>
+====合并Mary代码到中央项目库====
 {{ :git_branch_model:git-workflow-feature-branch-7.png |}}
 Once Bill is ready to accept the pull request, someone needs to merge the feature into the stable project (this can be done by either Bill or Mary):
 
+<fc #0000EE> 一旦Bill 决定接受pull request，就要有人去合并Mary的代码到稳定的中央项目仓库，（这个工作可以是Marry也可以是Bill来操作）</fc>
+
+<code>
 git checkout master
 git pull
 git pull origin marys-feature
 git push
+</code>
 
 First, whoever’s performing the merge needs to check out their master branch and make sure it’s up to date. Then, git pull origin marys-feature merges the central repository’s copy of marys-feature. You could also use a simple git merge marys-feature, but the command shown above makes sure you’re always pulling the most up-to-date version of the feature branch. Finally, the updated master needs to get pushed back to origin.
 
 This process often results in a merge commit. Some developers like this because it’s like a symbolic joining of the feature with the rest of the code base. But, if you’re partial to a linear history, it’s possible to rebase the feature onto the tip of master before executing the merge, resulting in a fast-forward merge.
 
 Some GUI’s will automate the pull request acceptance process by running all of these commands just by clicking an “Accept” button. If yours doesn’t, it should at least be able to automatically close the pull request when the feature branch gets merged into master
-====Meanwhile, John is doing the exact same thing====
+====期间, John 也要同步代码====
 
 While Mary and Bill are working on marys-feature and discussing it in her pull request, John is doing the exact same thing with his own feature branch. By isolating features into separate branches, everybody can work independently, yet it’s still trivial to share changes with other developers when necessary.
 =====Where To Go From Here=====

@@ -8,15 +8,13 @@ Once you&#039;ve got the hang of the Centralized Workflow, adding feature branch
 </p>
 
 <p>
-一旦熟悉了集中式的git开发流程，再使用特性分支开发就容易多了，并加强了协作性而且简便了沟通。
-</p>
-
-<p>
+<span style="color: #0000EE">一旦熟悉了集中式的git开发流程，再使用特性分支开发就容易多了，并加强了协作性而且简便了沟通。
+</span>
 The core idea behind the Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the master branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the master branch will never contain broken code, which is a huge advantage for continuous integration environments.
 </p>
 
 <p>
-特性分支流程的核心就是所有新需求都在分支上开发。大家都在不同的分支上开发，互相不干扰，主干（master)不会有无法编译的代码，持续集成就需要这种的特性。
+<span style="color: #0000EE">特性分支流程的核心就是所有新需求都在分支上开发。大家都在不同的分支上开发，互相不干扰，主干（master)不会有无法编译的代码，持续集成就需要这种的特性。</span>
 </p>
 
 <p>
@@ -24,12 +22,12 @@ Encapsulating feature development also makes it possible to leverage pull reques
 </p>
 
 <p>
-每个需求都用分支来开发，这样就可以在分支上发起讨论，在分支合并入项目主库前，其他工程师也有机会广播这个特性。如果对这个需求你还有一些想法，你可以创建一个pull request咨询你的同事。 。pull request 让其他开发者在合并代码前，评审代码。
+<span style="color: #0000EE">每个需求都用分支来开发，这样就可以在分支上发起讨论，在分支合并入项目主库前，其他工程师也有机会广播这个特性。如果对这个需求你还有一些想法，你可以创建一个pull request咨询你的同事。 pull request 让其他开发者在合并代码前，评审代码。</span>
 </p>
 
 </div>
-<!-- EDIT1 SECTION "任务分支模式" [1-1874] -->
-<h2 class="sectionedit2" id="how_it_works">How It Works</h2>
+<!-- EDIT1 SECTION "任务分支模式" [1-1922] -->
+<h2 class="sectionedit2" id="流程描述">流程描述</h2>
 <div class="level2">
 
 <p>
@@ -37,7 +35,7 @@ The Feature Branch Workflow still uses a central repository, and master still re
 </p>
 
 <p>
-任务分支模式任然需要一个中央仓库，master分支存放的是稳定的生产版本。每当有新任务的时候，工程师在本地创建新分支。分支的名字应该能说清楚分支的目的。比如分支Issue-#1061。
+<span style="color: #0000EE">任务分支模式任然需要一个中央仓库，master分支存放的是稳定的生产版本。每当有新任务的时候，工程师在本地创建新分支。分支的名字应该能说清楚分支的目的。比如分支Issue-#1061。</span>
 </p>
 
 <p>
@@ -45,7 +43,7 @@ Git makes no technical distinction between the master branch and feature branche
 </p>
 
 <p>
-对于Git来说，master分支和任务分支在功能上没有什么不一样。 工程师在任务分支上的活动和在中央集中式的流程一样。
+<span style="color: #0000EE">对于Git来说，master分支和任务分支在功能上没有什么不一样。 工程师在任务分支上的活动和在中央集中式的流程一样。</span>
 </p>
 
 <p>
@@ -53,21 +51,20 @@ In addition, feature branches can (and should) be pushed to the central reposito
 </p>
 
 <p>
-任务分支在本地每天提交后，也需要同步到中央仓库，其他工程师不用动稳定代码，就可以看到新功能的代码。作为本地的备份。
+<span style="color: #0000EE">任务分支在本地每天提交后，也需要同步到中央仓库，其他工程师不用动稳定代码，就可以看到新功能的代码。作为本地的备份。</span>
 </p>
 
 </div>
-<!-- EDIT2 SECTION "How It Works" [1875-3494] -->
-<h3 class="sectionedit3" id="pull_requests">Pull Requests</h3>
+<!-- EDIT2 SECTION "流程描述" [1923-3593] -->
+<h3 class="sectionedit3" id="合并请求_pull_requests">合并请求(Pull Requests)</h3>
 <div class="level3">
 
 <p>
-合并请求
 Aside from isolating feature development, branches make it possible to discuss changes via pull requests. Once someone completes a feature, they don’t immediately merge it into master. Instead, they push the feature branch to the central server and file a pull request asking to merge their additions into master. This gives other developers an opportunity to review the changes before they become a part of the main codebase.
 </p>
 
 <p>
-除了孤立的特性开发，通过pull request 也使得讨论变更成为可能。一旦完成了某个任务， 你不能立即把它合并回主干。相反的，你发起一个合并请求，要求合并到主干上。这给了其他开发者有机会评审你的代码，然后才能合并回主干。
+<span style="color: #0000EE"> 除了孤立的特性开发，通过pull request 也使得讨论变更成为可能。一旦完成了某个任务， 你不能立即把它合并回主干。相反的，你发起一个合并请求，要求合并到主干上。这给了其他开发者有机会评审你的代码，然后才能合并回主干。</span>
 </p>
 
 <p>
@@ -75,7 +72,7 @@ Code review is a major benefit of pull requests, but they’re actually designed
 </p>
 
 <p>
-pull requests 的主要好处是代码评审。但它最初的应用是讨论代码。
+<span style="color: #0000EE"> pull requests 的主要好处是代码评审。但它最初的应用是讨论代码。</span>
 </p>
 
 <p>
@@ -83,7 +80,7 @@ Once a pull request is accepted, the actual act of publishing a feature is much 
 </p>
 
 <p>
-一旦pull reques 被接受了，提交代码的功能和中央集中式工作流程一样。
+<span style="color: #0000EE"> 一旦pull reques 被接受了，提交代码的功能和中央集中式工作流程一样。</span>
 </p>
 
 <p>
@@ -91,20 +88,24 @@ Pull requests can be facilitated by product repository management solutions like
 </p>
 
 <p>
-对于一些git托管系统，pull request是非常有用的工具。
+<span style="color: #0000EE"> 对于一些git托管系统，pull request是非常有用的工具。</span>
 </p>
 
 </div>
-<!-- EDIT3 SECTION "Pull Requests" [3495-5524] -->
-<h2 class="sectionedit4" id="example">Example</h2>
+<!-- EDIT3 SECTION "合并请求(Pull Requests)" [3594-5697] -->
+<h2 class="sectionedit4" id="演示">演示</h2>
 <div class="level2">
 
 <p>
 The example included below demonstrates a pull request as a form of code review, but remember that they can serve many other purposes.
 </p>
 
+<p>
+本演示用pull request作为代码评审的形式之一，但要明白pull request 有很多用途。
+</p>
+
 </div>
-<!-- EDIT4 SECTION "Example" [5525-5679] -->
+<!-- EDIT4 SECTION "演示" [5698-5956] -->
 <h3 class="sectionedit5" id="mary_开始新任务开发">Mary 开始新任务开发</h3>
 <div class="level3">
 
@@ -114,7 +115,7 @@ Before she starts developing a feature, Mary needs an isolated branch to work on
 </p>
 
 <p>
-Mary 首先创建一个新的任务分支：
+<span style="color: #0000EE"> Mary 首先创建一个新的任务分支：</span>
 </p>
 <pre class="code">git checkout -b marys-feature master</pre>
 
@@ -123,15 +124,15 @@ This checks out a branch called marys-feature based on master, and the -b flag t
 </p>
 
 <p>
-在这个分支，Mary完成开发工作。
+<span style="color: #0000EE"> 在这个分支，Mary完成开发工作。</span>
 </p>
 <pre class="code">git status
 git add &lt;some-file&gt;
 git commit</pre>
 
 </div>
-<!-- EDIT5 SECTION "Mary 开始新任务开发" [5680-6391] -->
-<h3 class="sectionedit6" id="mary_每日提交">Mary 每日提交</h3>
+<!-- EDIT5 SECTION "Mary 开始新任务开发" [5957-6704] -->
+<h3 class="sectionedit6" id="mary_要去午餐">Mary 要去午餐</h3>
 <div class="level3">
 
 <p>
@@ -143,7 +144,7 @@ Mary adds a few commits to her feature over the course of the morning. Before sh
 </p>
 
 <p>
-Mary 清晨开始了一些提交，午餐是，她最好能把任务分支提交到中央项目库。这也是一种备份方式。
+<span style="color: #0000EE"> Mary 清晨开始了一些提交，午餐时，她最好能把任务分支提交到中央项目库。这也是一种备份方式。</span>
 </p>
 <pre class="code">git push -u origin marys-feature</pre>
 
@@ -152,11 +153,11 @@ This command pushes marys-feature to the central repository (origin), and the -u
 </p>
 
 <p>
-Mary利用这里命令在中央仓库创建了自己的分支。
+<span style="color: #0000EE"> Mary利用这里命令在中央仓库创建了自己的分支。</span>
 </p>
 
 </div>
-<!-- EDIT6 SECTION "Mary 每日提交" [6392-7307] -->
+<!-- EDIT6 SECTION "Mary 要去午餐" [6705-7656] -->
 <h3 class="sectionedit7" id="mary_的任务开发完成">Mary 的任务开发完成</h3>
 <div class="level3">
 
@@ -169,24 +170,21 @@ When Mary gets back from lunch, she completes her feature. Before merging it int
 </p>
 
 <p>
-当Mary 午餐后，她完成了开发。在合并到中央仓库前，她需要发起了一个pull request让团队其他人了解她的工作。但是首先，她要向中央仓库分支提交代码： 
-&lt;code&gt;
-git push
-&lt;code&gt;
+<span style="color: #0000EE"> 当Mary 午餐后，她完成了开发。为了让团队其他人了解她的工作，她先要向中央仓库分支提交代码： </span>
+</p>
+<pre class="code">git push</pre>
+
+<p>
 Then, she files the pull request in her Git <abbr title="Graphical User Interface">GUI</abbr> asking to merge marys-feature into master, and team members will be notified automatically. The great thing about pull requests is that they show comments right next to their related commits, so it&#039;s easy to ask questions about specific changesets.
 </p>
 
 <p>
-然后，她发起一个pull request,要求合并Marry的分支到主干分支，团队其他成员也会自动收到提示。 pull request 的特点之一就是可以在相关提交写下评语。所以对于某个代码片段可以容易地发起评审。
-</p>
-
-<p>
-ranhou 
+<span style="color: #0000EE"> 然后，在她的Git工具中，发起一个pull request,要求合并她的代码到主干，团队其他成员也会自动收到提示。 pull request 的特点之一就是可以在相关提交里写下评语。所以对于某个代码片段可以容易地发起评审。</span>
 </p>
 
 </div>
-<!-- EDIT7 SECTION "Mary 的任务开发完成" [7308-8477] -->
-<h3 class="sectionedit8" id="bill_接受合并请求">Bill 接受合并请求</h3>
+<!-- EDIT7 SECTION "Mary 的任务开发完成" [7657-8802] -->
+<h3 class="sectionedit8" id="bill_收到了合并请求">Bill 收到了合并请求</h3>
 <div class="level3">
 
 <p>
@@ -200,12 +198,12 @@ Bill gets the pull request and takes a look at marys-feature. He decides he want
 </p>
 
 <p>
-Bill收到合并请求，看到了Marry的分支。
+<span style="color: #0000EE"> Bill收到合并请求，看到了Marry的分支。在合并Marry的代码前，Bill还要做一些变更，所以通过pull request和Marry做了一些沟通。</span>
 </p>
 
 </div>
-<!-- EDIT8 SECTION "Bill 接受合并请求" [8478-8876] -->
-<h3 class="sectionedit9" id="mary_makes_the_changes">Mary makes the changes</h3>
+<!-- EDIT8 SECTION "Bill 收到了合并请求" [8803-9332] -->
+<h3 class="sectionedit9" id="mary_继续修改代码">Mary 继续修改代码</h3>
 <div class="level3">
 
 <p>
@@ -217,12 +215,20 @@ To make the changes, Mary uses the exact same process as she did to create the f
 </p>
 
 <p>
+<span style="color: #0000EE"> Mary 就像第一轮过程，重复执行了编码，git add，git commit，git push 的工作。把代码提交到中央项目库分支。她的所有的变更历史都体现在pull request里，Bill 任然继续在pull request里执行代码评审。</span>
+</p>
+
+<p>
 If he wanted, Bill could pull marys-feature into his local repository and work on it on his own. Any commits he added would also show up in the pull request.
 </p>
 
+<p>
+<span style="color: #0000EE"> 如果有必要，Bill会 pull mary的代码分支进入他本地仓库，基于其上，继续工作。当让，任何Bill增加的提交都会想在pull request上。</span>
+</p>
+
 </div>
-<!-- EDIT9 SECTION "Mary makes the changes" [8877-9445] -->
-<h3 class="sectionedit10" id="mary_publishes_her_feature">Mary publishes her feature</h3>
+<!-- EDIT9 SECTION "Mary 继续修改代码" [9333-10363] -->
+<h3 class="sectionedit10" id="合并mary代码到中央项目库">合并Mary代码到中央项目库</h3>
 <div class="level3">
 
 <p>
@@ -231,11 +237,12 @@ Once Bill is ready to accept the pull request, someone needs to merge the featur
 </p>
 
 <p>
-git checkout master
+<span style="color: #0000EE"> 一旦Bill 决定接受pull request，就要有人去合并Mary的代码到稳定的中央项目仓库，（这个工作可以是Marry也可以是Bill来操作）</span>
+</p>
+<pre class="code">git checkout master
 git pull
 git pull origin marys-feature
-git push
-</p>
+git push</pre>
 
 <p>
 First, whoever’s performing the merge needs to check out their master branch and make sure it’s up to date. Then, git pull origin marys-feature merges the central repository’s copy of marys-feature. You could also use a simple git merge marys-feature, but the command shown above makes sure you’re always pulling the most up-to-date version of the feature branch. Finally, the updated master needs to get pushed back to origin.
@@ -250,8 +257,8 @@ Some GUI’s will automate the pull request acceptance process by running all of
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Mary publishes her feature" [9446-10796] -->
-<h3 class="sectionedit11" id="meanwhile_john_is_doing_the_exact_same_thing">Meanwhile, John is doing the exact same thing</h3>
+<!-- EDIT10 SECTION "合并Mary代码到中央项目库" [10364-11919] -->
+<h3 class="sectionedit11" id="期间_john_也要同步代码">期间, John 也要同步代码</h3>
 <div class="level3">
 
 <p>
@@ -259,7 +266,7 @@ While Mary and Bill are working on marys-feature and discussing it in her pull r
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Meanwhile, John is doing the exact same thing" [10797-11163] -->
+<!-- EDIT11 SECTION "期间, John 也要同步代码" [11920-12272] -->
 <h2 class="sectionedit12" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -272,4 +279,4 @@ The Feature Branch Workflow is an incredibly flexible way to develop a project. 
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Where To Go From Here" [11164-] -->
+<!-- EDIT12 SECTION "Where To Go From Here" [12273-] -->
