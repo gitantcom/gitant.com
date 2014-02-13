@@ -271,3 +271,22 @@
 1392195751	10.221.135.120	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary finishes her feature] 	
 1392196079	10.221.135.120	E	git_branch_model:git-workflow-gitflow	uahoo		
 1392196129	10.221.135.120	E	git_branch_model:gitbranchmodel	uahoo	[发布分支模式(git flow)] 	
+1392199406	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo		
+1392199429	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[How It Works] 	
+1392258939	10.221.135.120	E	git_doc:git_reference	uahoo		
+1392259094	10.221.135.120	E	git_doc:git_reference	uahoo	[Git 官方文档] 	
+1392259119	10.221.135.120	E	git_doc:git_reference	uahoo	[Git 文档] 	
+1392260328	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The Official Repository] 	
+1392260850	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Branching in the Forking Workflow] 	
+1392262500	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Example] 	
+1392262961	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The project maintainer initializes the official repository] 	
+1392263762	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[项目管理员初始化官方项目库] 	
+1392268756	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers clone their forked repositories] 	
+1392270568	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[开发者Developers clone their forked repositories] 	
+1392271844	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[开发者克隆他们复刻的官方项目仓库] 	
+1392272176	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[开发者克隆他们复刻的官方项目仓库] 	
+1392272680	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers work on their features] 	
+1392274041	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers publish their features] 	
+1392275203	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[The project maintainer integrates their features] 	
+1392275626	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo	[Developers synchronize with the official repository] 	
+1392275898	10.221.135.120	E	git_branch_model:git-fork-branch	uahoo		

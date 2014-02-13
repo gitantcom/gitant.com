@@ -7,6 +7,10 @@ The Forking Workflow is fundamentally different than the other workflows discuss
 </p>
 
 <p>
+<span style="color: #0000EE">复刻分支流程和其他三个分支流程完全不同。相对于其他三个流程都用了单一的中央项目库不同，复刻分支模式给了每个开发者都有有一个相对于其他开发者是中心的项目仓库。 每个开发者都有两个仓库：一个是私有本地仓库，另一个是公开的中心仓库。</span>
+</p>
+
+<p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking.png" class="media" title="git_branch_model:git-workflows-forking.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking.png" class="mediacenter" title=" Git Workflows: Forking" alt=" Git Workflows: Forking" /></a>
 </p>
 
@@ -15,12 +19,16 @@ The main advantage of the Forking Workflow is that contributions can be integrat
 </p>
 
 <p>
+<span style="color: #0000EE">复刻流程主要特点是可以随时合并集成代码到中央库。开发者提交代码到他们自己的中央项目库，只有项目的维护者可以提交代码到官方项目中央库。这样允许项目管理员可以接受那些没有对官方仓库有写权限的人贡献代码。</span>
+</p>
+
+<p>
 The result is a distributed workflow that provides a flexible way for large, organic teams (including untrusted third-parties) to collaborate securely. This also makes it an ideal workflow for open source projects.
 </p>
 
 </div>
-<!-- EDIT1 SECTION "Forking Workflow" [1-1085] -->
-<h2 class="sectionedit2" id="how_it_works">How It Works</h2>
+<!-- EDIT1 SECTION "Forking Workflow" [1-1757] -->
+<h2 class="sectionedit2" id="流程介绍">流程介绍</h2>
 <div class="level2">
 
 <p>
@@ -28,7 +36,7 @@ As in the other Git workflows, the Forking Workflow begins with an official publ
 </p>
 
 <p>
-开始项目时，并不直接克隆仓库。
+<span style="color: #0000EE">开始项目时，并不直接克隆仓库。</span>
 </p>
 
 <p>
@@ -36,7 +44,7 @@ Instead, they fork the official repository to create copy of it on the server. T
 </p>
 
 <p>
-相反，工程师复刻官方仓库。新拷贝作为工程师个人的公开仓库，但是其他人不能提交。
+<span style="color: #0000EE">相反，工程师复刻官方仓库。新拷贝作为工程师个人的公开仓库，但是其他人不能提交。</span>
 </p>
 
 <p>
@@ -48,31 +56,39 @@ To integrate the feature into the official codebase, the maintainer pulls the co
 </p>
 
 </div>
-<!-- EDIT2 SECTION "How It Works" [1086-2812] -->
-<h3 class="sectionedit3" id="the_official_repository">The Official Repository</h3>
+<!-- EDIT2 SECTION "流程介绍" [1758-3518] -->
+<h3 class="sectionedit3" id="项目官方仓库">项目官方仓库</h3>
 <div class="level3">
 
 <p>
 It’s important to understand that the notion of an “official” repository in the Forking Workflow is merely a convention. From a technical standpoint, Git doesn’t see any difference between each developer’s public repository and the official one. In fact, the only thing that makes the official repository so official is that it’s the public repository of the project maintainer.
 </p>
 
+<p>
+<span style="color: #0000EE">在复刻模式中官方仓库只是一个约定的说法。从技术观点看，Git认为每个开发者的公共库和所谓的官方库没有区别。所以，官方库只所以叫官方，它是项目维护者管理的库。</span>
+</p>
+
 </div>
-<!-- EDIT3 SECTION "The Official Repository" [2813-3237] -->
-<h3 class="sectionedit4" id="branching_in_the_forking_workflow">Branching in the Forking Workflow</h3>
+<!-- EDIT3 SECTION "项目官方仓库" [3519-4185] -->
+<h3 class="sectionedit4" id="复刻流程中的分支">复刻流程中的分支</h3>
 <div class="level3">
 
 <p>
 All of these personal public repositories are really just a convenient way to share branches with other developers. Everybody should still be using branches to isolate individual features, just like in the Feature Branch Workflow and the Gitflow Workflow. The only difference is how those branches get shared. In the Forking Workflow, they are pulled into another developer’s local repository, while in the Feature Branch and Gitflow Workflows they are pushed to the official repository.
 </p>
 
+<p>
+<span style="color: #0000EE">各开发者的共享仓库只是为了方便地与其他开发者协作代码开发。每个开发者依然要用分支隔离开发每个功能，就像在任务分支模式和Gitflow模式中一样。有点区别是如何协作代码开发。复刻模式中，协作的代码被pull进另外一个开发者的本地私有仓库，在任务分支模式和Gitflow模式中，代码是push到中央项目仓库。</span>
+</p>
+
 </div>
-<!-- EDIT4 SECTION "Branching in the Forking Workflow" [3238-3772] -->
-<h2 class="sectionedit5" id="example">Example</h2>
+<!-- EDIT4 SECTION "复刻流程中的分支" [4186-5144] -->
+<h2 class="sectionedit5" id="实例演示">实例演示</h2>
 <div class="level2">
 
 </div>
-<!-- EDIT5 SECTION "Example" [3773-3791] -->
-<h3 class="sectionedit6" id="the_project_maintainer_initializes_the_official_repository">The project maintainer initializes the official repository</h3>
+<!-- EDIT5 SECTION "实例演示" [5145-5168] -->
+<h3 class="sectionedit6" id="项目管理员初始化官方项目库">项目管理员初始化官方项目库</h3>
 <div class="level3">
 
 <p>
@@ -84,17 +100,26 @@ As with any Git-based project, the first step is to create an official repositor
 </p>
 
 <p>
+<span style="color: #0000EE">项目管理员首先初始化一个官方的仓库，供所有项目成员获取基线版本代码。这个库就是项目管理员维护的共享库。</span>
+</p>
+
+<p>
 Public repositories should always be bare, regardless of whether they represent the official codebase or not. So, the project maintainer should run something like the following to set up the official repository:
 </p>
 
 <p>
-ssh user@host
-git init –bare /path/to/repo.git
+<span style="color: #0000EE">共享库应该用bare参数创建：</span>
 </p>
+<pre class="code">ssh user@host
+git init --bare /path/to/repo.git</pre>
 
 <p>
 Bitbucket and Stash also provide a convenient <abbr title="Graphical User Interface">GUI</abbr> alternative to the above commands. This is the exact same process as setting up a central repository for the other workflows in this tutorial. The maintainer should also push the existing codebase to this repository, if necessary.
 Developers fork the official repository
+</p>
+
+<p>
+<span style="color: #0000EE">创建完官方项目库后，项目管理员将基线代码push进仓库，如有必要，开发者复刻官方项目库:</span>
 </p>
 
 <p>
@@ -110,8 +135,8 @@ After this step, every developer should have their own server-side repository. L
 </p>
 
 </div>
-<!-- EDIT6 SECTION "The project maintainer initializes the official repository" [3792-5360] -->
-<h3 class="sectionedit7" id="developers_clone_their_forked_repositories">Developers clone their forked repositories</h3>
+<!-- EDIT6 SECTION "项目管理员初始化官方项目库" [5169-7103] -->
+<h3 class="sectionedit7" id="开发者克隆他们复刻的官方项目仓库">开发者克隆他们复刻的官方项目仓库</h3>
 <div class="level3">
 
 <p>
@@ -123,36 +148,44 @@ Next each developer needs to clone their own public repository. They can do with
 </p>
 
 <p>
+<span style="color: #0000EE">下一步，每个开发者需要克隆他们复刻的项目官方库。</span>
+</p>
+
+<p>
 Our example assumes the use of Bitbucket to host these repositories. Remember, in this situation, each developer should have their own Bitbucket account and they should clone their server-side repository using:
 </p>
 
 <p>
-git clone <a href="https://user@bitbucket.org/user/repo.git" class="urlextern" title="https://user@bitbucket.org/user/repo.git"  rel="nofollow">https://user@bitbucket.org/user/repo.git</a>
+<span style="color: #0000EE">我们的实例假设用Bitbucket去托管这项共享库，每个开发者都在Bitbucket上有个一个共享的仓库：</span>
 </p>
+<pre class="code">git clone https://user@bitbucket.org/user/repo.git</pre>
 
 <p>
 Whereas the other workflows in this tutorial use a single origin remote that points to the central repository, the Forking Workflow requires two remotes—one for the official repository, and one for the developer’s personal server-side repository. While you can call these remotes anything you want, a common convention is to use origin as the remote for your forked repository (this will be created automatically when you run git clone) and upstream for the official repository.
 </p>
 
 <p>
-git remote add upstream <a href="https://bitbucket.org/maintainer/repo" class="urlextern" title="https://bitbucket.org/maintainer/repo"  rel="nofollow">https://bitbucket.org/maintainer/repo</a>
+<span style="color: #0000EE">在其他流程中，每个开发者只有一个远程中央项目仓库origin，但是，复刻开发流程中至少需要两个远程仓库，一个是开发者个人的共享库，一个是官方项目库。一般把你的共享库叫origin，执行git clone会自动设置，把官方项目库叫做upstream。</span>
 </p>
+<pre class="code">git remote add upstream https://bitbucket.org/maintainer/repo
+</pre>
 
 <p>
 You’ll need to create the upstream remote yourself using the above command. This will let you easily keep your local repository up-to-date as the official project progresses. Note that if your upstream repository has authentication enabled (i.e., it&#039;s not open source), you&#039;ll need to supply a username, like so:
 </p>
 
 <p>
-git remote add upstream <a href="https://user@bitbucket.org/maintainer/repo.git" class="urlextern" title="https://user@bitbucket.org/maintainer/repo.git"  rel="nofollow">https://user@bitbucket.org/maintainer/repo.git</a>
+<span style="color: #0000EE">你需要git remote 设置upstream跟踪远端官方项目库。这样做，方便你本地私有库与远端官方库的更新。</span>
 </p>
+<pre class="code">git remote add upstream https://user@bitbucket.org/maintainer/repo.git</pre>
 
 <p>
 This requires users to supply a valid password before cloning or pulling from the official codebase.
 </p>
 
 </div>
-<!-- EDIT7 SECTION "Developers clone their forked repositories" [5361-6930] -->
-<h3 class="sectionedit8" id="developers_work_on_their_features">Developers work on their features</h3>
+<!-- EDIT7 SECTION "开发者克隆他们复刻的官方项目仓库" [7104-9440] -->
+<h3 class="sectionedit8" id="开发者在本地任务分支开发开发">开发者在本地任务分支开发开发</h3>
 <div class="level3">
 
 <p>
@@ -164,26 +197,32 @@ In the local repositories that they just cloned, developers can edit code, commi
 </p>
 
 <p>
-git checkout -b some-feature
-# Edit some code
-git commit -a -m “Add first draft of some feature”
+<span style="color: #0000EE">在开发者克隆的本地仓库里，开发者可以编码，提交，创建分支：</span>
 </p>
+<pre class="code">git checkout -b some-feature
+# Edit some code
+git commit -a -m &quot;Add first draft of some feature&quot;</pre>
 
 <p>
 All of their changes will be entirely private until they push it to their public repository. And, if the official project has moved forward, they can access new commits with git pull:
 </p>
 
 <p>
-git pull upstream master
+<span style="color: #0000EE">这些代码在开发者提交到自己的共享库之前，存放在本地私有库里，如果官方项目库已经有新的提交了，开发者用git pull 去同步这些新代码：</span>
 </p>
+<pre class="code">git pull upstream master</pre>
 
 <p>
 Since developers should be working in a dedicated feature branch, this should generally result in a fast-forward merge.
 </p>
 
+<p>
+<span style="color: #0000EE">开发者都在专门的分支上编码，所以同步官方项目仓库会产生一个 FastForward的合并。</span>
+</p>
+
 </div>
-<!-- EDIT8 SECTION "Developers work on their features" [6931-7657] -->
-<h3 class="sectionedit9" id="developers_publish_their_features">Developers publish their features</h3>
+<!-- EDIT8 SECTION "开发者在本地任务分支开发开发" [9441-10647] -->
+<h3 class="sectionedit9" id="开发者共享编写的代码">开发者共享编写的代码</h3>
 <div class="level3">
 
 <p>
@@ -195,20 +234,30 @@ Once a developer is ready to share their new feature, they need to do two things
 </p>
 
 <p>
-git push origin feature-branch
+<span style="color: #0000EE">一旦开发者准备共享他们的编写的代码，需要做两件事，提交自己的代码到开发者的共享库，方便其他开发者访问。</span>
 </p>
+<pre class="code">git push origin feature-branch
+</pre>
 
 <p>
 This diverges from the other workflows in that the origin remote points to the developer’s personal server-side repository, not the main codebase.
 </p>
 
 <p>
+<span style="color: #0000EE">这里就和其他流程不同了，这里提交代码不是中央项目库，而是开发者自己的共享库。</span>
+</p>
+
+<p>
 Second, they need to notify the project maintainer that they want to merge their feature into the official codebase. Bitbucket and Stash provide a “Pull request” button that leads to a form asking you to specify which branch you want to merge into the official repository. Typically, you’ll want to integrate your feature branch into the upstream remote’s master branch.
 </p>
 
+<p>
+<span style="color: #0000EE">另外，开发者需要提醒项目管理员，自己有代码想合并到官方项目基准代码库里,Bitbucket提供了pull request 按键，来询问开发者把那个分支的代码合并到官方项目库。典型的，开发者想合并自己共享库里分支新代码到官方项目库的master分支。</span>
+</p>
+
 </div>
-<!-- EDIT9 SECTION "Developers publish their features" [7658-8655] -->
-<h3 class="sectionedit10" id="the_project_maintainer_integrates_their_features">The project maintainer integrates their features</h3>
+<!-- EDIT9 SECTION "开发者共享编写的代码" [10648-12297] -->
+<h3 class="sectionedit10" id="项目管理员接收合并开发者的新代码">项目管理员接收合并开发者的新代码</h3>
 <div class="level3">
 
 <p>
@@ -230,46 +279,65 @@ When the project maintainer receives the pull request, their job is to decide wh
 </p>
 
 <p>
+<span style="color: #0000EE">当项目管理员收到pull request，他需要决定基线代码库是否要合并这些代码。
+
+1）在pull request里直接评审代码，并合并；
+2）把这些代码拉到管理员的本地库，他手动合并这些代码到项目基线库里。</span>
+</p>
+
+<p>
 The first option is simpler, as it lets the maintainer view a diff of the changes, comment on it, and perform the merge via a graphical user interface. However, the second option is necessary if the pull request results in a merge conflict. In this case, the maintainer needs to fetch the feature branch from the developer’s server-side repository, merge it into their local master branch, and resolve any conflicts:
 </p>
 
 <p>
-git fetch <a href="https://bitbucket.org/user/repo" class="urlextern" title="https://bitbucket.org/user/repo"  rel="nofollow">https://bitbucket.org/user/repo</a> feature-branch
+<span style="color: #0000EE">第一选项简单，项目管理员查看pull request里代码的差异，写出评审，通过图形界面就合并了开发者提交的代码。
+如果qull request发生了合并冲突，需要执行第二个选项，在项目管理员的本地仓库合并代码。 在本演示实例中，项目管理员需要先从开发者的共享库里fetch代码，在本地合并代码到主干分支，然后解决冲突：</span>
+</p>
+<pre class="code">git fetch https://bitbucket.org/user/repo feature-branch
 # Inspect the changes
 git checkout master
 git merge FETCH_HEAD
-</p>
+</pre>
 
 <p>
 Once the changes are integrated into their local master, the maintainer needs to push it to the official repository on the server so that other developers can access it:
 </p>
 
 <p>
-git push origin master
+<span style="color: #0000EE">代码合并到本地的master分支后，项目管理员push 合并后的代码到官方项目库，其他开发者也能访问：</span>
 </p>
+<pre class="code">git push origin master</pre>
 
 <p>
 Remember that the maintainer&#039;s origin points to their public repository, which also serves as the official codebase for the project. The developer&#039;s contribution is now fully integrated into the project.
 </p>
 
+<p>
+<span style="color: #0000EE">项目管理员的origin指向的共享库也是官方的代码基准哭。 开发者的贡献现在完全集成到项目库中去了。</span>
+</p>
+
 </div>
-<!-- EDIT10 SECTION "The project maintainer integrates their features" [8656-10038] -->
-<h3 class="sectionedit11" id="developers_synchronize_with_the_official_repository">Developers synchronize with the official repository</h3>
+<!-- EDIT10 SECTION "项目管理员接收合并开发者的新代码" [12298-14730] -->
+<h3 class="sectionedit11" id="开发者同步官方项目库">开发者同步官方项目库</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-fork-branch&amp;media=git_branch_model:git-workflows-forking-7.png" class="media" title="git_branch_model:git-workflows-forking-7.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflows-forking-7.png" class="mediacenter" title="Forking Workflow: Synchronize with the official repository
 " alt="Forking Workflow: Synchronize with the official repository
 " /></a>
+</p>
+
+<p>
 Since the main codebase has moved forward, other developers should synchronize with the official repository:
 </p>
 
 <p>
-git pull upstream master
+<span style="color: #0000EE">官方项目库代码基线向前移动后，其他的开发者应该及时同步官方项目新基线到本地主干。</span>
 </p>
+<pre class="code">git pull upstream master</pre>
 
 </div>
-<!-- EDIT11 SECTION "Developers synchronize with the official repository" [10039-10347] -->
+<!-- EDIT11 SECTION "开发者同步官方项目库" [14731-15172] -->
 <h2 class="sectionedit12" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -286,4 +354,4 @@ This makes the Forking Workflow a very powerful tool for loosely-knit teams. Any
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Where To Go From Here" [10348-] -->
+<!-- EDIT12 SECTION "Where To Go From Here" [15173-] -->

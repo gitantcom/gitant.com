@@ -1,10 +1,15 @@
 
 ==== Git 官方文档 ====
-  * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|git官方文档]]
+  * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|Git官方]]
+  * [[https://www.kernel.org/pub/software/scm/git/docs/|Git Manual Page ]]
 
 ====Git 文档====
-  * [[ http://githowto.com/ | git how to ]]
-  * [[https://www.atlassian.com/dms/wac/images/landing/git/atlassian_git_cheatsheet.pdf | git  命令速查卡片]]
+  * [[ http://githowto.com/ | Git How To ]]
+  * [[https://www.atlassian.com/dms/wac/images/landing/git/atlassian_git_cheatsheet.pdf | Git  命令速查卡片]]
+  * [[http://git-scm.com/book/zh)|Pro Git]]
+  * [[http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/|Git magic]]
+  * [[http://rogerdudler.github.io/git-guide/index.zh.html|Git - 简易指南]]
+  * [[http://gitref.justjavac.com/|Git 参考手册]]
 
 ====Github上的Free书籍====
   * [[https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md|Free的中文书籍]]
