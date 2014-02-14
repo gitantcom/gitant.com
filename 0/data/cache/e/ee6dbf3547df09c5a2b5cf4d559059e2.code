@@ -1,0 +1,4 @@
+$ <span class="kw2">git branch</span> <span class="re5">-d</span> simon
+error: The branch <span class="st_h">'simon'</span> is not fully merged.
+If you are sure you want to delete it, run
+<span class="st_h">'git branch -D simon'</span>.

@@ -26,7 +26,7 @@ HTTPS 方式保存密码
 
 
 
-GitHub如何操作pull request？
+
 
 用git部署php站点
 源码发布
@@ -64,8 +64,8 @@ git分支比较
 
 如何回退到某个指定版本提交？
 放弃没有缓存的的文件变更？
-
-Git Push
+提交所有变更文件
+向远端仓库提交代码
 Git remote
 计算每次commit的唯一序数号
 中央集中式开发流程
@@ -86,10 +86,10 @@ a
 
 
 
-如何只提交部分文件？
+增加变更文件到缓存状态
 本地新分支？
-版本控制系统
-git分支类型
+
+
 
 
 
@@ -109,3 +109,11 @@ Git 简史
 
 
 
+git init 初始化仓库
+
+GitHub如何操作pull request？
+
+原生Git如何发起pull quest？
+版本控制系统
+git分支
+rebase VS merge

@@ -20,3 +20,5 @@
    * [[gitcommand:gitconfigpasswd|https协议保存密码]]
 ====git的3种状态====
   * [[git_concept:git_three_stage| git 的3种工作状态]]
+====git的分支与合并====
+  * [[git_concept:git_lost_head| git lost head ]]

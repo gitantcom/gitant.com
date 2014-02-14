@@ -1,0 +1,17 @@
+
+Merge  :takes all the changes in one branch and merge them into another branch in one commit.\\
+Rebase :says I want the point at which I branched to move to a new starting point\\
+
+====rebase VS merge ====
+
+
+In general, it is a good practice to use git rebase when you are working on non-published things - local things that you have not pushed (or you have pushed to a place that other people are not pulling from). Rebase rewrites history, so people pulling will have issues if you rebase, while merge does not rewrite history, thus does not cause issues for other people.
+
+While merge will try to merge your changes using a merge strategy, rebase will just fetch the HEAD of what you are rebasing against and then try to apply your changes. Since it loses the time of when your change was made, it can not solve conflicts as effectively as a merge.
+
+Usually rebase is not much more complicated, unless you are in a relatively small codebase where a lot of developers are working at the same time and stepping on each others toes OR you leave your code for a long time.
+
+I think this is a good resource to read about rebase: http://www.jarrodspillers.com/2009/08/19/git-merge-vs-git-rebase-avoiding-rebase-hell/
+
+Jarrod defines the "rebase rule" very good: Don’t rebase branches you have shared with another developer.
+

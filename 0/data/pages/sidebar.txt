@@ -1,16 +1,16 @@
 
 ====  命令 ====
-  * [[gitcommand:git_concept|Git基础]]
+
+  * [[git_concept:git_concept|Git基础]]
   * [[gitcommand:git_command|Git手册]]
   * [[gitcommand:git_command1|Git实例]]
 
 
 
 ==== 并行开发 ====
-  * [[git_branch_model:git_parallel_concept|分支与合并]]
+
+  * [[git_concept:git_parallel_concept|分支与合并]]
   * [[git_branch_model:gitbranchmodel|Git分支模式]] 
-
-
 
 
 

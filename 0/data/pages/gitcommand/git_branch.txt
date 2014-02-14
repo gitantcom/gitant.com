@@ -1,13 +1,18 @@
 
 
------
+
 ====本地新分支？====
 <code bash>
 $ git checkout -b alvin
 Switched to a new branch 'alvin'
 </code>
 
------
+
+====转换分支====
+<code>
+git checkout <branch-name>
+</code>
+
 ====本地删除分支====
 <code bash>
 $ git branch -d simon
@@ -15,7 +20,8 @@ error: The branch 'simon' is not fully merged.
 If you are sure you want to delete it, run
 'git branch -D simon'.
 </code>
------
+
+
 ====删除远端仓库的分支？====
 删除origin上的simon分支？
 <code>

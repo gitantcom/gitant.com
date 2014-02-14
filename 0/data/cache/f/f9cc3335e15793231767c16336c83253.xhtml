@@ -1,0 +1,44 @@
+
+<h3 class="sectionedit1" id="原生git如何发起pull_quest">原生Git如何发起pull quest？</h3>
+<div class="level3">
+
+<p>
+Sometimes your patches are a bit too unwieldy to be sent to the koha-patches mailing list in the usual way. What you can do then is push the changes to a publicly available git repository <br/>
+
+(for example GitHub, another similar service or a repository that you host yourself), and send a “request to pull” to koha-patches.
+</p>
+
+<p>
+To do this, make sure you have pushed your changes to the public repo, and that you are on the branch that contains your changes. Then do this:
+</p>
+<pre class="code">$git request-pull origin/master git://git.workbuffer.org/git/koha.git | mailx koha-patches@....org -s “Bug 1234 - Request to pull”</pre>
+
+<p>
+Where:<br/>
+
+</p>
+
+<p>
+origin/master is the name for the master branch of the official repo, so if you called that something other than origin you must change accordingly
+</p>
+
+<p>
+git:<em>git.workbuffer.org/git/koha.git is the address for your publicly available repository
+
+koha-patches@….org is the address of the koha-patches mailing list 
+
+This will only work if you have mailx and sending of emails set up correctly on your machine. If you do not, you can run this part of the command:
+
+$git request-pull origin/master git:</em>git.workbuffer.org/git/koha.git
+</p>
+
+<p>
+and copy/paste the output into an ordinary email in the email program of your choice, give it a proper subject and send it to koha-patches.
+See also  
+</p>
+
+<p>
+<a href="https://www.kernel.org/pub/software/scm/git/docs/git-request-pull.html" class="urlextern" title="https://www.kernel.org/pub/software/scm/git/docs/git-request-pull.html"  rel="nofollow"> git-request-pull(1) Manual Page</a>
+</p>
+
+</div>

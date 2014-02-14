@@ -151,3 +151,13 @@ wiki:sectiona
 wiki:sectionb
 wiki:sectionc
 wiki:sectiond
+gitcommand:git_init
+git_concept:git_lost_head
+git_concept:git_local_branch
+git_concept:git_remote_branch
+wiki:github_howto_pull_request
+git_concept:git_howto_pull_request
+gitcommand:git_request_pull
+git_concept:merge_rebase_diff
+git_concept:git_concept
+git_concept:git_parallel_concept

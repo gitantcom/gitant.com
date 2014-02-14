@@ -1,0 +1,2 @@
+$ <span class="kw2">git checkout</span> <span class="re5">-b</span> alvin
+Switched to a new branch <span class="st_h">'alvin'</span>

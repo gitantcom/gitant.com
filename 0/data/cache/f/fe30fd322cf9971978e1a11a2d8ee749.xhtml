@@ -1,0 +1,77 @@
+
+<h3 class="sectionedit1" id="本地新分支">本地新分支？</h3>
+<div class="level3">
+<pre class="code bash">$ <span class="kw2">git checkout</span> <span class="re5">-b</span> alvin
+Switched to a new branch <span class="st_h">'alvin'</span></pre>
+
+</div>
+<!-- EDIT1 SECTION "本地新分支？" [4-109] -->
+<h3 class="sectionedit2" id="转换分支">转换分支</h3>
+<div class="level3">
+<pre class="code">git checkout &lt;branch-name&gt;</pre>
+
+</div>
+<!-- EDIT2 SECTION "转换分支" [110-173] -->
+<h3 class="sectionedit3" id="本地删除分支">本地删除分支</h3>
+<div class="level3">
+<pre class="code bash">$ <span class="kw2">git branch</span> <span class="re5">-d</span> simon
+error: The branch <span class="st_h">'simon'</span> is not fully merged.
+If you are sure you want to delete it, run
+<span class="st_h">'git branch -D simon'</span>.</pre>
+
+</div>
+<!-- EDIT3 SECTION "本地删除分支" [174-357] -->
+<h3 class="sectionedit4" id="删除远端仓库的分支">删除远端仓库的分支？</h3>
+<div class="level3">
+
+<p>
+删除origin上的simon分支？
+</p>
+<pre class="code">$ git push origin :simon</pre>
+<hr />
+
+</div>
+<!-- EDIT4 SECTION "删除远端仓库的分支？" [358-479] -->
+<h3 class="sectionedit5" id="修改本地分支名称">修改本地分支名称？</h3>
+<div class="level3">
+<pre class="code">$ git branch -m old_branch new_branch</pre>
+<hr />
+
+</div>
+<!-- EDIT5 SECTION "修改本地分支名称？" [480-575] -->
+<h3 class="sectionedit6" id="修改远端仓库分支名称">修改远端仓库分支名称？</h3>
+<div class="level3">
+
+<p>
+没有直接的方法改名，可以如下方式修改远端分支名。
+</p>
+<pre class="code bash">$ <span class="kw2">git push</span> <span class="re5">-u</span> origin new_branch <span class="co0">#创建远端新分支</span>
+$ <span class="kw2">git push</span> origin :old_branch   <span class="co0">#删除旧分支</span></pre>
+<hr />
+
+</div>
+<!-- EDIT6 SECTION "修改远端仓库分支名称？" [576-820] -->
+<h3 class="sectionedit7" id="设置远程分支的跟踪">设置远程分支的跟踪?</h3>
+<div class="level3">
+
+<p>
+你在本地克隆了一个仓库，远端有一个分支叫”some_branch”，如何设置本地仓库跟踪它呢？
+Assuming there is a remote repository that you cloned your local repository from and also assuming that there is a branch named &#039;some_branch&#039; on that remote repository, here is how to track it locally:
+</p>
+<pre class="code bash"><span class="co0"># list remote branches</span>
+<span class="kw2">git branch</span> <span class="re5">-r</span>
+&nbsp;
+<span class="co0"># start tracking one remote branch</span>
+<span class="kw2">git branch</span> <span class="re5">--track</span> some_branch origin<span class="sy0">/</span>some_branch
+&nbsp;
+<span class="co0"># change to the branch locally</span>
+<span class="kw2">git checkout</span> some_branch
+&nbsp;
+<span class="co0"># make changes and commit them locally</span>
+....
+&nbsp;
+<span class="co0"># push your changes to the remote repository:</span>
+<span class="kw2">git push</span></pre>
+
+</div>
+<!-- EDIT7 SECTION "设置远程分支的跟踪?" [821-] -->

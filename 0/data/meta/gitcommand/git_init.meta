@@ -1,0 +1,12 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1392281631;s:8:"modified";i:1392282519;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1392282519;s:2:"ip";s:14:"10.221.135.120";s:4:"type";s:1:"E";s:2:"id";s:19:"gitcommand:git_init";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:24:"git init 初始化仓库";s:11:"description";a:2:{s:15:"tableofcontents";a:1:{i:0;a:4:{s:3:"hid";s:24:"git_init_初始化仓库";s:5:"title";s:24:"git init 初始化仓库";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:353:"git init 初始化仓库
+
+
+git init #用于工作
+git init -bare  #用与共享代码，供其他用户clone
+
+
+git init  和 git init –bare 的区别
+
+git init -bare 只会生成一类文件:用于记录版本库历史记录的.git目录下面的文件;所以该版本库不能称为工作目录(working tree);
+
+主要用来作为中央项目使用。";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1392281631;s:8:"modified";i:1392282519;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1392282519;s:2:"ip";s:14:"10.221.135.120";s:4:"type";s:1:"E";s:2:"id";s:19:"gitcommand:git_init";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

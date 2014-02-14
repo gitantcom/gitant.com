@@ -1,0 +1,14 @@
+<span class="co0"># list remote branches</span>
+<span class="kw2">git branch</span> <span class="re5">-r</span>
+&nbsp;
+<span class="co0"># start tracking one remote branch</span>
+<span class="kw2">git branch</span> <span class="re5">--track</span> some_branch origin<span class="sy0">/</span>some_branch
+&nbsp;
+<span class="co0"># change to the branch locally</span>
+<span class="kw2">git checkout</span> some_branch
+&nbsp;
+<span class="co0"># make changes and commit them locally</span>
+....
+&nbsp;
+<span class="co0"># push your changes to the remote repository:</span>
+<span class="kw2">git push</span>

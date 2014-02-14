@@ -4,7 +4,7 @@
 =====Git命令实例=====
 
 ===== 初始化与设置=====
-  * git init
+  *[[gitcommand:git_init| git init]]
   *[[gitcommand:git_clone | git clone]]
   *[[gitcommand:git_config | git config ]]
 
@@ -32,27 +32,29 @@
 ===== 分支合并 =====
   * [[gitcommand:git_branch|git branch]]
   * git merge
+  * git rebase
+  * git rebase -i
+  * [[gitcommand:git_cherry_pick| git cherry pick ]]
   * [[gitcommand:git_log_branch| git log ]]
   * [[gitcommand:log_diff_branch|git diff]]
-  * [[gitcommand:git_cherry_pick| git cherry pick ]]
+  * [[gitcommand:git_request_pull| git request-pull ]]
+
 
 
 
 
 ===== 修改历史=====
   * git commit --amend
-  * git rebase
-  * git rebase -i
   * git reflog
 
 
 
 
 ===== 分享与更新=====
+  * [[gitcommand:git_push|git push]]
   * [[gitcommand:git_remote|git remote]]
   * git fetch
   * git pull
-  * [[gitcommand:git_push|git push]]
   * git submodle
   * [[gitcommand:git_subtree| git_subtree]]
 =====检查和比对=====

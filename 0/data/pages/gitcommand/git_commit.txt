@@ -1,0 +1,6 @@
+====提交所有变更文件====
+<code>
+$ git commit -a # the -a flag pulls in all modified files
+</code>
+不包括新文件。新文件需要执行git add 。
+
