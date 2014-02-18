@@ -1,0 +1,13 @@
+====git commit log====
+
+<code>
+一句话说明这次提交做了什么|Summarize clearly in one line what the commit is about
+
+
+说明解决了什么问题或者交付了什么新功能。解释你方案的理由。
+Describe the problem the commit solves or the use
+case for a new feature. Justify why you chose
+the particular solution.
+</code>
+
+[[https://github.com/erlang/otp/wiki/Writing-good-commit-messages|如何写git commit log]]

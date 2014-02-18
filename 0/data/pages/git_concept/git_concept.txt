@@ -9,9 +9,17 @@
 
 
 ==== 最新下载 ====
-   * {{:wiki:logo_2x.png?100*50|}}  [[http://git-scm.com/download/win|{{:wiki:download-big.png|Git for Win 最新版}}]]
+   * {{:wiki:logo_2x.png?50*20|}}  [[http://git-scm.com/download/win|{{:wiki:download-big.png|Git for Win 最新版}}]]
 
 ====版本控制====
+  * [[ git_concept:git_add_commit|git 的缓存和提交]]
+  * [[ git_concept:git_revert_reset| git 的undo 提交]]
+  * [[git_concept:git_pull_push_checkout|git 的拉、推、检出]]
+  * [[git_concept:git_master_branch_stush|git 的主干、分支、分支的分支]]
+  * [[git_concept:git_merge_rebase_ chery-pick|git 的合并、变基、挑选]]
+  * [[git_concept:git_conflict|git 的冲突]]
+  * [[git_concept:git_write_commit_log|git commit log的内容]]
+
 ====git版本号====
    * [[gitcommand:git_version_number_desc|选择git的版本号]]
    * [[gitcommand:git_version_range| git 的版本范围]]

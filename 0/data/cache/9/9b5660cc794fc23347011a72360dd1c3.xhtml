@@ -1,0 +1,125 @@
+<hr />
+
+<h3 class="sectionedit1" id="比对任意提交">比对任意提交</h3>
+<div class="level3">
+<pre class="code">    $ git diff test            &lt;1&gt;
+    $ git diff HEAD -- ./test  &lt;2&gt;
+    $ git diff HEAD^ HEAD      &lt;3&gt;</pre>
+<ul>
+<li class="level1"><div class="li"> Instead of using the tip of the current branch, compare with the tip of “test” branch.</div>
+</li>
+<li class="level1"><div class="li"> Instead of comparing with the tip of “test” branch, compare with the tip of the current branch, but limit the comparison to the file “test”.</div>
+</li>
+<li class="level1"><div class="li"> Compare the version before the last commit and the last commit.</div>
+</li>
+</ul>
+<hr />
+
+</div>
+<!-- EDIT1 SECTION "比对任意提交" [7-465] -->
+<h3 class="sectionedit2" id="比对标签">比对标签</h3>
+<div class="level3">
+<pre class="code">$ git diff v0.9</pre>
+
+<p>
+自从git 标签 v0.9 以来的变化。
+</p>
+<pre class="code">$ git diff v0.9 --stat
+ README  |    2 +-
+ ruby.rb |    4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)</pre>
+<hr />
+
+</div>
+<!-- EDIT2 SECTION "比对标签" [466-692] -->
+<h3 class="sectionedit3" id="对比分支">对比分支</h3>
+<div class="level3">
+
+<p>
+ 要比较两个不同的分支，你可以执行类似 git diff branchA branchB 的命令。 不过它的问题在于它会完完全全按你说的作 —— 它会直接给你个补丁文件，该补丁能够将甲分支的最新快照变成乙分支的最新快照的样子。 这意味着如果两个分支已经产生分歧 —— 奔往两个不同方向了 —— 它会移除甲分支中引入的所有工作，然后累加乙分支中的所有工作。 这大概不是你要的吧 —— 你想要不在甲分支中的乙分支的改动。所以你真的需要的是两个分支叉开去时，和最新的乙分支的差别。 所以，如果我们的历史记录看起来像这样：
+</p>
+<pre class="code">$ git log --graph --oneline --decorate --all
+* 594f90b (HEAD, tag: v1.0, master) reverted to old class name
+| * 1834130 (erlang) added haskell
+| * ab5ab4c added erlang
+|/
+*   8d585ea Merge branch &#039;fix_readme&#039;
+...</pre>
+
+<p>
+并且，我们想要看“erlang”分支与主分支相比的查别。执行 git diff master erlang 会给我们错误的结果。
+</p>
+<pre class="code">$ git diff --stat master erlang
+ erlang_hw.erl |    5 +++++
+ haskell.hs    |    4 ++++
+ ruby.rb       |    4 ++--
+ 3 files changed, 11 insertions(+), 2 deletions(-)</pre>
+
+<p>
+你可以看到，它加上了 erlang 和 haskell 文件，这确实是我们在该分支中做的， 但是它同时恢复了我们在主分支中改动的 ruby 文件。我们真心想要的只是“erlang”分支中的改动（添加两个文件）。 我们可以通过求两个分支分歧时的共同提交与该分支的差值得到想要的结果：
+</p>
+<pre class="code">$ git diff --stat 8d585ea erlang
+ erlang_hw.erl |    5 +++++
+ haskell.hs    |    4 ++++
+ 2 files changed, 9 insertions(+), 0 deletions(-)</pre>
+
+<p>
+这才是我们在找的，但是我们可不想要每次都要找出两个分支分歧时的那次提交。 幸运的是，Git 为此提供了一个快捷方式。 如果你执行 git diff master…erlang（在分支名之间有三个半角的点）， Git 就会自动找出两个分支的共同提交（也被成为合并基础），并求差值。
+</p>
+<pre class="code">$ git diff --stat master erlang
+ erlang_hw.erl |    5 +++++
+ haskell.hs    |    4 ++++
+ ruby.rb       |    4 ++--
+ 3 files changed, 11 insertions(+), 2 deletions(-)
+$ git diff --stat master...erlang
+ erlang_hw.erl |    5 +++++
+ haskell.hs    |    4 ++++
+ 2 files changed, 9 insertions(+), 0 deletions(-)</pre>
+
+<p>
+几乎每一次你要对比两个分支的时候，你都会想用三个点的语法，因为它通常会给你你想要的。
+顺带提一句，你还可以让 Git 手工计算两次提交的合并基础（第一个共同的祖提交），即 git merge-base 命令：
+</p>
+<pre class="code">$ git merge-base master erlang
+8d585ea6faf99facd39b55d6f6a3b3f481ad0d3d</pre>
+
+<p>
+所以你执行下面这个也跟 git diff master…erlang 一样：
+</p>
+<pre class="code">$ git diff --stat $(git merge-base master erlang) erlang
+ erlang_hw.erl |    5 +++++
+ haskell.hs    |    4 ++++
+ 2 files changed, 9 insertions(+), 0 deletions(-)</pre>
+
+<p>
+当然，我会推荐简单点的那个。
+</p>
+
+<p>
+简而言之 使用 git diff 查看某一分支自它偏离出来起与过去某一点之间项目的改动。 总是使用 git diff branchA…branchB 来查看 branchB 与 branchA 的相对差值，这会让事情简单点。 
+</p>
+<hr />
+
+</div>
+<!-- EDIT3 SECTION "对比分支" [693-4016] -->
+<h3 class="sectionedit4" id="diff时用到的参数">diff时用到的参数</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="/0/doku.php?id=wiki:git_commit_range" class="wikilink2" title="wiki:git_commit_range" rel="nofollow">比较的范围</a></div>
+</li>
+</ul>
+<hr />
+
+</div>
+<!-- EDIT4 SECTION "diff时用到的参数" [4017-4100] -->
+<h3 class="sectionedit5" id="本地仓库diff">本地仓库diff</h3>
+<div class="level3">
+<hr />
+
+</div>
+<!-- EDIT5 SECTION "本地仓库diff" [4101-4131] -->
+<h3 class="sectionedit6" id="本地与远程仓库之间diff">本地与远程仓库之间diff</h3>
+<div class="level3">
+
+</div>
+<!-- EDIT6 SECTION "本地与远程仓库之间diff" [4132-] -->

@@ -161,3 +161,10 @@ gitcommand:git_request_pull
 git_concept:merge_rebase_diff
 git_concept:git_concept
 git_concept:git_parallel_concept
+git_concept:git_add_commit
+git_concept:git_revert_reset
+git_concept:git_pull_push_checkout
+git_concept:git_master_branch_stush
+git_concept:git_merge_rebase_chery-pick
+git_concept:git_conflict
+git_concept:git_write_commit_log

@@ -117,3 +117,4 @@ gitcommand:git_request_pull
 git_concept:git_concept
 git_concept:git_parallel_concept
 git_concept:merge_rebase_diff
+git_concept:git_write_commit_log
