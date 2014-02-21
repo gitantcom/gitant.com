@@ -1,18 +1,33 @@
 
 ==== Git 官方文档 ====
-  * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|Git官方]]
-  * [[https://www.kernel.org/pub/software/scm/git/docs/|Git Manual Page ]]
+  * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|Git官方文档]]
+  * [[https://www.kernel.org/pub/software/scm/git/docs/|Git 手册 ]]
 
-====Git 文档====
+====Stackoverflow Git实践手册====
+  * [[http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide| Git最佳实践列表]]
+
+====Github 训练营====
+  * [[https://help.github.com/articles/| Github培训]]
+
+====Bitbucket训练营====
+  * [[https://www.atlassian.com/git|Bitbucket git训练营]]
+
+
+====Git  学习资源====
   * [[ http://githowto.com/ | Git How To ]]
-  * [[https://www.atlassian.com/dms/wac/images/landing/git/atlassian_git_cheatsheet.pdf | Git  命令速查卡片]]
+  * [[http://gitready.com/ | Git ready ]]
   * [[http://git-scm.com/book/zh)|Pro Git]]
   * [[http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/|Git magic]]
   * [[http://rogerdudler.github.io/git-guide/index.zh.html|Git - 简易指南]]
   * [[http://gitref.justjavac.com/|Git 参考手册]]
+  * [[http://www.ndpsoftware.com/git-cheatsheet.html|Git 命令分类培训]]
+  * [[http://www.vogella.com/tutorials/Git/article.html|Git turtoial]]
+   
+
 
 
 ====Git 练习工具====
-  *[[http://try.github.io/levels/1/challenges/1| Git 命令行在线工具]]
+
+  * [[http://try.github.io/levels/1/challenges/1 | Git 命令行在线工具]]
 ====Github上的Free书籍====
   * [[https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md|Free的中文书籍]]

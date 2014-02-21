@@ -26,23 +26,25 @@
 
 
 ==== 代码托管 ====
-  * [[git_host:git_repo_localnet|搭建Git托管]]
-  * [[git_host:git_repo_online|选择Git托管]]
+  * [[git_host:git_repo_localnet|本地托管]]
+  * [[git_host:git_repo_online|在线托管]]
 
 
 
 ==== 客户端====
-  * [[git_tools:git_client|Git 客户端]]
+  * [[git_tools:git_client|客户端]]
 
 
+==== 训练营 ====
 
-==== 文档 ====
-  * [[git_doc:git_index_folder_list|全站索引]]
-  * [[git_doc:git_reference|Git资源]]
+  * [[git_doc:git_reference|学习Git]] 
+  
+
  
                                
                                
 ==== wiki帮助 ====
+  * [[git_doc:git_index_folder_list|本站索引]]
   * [[wiki:welcome|welcome]]
   * [[wiki:syntax|syntax]]
   * [[wiki:dokuwiki|dokuwiki]]
