@@ -169,3 +169,8 @@ git_concept:git_merge_rebase_chery-pick
 git_concept:git_conflict
 git_concept:git_write_commit_log
 git_练习工具_http:try.github.io_levels_1_challenges_1
+wiki:contact
+gitcommand:git_pull
+gitcommnad:git_merge
+git_branch_model:git_rebase_workflow
+git_concept:branch_name_as_version_number

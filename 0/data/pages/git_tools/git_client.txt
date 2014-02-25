@@ -1,3 +1,7 @@
+==== 官网最新下载 ====
+   * {{:wiki:logo_2x.png?50*20|}}  [[http://git-scm.com/downloads|{{:wiki:download-big.png|Git 最新版}}]]
+
+
 ==== Windows 平台 ====
   * [[https://code.google.com/p/msysgit/ | mysysgit ]] win平台下的命令行工具
   * [[http://code.google.com/p/gitextensions/ | gitextensions]]可以和win资源管理器集成，与sysgit集成，图形化git命令。  

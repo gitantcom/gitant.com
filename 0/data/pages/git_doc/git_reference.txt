@@ -1,7 +1,7 @@
 
 ==== Git 官方文档 ====
   * [[ http://git-scm.com/book/zh/%E8%B5%B7%E6%AD%A5|Git官方文档]]
-  * [[https://www.kernel.org/pub/software/scm/git/docs/|Git 手册 ]]
+  * [[https://www.kernel.org/pub/software/scm/git/docs/|Git官方手册]]
 
 ====Stackoverflow Git实践手册====
   * [[http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide| Git最佳实践列表]]

@@ -1,0 +1,25 @@
+a:53:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:20:"git merge 和 rebase";i:1;i:3;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1;}i:3;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:30;}i:4;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:30;}i:5;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:30;}i:6;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:1:" ";}i:2;i:34;}i:7;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:1;i:1;s:7:"#008000";}i:2;i:1;i:3;s:12:"<fc #008000>";}i:2;i:35;}i:8;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:3;i:1;s:37:"git merge的流程经常是这样的 ";}i:2;i:3;i:3;s:37:"git merge的流程经常是这样的 ";}i:2;i:47;}i:9;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:4;i:1;s:4:"#ff0";}i:2;i:4;i:3;s:5:"</fc>";}i:2;i:84;}i:10;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:89;}i:11;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:89;}i:12;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:89;}i:13;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:167:"
+git commit -m "something"
+git pull   # this does a merge from origin and may add a merge commit
+git push   # Push back both my commit and the (possible) merge commit
+";i:1;N;i:2;N;}i:2;i:95;}i:14;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:271;}i:15;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:271;}i:16;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:271;}i:17;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:1:" ";}i:2;i:275;}i:18;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:1;i:1;s:7:"#800080";}i:2;i:1;i:3;s:12:"<fc #800080>";}i:2;i:276;}i:19;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:3;i:1;s:40:" git rebase 的流程经常是这样的 ";}i:2;i:3;i:3;s:40:" git rebase 的流程经常是这样的 ";}i:2;i:288;}i:20;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:4;i:1;s:4:"#ff0";}i:2;i:4;i:3;s:5:"</fc>";}i:2;i:328;}i:21;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:333;}i:22;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:333;}i:23;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:333;}i:24;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:692:"
+
+git checkout 7.x-1.x  # 本地检出项目库的公共产品分支
+git pull              # 合并项目库公共产品分支到本地产品分支
+git checkout -b comment_broken_links_101026  # 本地创建最新开发分支
+
+... # 在本地分支上开发，测试，提交......
+
+git fetch origin      # 更新远端仓库到本地仓库 origin/下
+git rebase origin/7.x-1.x  # Plop our commits on top of everybody else's
+git checkout 7.x-1.x  # 本地工作目录更换到公共分支
+git pull              # 这样做并不会产生合并提交
+git rebase comment_broken_links_101026  # 合并最新的提交到公共分支上
+git push               # 提交到项目库公共分支里
+
+";i:1;N;i:2;N;}i:2;i:340;}i:25;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:340;}i:26;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:2:"* ";}i:2;i:1042;}i:27;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:1;i:1;s:7:"#800080";}i:2;i:1;i:3;s:12:"<fc #800080>";}i:2;i:1044;}i:28;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:3;i:1;s:21:"合并与合并冲突";}i:2;i:3;i:3;s:21:"合并与合并冲突";}i:2;i:1056;}i:29;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:9:"fontcolor";i:1;a:2:{i:0;i:4;i:1;s:4:"#ff0";}i:2;i:4;i:3;s:5:"</fc>";}i:2;i:1077;}i:30;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1082;}i:31;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1082;}i:32;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:294:"执行rebase，就会产生合并冲突，git不知道如何将你的提交放在其他人已经提交的分支的头上。如果你和其他人工作在不同的目录，而且代码功能也是分离的。合并冲突就会少很多。但是，你任然需要知道如何处理合并冲突。";}i:2;i:1084;}i:33;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1378;}i:34;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1378;}i:35;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:6:"Every ";}i:2;i:1380;}i:36;a:3:{i:0;s:7:"acronym";i:1;a:1:{i:0;s:2:"OS";}i:2;i:1386;}i:37;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:219:" has good merge tools available which work beautifully with Git. Working from the command line you can use git mergetool when you have a conflict to resolve the conflict. We'll save that for another time.
+Branch Cleanup";}i:2;i:1388;}i:38;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1607;}i:39;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1607;}i:40;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:158:"You can imagine that, using this workflow, you end up with all kinds of useless, abandoned topical branches. Yes you do. From time to time, clean them up with";}i:2;i:1609;}i:41;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1773;}i:42;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:43:"
+git branch -d comment_broken_links_101026
+";i:1;N;i:2;N;}i:2;i:1773;}i:43;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1773;}i:44;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:103:"or, if you haven't ever merged the topical branch (for example, if you just used it to prepare a patch)";}i:2;i:1825;}i:45;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1934;}i:46;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:43:"
+git branch -D comment_broken_links_101026
+";i:1;N;i:2;N;}i:2;i:1934;}i:47;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1934;}i:48;a:3:{i:0;s:12:"externallink";i:1;a:2:{i:0;s:36:"http://randyfay.com/taxonomy/term/26";i:1;s:6:"原文";}i:2;i:1988;}i:49;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:0:"";}i:2;i:2035;}i:50;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2035;}i:51;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:2035;}i:52;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:2035;}}

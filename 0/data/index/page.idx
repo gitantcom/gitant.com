@@ -118,3 +118,8 @@ git_concept:git_concept
 git_concept:git_parallel_concept
 git_concept:merge_rebase_diff
 git_concept:git_write_commit_log
+wiki:contact
+gitcommand:git_pull
+gitcommnad:git_merge
+git_branch_model:git_rebase_workflow
+git_concept:branch_name_as_version_number

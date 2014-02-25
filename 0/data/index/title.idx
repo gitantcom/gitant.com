@@ -76,7 +76,7 @@ Gerrit
 modgit 工具
 Github
 搭建自己的Git代码托管仓库
-Windows 平台
+官网最新下载
 Git 官方文档
 使用git subtree集成项目到子目录
 统计每个人的提交次数
@@ -118,3 +118,8 @@ GitHub如何操作pull request？
 git分支
 rebase VS merge
 git commit log
+
+git无须合并冲突，强制与远端同步，执行pull操作?
+如何取消git merge
+git merge 和 rebase
+如何识别git中的一次提交

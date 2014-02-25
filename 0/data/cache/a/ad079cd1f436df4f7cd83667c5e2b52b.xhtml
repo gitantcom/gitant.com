@@ -1,6 +1,6 @@
 
-<h5 id="git分支比较">git分支比较</h5>
-<div class="level5">
+<h3 class="sectionedit1" id="git分支比较">git分支比较</h3>
+<div class="level3">
 <pre class="code">    $ git diff topic master    &lt;1&gt;
     $ git diff topic..master   &lt;2&gt;
     $ git diff topic...master  &lt;3&gt;</pre>
@@ -14,3 +14,16 @@
 </ul>
 
 </div>
+<!-- EDIT1 SECTION "git分支比较" [1-328] -->
+<h3 class="sectionedit2" id="git_查看本地不同分支的差异">git  查看本地不同分支的差异</h3>
+<div class="level3">
+<pre class="code">
+$ git diff --name-status master..branch
+#只查询分支之间文件状态
+
+
+$ git diff --stat --color master..branchName
+</pre>
+
+</div>
+<!-- EDIT2 SECTION "git  查看本地不同分支的差异" [329-] -->

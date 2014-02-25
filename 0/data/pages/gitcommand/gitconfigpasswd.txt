@@ -4,7 +4,7 @@
 
 HTTPS 方式保存密码
 
-OSX 用户
+<fc #800080>OSX 用户</fc>
 
 如果你的网络环境中只能使用 HTTPS 的方式，那么可以尝试安装 osxkeychain 凭据助手，并在 Git 中设置使用。注意：Git 版本要在 1.7.9 及以上才可使用。
 
@@ -52,7 +52,7 @@ Password: [enter your password]
 
 经过这样的设置之后，下次再克隆 HTTPS 地址时会询问你的用户名和密码，并授权给 OSX keychain。完成这些之后你的用户名和密码就会存储到 keychain 中，再也不会在 Git 中询问了。
 
-Windows 用户
+<fc #800080>Windows 用户</fc>
 
 如果你是 Windows 用户，那么首先可以考虑使用 GitHub for Windows，它已经包含了该助手。
 
@@ -68,7 +68,7 @@ Source 版本
 
  
 
-Linux 用户
+<fc #800080>Linux 用户</fc>
 
 Linux 用户可以使用 ‘cache’ 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）：
 
@@ -84,4 +84,6 @@ Linux 用户可以使用 ‘cache’ 认证助手包来缓存认证信息，运�
 
 参考资料：
 
-https://confluence.atlassian.com/display/STASH/Permanently+authenticating+with+Git+repositorieshttps://help.github.com/articles/set-up-git
+[[http://stackoverflow.com/questions/6031214/git-how-to-use-netrc-file-on-windows-to-save-user-and-password| 1]]
+
+[[http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146|2]]

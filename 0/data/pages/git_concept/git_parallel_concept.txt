@@ -14,9 +14,12 @@
   * [[gitcommand:merge_specify_file|如何合并某个指定文件？]]
   * [[gitcommand:merge_specify_version|如何合并某个版本的分支？]]
   * [[gitcommand:git_flow| 如何使用git flow？]]
-  * [[git_concept:merge_rebase_diff| merge和rebase的区别？]]
+ 
 
 ====git pull request===
   * [[wiki:github_howto_pull_request|github 如何pull request ?]]
   * [[git_concept:git_howto_pull_request|git 如何pull request ？]]
 
+====git rebase vs merge ====
+  * [[git_concept:merge_rebase_diff| merge和rebase的区别？]]
+  * [[git_branch_model:git_rebase_workflow| git rebase 流程]]

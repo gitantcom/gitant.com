@@ -1,9 +1,9 @@
 
 ====  命令 ====
-
   * [[git_concept:git_concept|Git基础]]
   * [[gitcommand:git_command|Git手册]]
   * [[gitcommand:git_command1|Git实例]]
+
 
 
 
@@ -44,6 +44,8 @@
                                
                                
 ==== wiki帮助 ====
+
+  * [[wiki:contact|联系]]
   * [[git_doc:git_index_folder_list|本站索引]]
   * [[wiki:welcome|welcome]]
   * [[wiki:syntax|syntax]]

@@ -1,0 +1,17 @@
+
+<h3 class="sectionedit1" id="如何取消git_merge">如何取消git merge</h3>
+<div class="level3">
+
+<p>
+git  执行reset，remerge ,rebase 时把当前的仓库提交记录由HEAD保存改为ORIG_HEAD,所以撤回合并只需要将当前指向重新返回到PRIG_HEAD就实现了。 
+</p>
+
+<p>
+多次之前的合并动作，需要先执行 git reflog查看提交时哈希值，然后回退到一个指定的哈希值。
+</p>
+<pre class="code">
+git reset --hard ORIG_HEAD
+</pre>
+
+</div>
+<!-- EDIT1 SECTION "如何取消git merge" [4-] -->

@@ -1,0 +1,45 @@
+====git merge 和 rebase ====
+  * <fc #008000>git merge的流程经常是这样的 </fc>
+<code>
+git commit -m "something"
+git pull   # this does a merge from origin and may add a merge commit
+git push   # Push back both my commit and the (possible) merge commit
+</code>
+
+  * <fc #800080> git rebase 的流程经常是这样的 </fc>
+
+<code>
+
+git checkout 7.x-1.x  # 本地检出项目库的公共产品分支
+git pull              # 合并项目库公共产品分支到本地产品分支
+git checkout -b comment_broken_links_101026  # 本地创建最新开发分支
+
+... # 在本地分支上开发，测试，提交......
+
+git fetch origin      # 更新远端仓库到本地仓库 origin/下
+git rebase origin/7.x-1.x  # Plop our commits on top of everybody else's
+git checkout 7.x-1.x  # 本地工作目录更换到公共分支
+git pull              # 这样做并不会产生合并提交
+git rebase comment_broken_links_101026  # 合并最新的提交到公共分支上
+git push               # 提交到项目库公共分支里
+
+</code>
+
+* <fc #800080>合并与合并冲突</fc>
+
+执行rebase，就会产生合并冲突，git不知道如何将你的提交放在其他人已经提交的分支的头上。如果你和其他人工作在不同的目录，而且代码功能也是分离的。合并冲突就会少很多。但是，你任然需要知道如何处理合并冲突。
+
+Every OS has good merge tools available which work beautifully with Git. Working from the command line you can use git mergetool when you have a conflict to resolve the conflict. We'll save that for another time.
+Branch Cleanup
+
+You can imagine that, using this workflow, you end up with all kinds of useless, abandoned topical branches. Yes you do. From time to time, clean them up with
+<code>
+git branch -d comment_broken_links_101026
+</code>
+or, if you haven't ever merged the topical branch (for example, if you just used it to prepare a patch)
+<code>
+git branch -D comment_broken_links_101026
+</code>
+
+
+[[http://randyfay.com/taxonomy/term/26|原文]]

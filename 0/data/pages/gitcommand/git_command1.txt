@@ -31,7 +31,7 @@
 
 ===== 分支合并 =====
   * [[gitcommand:git_branch|git branch]]
-  * git merge
+  * [[gitcommnad:git_merge|git merge]]
   * git rebase
   * git rebase -i
   * [[gitcommand:git_cherry_pick| git cherry pick ]]
@@ -54,7 +54,7 @@
   * [[gitcommand:git_push|git push]]
   * [[gitcommand:git_remote|git remote]]
   * git fetch
-  * git pull
+  * [[gitcommand:git_pull|git pull]]
   * git submodle
   * [[gitcommand:git_subtree| git_subtree]]
 =====检查和比对=====

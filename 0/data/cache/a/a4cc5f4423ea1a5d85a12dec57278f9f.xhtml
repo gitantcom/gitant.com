@@ -1,0 +1,120 @@
+
+<h2 class="sectionedit1" id="如何识别git中的一次提交">如何识别git中的一次提交</h2>
+<div class="level2">
+
+<p>
+版本控制中准确标识出某次变更是基本功能。比如，创建分支时，要选择某次提交点作为分叉点; 输入两次版本号才能比较并行开发的代码；修改git提交的历史，也需要先收集提交版本记录。git里，你确定一次提交既可以用明确的标识，也可以用相对的关系来标识。
+</p>
+
+<p>
+唯一的，40位十六进制的SHA1值是明确的标识，HEAD，在git里指的是最近一次提交，它是隐式应用。很对时候，这种方式更方便。Git提供了很多种这种隐式应用来标识一次提交。
+</p>
+
+<p>
+例如，在分布式环境的不同仓库和同事讨论一次变更提交，当让需要一个明确的版本号，在不同仓库都能明确标识变更。但是在自己的仓库，指明一个提交，就可以用简单的相对名字。在git里，哈希值是最严格的绝对命名，可以在宇宙中中指明一次变更。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "如何识别git中的一次提交" [1-967] -->
+<h3 class="sectionedit2" id="绝对命名方式">绝对命名方式</h3>
+<div class="level3">
+
+<p>
+HASH 标识是严格的绝对命名释放，唯一地宇宙中指向一次变更。HASH值相同，他们的内容就是一致的。
+</p>
+<pre class="code">    $ git log -1 --pretty=oneline HEAD    
+     1fbb58b4153e90eda08c2b022ee32d90729582e6 Merge git://repo.or.cz/git-gui     
+     
+    $ git log -1 --pretty=oneline 1fbb     
+    error: short SHA1 1fbb is ambiguous.     
+    fatal: ambiguous argument &#039;1fbb&#039;: unknown revision or path         
+    not in the working tree.
+    Use &#039;--&#039; to separate paths from revisions     
+                                   
+    $ git log -1 --pretty=oneline 1fbb58
+    1fbb58b4153e90eda08c2b022ee32d90729582e6 Merge git://repo.or.cz/git-gui 
+    
+ </pre>
+
+<p>
+另外，tag名字我们一般也任务时绝对名称，尽管tag名称不能在宇宙中使用，但每个tag名称有一个唯一的HASH1值。
+</p>
+
+</div>
+<!-- EDIT2 SECTION "绝对命名方式" [968-1827] -->
+<h3 class="sectionedit3" id="refs_和_symrefs">refs 和 symrefs</h3>
+<div class="level3">
+
+<p>
+ref（reference）是Git对象仓库内一个对象的哈希值。ref可能指向多个Git对象，通常指向一次提交对象。symref（symbolic reference）是直接指向git对象的一个名称，它任然是一个ref。 本地不同任务的分支，远端协作的分支，标签名都是 ref。每个 symrefs 有一个独有的，以 refs/开头的名字。每一个都被分级存放在 .git/refs/ 目录中。基本上refs有3个不同的命名空间：
+refs/heads/ref   标识本地分支；
+refs/remotes/ref 标识远端协作分支；
+refs/tags/ref    标识所有标签
+</p>
+
+<p>
+例如，本地有一个叫dev的分支，它简称是： refs/heads/dev。 远端协作分支可以在 refs/remotes/ 内找到它们的名字。 所以 origin/master 对应着 refs/remotes/origin/master.像v2.6.23 这样的标签， 它的SHA1值存放在 refs/tags/v2.6.23
+你可以用完整的 ref 名称，也可以用它的缩写，如果分支和标签的名称相同，Git使用如下的列表来匹配。
+</p>
+
+<p>
+     .git/ref
+</p>
+<pre class="code">   .git/refs/ref     
+   .git/refs/tags/ref     
+   .git/refs/heads/ref     
+   .git/refs/remotes/ref     
+   .git/refs/remotes/ref/HEAD
+   </pre>
+
+<p>
+The first rule is usually just for a few refs described later: HEAD, ORIG_HEAD, FETCH_HEAD, CHERRY_PICK_HEAD, and MERGE_HEAD. Technically, the name of the Git directory, .git, can be changed. Thus, Git’s internal documentation uses the variable $GIT_DIR instead of the literal .git. Git maintains several special symrefs automatically for particular purposes. They can be used anywhere a commit is used.
+</p>
+
+<p>
+HEAD<br/>
+
+HEAD always refers to the most recent commit on the current branch. When you change branches, HEAD is   updated to refer to the new branch’s latest commit.
+</p>
+
+<p>
+ORIG_HEAD<br/>
+
+Certain operations, such as merge and reset, record the previous version of HEAD in ORIG_HEAD just prior to adjusting it to a new value. You can use ORIG_HEAD to recover or revert to the previous state or to make a comparison.
+</p>
+
+<p>
+FETCH_HEAD<br/>
+
+When remote repositories are used, git fetch records the heads of all branches fetched in the file .git/FETCH_HEAD. FETCH_HEAD is a shorthand for the head of the last branch fetched and is valid only immediately after a fetch operation. Using this symref, you can find the HEAD of commits from git fetch even if an anonymous fetch that doesn’t specifically name a branch is used. The fetch operation is covered in 
+</p>
+
+<p>
+MERGE_HEAD<br/>
+
+When a merge is in progress, the tip of the other branch is temporarily recorded in the symref MERGE_HEAD. In other words, MERGE_HEAD is the commit that is being merged into HEAD. All of these symbolic references are managed by the plumbing command git symbolic-ref. 
+</p>
+
+<p>
+Although it is possible to create your own branch with one of these special symbolic names (e.g., HEAD), it isn’t a good idea. There are a whole raft of special character variants for ref names. The two most common, the caret (^) and tilde (~), are described in the next section. In another twist on refs, colons can be used to refer to alternate versions of a common file involved in a merge conflict. This procedure is described in Chapter 9.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "refs 和 symrefs" [1828-5000] -->
+<h3 class="sectionedit4" id="相对命名">相对命名</h3>
+<div class="level3">
+
+<p>
+Git also provides mechanisms for identifying a commit relative to another reference, commonly the tip of a branch. You’ve seen some of these names already, such as master and master^, where master^ always refers to the penultimate commit on the master branch. There are others as well: you can use master^^, master~2, and even a complex name like master~10^2~2^2.
+</p>
+
+<p>
+Except for the first root commit,2 each  commit is derived from at least one earlier commit and possibly many, where direct ancestors are called parent commits. For a commit to have multiple parent commits, it must be the result of a merge operation. As a result, there will be a parent commit for each branch contributing to a merge commit. Within a single generation, the caret is used to select a different parent. Given a commit C, C^1 is the first parent, C^2 is the second parent, C^3 is the third parent, and so on, as shown in Figure 6-1. Figure 6-1. Multiple parent names The tilde is used to go back before an ancestral parent and select a preceding generation. Again, given the commit C, C~1 is the first parent, C~2 is the first grandparent, and C~3 is the first great-grandparent. When there are multiple parents in a generation, the first parent of the first parent is followed. You might also notice that both C^1 and C~1 refer to the first parent; either name is correct, and is shown in Figure 6-2. Figure 6-2. Multiple parent names 2.Yes, you can actually introduce multiple root commits into a single repository. This happens, for example, when two different projects and both entire repositories are brought together and merged into one.
+</p>
+
+<p>
+Git supports other abbreviations and combinations as well. The abbreviated forms C^ and C~ are the same as C^1 and C~1, respectively. Also, C^^ is the same as C^1^1 and, because that means the “first parent of the first parent of commit C,” it refers to the same commit as C~2. By combining a ref and instances of caret and tilde, arbitrary commits may be selected from the ancestral commit graph of ref. Remember, though, that these names are relative to the current value of ref. If a new commit is made on top of ref, the commit graph is amended with a new generation and each “parent” name shifts further back in the history and graph. Here’s an example from Git’s own history when Git’s master branch was at commit 1fbb58b4153e90eda08c2b022ee32d90729582e6. Using the command:     git show-branch –more=35 and limiting the output to the final 10 lines, you can inspect the graph history and examine a complex branch merge structure:     $ git rev-parse master     1fbb58b4153e90eda08c2b022ee32d90729582e6     $ git show-branch –more=35 | tail -10     – [master~15] Merge branch &#039;maint&#039;     – [master~3^2^] Merge branch &#039;maint-1.5.4&#039; into maint     +* [master~3^2^2^] wt-status.h: declare global variables as extern     – [master~3^2~2] Merge branch &#039;maint-1.5.4&#039; into maint     – [master~16] Merge branch &#039;lt/core-optim&#039;     +* [master~16^2] Optimize symlink/directory detection     +* [master~17] rev-parse –verify: do not output anything on error     +* [master~18] rev-parse: fix using ”–default” with ”–verify”     +* [master~19] rev-parse: add test script for ”–verify”     +* [master~20] Add svn-compatible “blame” output format to git-svn     $ git rev-parse master~3^2^2^     32efcd91c6505ae28f87c0e9a3e2b3c0115017d8 Between master~15 and master~16, a merge took place that introduced a couple of other merges as well as a simple commit named master~3^2^2^. That happens to be commit 32efcd91c6505ae28f87c0e9a3e2b3c0115017d8. The command git rev-parse is the final authority on translating any form of commit name—tag, relative, shortened, or absolute—into an actual, absolute commit hash ID within the object database.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "相对命名" [5001-] -->

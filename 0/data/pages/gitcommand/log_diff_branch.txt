@@ -1,4 +1,4 @@
-==git分支比较==
+====git分支比较====
  <code >
     $ git diff topic master    <1>
     $ git diff topic..master   <2>
@@ -7,4 +7,17 @@
   * Changes between the tips of the topic and the master branches.
   * Same as above.
   * Changes that occurred on the master branch since when the topic branch was started off it.
+
+====git  查看本地不同分支的差异====
+
+<code>
+
+$ git diff --name-status master..branch
+#只查询分支之间文件状态
+
+
+$ git diff --stat --color master..branchName
+
+</code>
+
 
