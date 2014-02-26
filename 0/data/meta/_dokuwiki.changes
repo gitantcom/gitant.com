@@ -1,5 +1,3 @@
-1392693029	10.221.135.120	C	git_concept:git_write_commit_log	uahoo	创建	
-1392693073	10.221.135.120	E	git_concept:git_write_commit_log	uahoo		
 1392791876	127.0.0.1	E	gitcommand:git_command1		外部编辑	
 1392791876	127.0.0.1	E	git_concept:git_parallel_concept		外部编辑	
 1392791876	127.0.0.1	E	git_concept:git_concept		外部编辑	
@@ -51,7 +49,6 @@
 1393297972	10.221.135.74	E	git_concept:git_concept	uahoo	[Git起源发展] 	
 1393298195	10.221.135.74	E	git_concept:git_concept	uahoo		
 1393298911	10.221.135.74	E	git_concept:git_concept	uahoo	[git的配置] 	
-1387958201	127.0.0.1	E	gitcommand:gitconfigpasswd		外部编辑	
 1393299013	10.221.135.74	E	gitcommand:gitconfigpasswd	uahoo		
 1393299063	10.221.135.74	E	gitcommand:gitconfigpasswd	uahoo		
 1393299123	10.221.135.74	E	gitcommand:gitconfigpasswd	uahoo		
@@ -80,3 +77,12 @@
 1393324240	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
 1393324337	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
 1393324361	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
+1393392417	10.221.135.74	E	git_concept:git_origin	uahoo		
+1393392478	10.221.135.74	E	git_concept:git_origin	uahoo		
+1393392565	10.221.135.74	E	git_concept:git_history	uahoo		
+1393393034	10.221.135.74	E	git_concept:git_history	uahoo		
+1393393199	10.221.135.74	E	git_concept:git_history	uahoo		
+1393394842	10.221.135.74	E	git_concept:git_history	uahoo		
+1393394932	10.221.135.74	E	git_concept:git_history	uahoo		
+1393395459	10.221.135.74	E	git_concept:git_history	uahoo		
+1393395492	10.221.135.74	E	git_concept:vcs	uahoo		
