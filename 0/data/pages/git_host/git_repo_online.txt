@@ -2,3 +2,6 @@
 [[http://github.com | GitHub ]] 公开免费，私有收费,无限仓库个数。
 ====Bitbucket====
 [[http://bitbucket.com | Bitbucket ]] 私有免费，公开收费，无限仓库个数。
+
+====Git托管服务器列表====
+[[http://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities|Wikipedia上Git托管服务列表]]
