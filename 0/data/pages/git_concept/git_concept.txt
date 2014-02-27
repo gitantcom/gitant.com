@@ -5,7 +5,7 @@
 ==== git起源 ====
 
   * [[git_concept:git_origin|Git 的起源]]
-  * [[git_concept:git_history|Git的发展]]
+  * [[git_concept:git_history|Git 的发展]]
 
 
 ====git的配置====
@@ -15,9 +15,9 @@
    * [[gitcommand:gitconfigpasswd|https协议git提交如何保存密码]]
 
 ====git的版本号====
-   * [[gitcommand:git_version_number_desc|git版本号的不同形式]]
-   * [[gitcommand:git_version_range| 选择版本范围]]
-   * [[git_concept:branch_name_as_version_number|分支名称当作版本号]]
+   * [[gitcommand:git_version_number_desc|Git版本号的不同形式]]
+   * [[gitcommand:git_version_range| 选择Git版本范围]]
+   * [[git_concept:branch_name_as_version_number|Git如何标识一次变更]]
  
 
 

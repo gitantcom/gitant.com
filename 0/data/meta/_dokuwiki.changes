@@ -1,8 +1,3 @@
-1392791876	127.0.0.1	E	gitcommand:git_command1		外部编辑	
-1392791876	127.0.0.1	E	git_concept:git_parallel_concept		外部编辑	
-1392791876	127.0.0.1	E	git_concept:git_concept		外部编辑	
-1392791876	127.0.0.1	E	git_doc:git_reference		外部编辑	
-1392791876	127.0.0.1	E	sidebar		外部编辑	
 1392953485	10.221.135.65	E	git_doc:git_reference	uahoo		
 1392953671	10.221.135.65	E	git_doc:git_reference	uahoo	[Stackoverflow Git 权威实践手册] 	
 1392953800	10.221.135.65	E	git_doc:git_reference	uahoo	[Git 文档] 	
@@ -86,3 +81,13 @@
 1393394932	10.221.135.74	E	git_concept:git_history	uahoo		
 1393395459	10.221.135.74	E	git_concept:git_history	uahoo		
 1393395492	10.221.135.74	E	git_concept:vcs	uahoo		
+1393401843	10.221.135.74	E	git_concept:git_concept	uahoo	[git的版本号] 	
+1393403478	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
+1393403541	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
+1393408108	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
+1393408565	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[相对命名] 	
+1393408738	10.221.135.74	E	git_concept:git_concept	uahoo	[git起源] 	
+1393470338	10.221.135.74	E	git_doc:git_reference	uahoo	[Bitbucket训练营] 	
+1393470423	10.221.135.74	E	git_doc:git_reference	uahoo	[Github 训练营] 	
+1393470713	10.221.135.74	E	git_doc:git_reference	uahoo	[Bitbucket训练营] 	
+1393494536	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo		

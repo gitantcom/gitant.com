@@ -7,10 +7,12 @@
   * [[http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide| Git最佳实践列表]]
 
 ====Github 训练营====
-  * [[https://help.github.com/articles/| Github培训]]
+  * [[http://training.github.com/resources/videos/|Git训练视屏 ]]
+  * [[http://training.github.com/resources/presentations/|Git培训ppt]]
 
 ====Bitbucket训练营====
-  * [[https://www.atlassian.com/git|Bitbucket git训练营]]
+
+  * [[https://www.atlassian.com/git/tutorial/git-basics|Git训练营]]
 
 
 ====Git  学习资源====

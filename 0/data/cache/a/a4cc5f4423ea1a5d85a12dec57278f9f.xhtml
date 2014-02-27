@@ -68,53 +68,49 @@ refs/tags/ref    标识所有标签
    </pre>
 
 <p>
-The first rule is usually just for a few refs described later: HEAD, ORIG_HEAD, FETCH_HEAD, CHERRY_PICK_HEAD, and MERGE_HEAD. Technically, the name of the Git directory, .git, can be changed. Thus, Git’s internal documentation uses the variable $GIT_DIR instead of the literal .git. Git maintains several special symrefs automatically for particular purposes. They can be used anywhere a commit is used.
+Git 里有几个特殊名字的 symrefs，他们都有专门的意义。他们都可以用来标识一次变更的提交。
 </p>
 
 <p>
-HEAD<br/>
-
-HEAD always refers to the most recent commit on the current branch. When you change branches, HEAD is   updated to refer to the new branch’s latest commit.
+<span style="color: #008080">HEAD</span>
 </p>
 
 <p>
-ORIG_HEAD<br/>
-
-Certain operations, such as merge and reset, record the previous version of HEAD in ORIG_HEAD just prior to adjusting it to a new value. You can use ORIG_HEAD to recover or revert to the previous state or to make a comparison.
+HEAD 指的是当前分支的最新一次提交。切换分支后，它指的是新分支最新一次变更提交。
 </p>
 
 <p>
-FETCH_HEAD<br/>
-
-When remote repositories are used, git fetch records the heads of all branches fetched in the file .git/FETCH_HEAD. FETCH_HEAD is a shorthand for the head of the last branch fetched and is valid only immediately after a fetch operation. Using this symref, you can find the HEAD of commits from git fetch even if an anonymous fetch that doesn’t specifically name a branch is used. The fetch operation is covered in 
+<span style="color: #008080">ORIG_HEAD</span>
 </p>
 
 <p>
-MERGE_HEAD<br/>
-
-When a merge is in progress, the tip of the other branch is temporarily recorded in the symref MERGE_HEAD. In other words, MERGE_HEAD is the commit that is being merged into HEAD. All of these symbolic references are managed by the plumbing command git symbolic-ref. 
+执行合并(merge）和撤销(reset)操作后，合并或者撤销前的那次全量提交被标识在这里。 你可以用 ORIG_HEAD 去覆盖或者回退本分之先前的状态。
 </p>
 
 <p>
-Although it is possible to create your own branch with one of these special symbolic names (e.g., HEAD), it isn’t a good idea. There are a whole raft of special character variants for ref names. The two most common, the caret (^) and tilde (~), are described in the next section. In another twist on refs, colons can be used to refer to alternate versions of a common file involved in a merge conflict. This procedure is described in Chapter 9.
+<span style="color: #008080">FETCH_HEAD</span>
+</p>
+
+<p>
+当和远端仓库协作开发时，git 取回所有分支的更新，并存放在 .git/FETCH_HEAD。 FETCH_HEAD是快捷名称，它对应的是某分支执行fetch后，更新后的分支名称。 使用这个 symref，你可以找到git fetch后的分支的最新版。 FETCH_HEAD被合并操作覆盖，形成了MERGE_HEAD.
+</p>
+
+<p>
+<span style="color: #008080">MERGE_HEAD</span>
+</p>
+
+<p>
+当执行merger操作，.git/MERGE_HEAD里列出了需要merge进来的那个分支的最近的commit sha1 。
 </p>
 
 </div>
-<!-- EDIT3 SECTION "refs 和 symrefs" [1828-5000] -->
+<!-- EDIT3 SECTION "refs 和 symrefs" [1828-4007] -->
 <h3 class="sectionedit4" id="相对命名">相对命名</h3>
 <div class="level3">
 
 <p>
-Git also provides mechanisms for identifying a commit relative to another reference, commonly the tip of a branch. You’ve seen some of these names already, such as master and master^, where master^ always refers to the penultimate commit on the master branch. There are others as well: you can use master^^, master~2, and even a complex name like master~10^2~2^2.
-</p>
-
-<p>
-Except for the first root commit,2 each  commit is derived from at least one earlier commit and possibly many, where direct ancestors are called parent commits. For a commit to have multiple parent commits, it must be the result of a merge operation. As a result, there will be a parent commit for each branch contributing to a merge commit. Within a single generation, the caret is used to select a different parent. Given a commit C, C^1 is the first parent, C^2 is the second parent, C^3 is the third parent, and so on, as shown in Figure 6-1. Figure 6-1. Multiple parent names The tilde is used to go back before an ancestral parent and select a preceding generation. Again, given the commit C, C~1 is the first parent, C~2 is the first grandparent, and C~3 is the first great-grandparent. When there are multiple parents in a generation, the first parent of the first parent is followed. You might also notice that both C^1 and C~1 refer to the first parent; either name is correct, and is shown in Figure 6-2. Figure 6-2. Multiple parent names 2.Yes, you can actually introduce multiple root commits into a single repository. This happens, for example, when two different projects and both entire repositories are brought together and merged into one.
-</p>
-
-<p>
-Git supports other abbreviations and combinations as well. The abbreviated forms C^ and C~ are the same as C^1 and C~1, respectively. Also, C^^ is the same as C^1^1 and, because that means the “first parent of the first parent of commit C,” it refers to the same commit as C~2. By combining a ref and instances of caret and tilde, arbitrary commits may be selected from the ancestral commit graph of ref. Remember, though, that these names are relative to the current value of ref. If a new commit is made on top of ref, the commit graph is amended with a new generation and each “parent” name shifts further back in the history and graph. Here’s an example from Git’s own history when Git’s master branch was at commit 1fbb58b4153e90eda08c2b022ee32d90729582e6. Using the command:     git show-branch –more=35 and limiting the output to the final 10 lines, you can inspect the graph history and examine a complex branch merge structure:     $ git rev-parse master     1fbb58b4153e90eda08c2b022ee32d90729582e6     $ git show-branch –more=35 | tail -10     – [master~15] Merge branch &#039;maint&#039;     – [master~3^2^] Merge branch &#039;maint-1.5.4&#039; into maint     +* [master~3^2^2^] wt-status.h: declare global variables as extern     – [master~3^2~2] Merge branch &#039;maint-1.5.4&#039; into maint     – [master~16] Merge branch &#039;lt/core-optim&#039;     +* [master~16^2] Optimize symlink/directory detection     +* [master~17] rev-parse –verify: do not output anything on error     +* [master~18] rev-parse: fix using ”–default” with ”–verify”     +* [master~19] rev-parse: add test script for ”–verify”     +* [master~20] Add svn-compatible “blame” output format to git-svn     $ git rev-parse master~3^2^2^     32efcd91c6505ae28f87c0e9a3e2b3c0115017d8 Between master~15 and master~16, a merge took place that introduced a couple of other merges as well as a simple commit named master~3^2^2^. That happens to be commit 32efcd91c6505ae28f87c0e9a3e2b3c0115017d8. The command git rev-parse is the final authority on translating any form of commit name—tag, relative, shortened, or absolute—into an actual, absolute commit hash ID within the object database.
+Git 提供了用”^”和“~”的符号标识末次全量提交的快照。你可能见过master和master^。比如master^指的是到master分支上的倒数第二次提交。
 </p>
 
 </div>
-<!-- EDIT4 SECTION "相对命名" [5001-] -->
+<!-- EDIT4 SECTION "相对命名" [4008-] -->
