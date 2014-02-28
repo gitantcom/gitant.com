@@ -1,5 +1,84 @@
+====git中如何合并某个指定文件？====
+
+分支A_bracn和B_branch，只想将A_branch分支的某个文件f.txt合并到B_branch分支上。
+<code bash>
+	
+$git checkout A_branch
+      
+$git checkout --patch B_branch f.txt
+</code>
+第一个命令： 切换到A分支；
+
+第二个命令：合并B分支上f文件到A分支上，将B分支上 f 文件追加补丁到A分支上 f文件。你可以接受或者拒绝补丁内容。
 
 
+
+如果只是简单的将A_branch分支的文件f.txt copy到B_branch分支上；
+
+<code bash>
+	
+$git checkout B_branch
+$cd path/to/f.txt
+$git checkout A_bracn  f.txt
+</code>
+
+
+====如何合并某个版本的分支？====
+ 
+
+在本地 master 分支上做了一个commit ( 38361a68138140827b31b72f8bbfd88b3705d77a ) ， 如何把它放到 本地 old_cc 分支上？
+----
+
+办法之一： 使用 cherry-pick.  根据git 文档：
+
+Apply the changes introduced by some existing commits
+
+就是对已经存在的commit 进行apply (可以理解为再次提交）
+
+简单用法：
+
+    git cherry-pick <commit id>
+
+
+
+例如：
+<code >
+$ git checkout old_cc
+$ git cherry-pick 38361a68     # 这个 38361a68 号码，位于：
+</code>
+<code> 
+
+    $ git log
+
+    commit 38361a68138140827b31b72f8bbfd88b3705d77a
+    Author: Siwei Shen <siwei.shen@focusbeijing.com>
+    Date:   Sat Dec 10 00:09:44 2011 +0800
+</code>
+
+1. 如果顺利，就会正常提交。结果：
+<code>
+    Finished one cherry-pick.
+    # On branch old_cc
+    # Your branch is ahead of 'origin/old_cc' by 3 commits.
+</code>
+
+2. 如果在cherry-pick 的过程中出现了冲突
+<code>
+    Automatic cherry-pick failed.  After resolving the conflicts,
+    mark the corrected paths with 'git add <paths>' or 'git rm <paths>'
+    and commit the result with:
+
+            git commit -c 15a2b6c61927e5aed6718de89ad9dafba939a90b
+
+</code>
+就跟普通的冲突一样，手工解决：
+<code>
+ $ git status    # 看哪些文件出现冲突
+ both modified:      app/models/user.rb
+ $ vim app/models/user.rb  # 手动解决它。
+ $ git add app/models/user.rb
+ git commit -c <新的commit号码>
+</code>
 
 ====如何取消git merge====
 git  执行reset，remerge ,rebase 时把当前的仓库提交记录由HEAD保存改为ORIG_HEAD,所以撤回合并只需要将当前指向重新返回到PRIG_HEAD就实现了。 

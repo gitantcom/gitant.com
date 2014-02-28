@@ -1,3 +1,5 @@
 1388052533	10.221.135.120	C	gitcommand:merge_specify_file	uahoo	创建	
 1388052571	10.221.135.120	E	gitcommand:merge_specify_file	uahoo		
 1388052587	10.221.135.120	E	gitcommand:merge_specify_file	uahoo		
+1388116323	127.0.0.1	E	gitcommand:merge_specify_file		外部编辑	
+1393556546	10.221.135.74	D	gitcommand:merge_specify_file	uahoo	移除	

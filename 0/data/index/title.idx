@@ -38,8 +38,8 @@ git 如何检出变更文件？
 
 
 
-git中如何合并某个指定文件？
-如何合并某个版本的分支？
+
+
 如何合并两个仓库？
 Git命令实例
 git log 日常用法
@@ -120,6 +120,7 @@ rebase VS merge
 git commit log
 
 git无须合并冲突，强制与远端同步，执行pull操作?
-如何取消git merge
+git中如何合并某个指定文件？
 git merge 和 rebase
 如何识别git中的一次提交
+Git克隆所有远程分支

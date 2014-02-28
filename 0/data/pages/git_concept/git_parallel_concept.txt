@@ -1,10 +1,10 @@
 ====git分支====
-  * [[git_branch_model:git_branch_style|分支]]
+  * [[git_branch_model:git_branch_style|分支类型]]
+  * [[gitcommand:git_flow| git-flow的分支类型]]
 
 
 ====git 创建分支====
-  * [[git_concept:git_local_branch|本地分支]] 
-  * [[git_concept:git_remote_branch|远程分支]]
+  * [[git_concept:git_create_all_remote_branch|Git克隆所有远程分支]]
  
 
 ====git 分支合并====
@@ -13,7 +13,7 @@
   * [[git_branch_model:git_pull_rebase|合并主干到分支]]
   * [[gitcommand:merge_specify_file|如何合并某个指定文件？]]
   * [[gitcommand:merge_specify_version|如何合并某个版本的分支？]]
-  * [[gitcommand:git_flow| 如何使用git flow？]]
+
  
 
 ====git pull request===

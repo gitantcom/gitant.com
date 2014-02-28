@@ -1,0 +1,69 @@
+
+<h3 class="sectionedit1" id="git克隆所有远程分支">Git克隆所有远程分支</h3>
+<div class="level3">
+
+<p>
+克隆一个git仓库后，本地发现只有master分支，其余的分支呢？
+</p>
+
+<p>
+先克隆远程仓库:
+</p>
+<pre class="code">
+$ git clone git://example.com/myproject
+$ cd myproject</pre>
+
+<p>
+查看本地分支:
+</p>
+<pre class="code">$ git branch
+* master</pre>
+
+<p>
+只有一个缺省的master分支，远程分支都隐藏起来了。可以用 -a 参数参看远程分支:
+</p>
+<pre class="code">
+$ git branch -a
+* master
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/v1.0-stable
+  remotes/origin/experimental</pre>
+
+<p>
+如果只是想浏览下远端分支的内容，直接检出就可以：
+</p>
+<pre class="code">$ git checkout origin/experimental</pre>
+
+<p>
+但是，想修改分支上的内容，就需要创建本地跟踪分支：
+</p>
+<pre class="code">$ git checkout -b experimental origin/experimental</pre>
+
+<p>
+Now, if you look at your local branches, this is what you&#039;ll see:
+现在再查看本地分支，就能看到两个分支了：
+</p>
+<pre class="code">$ git branch
+* experimental
+  master</pre>
+
+<p>
+其他远程仓库的分支也需要先添加跟踪：
+</p>
+<pre class="code">$ git remote add win32 git://example.com/users/joe/myproject-win32-port
+$ git branch -a
+* master
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/v1.0-stable
+  remotes/origin/experimental
+  remotes/win32/master
+  remotes/win32/new-widgets</pre>
+
+<p>
+可以用gitk图示分支的关系：
+</p>
+<pre class="code">$ gitk --all &amp;</pre>
+
+</div>
