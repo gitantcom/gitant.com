@@ -1,2 +1,5 @@
 1390836897	10.212.40.205	C	gitcommand:git_push	uahoo	创建	
 1392372770	10.221.135.120	E	gitcommand:git_push	uahoo		
+1392791876	127.0.0.1	E	gitcommand:git_push		外部编辑	
+1393836819	10.221.135.103	E	gitcommand:git_push	uahoo		
+1393836872	10.221.135.103	E	gitcommand:git_push	uahoo	[删除远端分支] 	

@@ -1,20 +1,3 @@
-1392953485	10.221.135.65	E	git_doc:git_reference	uahoo		
-1392953671	10.221.135.65	E	git_doc:git_reference	uahoo	[Stackoverflow Git 权威实践手册] 	
-1392953800	10.221.135.65	E	git_doc:git_reference	uahoo	[Git 文档] 	
-1392953880	10.221.135.65	E	sidebar	uahoo		
-1392953974	10.221.135.65	E	sidebar	uahoo		
-1392954056	10.221.135.65	E	sidebar	uahoo		
-1392954120	10.221.135.65	E	sidebar	uahoo		
-1392954966	10.221.135.65	E	git_doc:git_reference	uahoo	[Git 互联网资源] 	
-1392955736	10.221.135.65	E	git_doc:git_reference	uahoo		
-1392956007	10.221.135.65	E	git_doc:git_reference	uahoo	[Git  学习资源] 	
-1392956128	10.221.135.65	E	git_doc:git_reference	uahoo	[Git  学习资源] 	
-1392956309	10.221.135.65	E	git_doc:git_reference	uahoo		
-1392956390	10.221.135.65	E	sidebar	uahoo		
-1392973358	10.221.135.65	E	sidebar	uahoo		
-1392975367	10.221.135.65	E	gitcommand:log_diff_branch	uahoo		
-1392975995	10.221.135.65	E	gitcommand:log_diff_branch	uahoo	[git  查看本地不同分支的差异] 	
-1392976792	10.221.135.65	E	gitcommand:log_diff_branch	uahoo	[git  查看本地不同分支的差异] 	
 1393215524	10.221.135.74	E	sidebar	uahoo	[wiki帮助] 	
 1393215624	10.221.135.74	C	wiki:contact	uahoo	创建	
 1393215656	10.221.135.74	E	sidebar	uahoo	[wiki帮助] 	
@@ -81,6 +64,7 @@
 1393394932	10.221.135.74	E	git_concept:git_history	uahoo		
 1393395459	10.221.135.74	E	git_concept:git_history	uahoo		
 1393395492	10.221.135.74	E	git_concept:vcs	uahoo		
+1393401400	127.0.0.1	E	wiki:contact		外部编辑	
 1393401843	10.221.135.74	E	git_concept:git_concept	uahoo	[git的版本号] 	
 1393403478	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
 1393403541	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
@@ -91,10 +75,8 @@
 1393470423	10.221.135.74	E	git_doc:git_reference	uahoo	[Github 训练营] 	
 1393470713	10.221.135.74	E	git_doc:git_reference	uahoo	[Bitbucket训练营] 	
 1393494536	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo		
-1388116323	127.0.0.1	E	gitcommand:merge_specify_file		外部编辑	
 1393556546	10.221.135.74	D	gitcommand:merge_specify_file	uahoo	移除	
 1393556563	10.221.135.74	E	gitcommnad:git_merge	uahoo		
-1388116323	127.0.0.1	E	gitcommand:merge_specify_version		外部编辑	
 1393556588	10.221.135.74	D	gitcommand:merge_specify_version	uahoo	移除	
 1393556610	10.221.135.74	E	gitcommnad:git_merge	uahoo		
 1393556671	10.221.135.74	E	gitcommnad:git_merge	uahoo	[如何合并某个版本的分支？] 	
@@ -105,3 +87,27 @@
 1393557945	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 创建分支] 	
 1393557990	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 创建分支] 	
 1393559294	10.221.135.74	C	git_concept:git_create_all_remote_branch	uahoo	创建	
+1393565961	10.221.135.74	D	wiki:contact	uahoo	移除	
+1393568128	10.221.135.74	E	git_concept:git_concept	uahoo		
+1393568425	10.221.135.74	E	git_concept:git_write_commit_log	uahoo		
+1393568469	10.221.135.74	E	git_concept:git_write_commit_log	uahoo		
+1393568501	10.221.135.74	E	git_concept:git_write_commit_log	uahoo		
+1393577420	10.221.135.74	E	gitcommand:git_log_stage	uahoo		
+1393577559	10.221.135.74	E	gitcommand:git_log_stage	uahoo		
+1393579766	10.221.135.74	E	gitcommand:git_commit	uahoo		
+1393579934	10.221.135.74	E	gitcommand:git_commit	uahoo		
+1393579945	10.221.135.74	E	gitcommand:git_commit	uahoo	[修改刚才提交的commit log] 	
+1393580066	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 分支合并] 	
+1393580412	10.221.135.74	C	gitcommand:merge_diverged_branch	uahoo	创建	
+1393581148	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 分支合并] 	
+1393581255	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 分支合并] 	
+1393581307	10.221.135.74	C	gitcommand:merge_diverged_detached	uahoo	创建	
+1393582688	10.221.135.74	E	git_concept:git_parallel_concept	uahoo	[git 分支合并] 	
+1392791876	127.0.0.1	E	gitcommand:git_command		外部编辑	
+1393836593	10.221.135.103	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
+1393836623	10.221.135.103	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
+1392791876	127.0.0.1	E	gitcommand:git_push		外部编辑	
+1393836819	10.221.135.103	E	gitcommand:git_push	uahoo		
+1393836872	10.221.135.103	E	gitcommand:git_push	uahoo	[删除远端分支] 	
+1393839132	10.221.135.103	E	sidebar	uahoo		
+1393839153	10.221.135.103	E	sidebar	uahoo	[命令] 	

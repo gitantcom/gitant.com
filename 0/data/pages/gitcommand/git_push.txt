@@ -27,4 +27,9 @@ $ git remote set-url remote URL
   $ git push --tags
   </code>
 
+====删除远端分支====
+<code bash>
+$git ls-remote origin #//查看远端分支是否存在
+$git push origin --delete branch_name  #//删除远端分支 branch_name
+</code>
   

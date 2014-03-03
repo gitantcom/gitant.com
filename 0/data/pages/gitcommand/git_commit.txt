@@ -4,3 +4,16 @@ $ git commit -a # the -a flag pulls in all modified files
 </code>
 不包括新文件。新文件需要执行git add 。
 
+====修改刚才提交的commit log====
+<code>
+$ git commit --ammend
+</code>
+修改commit log的内容。
+
+
+====HEAD标识处于分离状态时的提交操作====
+
+
+当HEAD处于分离状态（不依附于任一分支）时，提交操作可以正常进行，但是不会更新任何已命名的分支。(你可以认为这是在更新一个匿名分支。)
+
+一旦此后你切换到别的分支，比如说master，那么这个提交节点（可能）再也不会被引用到，然后就会被丢弃掉了。

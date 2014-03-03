@@ -126,3 +126,7 @@ $ git log --name-status
 $ git log --stat
 </code>
 ----
+====git log 图示版本演进====
+<code>
+git log --graph --pretty=oneline --abbrev-commit
+</code>

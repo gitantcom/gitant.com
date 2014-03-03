@@ -14,18 +14,20 @@
    * [[gitcommand:gitcommitname|Git的版本号]]
    * [[gitcommand:gitconfigpasswd|https协议git提交如何保存密码]]
 
+
+====git的3种状态====
+  * [[git_concept:git_three_stage| git 的3种工作状态]]
+
+
 ====git的版本号====
    * [[gitcommand:git_version_number_desc|Git版本号的不同形式]]
    * [[gitcommand:git_version_range| 选择Git版本范围]]
    * [[git_concept:branch_name_as_version_number|Git如何标识一次变更]]
  
 
-
-====git的3种状态====
-  * [[git_concept:git_three_stage| git 的3种工作状态]]
-
 ====git的commit log====
   * [[git_concept:git_write_commit_log|git commit log的内容]]
+
 
 
 ====git的合并====

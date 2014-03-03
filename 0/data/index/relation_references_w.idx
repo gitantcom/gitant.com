@@ -175,3 +175,5 @@ gitcommnad:git_merge
 git_branch_model:git_rebase_workflow
 git_concept:branch_name_as_version_number
 git_concept:git_create_all_remote_branch
+gitcommand:merge_diverged_branch
+gitcommand:merge_diverged_detached

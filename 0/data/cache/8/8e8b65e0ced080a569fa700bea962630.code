@@ -1,0 +1,2 @@
+$ <span class="kw2">git ls-remote</span> origin <span class="co0">#查看远端分支是否存在</span>
+<span class="re1">$git</span> push origin <span class="re5">--delete</span> <span class="sy0">//</span> branch_name<span class="sy0">//</span>  <span class="co0">#删除远端分支 //branch_name//</span>
