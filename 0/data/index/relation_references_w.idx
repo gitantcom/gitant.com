@@ -177,3 +177,8 @@ git_concept:branch_name_as_version_number
 git_concept:git_create_all_remote_branch
 gitcommand:merge_diverged_branch
 gitcommand:merge_diverged_detached
+git_concept:git_object_desc
+gitcommand:git_status
+gitcommand:git_rm
+gitcommand:git_revert
+gitcommand:git_clean

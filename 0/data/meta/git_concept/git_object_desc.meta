@@ -1,0 +1,12 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1393903798;s:8:"modified";i:1393904298;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1393904298;s:2:"ip";s:14:"10.221.135.103";s:4:"type";s:1:"E";s:2:"id";s:27:"git_concept:git_object_desc";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:18:"git的存储对象";s:11:"description";a:2:{s:15:"tableofcontents";a:1:{i:0;a:4:{s:3:"hid";s:18:"git的存储对象";s:5:"title";s:18:"git的存储对象";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:665:"git的存储对象
+
+每个对象都由三个东东组成：type，size，content。size当然是content的size了，而content却是依赖于这个对象是个什么type了。而type又有四类：“blob”，”tree”, “commit”, “tag”。 
+
+ #通常被用来存储文件数据，一般是个文件。 
+
+ #基本上像个目录结构，比如x / yyy  
+
+ #它指向一个单独的tree，它标记了一个时刻的项目的面貌，#就像给这个project照了个快照一样。
+#它包含那个时刻的元信息，例如时间戳，改变本次提交的作者，前一个提交的指向标等等。
+
+ #专门用来指定某些特殊行为的commits。…";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1393903798;s:8:"modified";i:1393904298;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1393904298;s:2:"ip";s:14:"10.221.135.103";s:4:"type";s:1:"E";s:2:"id";s:27:"git_concept:git_object_desc";s:4:"user";s:5:"uahoo";s:3:"sum";s:0:"";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

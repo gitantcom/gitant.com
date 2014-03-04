@@ -1,4 +1,4 @@
-----
+
 ====git log 日常用法====
   * 只是显示sha版本号和commit log
 <code>

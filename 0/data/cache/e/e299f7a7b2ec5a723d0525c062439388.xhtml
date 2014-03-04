@@ -1,0 +1,20 @@
+
+<h3 class="sectionedit1" id="git的存储对象">git的存储对象</h3>
+<div class="level3">
+
+<p>
+每个对象都由三个东东组成：type，size，content。size当然是content的size了，而content却是依赖于这个对象是个什么type了。而type又有四类：“blob”，”tree”, “commit”, “tag”。 
+</p>
+
+<p>
+<span style="color: #00FF00">blob</span> #通常被用来存储文件数据，一般是个文件。 <br/>
+
+<span style="color: #00FF00">tree</span> #基本上像个目录结构，比如x / yyy  <br/>
+
+<span style="color: #00FF00">commit</span> #它指向一个单独的tree，它标记了一个时刻的项目的面貌，#就像给这个project照了个快照一样。<br/>
+#它包含那个时刻的元信息，例如时间戳，改变本次提交的作者，前一个提交的指向标等等。<br/>
+
+<span style="color: #00FF00">tag</span> #专门用来指定某些特殊行为的commits。
+</p>
+
+</div>

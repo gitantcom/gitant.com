@@ -126,3 +126,8 @@ git merge 和 rebase
 Git克隆所有远程分支
 分离分支的情况
 detached HEAD 和 diverged HEAD
+git的存储对象
+查看工作目录的变更
+git rm
+
+

@@ -13,8 +13,8 @@
 =====暂存与快照=====
   * [[gitcommand:git_add|git add]]
   * [[gitcommand:git_commit|git commit ]]
-  * git status
-  * git rm
+  * [[gitcommand:git_status|git status ]]
+  * [[gitcommand:git_rm| git rm]]
   * [[gitcommand:git_short_log| git shortlog]]
   * git show
   * [[gitcommand:git_stash|git stash]]
@@ -22,9 +22,9 @@
 ===== 撤销变更 =====
 
   * [[gitcommand:git_checkout|git checkout]] 
-  * git revert
+  * [[gitcommand:git_revert| git revert]]
   * [[gitcommand:git_rest|git reset]]
-  * git clean
+  * [[gitcommand:git_clean| git clean]]
 
 
 
