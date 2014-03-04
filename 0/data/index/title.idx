@@ -131,3 +131,7 @@ git的存储对象
 git rm
 
 
+git fetch
+
+git 修改最新提交的commit log
+git 查看每次提交变更内容

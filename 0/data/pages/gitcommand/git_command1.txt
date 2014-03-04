@@ -18,6 +18,7 @@
   * [[gitcommand:git_short_log| git shortlog]]
   * git show
   * [[gitcommand:git_stash|git stash]]
+  * [[gitcommand:git_whatchanged| git whatchanged ]]
 
 ===== 撤销变更 =====
 
@@ -44,8 +45,8 @@
 
 
 ===== 修改历史=====
-  * git commit --amend
-  * git reflog
+  * [[gitcommand:git_commit_amend| git commit --amend]]
+  * [[gitcommand:git_reflog|git reflog]]
 
 
 
@@ -53,20 +54,20 @@
 ===== 分享与更新=====
   * [[gitcommand:git_push|git push]]
   * [[gitcommand:git_remote|git remote]]
-  * git fetch
+  * [[gitcommand:git_fetch| git fetch]]
   * [[gitcommand:git_pull|git pull]]
   * git submodle
   * [[gitcommand:git_subtree| git_subtree]]
 =====检查和比对=====
   * [[gitcommand:git_log_stage| git log]]
   * [[gitcommand:git_diff_stage| git diff]]
-  * git  log 
   * [[ gitcommand:git_diff_arbitrary|git  diff]]
-  * git shortlog
+  * [[gitcommand:git_short_log |git shortlog]]
   * [[gitcommand:git_rev_list| git revlist]]
   * [[gitcommand:git_rev_parse| git rev-parse]]
-  * git describ
-  * gitx
+  * [[gitcommand:git_describe |git describe ]]
+  * gitk
+  * gui
 
 
 

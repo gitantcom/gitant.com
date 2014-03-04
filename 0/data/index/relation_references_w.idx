@@ -182,3 +182,9 @@ gitcommand:git_status
 gitcommand:git_rm
 gitcommand:git_revert
 gitcommand:git_clean
+gitcommand:git_fetch
+gitcommand:git_reflog
+gitcommand:git_shortlog
+gitcommand:git_describe
+gitcommand:git_commit_amend
+gitcommand:git_whatchanged

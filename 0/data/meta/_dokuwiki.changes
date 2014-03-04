@@ -96,3 +96,15 @@
 1393907474	10.221.135.103	C	gitcommand:git_revert	uahoo	创建	
 1393907549	10.221.135.103	E	gitcommand:git_command1	uahoo	[撤销变更] 	
 1393907583	10.221.135.103	C	gitcommand:git_clean	uahoo	创建	
+1393912822	10.221.135.103	E	gitcommand:git_command1	uahoo	[分享与更新] 	
+1393912890	10.221.135.103	C	gitcommand:git_fetch	uahoo	创建	
+1393912980	10.221.135.103	E	gitcommand:git_fetch	uahoo		
+1393913338	10.221.135.103	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1393913491	10.221.135.103	E	gitcommand:git_command1	uahoo	[修改历史] 	
+1393913556	10.221.135.103	C	gitcommand:git_reflog	uahoo	创建	
+1393925440	10.221.135.103	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1393925467	10.221.135.103	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1393925517	10.221.135.103	E	gitcommand:git_command1	uahoo	[修改历史] 	
+1393925560	10.221.135.103	C	gitcommand:git_commit_amend	uahoo	创建	
+1393926122	10.221.135.103	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
+1393926384	10.221.135.103	C	gitcommand:git_whatchanged	uahoo	创建	

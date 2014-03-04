@@ -1,0 +1,1 @@
+ git reflog 可以查看每个改动,包括已经执行 reset 操作的记录，均能在reflog中发现。
