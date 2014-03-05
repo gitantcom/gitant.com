@@ -1,3 +1,15 @@
 1390836965	10.212.40.205	C	gitcommand:git_remote	uahoo	创建	
 1391830793	10.221.135.120	E	gitcommand:git_remote	uahoo		
 1391830949	10.221.135.120	E	gitcommand:git_remote	uahoo	[设置跟踪远端分支和取消跟踪远端分支] 	
+1393986126	10.221.135.103	E	gitcommand:git_remote	uahoo		
+1393987153	10.221.135.103	E	gitcommand:git_remote	uahoo		
+1393989822	10.221.135.103	E	gitcommand:git_remote	uahoo		
+1393989858	10.221.135.103	E	gitcommand:git_remote	uahoo	[本地非克隆仓库推送到远端仓库] 	
+1393991053	10.221.135.103	E	gitcommand:git_remote	uahoo	[本地仓库推送分支到新远端仓库] 	
+1393991075	10.221.135.103	E	gitcommand:git_remote	uahoo	[本地分支备份到远端仓库] 	
+1393991146	10.221.135.103	E	gitcommand:git_remote	uahoo	[本地分支备份到远端仓库] 	
+1393991189	10.221.135.103	E	gitcommand:git_remote	uahoo	[本地分支备份到远端仓库] 	
+1393991231	10.221.135.103	E	gitcommand:git_remote	uahoo		
+1393992262	10.221.135.103	E	gitcommand:git_remote	uahoo		
+1393997746	10.221.135.103	E	gitcommand:git_remote	uahoo	[查看本地分支和远程分支之间的跟踪关系] 	
+1393997762	10.221.135.103	E	gitcommand:git_remote	uahoo	[查看本地分支和远程分支之间的跟踪关系] 	

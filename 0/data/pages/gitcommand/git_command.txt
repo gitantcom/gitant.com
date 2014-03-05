@@ -10,28 +10,28 @@
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-diff.html| git-diff(1)]]和[[https://www.kernel.org/pub/software/scm/git/docs/git-status.html|git-status(1)]]查看你正在做什么。 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-commit.html|git-commit(1)]]将内容推进现分支 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-reset.html|git-reset(1)]]和[[https://www.kernel.org/pub/software/scm/git/docs/git-checkout.html|git-checkout(1)]]（带路径名 参数）放弃修改。 
-  * [[https://www.kernel.org/pub/software/scm/git/docs/git-merge.html|git-merge(1)]]用来合并本地分支 
-  *[[https://www.kernel.org/pub/software/scm/git/docs/git-rebase.html| git-rebase(1)]]用来维护主题分支 
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-tag.html| git-tag(1)]]用来给已知点打标签 
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html| git-rev-parse(1)]] 查询对象的SHA值
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-stash.html| git-stash(1)]] 保存未提交变更，清除工作目录
-  *[[https://www.kernel.org/pub/software/scm/git/docs/git-request-pull.html | git-request-pull]] 发起合并请求，代码评审
+
     
 
    
 
 
 ===== 个人开发者（参与开发）=====
-作为在一个团体项目里参与角色的开发人员，需要学习如何与他人沟通，除了那些单独开发者需要掌握的命令以外，还要使用这些命令。 
+作为在一个团体项目里参与角色的开发人员，需要学习如何与他人协作开发，除了那些单独开发者需要掌握的命令以外，还要使用这些命令。 
 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-clone.html|git-clone(1)]]从上游代码库填充你的本地代码库。
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-pull.html|git-pull(1)]]和[[https://www.kernel.org/pub/software/scm/git/docs/git-fetch.html|git-fetch(1)]]从“origin”得到最新的上游代码库。 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-push.html|git-push(1)]]用来共享代码库，如果你采用cvs风格的代码库工作流的话。 
-  * [[https://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html| git-ls-remote(1) 用来读取远端仓库的分支、标签信息]]
+  * [[https://www.kernel.org/pub/software/scm/git/docs/git-merge.html|git-merge(1)]]用来合并本地分支 
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-rebase.html| git-rebase(1)]]用来维护主题分支 
+  * [[https://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html| git-ls-remote(1)]] 用来读取远端仓库的分支、标签信息 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-format-patch.html|git-format-patch(1)]]用来准备e-mail提交，如果你使用Linux内核风格的公共论坛工作流的话。 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-whatchanged.html| git-whatchanged(1)]]  每次提交的变更内容
-
-
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-request-pull.html | git-request-pull(1)]] 发起合并请求，代码评审
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-blame.html| git-blame(1)]] 查看某个文件的修改时间和修改者的列表。
 
 
 ===== 集成人员=====

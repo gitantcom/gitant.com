@@ -135,3 +135,5 @@ gitcommand:git_fetch
 gitcommand:git_reflog
 gitcommand:git_commit_amend
 gitcommand:git_whatchanged
+gitcommand:git_merge
+git_concept:git_track_remote_branch

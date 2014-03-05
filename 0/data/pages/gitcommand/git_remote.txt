@@ -1,20 +1,12 @@
------
+
 ==== Git remote ==== 
  
 
- 
-  * 如何修改远端git仓库 remote 的url地址？
-
-<code bash>
-$ git remote set-url remote URL
-</code>
-
-----
- ==== 添加一个远端仓库到一个已经存在的git仓库上？====
+==== 添加一个远端仓库到一个已经存在的git仓库上？====
 <code bash>
 $ git remote add --track master origin  https://github.com/user/repo.git
 </code>
-----
+
 ==== 设置跟踪远端分支和取消跟踪远端分支====
 <code>
 $ git remote set-url remote URL
@@ -22,3 +14,27 @@ $ git remote set-url remote URL
 $ git remote set-url remote URL
 #取消跟踪远端分支
 </code>
+====本地分支备份到远端仓库====
+
+  * 本地添加远端仓库名称 “github”
+<code bash>
+$ git remote  add  https://github.com/uahoo/git_test.git
+</code>
+
+  * 将本地分支branch_4 备份到 github上
+
+<code>
+$ git push -u github branch_4
+Username for 'https://github.com': 
+Password for 'https://uahoo@outlook.com@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/uahoo/git_test.git
+ * [new branch]      branch_4 -> branch_4
+Branch branch_4 set up to track remote branch branch_4 from github.
+</code>
+
+====查看本地分支和远程分支之间的跟踪关系====
+<code>
+$ git remote show remote_repo
+ </code>
+ 

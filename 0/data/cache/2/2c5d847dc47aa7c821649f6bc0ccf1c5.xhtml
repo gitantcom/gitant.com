@@ -1,0 +1,110 @@
+
+<h3 class="sectionedit1" id="git中如何合并某个指定文件">git中如何合并某个指定文件？</h3>
+<div class="level3">
+
+<p>
+分支A_bracn和B_branch，只想将A_branch分支的某个文件f.txt合并到B_branch分支上。
+</p>
+<pre class="code bash"><span class="re1">$git</span> checkout A_branch
+&nbsp;
+<span class="re1">$git</span> checkout <span class="re5">--patch</span> B_branch f.txt</pre>
+
+<p>
+第一个命令： 切换到A分支；
+</p>
+
+<p>
+第二个命令：合并B分支上f文件到A分支上，将B分支上 f 文件追加补丁到A分支上 f文件。你可以接受或者拒绝补丁内容。
+</p>
+
+<p>
+如果只是简单的将A_branch分支的文件f.txt copy到B_branch分支上；
+</p>
+<pre class="code bash"><span class="re1">$git</span> checkout B_branch
+<span class="re1">$cd</span> path<span class="sy0">/</span>to<span class="sy0">/</span>f.txt
+<span class="re1">$git</span> checkout A_bracn  f.txt</pre>
+
+</div>
+<!-- EDIT1 SECTION "git中如何合并某个指定文件？" [1-615] -->
+<h3 class="sectionedit2" id="如何合并某个版本的分支">如何合并某个版本的分支？</h3>
+<div class="level3">
+
+<p>
+在本地 master 分支上做了一个commit ( 38361a68138140827b31b72f8bbfd88b3705d77a ) ， 如何把它放到 本地 old_cc 分支上？
+</p>
+<hr />
+
+<p>
+办法之一： 使用 cherry-pick.  根据git 文档：
+</p>
+
+<p>
+Apply the changes introduced by some existing commits
+</p>
+
+<p>
+就是对已经存在的commit 进行apply (可以理解为再次提交）
+</p>
+
+<p>
+简单用法：
+</p>
+<pre class="code">  git cherry-pick &lt;commit id&gt;</pre>
+
+<p>
+例如：
+</p>
+<pre class="code">$ git checkout old_cc
+$ git cherry-pick 38361a68     # 这个 38361a68 号码，位于：</pre>
+<pre class="code"> 
+
+    $ git log
+
+    commit 38361a68138140827b31b72f8bbfd88b3705d77a
+    Author: Siwei Shen &lt;siwei.shen@focusbeijing.com&gt;
+    Date:   Sat Dec 10 00:09:44 2011 +0800</pre>
+
+<p>
+1. 如果顺利，就会正常提交。结果：
+</p>
+<pre class="code">    Finished one cherry-pick.
+    # On branch old_cc
+    # Your branch is ahead of &#039;origin/old_cc&#039; by 3 commits.</pre>
+
+<p>
+2. 如果在cherry-pick 的过程中出现了冲突
+</p>
+<pre class="code">    Automatic cherry-pick failed.  After resolving the conflicts,
+    mark the corrected paths with &#039;git add &lt;paths&gt;&#039; or &#039;git rm &lt;paths&gt;&#039;
+    and commit the result with:
+
+            git commit -c 15a2b6c61927e5aed6718de89ad9dafba939a90b
+</pre>
+
+<p>
+就跟普通的冲突一样，手工解决：
+</p>
+<pre class="code"> $ git status    # 看哪些文件出现冲突
+ both modified:      app/models/user.rb
+ $ vim app/models/user.rb  # 手动解决它。
+ $ git add app/models/user.rb
+ git commit -c &lt;新的commit号码&gt;</pre>
+
+</div>
+<!-- EDIT2 SECTION "如何合并某个版本的分支？" [616-2094] -->
+<h3 class="sectionedit3" id="如何取消git_merge">如何取消git merge</h3>
+<div class="level3">
+
+<p>
+git  执行reset，remerge ,rebase 时把当前的仓库提交记录由HEAD保存改为ORIG_HEAD,所以撤回合并只需要将当前指向重新返回到PRIG_HEAD就实现了。 
+</p>
+
+<p>
+多次之前的合并动作，需要先执行 git reflog查看提交时哈希值，然后回退到一个指定的哈希值。
+</p>
+<pre class="code">
+git reset --hard ORIG_HEAD
+</pre>
+
+</div>
+<!-- EDIT3 SECTION "如何取消git merge" [2095-] -->

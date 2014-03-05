@@ -120,7 +120,7 @@ rebase VS merge
 git commit log
 
 git无须合并冲突，强制与远端同步，执行pull操作?
-git中如何合并某个指定文件？
+
 git merge 和 rebase
 如何识别git中的一次提交
 Git克隆所有远程分支
@@ -135,3 +135,5 @@ git fetch
 
 git 修改最新提交的commit log
 git 查看每次提交变更内容
+git中如何合并某个指定文件？
+

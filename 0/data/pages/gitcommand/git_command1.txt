@@ -32,8 +32,8 @@
 
 ===== 分支合并 =====
   * [[gitcommand:git_branch|git branch]]
-  * [[gitcommnad:git_merge|git merge]]
-  * git rebase
+  * [[gitcommand:git_merge|git merge]]
+  * [[gitcommand:git_rebase|git rebase ]]
   * git rebase -i
   * [[gitcommand:git_cherry_pick| git cherry pick ]]
   * [[gitcommand:git_log_branch| git log ]]
