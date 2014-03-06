@@ -190,3 +190,5 @@ gitcommand:git_commit_amend
 gitcommand:git_whatchanged
 gitcommand:git_rebase
 git_concept:git_track_remote_branch
+gitcommand:git_show
+gitcommand:git_cat_file

@@ -1,0 +1,19 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1394087809;s:8:"modified";i:1394087809;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1394087809;s:2:"ip";s:14:"10.221.135.110";s:4:"type";s:1:"C";s:2:"id";s:23:"gitcommand:git_cat_file";s:4:"user";s:5:"uahoo";s:3:"sum";s:6:"创建";s:5:"extra";s:0:"";}s:5:"title";s:33:"查看指定版本文件的内容";s:11:"description";a:2:{s:15:"tableofcontents";a:1:{i:0;a:4:{s:3:"hid";s:33:"查看指定版本文件的内容";s:5:"title";s:33:"查看指定版本文件的内容";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:455:"查看指定版本文件的内容
+
+如查看某文件的具体内容，如下操作：
+
+	*  查看版本值
+
+
+$git log #查看历史,产看sha1值。
+
+
+	*  查看对象的类型。
+
+
+
+git ls-tree a0149bc
+100644 blob 708beed363e39fefbaf2b0c72fe49bd2977f3d06	README.txt
+100644 blob 9b084cbebe722abeece8d08c152ff0c7025e1831	git-reset.md
+100644 blob 25e08aa6e7755906d2026cf92c9474df9186f295	git-revert
+040000 tree 06d35d31f15624f5fba03b9f03e9096d75057869	libs";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:4:{s:4:"date";a:1:{s:7:"created";i:1394087809;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1394087809;s:2:"ip";s:14:"10.221.135.110";s:4:"type";s:1:"C";s:2:"id";s:23:"gitcommand:git_cat_file";s:4:"user";s:5:"uahoo";s:3:"sum";s:6:"创建";s:5:"extra";s:0:"";}}}

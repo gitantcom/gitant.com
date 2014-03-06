@@ -1,22 +1,3 @@
-1393392417	10.221.135.74	E	git_concept:git_origin	uahoo		
-1393392478	10.221.135.74	E	git_concept:git_origin	uahoo		
-1393392565	10.221.135.74	E	git_concept:git_history	uahoo		
-1393393034	10.221.135.74	E	git_concept:git_history	uahoo		
-1393393199	10.221.135.74	E	git_concept:git_history	uahoo		
-1393394842	10.221.135.74	E	git_concept:git_history	uahoo		
-1393394932	10.221.135.74	E	git_concept:git_history	uahoo		
-1393395459	10.221.135.74	E	git_concept:git_history	uahoo		
-1393395492	10.221.135.74	E	git_concept:vcs	uahoo		
-1393401400	127.0.0.1	E	wiki:contact		外部编辑	
-1393401843	10.221.135.74	E	git_concept:git_concept	uahoo	[git的版本号] 	
-1393403478	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
-1393403541	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
-1393408108	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[refs 和 symrefs] 	
-1393408565	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo	[相对命名] 	
-1393408738	10.221.135.74	E	git_concept:git_concept	uahoo	[git起源] 	
-1393470338	10.221.135.74	E	git_doc:git_reference	uahoo	[Bitbucket训练营] 	
-1393470423	10.221.135.74	E	git_doc:git_reference	uahoo	[Github 训练营] 	
-1393470713	10.221.135.74	E	git_doc:git_reference	uahoo	[Bitbucket训练营] 	
 1393494536	10.221.135.74	E	git_concept:branch_name_as_version_number	uahoo		
 1393556546	10.221.135.74	D	gitcommand:merge_specify_file	uahoo	移除	
 1393556563	10.221.135.74	E	gitcommnad:git_merge	uahoo		
@@ -108,3 +89,47 @@
 1394000203	10.221.135.103	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
 1394000349	10.221.135.103	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
 1394000441	10.221.135.103	E	gitcommand:git_command	uahoo	[个人开发者（参与开发）] 	
+1394004479	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo		
+1394011245	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[中央集中式开发流程] 	
+1394011486	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[中央集中式开发流程] 	
+1394012084	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[中央集中式开发流程] 	
+1394012104	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[中央集中式开发流程] 	
+1394012815	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[工作机制] 	
+1394013288	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[工作机制] 	
+1394014218	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[解决冲突] 	
+1394014779	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[演示] 	
+1394016035	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[实例演示] 	
+1394016307	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[初始化中央项目仓库] 	
+1394016437	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[项目成员克隆中央仓库] 	
+1394016624	10.221.135.103	E	git_branch_model:git-workflow-central	uahoo	[项目成员克隆中央仓库] 	
+1394075892	10.221.135.110	E	gitcommand:git_checkout	uahoo		
+1394076037	10.221.135.110	E	gitcommand:git_checkout	uahoo	[How do I reset/revert a specific file to a specific revision using Git?] 	
+1394003144	127.0.0.1	E	gitcommand:git_command1		外部编辑	
+1394085127	10.221.135.110	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1394085150	10.221.135.110	D	gitcommand:git_diff_stage	uahoo	移除	
+1394085274	10.221.135.110	E	gitcommand:git_diff_arbitrary	uahoo		
+1394086073	10.221.135.110	E	gitcommand:git_diff_arbitrary	uahoo	[git不同状态下diff] 	
+1394086093	10.221.135.110	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1394086149	10.221.135.110	E	gitcommand:git_command1	uahoo	[检查和比对] 	
+1394003144	127.0.0.1	E	gitcommand:git_command		外部编辑	
+1394086506	10.221.135.110	E	gitcommand:git_command	uahoo	[个人开发者（单独开发）] 	
+1394086543	10.221.135.110	E	gitcommand:git_command	uahoo	[个人开发者（单独开发）] 	
+1394086572	10.221.135.110	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
+1394086982	10.221.135.110	C	gitcommand:git_show	uahoo	创建	
+1394087809	10.221.135.110	C	gitcommand:git_cat_file	uahoo	创建	
+1394089061	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 在本地开发新功能] 	
+1394089434	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 在本地开发新功能] 	
+1394089738	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 在本地开发新功能] 	
+1394089973	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 在本地修改她的代码] 	
+1394090026	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 在本地开发新功能] 	
+1394090035	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 在本地修改她的代码] 	
+1394090818	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 提交他的代码] 	
+1394091180	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 提交他的代码] 	
+1394091382	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 提交他的代码] 	
+1394091525	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[John 提交他的代码] 	
+1394091693	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 尝试提交她的代码] 	
+1394091838	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 衍合（变基）John的变更 rebases on top of John’s commit(s)] 	
+1394092609	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 衍合（变基）John的变更] 	
+1394092989	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 衍合（变基）John的变更] 	
+1394093206	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary 解决合并冲突] 	
+1394093223	10.221.135.110	E	git_branch_model:git-workflow-central	uahoo	[Mary成功向项目仓库提交代码] 	

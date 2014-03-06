@@ -1,0 +1,5 @@
+<span class="co0">#For a specific file use:</span>
+<span class="re1">$git</span> checkout path<span class="sy0">/</span>to<span class="sy0">/</span>file<span class="sy0">/</span>to<span class="sy0">/</span>revert
+&nbsp;
+<span class="co0">#For all unstaged files use:</span>
+<span class="re1">$git</span> checkout <span class="re5">--</span> .

@@ -1,3 +1,36 @@
-a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1390837275;s:8:"modified";i:1392108754;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:27:"中央集中式开发流程";s:11:"description";a:2:{s:15:"tableofcontents";a:14:{i:0;a:4:{s:3:"hid";s:27:"中央集中式开发流程";s:5:"title";s:27:"中央集中式开发流程";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:12:"工作机制";s:5:"title";s:12:"工作机制";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:12:"解决冲突";s:5:"title";s:12:"解决冲突";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:6:"演示";s:5:"title";s:6:"演示";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:4;a:4:{s:3:"hid";s:27:"初始化中央项目仓库";s:5:"title";s:27:"初始化中央项目仓库";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:5;a:4:{s:3:"hid";s:30:"项目成员克隆中央仓库";s:5:"title";s:30:"项目成员克隆中央仓库";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:6;a:4:{s:3:"hid";s:29:"john_在本地开发新功能";s:5:"title";s:29:"John 在本地开发新功能";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:7;a:4:{s:3:"hid";s:32:"mary_在本地修改她的代码";s:5:"title";s:32:"Mary 在本地修改她的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:8;a:4:{s:3:"hid";s:23:"john_提交他的代码";s:5:"title";s:23:"John 提交他的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:9;a:4:{s:3:"hid";s:29:"mary_尝试提交她的代码";s:5:"title";s:29:"Mary 尝试提交她的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:10;a:4:{s:3:"hid";s:66:"mary_衍合_变基_john的变更_rebases_on_top_of_john_s_commit_s";s:5:"title";s:73:"Mary 衍合（变基）John的变更 rebases on top of John’s commit(s)";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:11;a:4:{s:3:"hid";s:23:"mary_解决合并冲突";s:5:"title";s:23:"Mary 解决合并冲突";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:12;a:4:{s:3:"hid";s:37:"mary成功向项目仓库提交代码";s:5:"title";s:37:"Mary成功向项目仓库提交代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:13;a:4:{s:3:"hid";s:12:"继续前进";s:5:"title";s:12:"继续前进";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:282:"[Git Workflows: SVN-style Workflow]
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1390837275;s:8:"modified";i:1394093223;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1394093223;s:2:"ip";s:14:"10.221.135.110";s:4:"type";s:1:"E";s:2:"id";s:37:"git_branch_model:git-workflow-central";s:4:"user";s:5:"uahoo";s:3:"sum";s:40:"[Mary成功向项目仓库提交代码] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:27:"中央集中式开发流程";s:11:"description";a:2:{s:15:"tableofcontents";a:14:{i:0;a:4:{s:3:"hid";s:27:"中央集中式开发流程";s:5:"title";s:27:"中央集中式开发流程";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:12:"工作机制";s:5:"title";s:12:"工作机制";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:12:"解决冲突";s:5:"title";s:12:"解决冲突";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:12:"实例演示";s:5:"title";s:12:"实例演示";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:4;a:4:{s:3:"hid";s:27:"初始化中央项目仓库";s:5:"title";s:27:"初始化中央项目仓库";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:5;a:4:{s:3:"hid";s:30:"项目成员克隆中央仓库";s:5:"title";s:30:"项目成员克隆中央仓库";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:6;a:4:{s:3:"hid";s:29:"john_在本地开发新功能";s:5:"title";s:29:"John 在本地开发新功能";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:7;a:4:{s:3:"hid";s:32:"mary_在本地修改她的代码";s:5:"title";s:32:"Mary 在本地修改她的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:8;a:4:{s:3:"hid";s:23:"john_提交他的代码";s:5:"title";s:23:"John 提交他的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:9;a:4:{s:3:"hid";s:29:"mary_尝试提交她的代码";s:5:"title";s:29:"Mary 尝试提交她的代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:10;a:4:{s:3:"hid";s:32:"mary_衍合_变基_john的变更";s:5:"title";s:36:"Mary 衍合（变基）John的变更";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:11;a:4:{s:3:"hid";s:23:"mary_解决合并冲突";s:5:"title";s:23:"Mary 解决合并冲突";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:12;a:4:{s:3:"hid";s:37:"mary成功向项目仓库提交代码";s:5:"title";s:37:"Mary成功向项目仓库提交代码";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:13;a:4:{s:3:"hid";s:12:"继续前进";s:5:"title";s:12:"继续前进";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:362:"[Git Workflows: SVN-style Workflow]
 
-Transitioning to a distributed version control system may seem like a daunting task, but you don’t have to change your existing workflow to take advantage of Git. Your team can develop projects in the exact same way as they do with Subversion.";}s:8:"relation";a:2:{s:5:"media";a:13:{s:37:"git_branch_model:git-workflow-svn.png";b:1;s:48:"git_branch_model:git-workflow-svn-push-local.png";b:1;s:48:"git_branch_model:git-workflow-svn-initialize.png";b:1;s:43:"git_branch_model:git-workflow-svn-clone.png";b:1;s:39:"git_branch_model:git-workflow-svn-1.png";b:1;s:39:"git_branch_model:git-workflow-svn-2.png";b:1;s:39:"git_branch_model:git-workflow-svn-3.png";b:1;s:39:"git_branch_model:git-workflow-svn-4.png";b:1;s:39:"git_branch_model:git-workflow-svn-5.png";b:1;s:39:"git_branch_model:git-workflow-svn-6.png";b:1;s:39:"git_branch_model:git-workflow-svn-7.png";b:1;s:39:"git_branch_model:git-workflow-svn-8.png";b:1;s:39:"git_branch_model:git-workflow-svn-9.png";b:1;}s:10:"firstimage";s:37:"git_branch_model:git-workflow-svn.png";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1390837275;s:8:"modified";i:1392108754;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";b:0;s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}
+
+
+
+
+
+
+
+工作机制
+
+
+
+
+
+””
+
+
+
+解决冲突
+
+
+
+
+
+
+
+实例演示
+
+
+
+初始化中央项目仓库
+
+[Git Workflows: Initialize Central Bare Repository]
+
+首先，现在服务器上创建一个项目中央仓库。 如果是新项目，你初始化一个空仓库。否则，就import一个已经存在的Git或者SVN仓库。";}s:8:"relation";a:2:{s:5:"media";a:13:{s:37:"git_branch_model:git-workflow-svn.png";b:1;s:48:"git_branch_model:git-workflow-svn-push-local.png";b:1;s:48:"git_branch_model:git-workflow-svn-initialize.png";b:1;s:43:"git_branch_model:git-workflow-svn-clone.png";b:1;s:39:"git_branch_model:git-workflow-svn-1.png";b:1;s:39:"git_branch_model:git-workflow-svn-2.png";b:1;s:39:"git_branch_model:git-workflow-svn-3.png";b:1;s:39:"git_branch_model:git-workflow-svn-4.png";b:1;s:39:"git_branch_model:git-workflow-svn-5.png";b:1;s:39:"git_branch_model:git-workflow-svn-6.png";b:1;s:39:"git_branch_model:git-workflow-svn-7.png";b:1;s:39:"git_branch_model:git-workflow-svn-8.png";b:1;s:39:"git_branch_model:git-workflow-svn-9.png";b:1;}s:10:"firstimage";s:37:"git_branch_model:git-workflow-svn.png";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1390837275;s:8:"modified";i:1394093223;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1394093223;s:2:"ip";s:14:"10.221.135.110";s:4:"type";s:1:"E";s:2:"id";s:37:"git_branch_model:git-workflow-central";s:4:"user";s:5:"uahoo";s:3:"sum";s:40:"[Mary成功向项目仓库提交代码] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

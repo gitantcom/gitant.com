@@ -5,3 +5,5 @@
 1390292081	10.221.135.120	E	gitcommand:git_diff_arbitrary	uahoo		
 1390292379	10.221.135.120	E	gitcommand:git_diff_arbitrary	uahoo		
 1390836823	10.212.40.205	E	gitcommand:git_diff_arbitrary	uahoo		
+1394085274	10.221.135.110	E	gitcommand:git_diff_arbitrary	uahoo		
+1394086073	10.221.135.110	E	gitcommand:git_diff_arbitrary	uahoo	[git不同状态下diff] 	

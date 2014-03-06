@@ -16,7 +16,6 @@
   * [[gitcommand:git_status|git status ]]
   * [[gitcommand:git_rm| git rm]]
   * [[gitcommand:git_short_log| git shortlog]]
-  * git show
   * [[gitcommand:git_stash|git stash]]
   * [[gitcommand:git_whatchanged| git whatchanged ]]
 
@@ -60,8 +59,9 @@
   * [[gitcommand:git_subtree| git_subtree]]
 =====检查和比对=====
   * [[gitcommand:git_log_stage| git log]]
-  * [[gitcommand:git_diff_stage| git diff]]
-  * [[ gitcommand:git_diff_arbitrary|git  diff]]
+  * [[gitcommand:git_diff_arbitrary|git  diff]]
+  * [[gitcommand:git_show | git show ]]
+  * [[gitcommand:git_cat_file | git cat file ]]
   * [[gitcommand:git_short_log |git shortlog]]
   * [[gitcommand:git_rev_list| git revlist]]
   * [[gitcommand:git_rev_parse| git rev-parse]]

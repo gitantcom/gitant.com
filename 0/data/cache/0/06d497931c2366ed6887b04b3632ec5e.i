@@ -1,0 +1,11 @@
+a:33:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:33:"查看指定版本文件的内容";i:1;i:3;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1;}i:3;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1;}i:4;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:51:"如查看某文件的具体内容，如下操作：";}i:2;i:43;}i:5;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:94;}i:6;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:94;}i:7;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:94;}i:8;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:94;}i:9;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:16:" 查看版本值";}i:2;i:98;}i:10;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:114;}i:11;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:114;}i:12;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:114;}i:13;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:41:"
+$git log #查看历史,产看sha1值。
+";i:1;N;i:2;N;}i:2;i:120;}i:14;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:169;}i:15;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:169;}i:16;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:169;}i:17;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:25:" 查看对象的类型。";}i:2;i:173;}i:18;a:3:{i:0;s:9:"linebreak";i:1;a:0:{}i:2;i:198;}i:19;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:200;}i:20;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:200;}i:21;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:200;}i:22;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:273:"
+git ls-tree a0149bc
+100644 blob 708beed363e39fefbaf2b0c72fe49bd2977f3d06	README.txt
+100644 blob 9b084cbebe722abeece8d08c152ff0c7025e1831	git-reset.md
+100644 blob 25e08aa6e7755906d2026cf92c9474df9186f295	git-revert
+040000 tree 06d35d31f15624f5fba03b9f03e9096d75057869	libs
+";i:1;N;i:2;N;}i:2;i:206;}i:23;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:488;}i:24;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:488;}i:25;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:488;}i:26;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:38:" 查看blob类型的文件的内容：";}i:2;i:492;}i:27;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:530;}i:28;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:530;}i:29;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:530;}i:30;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:55:"
+$git cat-file -p 708beed363e39fe  #查看文件内容
+";i:1;N;i:2;N;}i:2;i:536;}i:31;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:599;}i:32;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:599;}}

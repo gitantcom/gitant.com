@@ -7,56 +7,36 @@
 </p>
 
 <p>
-Transitioning to a distributed version control system may seem like a daunting task, but you don’t have to change your existing workflow to take advantage of Git. Your team can develop projects in the exact same way as they do with Subversion.
+<span style="color: #0000EE">对于想体会git新特性的开发团队，迁移工作似乎很让人气馁。那么你可以像SVN的工作流程一样使用git，这样就可以使用git的新功能而不必调整现有的工作流程。</span>
 </p>
 
 <p>
-<span style="color: #0000EE">对于git的新特性，迁移到分布式版本控制系统似乎让气馁。那么你可以像SVN的工作流程使用git，这样就可以使用git的新功能而不必调整现有的工作流程。</span>
-</p>
+<span style="color: #0000EE">尽管如此，git还是比svn有2个好处：<br/>
 
-<p>
-However, using Git to power your development workflow presents a few advantages over SVN. First, it gives every developer their own local copy of the entire project. This isolated environment lets each developer work independently of all other changes to a project—they can add commits to their local repository and completely forget about upstream developments until it&#039;s convenient for them.
-</p>
-
-<p>
-<span style="color: #0000EE">尽管如此，git还是比svn有2个好处：
-1、工程师在本地有整个项目的代码。</span>
-</p>
-
-<p>
-Second, it gives you access to Git’s robust branching and merging model. Unlike SVN, Git branches are designed to be a fail-safe mechanism for integrating code and sharing changes between repositories.
+1、工程师在本地有整个项目的代码，隔离干扰，可以独立完成开发，直达合适的时候才提交代码。</span>
 </p>
 
 <p>
 <span style="color: #0000EE">
-2、可以方便使用git的分支模式。</span>
+2、利用git强大的分支与合并功能。方便地合并代码和交换变更。</span>
 </p>
 
 </div>
-<!-- EDIT1 SECTION "中央集中式开发流程" [1-1368] -->
+<!-- EDIT1 SECTION "中央集中式开发流程" [1-656] -->
 <h2 class="sectionedit2" id="工作机制">工作机制</h2>
 <div class="level2">
 
 <p>
-Like Subversion, the Centralized Workflow uses a central repository to serve as the single point-of-entry for all changes to the project. Instead of trunk, the default development branch is called master and all changes are committed into this branch. This workflow doesn’t require any other branches besides master.
 <span style="color: #0000EE">
-像svn一样，集中式工作流程使用了一个集中的仓库作为一个单点。 现对于trunk， git使用master收集所有提交到他的分支。 这种模式除了mater不需要其他分支。</span>
+就像SVN，中央集中式工作流程用一个统一仓库作为项目的唯一出入口。 SVN的主干叫trunk， git使用master分支开发代码。 这种模式除了mater不建立其他分支。</span>
 </p>
 
 <p>
-Developers start by cloning the central repository. In their own local copies of the project, they edit files and commit changes as they would with SVN; however, these new commits are stored locally—they’re completely isolated from the central repository. This lets developers defer synchronizing upstream until they’re at a convenient break point.
+<span style="color: #0000EE">首先开发者克隆项目的中央仓库。 开发者下载整个项目库，然后，就像svn一样，工程师编辑并提交代码；当然，新提交存在本地仓库。开发者能够在一个合适的时节才去提交远程仓库。</span>
 </p>
 
 <p>
-<span style="color: #0000EE">开发者从克隆中央集中的仓库开始工作。 在本地，开发者有整个项目的代码，就像svn一样，工程师编辑并提交代码；然而，新的提交被存到本地。 这让开发者能够在一个合适的时节才去提交本地代码。</span>
-</p>
-
-<p>
-To publish changes to the official project, developers “push” their local master branch to the central repository. This is the equivalent of svn commit, except that it adds all of the local commits that aren’t already in the central master branch.
-</p>
-
-<p>
-<span style="color: #0000EE">提交本地代码到中央仓库，开发者需要”push”本地master上的代码到中央仓库的master上。这步相当于“svn commit”，</span>
+<span style="color: #0000EE">最后，向远程中央仓库提交本地变更。开发者需要”push”本地master上的代码到中央仓库的master上。这步相当于“svn commit”，</span>
 </p>
 
 <p>
@@ -64,49 +44,33 @@ To publish changes to the official project, developers “push” their local ma
 </p>
 
 </div>
-<!-- EDIT2 SECTION "工作机制" [1369-3053] -->
+<!-- EDIT2 SECTION "工作机制" [657-1406] -->
 <h3 class="sectionedit3" id="解决冲突">解决冲突</h3>
 <div class="level3">
 
 <p>
-The central repository represents the official project, so its commit history should be treated as sacred and immutable. If a developer’s local commits diverge from the central repository, Git will refuse to push his changes because this would overwrite official commits.
+<span style="color: #0000EE">项目中央仓库一般算作官方的代码库了，所以要认真和严肃点。本地开发者修改完代码并提交回中央仓库前，相同代码被其他人修改并提交回中央仓库。git就不允许提交本地变更到中央，你需要执行rebase，防止破坏他人的提交。</span>
 </p>
 
 <p>
-<span style="color: #0000EE">中央仓库一般是官方的代码库了，所以要认真和严肃点。本地开发和中央仓库代码不一致，git就不允许提交本地变更到中央，这样你就破坏了官方的版本。</span>
+<span style="color: #0000EE">该开发者需要先从中央库取回其他人的成果，可以查看和比较。然后rebase自己的变更。这等于说， 我想增加变更”。这使得仓库的历史是线性的，就像传统的svn的工作流。</span>
 </p>
 
 <p>
-Before the developer can publish his feature, he needs to fetch the updated central commits and rebase his changes on top of them. This is like saying, “I want to add my changes to what everyone else has already done.” The result is a perfectly linear history, just like in traditional SVN workflows.
-</p>
-
-<p>
-<span style="color: #0000EE">在工程师能向中央库提交代码前，他需要先从中央库取回其他人的提交，并且在本人的基础上rebase自己的提交。这等于说， 我想增加变更”。这使得仓库的历史是线性的，就像传统的svn的工作流。</span>
-</p>
-
-<p>
-If local changes directly conflict with upstream commits, Git will pause the rebasing process and give you a chance to manually resolve the conflicts. The nice thing about Git is that it uses the same git status and git add commands for both generating commits and resolving merge conflicts. This makes it easy for new developers to manage their own merges. Plus, if they get themselves into trouble, Git makes it very easy to abort the entire rebase and try again (or go find help).
-</p>
-
-<p>
-<span style="color: #0000EE">如果本地变更直接与上游提交冲突，git将暂停rebase过程，并让工程师手动解决冲突。git 比较高级的是用 git status 和 git add 的命令解决合并冲突。 新人方便的合并冲突。如果合并陷入麻烦，git中断整个衍和，然后再来一次合并操作。</span>
+<span style="color: #0000EE">如果本地变更直接与上游提交冲突，git将暂停rebase过程，并让工程师手动解决冲突。git 比较高级的是用 git status 和 git add 的命令解决合并冲突。 很方便开发者合并冲突。如果合并陷入混乱，git可以很容易中断整个合并，，你可以重新开始合并操作。</span>
 </p>
 
 </div>
-<!-- EDIT3 SECTION "解决冲突" [3054-4968] -->
-<h2 class="sectionedit4" id="演示">演示</h2>
+<!-- EDIT3 SECTION "解决冲突" [1407-2346] -->
+<h2 class="sectionedit4" id="实例演示">实例演示</h2>
 <div class="level2">
 
 <p>
-Let’s take a step-by-step look at how a typical small team would collaborate using this workflow. We’ll see how two developers, John and Mary, can work on separate features and share their contributions via a centralized repository.
-</p>
-
-<p>
-<span style="color: #0000EE">让我们一步步地演示如何使用这个流程吧。看看两个工程师 John和Mary如何在中央集中仓库完成功能开发和协作。</span>
+<span style="color: #0000EE">让我们一步步地演示如何使用这个流程吧。看看两个工程师 John和Mary如何独自在本地仓库完成功能开发，并且通过中央仓库完成并行协作。</span>
 </p>
 
 </div>
-<!-- EDIT4 SECTION "演示" [4969-5392] -->
+<!-- EDIT4 SECTION "实例演示" [2347-2576] -->
 <h3 class="sectionedit5" id="初始化中央项目仓库">初始化中央项目仓库</h3>
 <div class="level3">
 
@@ -115,67 +79,58 @@ Let’s take a step-by-step look at how a typical small team would collaborate u
 </p>
 
 <p>
-First, someone needs to create the central repository on a server. If it’s a new project, you can initialize an empty repository. Otherwise, you’ll need to import an existing Git or SVN repository.
+首先，现在服务器上创建一个项目中央仓库。 如果是新项目，你初始化一个空仓库。否则，就import一个已经存在的Git或者SVN仓库。
 </p>
 
 <p>
-Central repositories should always be bare repositories (they shouldn’t have a working directory), which can be created as follows:
+创建中央仓库，需用bare模式。（这种git仓库没有工作目录），创建方法如下：<br/>
+
 </p>
 <pre class="code">ssh user@host
 git init --bare /path/to/repo.git</pre>
 
-<p>
-Be sure to use a valid SSH username for user, the domain or IP address of your server for host, and the location where you&#039;d like to store your repo for /path/to/repo.git. Note that the .git extension is conventionally appended to the repository name to indicate that it’s a bare repository.
-</p>
-
 </div>
-<!-- EDIT5 SECTION "初始化中央项目仓库" [5393-6236] -->
+<!-- EDIT5 SECTION "初始化中央项目仓库" [2577-3073] -->
 <h3 class="sectionedit6" id="项目成员克隆中央仓库">项目成员克隆中央仓库</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-clone.png" class="media" title="git_branch_model:git-workflow-svn-clone.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-clone.png" class="mediacenter" title="Git Workflows: Clone Central Repo" alt="Git Workflows: Clone Central Repo" /></a>
-</p>
+<span style="color: #0000EE">
+接下来，项目组成员在本地克隆整个项目仓库. <br/>
 
-<p>
-Next, each developer creates a local copy of the entire project. <br/>
+项目成员创建本地库。
+从项目中央库克隆的命令如下:</span> <br/>
 
-<span style="color: #0000EE">项目成员创建本地库。</span>
-This is accomplished via the git clone command:
 </p>
 <pre class="code">  
 git clone ssh://user@host/path/to/repo.git</pre>
 
 <p>
-When you clone a repository, Git automatically adds a shortcut called origin that points back to the “parent” repository, under the assumption that you&#039;ll want to interact with it further on down the road.
-</p>
-
-<p>
-<span style="color: #0000EE">你克隆中央库，Git自动创建一个名称origin指向远端仓库。</span>
+<span style="color: #0000EE">本地克隆中央库，Git自动在本地创建一个叫origin简短名称，origin标识了远端仓库，你将来通过这个名称与远端交互</span>
 </p>
 
 </div>
-<!-- EDIT6 SECTION "项目成员克隆中央仓库" [6237-6899] -->
+<!-- EDIT6 SECTION "项目成员克隆中央仓库" [3074-3595] -->
 <h3 class="sectionedit7" id="john_在本地开发新功能">John 在本地开发新功能</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-central&amp;media=git_branch_model:git-workflow-svn-1.png" class="media" title="git_branch_model:git-workflow-svn-1.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-svn-1.png" class="mediacenter" title="Git Workflows: Edit Stage Commit Feature Process" alt="Git Workflows: Edit Stage Commit Feature Process" /></a>
-</p>
-
-<p>
-In his local repository, John can develop features using the standard Git commit process: edit, stage, and commit. If you’re not familiar with the staging area, it’s a way to prepare a commit without having to include every change in the working directory. This lets you create highly focused commits, even if you’ve made a lot of local changes.
+<span style="color: #0000EE">
+在本地仓库,John使用git进行日常开发：编辑；缓存；提交。
+</span>
 </p>
 <pre class="code">git status # View the state of the repo
 git add # Stage a file
 git commit # Commit a file</pre>
 
 <p>
-Remember that since these commands create local commits, John can repeat this process as many times as he wants without worrying about what’s going on in the central repository. This can be very useful for large features that need to be broken down into simpler, more atomic chunks.
+这些动作发生在本地，重复进行，无需担心中央仓库发生了什么。
 </p>
 
 </div>
-<!-- EDIT7 SECTION "John 在本地开发新功能" [6900-7782] -->
+<!-- EDIT7 SECTION "John 在本地开发新功能" [3596-4023] -->
 <h3 class="sectionedit8" id="mary_在本地修改她的代码">Mary 在本地修改她的代码</h3>
 <div class="level3">
 
@@ -184,11 +139,13 @@ Remember that since these commands create local commits, John can repeat this pr
 </p>
 
 <p>
-Meanwhile, Mary is working on her own feature in her own local repository using the same edit/stage/commit process. Like John, she doesn’t care what’s going on in the central repository, and she really doesn’t care what John is doing in his local repository, since all local repositories are private.  
+<span style="color: #0000EE">
+同时，May在她的本地仓库修改变更。用的也是同样的 编辑/缓存/提交的git流程。 像John，她也不关心中心仓库发生了什么，也不关心John在他本地仓库的变更，因为所有的本地仓库都是私有的。
+ </span>
 </p>
 
 </div>
-<!-- EDIT8 SECTION "Mary 在本地修改她的代码" [7783-8227] -->
+<!-- EDIT8 SECTION "Mary 在本地修改她的代码" [4024-4432] -->
 <h3 class="sectionedit9" id="john_提交他的代码">John 提交他的代码</h3>
 <div class="level3">
 
@@ -197,11 +154,7 @@ Meanwhile, Mary is working on her own feature in her own local repository using 
 </p>
 
 <p>
-Once John finishes his feature, he should publish his local commits to the central repository so other team members can access it. He can do this with the git push command, like so:
-</p>
-
-<p>
-<span style="color: #0000EE">John完成了代码开发，他想把代码提交中央项目库，可以执行如下命令：</span>
+<span style="color: #0000EE">John完成了编码，他想把代码提交中央项目库，可以执行如下命令：</span>
 </p>
 <pre class="code">git push origin master</pre>
 
@@ -210,11 +163,11 @@ Remember that origin is the remote connection to the central repository that Git
 </p>
 
 <p>
-<span style="color: #0000EE">origin 是执行clone时，系统默认名称，指向远端中心仓库的master分支。这样 想 origin master 提交，就想对本地master提交的动作一样。 在John 克隆中央仓库，在本地修改后，还没人提交过新代码，所以John 的push动作不会有冲突，而且提交动作会顺利执行。</span>
+<span style="color: #0000EE">origin 是执行clone时，系统默认的远端仓库的简称，它指向远端中心仓库的master分支。当Git对origin操作，就像本地处理master一样处理远端仓库。  在John 克隆中央仓库，在本地修改后，还没人提交过新代码，所以John 的push动作不会有冲突，而且提交动作会顺利执行。</span>
 </p>
 
 </div>
-<!-- EDIT9 SECTION "John 提交他的代码" [8228-9392] -->
+<!-- EDIT9 SECTION "John 提交他的代码" [4433-5428] -->
 <h3 class="sectionedit10" id="mary_尝试提交她的代码">Mary 尝试提交她的代码</h3>
 <div class="level3">
 
@@ -223,20 +176,12 @@ Remember that origin is the remote connection to the central repository that Git
 </p>
 
 <p>
-Let’s see what happens if Mary tries to push her feature after John has successfully published his changes to the central repository. She can use the exact same push command:
-</p>
-
-<p>
 <span style="color: #0000EE">在John成功向中央项目仓库提交他的变更后，Mary 也要向项目库提交代码，她是这样做的：</span>
 </p>
 <pre class="code">git push origin master</pre>
 
 <p>
-But, since her local history has diverged from the central repository, Git will refuse the request with a rather verbose error message:
-</p>
-
-<p>
-<span style="color: #0000EE">然而，她本地的Git历史已经和中央项目库分叉了，Git 拒绝合并，并给出了详细的出错信息：</span>
+<span style="color: #0000EE">然而，在她之前，John已经提交变更，修改了master。Mary本地的Git历史已经和中央项目库分叉了，Git 拒绝合并，并给出了详细的出错信息：</span>
 </p>
 <pre class="code">error: failed to push some refs to &#039;/path/to/repo.git&#039;
 hint: Updates were rejected because the tip of your current branch is behind
@@ -245,16 +190,12 @@ hint: before pushing again.
 hint: See the &#039;Note about fast-forwards&#039; in &#039;git push --help&#039; for details.</pre>
 
 <p>
-This prevents Mary from overwriting official commits. She needs to pull John’s updates into her repository, integrate them with her local changes, and then try again.   
-</p>
-
-<p>
 <span style="color: #0000EE">拒绝的目的是防止Mary 覆盖该其他人已有的提交。 Mary 需要首先从中央项目库中取回（pull)John的变更，合并到自己的本地库中。  </span>
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Mary 尝试提交她的代码" [9393-10831] -->
-<h3 class="sectionedit11" id="mary_衍合_变基_john的变更_rebases_on_top_of_john_s_commit_s">Mary 衍合（变基）John的变更 rebases on top of John’s commit(s)</h3>
+<!-- EDIT10 SECTION "Mary 尝试提交她的代码" [5429-6444] -->
+<h3 class="sectionedit11" id="mary_衍合_变基_john的变更">Mary 衍合（变基）John的变更</h3>
 <div class="level3">
 
 <p>
@@ -262,11 +203,7 @@ This prevents Mary from overwriting official commits. She needs to pull John’s
 </p>
 
 <p>
-Mary can use git pull to incorporate upstream changes into her repository. This command is sort of like svn update—it pulls the entire upstream commit history into Mary’s local repository and tries to integrate it with her local commits:
-</p>
-
-<p>
-<span style="color: #0000EE">Mary 能用git pull 合并变更到本地库。 这个有点像 svn 的update 去合并所有的变更到Mary本地目录一样。</span>
+<span style="color: #0000EE">Mary 可以用 git pull 合并中心仓库变更到本地库。 这个有点像 svn 的update 去合并最新变更到本地目录。执行git pull时，git先从远端仓库获得John的变更内容，然后在本地和Mary的变更合并：</span>
 </p>
 <pre class="code">git pull --rebase origin master</pre>
 
@@ -287,11 +224,11 @@ The pull would still work if you forgot this option, but you would wind up with 
 </p>
 
 <p>
-<span style="color: #0000EE">如果没有rebase选项，pull可能任然工作，那就会产生合并提交。 对于git的流程来说，用rebase合并而不是一次合并提交，会让合并历史更清晰。</span>
+<span style="color: #0000EE">如果没有rebase选项，pull可能任然工作，那就会产生一次新的合并提交。 对于git的流程来说，用rebase合并而不是一次合并提交，会让合并历史更清晰。</span>
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Mary 衍合（变基）John的变更 rebases on top of John’s commit(s)" [10832-12283] -->
+<!-- EDIT11 SECTION "Mary 衍合（变基）John的变更" [6445-7742] -->
 <h3 class="sectionedit12" id="mary_解决合并冲突">Mary 解决合并冲突</h3>
 <div class="level3">
 
@@ -302,15 +239,7 @@ Git Workflows: Rebasing on Commits" /></a>
 </p>
 
 <p>
-Rebasing works by transferring each local commit to the updated master branch one at a time. This means that you catch merge conflicts on a commit-by-commit basis rather than resolving all of them in one massive merge commit. This keeps your commits as focused as possible and makes for a clean project history. In turn, this makes it much easier to figure out where bugs were introduced and, if necessary, to roll back changes with minimal impact on the project.
-</p>
-
-<p>
-<span style="color: #0000EE"> 衍合就是把每次本地提交都表现到主分支上。这样你能发现每次本地提交与远端主干发生了什么样的冲突，而不是在一次合并提交时，解决所有人大量的合并冲突。这样做，就把你在本地对项目的改变历史也体现在中央仓库历史上。 而且，这样可以方便地找到缺陷是生么时候带进来的。回退的时候可以只会有错误代码，无关其他代码的合并。</span>
-</p>
-
-<p>
-If Mary and John are working on unrelated features, it’s unlikely that the rebasing process will generate conflicts. But if it does, Git will pause the rebase at the current commit and output the following message, along with some relevant instructions:
+<span style="color: #0000EE"> 衍合(reabse)就是把每次本地提交都表现到主分支上。这样你能发现每次本地提交与远端主干发生了什么样的冲突，而不是在一次合并提交时，解决所有人大量的合并冲突。这样做，就把你在本地对项目的改变历史也体现在中央仓库历史上。 而且，这样可以方便地找到缺陷是生么时候带进来的。回退的时候可以只会有错误代码，无关其他代码的合并。</span>
 </p>
 
 <p>
@@ -323,10 +252,6 @@ If Mary and John are working on unrelated features, it’s unlikely that the reb
 </p>
 
 <p>
-The great thing about Git is that anyone can resolve their own merge conflicts. In our example, Mary would simply run a git status to see where the problem is. Conflicted files will appear in the Unmerged paths section:
-</p>
-
-<p>
 <span style="color: #0000EE">Git 的特点之一就是任何人都可以自己解决合并冲突。Mary 只是运行 “git status” 就可以知道合并时问题出在那里，合并失败的文件会明白的告诉你:</span>
 </p>
 <pre class="code"># Unmerged paths:
@@ -336,25 +261,13 @@ The great thing about Git is that anyone can resolve their own merge conflicts. 
 # both modified: &lt;some-file&gt;&gt;</pre>
 
 <p>
-Then, she’ll edit the file(s) to her liking. Once she’s happy with the result, she can stage the file(s) in the usual fashion and let git rebase do the rest:
-</p>
-
-<p>
 <span style="color: #0000EE">接着，Mary 修改文件，如果修改结果测试正确，她就会git add 这个文件，然后继续执行rebase的合并操作。</span>
 </p>
 <pre class="code">git add &lt;some-file&gt;
 git rebase --continue &lt;/some-file&gt;</pre>
 
 <p>
-And that’s all there is to it. Git will move on to the next commit and repeat the process for any other commits that generate conflicts.
-</p>
-
-<p>
 <span style="color: #0000EE">这就是全部，Git继续合并提交，直到遇见下一次合并冲突。 </span>
-</p>
-
-<p>
-If you get to this point and realize and you have no idea what’s going on, don’t panic. Just execute the following command and you’ll be right back to where you started before you ran git pull –rebase:
 </p>
 
 <p>
@@ -363,7 +276,7 @@ If you get to this point and realize and you have no idea what’s going on, don
 <pre class="code">git rebase --abort</pre>
 
 </div>
-<!-- EDIT12 SECTION "Mary 解决合并冲突" [12284-15599] -->
+<!-- EDIT12 SECTION "Mary 解决合并冲突" [7743-9617] -->
 <h3 class="sectionedit13" id="mary成功向项目仓库提交代码">Mary成功向项目仓库提交代码</h3>
 <div class="level3">
 
@@ -372,16 +285,12 @@ If you get to this point and realize and you have no idea what’s going on, don
 </p>
 
 <p>
-After she’s done synchronizing with the central repository, Mary will be able to publish her changes successfully:
-</p>
-
-<p>
 <span style="color: #0000EE">在执行完同步命令后，Mary就可以提交她的代码了，如下命令：</span>
 </p>
 <pre class="code">git push origin master</pre>
 
 </div>
-<!-- EDIT13 SECTION "Mary成功向项目仓库提交代码" [15600-15991] -->
+<!-- EDIT13 SECTION "Mary成功向项目仓库提交代码" [9618-9892] -->
 <h2 class="sectionedit14" id="继续前进">继续前进</h2>
 <div class="level2">
 
@@ -401,4 +310,4 @@ If your team is comfortable with the Centralized Workflow but wants to streamlin
 </p>
 
 </div>
-<!-- EDIT14 SECTION "继续前进" [15992-] -->
+<!-- EDIT14 SECTION "继续前进" [9893-] -->

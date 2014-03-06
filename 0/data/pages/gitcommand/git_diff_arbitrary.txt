@@ -1,4 +1,10 @@
------
+====git不同状态下diff====
+
+  * git diff             #检查工作区和缓存区差异
+  * git diff  --cached   #检查缓存区和仓库之间差异
+  * git diff    HEAD     #检查工作区和仓库之间差异
+
+
 ====比对任意提交====
 <code>
     $ git diff test            <1>

@@ -1,0 +1,66 @@
+
+<h3 class="sectionedit1" id="放弃没有缓存的的文件变更">放弃没有缓存的的文件变更？</h3>
+<div class="level3">
+
+<p>
+修改为文件变更，没有执行缓存(git add)，如何放弃这些修改？
+</p>
+<pre class="code bash"><span class="co0">#For a specific file use:</span>
+<span class="re1">$git</span> checkout path<span class="sy0">/</span>to<span class="sy0">/</span>file<span class="sy0">/</span>to<span class="sy0">/</span>revert
+&nbsp;
+<span class="co0">#For all unstaged files use:</span>
+<span class="re1">$git</span> checkout <span class="re5">--</span> .</pre>
+<hr />
+
+</div>
+<!-- EDIT1 SECTION "放弃没有缓存的的文件变更？" [2-270] -->
+<h3 class="sectionedit2" id="如何恢复某个指定版本的文件">如何恢复某个指定版本的文件?</h3>
+<div class="level3">
+
+<p>
+假设你想恢复 “abcde” 版本的某个文件，操作如下：
+</p>
+<pre class="code bash"><span class="co4">$ </span><span class="kw2">git checkout</span> abcde file<span class="sy0">/</span>to<span class="sy0">/</span>restore  <span class="co0">#恢复某个文件到指定版本</span></pre>
+
+</div>
+<!-- EDIT2 SECTION "如何恢复某个指定版本的文件?" [271-483] -->
+<h3 class="sectionedit3" id="git_检出某个旧版本的文件">git 检出某个旧版本的文件?</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> 查看文件日志</div>
+</li>
+</ul>
+<pre class="code bash">    <span class="re1">$git</span> log <span class="re5">--pretty</span>=format:<span class="st0">&quot;%h %ad | %s%d [%an]&quot;</span> <span class="re5">--graph</span> <span class="re5">--date</span>=short
+    <span class="sy0">*</span> fa3c141 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added HTML header <span class="br0">&#40;</span>HEAD, master<span class="br0">&#41;</span> <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 8c32287 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added standard HTML page tags <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 43628f7 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> Added h1 tag <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+    <span class="sy0">*</span> 911e8c9 <span class="nu0">2011</span>-03-09 <span class="sy0">|</span> First Commit <span class="br0">&#91;</span>Marina Pushkova<span class="br0">&#93;</span>
+&nbsp;</pre>
+<ul>
+<li class="level1"><div class="li"> 检出某个hash值的文件</div>
+</li>
+</ul>
+<pre class="code bash">    $ <span class="kw2">git checkout</span> 911e8c9
+    Note: checking out <span class="st_h">'911e8c9'</span>.
+&nbsp;
+    You are <span class="kw1">in</span> <span class="st_h">'detached HEAD'</span> state. You can look around, <span class="kw2">make</span> experimental
+    changes and commit them, and you can discard any commits you <span class="kw2">make</span> <span class="kw1">in</span> this
+    state without impacting any branches by performing another checkout.
+&nbsp;
+    If you want to create a new branch to retain commits you create, you may
+    <span class="kw1">do</span> so <span class="br0">&#40;</span>now or later<span class="br0">&#41;</span> by using <span class="re5">-b</span> with the checkout <span class="kw3">command</span> again. Example:
+&nbsp;
+    <span class="kw2">git checkout</span> <span class="re5">-b</span> new_branch_name
+&nbsp;
+    HEAD is now at 911e8c9... First Commit
+&nbsp;</pre>
+<ul>
+<li class="level1"><div class="li"> 回到master的最新版</div>
+</li>
+</ul>
+<pre class="code bash">     <span class="re1">$git</span> checkout master
+&nbsp;</pre>
+<hr />
+
+</div>
+<!-- EDIT3 SECTION "git 检出某个旧版本的文件?" [484-] -->

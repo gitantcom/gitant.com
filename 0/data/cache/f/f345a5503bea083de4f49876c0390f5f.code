@@ -1,0 +1,1 @@
+<span class="co4">$ </span><span class="kw2">git checkout</span> abcde file<span class="sy0">/</span>to<span class="sy0">/</span>restore  <span class="co0">#恢复某个文件到指定版本</span>

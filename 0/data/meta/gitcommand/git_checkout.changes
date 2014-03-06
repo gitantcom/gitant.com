@@ -1,2 +1,4 @@
 1390836234	10.212.40.205	C	gitcommand:git_checkout	uahoo	创建	
 1390892706	10.221.135.120	E	gitcommand:git_checkout	uahoo		
+1394075892	10.221.135.110	E	gitcommand:git_checkout	uahoo		
+1394076037	10.221.135.110	E	gitcommand:git_checkout	uahoo	[How do I reset/revert a specific file to a specific revision using Git?] 	

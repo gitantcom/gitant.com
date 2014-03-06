@@ -1,0 +1,8 @@
+====查看指定版本文件的内容====
+查看某个文件在不同版本的具体内容，可以用 git show。
+
+<code>
+$git show $REV:$FILE                           #查看某版本文件内容
+$git show somebranch:from/the/root/myfile.txt  #查看某分支下某文件的内容
+$git show HEAD^^^:test/test.py                 #查看用相对名称标识的文件内容
+</code>

@@ -1,4 +1,0 @@
-
-  * git diff
-  * git diff  --cached
-  * git diff    HEAD
