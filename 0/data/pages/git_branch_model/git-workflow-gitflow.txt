@@ -1,85 +1,83 @@
-======Gitflow Workflow======
+======Gitflow分支模式======
 {{ :git_branch_model:git-workflow-gitflow.png?300 |}}
-The Gitflow Workflow section below is derived from Vincent Driessen at nvie. 
+The [[http://nvie.com/posts/a-successful-git-branching-model/|Gitflow Workflow]] section below is derived from Vincent Driessen at nvie. 
 
 
 
-The Gitflow Workflow defines a strict branching model designed around the project release. While somewhat more complicated than the Feature Branch Workflow, this provides a robust framework for managing larger projects.
-
-<fc #0000EE>Gitflow 围绕发布定义了严格的分支模式。比任务分支模式更复杂，但对于管理大型项目提供了强壮的框架。</fc>
-
-This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
-
-<fc #0000EE>相对于任务分支，gitflow没有增加新的概念，它只是分配了许多特殊角色的分支，定义了什么时间和如何交互。 这些分支分别用来开发、维护、发布等。你也可以利用任务分支的所有其他好处，pull request、隔离开发、有效协作等。</fc>
 
 
-=====流程介绍=====
+<fc #0000EE>Gitflow 围绕产品发布定义了一系列严格用途的的多任务分支模式。但比任务分支模式更复杂，但对于管理大型项目提供了强壮的框架。</fc>
 
-The Gitflow Workflow still uses a central repository as the communication hub for all developers. And, as in the other workflows, developers work locally and push branches to the central repo. The only difference is the branch structure of the project.
+
+<fc #0000EE>相对于任务分支，gitflow没有增加新的概念和命令，它只是赋予分支特定的角色，定义了分支之间什么时间和如何交互。 这些分支专门用来开发、维护、发布等功能。你也可以利用任务分支的所有其他好处，pull request、实验开发、有效协作等。</fc>
+
+
+=====流程描述=====
 
 
 
-<fc #0000EE>Gitflow 依然使用一个中央仓库作为所有团队成员的项目库。而且同其他工作流程一样，开发者依然在本地开发，并提交分支到中央仓库。和任务分支模式主要的不同是分支在项目中的布局不同。</fc>
-====产品历史分支====
 
-Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. It's also convenient to tag all commits in the master branch with a version number.
 
-<fc #0000EE>相对于项目库中的单个master分支，gitflows用两个分支来记录项目历史。 master分支记录项目的正式发布历史，开发分支用于集成各种功能。在master主分支上很便利的对特殊版本号贴上标签。</fc>
+<fc #0000EE>Gitflow 依然使用一个中央仓库作为所有团队成员的官方项目库。而且同其他工作流程一样，开发者依然在本地开发，并提交分支到中央仓库。这种模式最大的不同是项目中的分支结构。</fc>
+====产品历史分支(Master 和 Develop)====
+
+
+<fc #0000EE>相对于项目库中的单个master分支，gitflows用两个分支来记录项目演变历史。 master分支记录项目的正式发布历史，开发分支记录功能集成迭代过程。按照产品的版本演进在master主分支上很便利贴上标签。</fc>
 
 {{ :git_branch_model:git-workflow-release-cycle-1historical.png |}}
 The rest of this workflow revolves around the distinction between these two branches.
 
 <fc #0000EE>此工作流的其余部分围绕着这两个分支差异展开。</fc>
 
-====任务分支Feature Branches====
+====任务分支(Feature Branch)====
 
 
-Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration. But, instead of branching off of master, feature branches use develop as their parent branch. When a feature is complete, it gets merged back into develop. Features should never interact directly with master.
 
-<fc #0000EE>每一个任务分支都在本地，这些分支也需要提交到中央项目仓库用于备份和协作。但是，相对于从主干master上开出分支，gitflow中的任务分支是从开发分支(develop）上创建的。当任务完成后，分支合并回开发分支(develop).任务分支从不直接和主干(master）打交道。</fc>
+<fc #0000EE>新功能的开发都在工程师本地分支上，最后要提交到中央项目仓库用于备份和协作开发。但是，其他分支模式都是从主干master开出分支，而gitflow中的任务分支是从开发分支(develop）上创建的。当任务完成后，任务分支合并回开发分支(develop).任务分支从不直接和主干(master）打交道。</fc>
 
 {{ :git_branch_model:git-workflow-release-cycle-2feature.png |}}
-Note that feature branches combined with the develop branch is, for all intents and purposes, the Feature Branch Workflow. But, the Gitflow Workflow doesn’t stop there.
+
 
 <fc #0000EE>任务分支结合开发分支，就可以满足对于各种开发用途，gitflow还不止这些功能。</fc>
 
 ====发布分支（Release Branches）====
 {{ :git_branch_model:git-workflow-release-cycle-3release.png |}}
-Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop. Creating this branch starts the next release cycle, so no new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it's ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop, which may have progressed since the release was initiated.
 
-<fc #0000EE>当代码逐渐成熟，准备发布的时候。你就需要从开发分支上开出一个发布分支。这也就意味着你进入下一个发布周期。在这以后，发布分支不接受新的功能代码的合并，只合并缺陷修复的代码，文档修改和其他面向发布的任务。如果准备发布，发布分支就合并到master主分支，并贴上标签。另外，发布分支也要合并回开发分支. </fc>
 
-Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release. It also creates well-defined phases of development (e.g., it's easy to say, “this week we're preparing for version 4.0” and to actually see it in the structure of the repository).
+<fc #0000EE>当代码逐渐成熟，准备发布的时候。你就需要从开发分支上开出一个发布分支。这也就意味着你进入这一轮发布周期。在这以后，发布分支不接受新的功能代码的合并，只合并缺陷修复的代码，文档修改和其他面向发布的任务。如果准备发布，发布分支就合并到master主分支，并贴上产品版本标签。同时，发布分支也要合并回开发分支，因为发布分支建立来，一些紧急修复也要合并回开发分支. </fc>
 
+
+
+发布的准备过程使用一个专门的分支，便于团队专心致力发布前的工作，并不阻碍其他人同时进入下一个发布循环。这样也定义和规范了开发的不同阶段。比如说： 工程师很方便说“本周我们准备发布产品4.0”，而且在代码仓库里，我们也看到真实的行动。
+
+<code>
 Common conventions:
+惯例：
 
     branch off: develop
     merge into: master
     naming convention: release-* or release/*
+</code>
 
 
-
-====维护分支（Maintenance Branches）====
+====维护分支（Hot Fix Branch）====
 {{ :git_branch_model:git-workflow-release-cycle-4maintenance.png |}}
-Maintenance or “hotfix” branches are used to quickly patch production releases. This is the only branch that should fork directly off of master. As soon as the fix is complete, it should be merged into both master and develop (or the current release branch), and master should be tagged with an updated version number.
 
-<fc #0000EE>维护分支，或者叫"hotfix”分支用于快速补丁产品发布分支。这是唯一直接从master分支上开出的分支。一旦修复完成，代码应合并回master主干和develop分支（或者当前发布分支），master分支上也要贴一个标签。</fc>
 
-Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle. You can think of maintenance branches as ad hoc release branches that work directly with master.
+<fc #0000EE>维护分支，或者叫"hotfix”分支用于快速修补产品的安全类问题。这是唯一直接从master分支上开出的分支。一旦修复完成，代码应合并回master主干和develop分支（或者当前发布分支），master分支上也要贴一个标签。</fc>
+
 
 <fc #0000EE>独立的维护分支的出现，可以让团队成员无需中断发布流程，或者必须等在下次发布修复缺陷。维护分支是直接从master分支上直接开出用于紧急修复的发布分支。 </fc>
 
 
 =====实例演示=====
 
-The example below demonstrates how this workflow can be used to manage a single release cycle. We’ll assume you have already created a central repository.
-
+下面演示发布循环的一次过程。假设你已经有中央的官方项目库，
 
 ====创建开发分支====  
 {{ :git_branch_model:git-workflow-release-cycle-5createdev.png |}}
-The first step is to complement the default master with a develop branch. A simple way to do this is for one developer to create an empty develop branch locally and push it to the server:  
 
-<fc #0000EE>第一步，从master上创建开发分支。简单的方法是，在本地创建一个空分支，然后提交到中央项目仓库：</fc>
+<fc #0000EE>第一步，从master上创建开发分支(developt)。简单的方法是，某个工程师在本地从master上创建一个叫develop的分支，然后提交到中央项目仓库：</fc>
 
 <code>
 git branch develop
@@ -88,22 +86,27 @@ git push -u origin develop
 
 This branch will contain the complete history of the project, whereas master will contain an abridged version. Other developers should now clone the central repository and create a tracking branch for develop:
 
-<fc #0000EE>这个分支包含了项目完整的开发历史，master主干分支包含的是重要节点版本历史。其余分支都是从开发分支中创建出来的。</fc>
+<fc #0000EE>这个分支包含了产品完整的历史路线，因为master主干包含产品的基线历史。接下来，团队成员克隆中央仓库，本地创建远程分支：</fc>
 
 
 <code>
 git clone ssh://user@host/path/to/repo.git
 git checkout -b develop origin/develop
 </code>
-Everybody now has a local copy of the historical branches set up.   
-   
+ 
+每个成员现在都有本地拷贝。   
 ====Mary 和 John 开发新功能====
  {{ :git_branch_model:git-workflow-release-cycle-6maryjohnbeginnew.png |}} 
-Our example starts with John and Mary working on separate features. They both need to create separate branches for their respective features. Instead of basing it on master, they should both base their feature branches on develop:
+
+
+我们的例子中，John和Mary有不同的需求开发任务，他们本地创建各自的任务分支去完成需求。以往的分支模式都是从master上创建任务分支。然而gitflow模式却是从develop上创建任务分支：
+
 <code>
 git checkout -b some-feature develop
 </code>
-Both of them add commits to the feature branch in the usual fashion: edit, stage, commit:
+
+他俩在各自的分支上例行步骤完成开发：编辑，缓存，提交：
+
 <code>
 git status
 git add <some-file>
@@ -112,10 +115,10 @@ git commit
 
 ====Mary 完成任务开发====
 {{ :git_branch_model:git-workflow-release-cycle-7maryfinishes.png |}}
-After adding a few commits, Mary decides her feature is ready. If her team is using pull requests, this would be an appropriate time to open one asking to merge her feature into develop. Otherwise, she can merge it into her local develop and push it to the central repository, like so:
 
 
-<fc #0000EE>Mary完成了开发任务。如果她使用pull request，需要评审然后合并到开发分支。否则，她合并任务分支进入本地的开发分支，然后推送到远端中央项目库：</fc>
+
+<fc #0000EE>Mary完成了自己的需求开发任务。如果她的团队使用了pull request，这是合适的时机去发起pull requests 要求合并自己的代码进入develop分支。 如果团队没有使用 pull requests，她合并任务分支进入本地的开发分支，然后推送到远端中央项目库：</fc>
 <code>
 git pull origin develop
 git checkout develop
@@ -124,14 +127,15 @@ git push
 git branch -d some-feature
 </code>
 
-The first command makes sure the develop branch is up to date before trying to merge in the feature. Note that features should never be merged directly into master. Conflicts can be resolved in the same way as in the Centralized Workflow.
+
+第一行命令确保本地develop分支和远端同步。注意的是任务分支不会直接合并入master，如何解决冲突和中央集中分支模式是一致的。
 
 
 ====Mary开始计划发布产品====
 {{ :git_branch_model:git-workflow-release-cycle-8maryprepsrelease.png |}}
-While John is still working on his feature, Mary starts to prepare the first official release of the project. Like feature development, she uses a new branch to encapsulate the release preparations. This step is also where the release’s version number is established:
 
-<fc #0000EE>John继续开发他的代码，Mary开始准备她的第一次项目发布。她用一个新分支专门用来发布。这一步也确立的发布产品的版本号：</fc>
+
+<fc #0000EE>John还在继续开发他的代码，Mary已经开始准备她的项目第一次发布。她用一个新分支专门用来管理发布过程。这一步确立了产品的第一个版本号0.1：</fc>
 
 <code>
 git checkout -b release-0.1 develop
@@ -146,7 +150,10 @@ As soon as Mary creates this branch and pushes it to the central repository, the
 {{ :git_branch_model:git-workflow-release-cycle-9maryfinishes.png |}}
 Once the release is ready to ship, Mary merges it into master and develop, then deletes the release branch. It’s important to merge back into develop because critical updates may have been added to the release branch and they need to be accessible to new features. Again, if Mary’s organization stresses code review, this would be an ideal place for a pull request.
 
-<fc #0000EE>一旦产品发布准备完毕，Mary合并发布分支到主干分支（master）和开发分支（develop），然后删除发布分支。</fc>
+
+<fc #0000EE>
+
+一旦产品发布准备完毕，Mary合并发布分支到主干分支（master）和开发分支（develop），然后删除发布分支。发布分支合并回开发分支很关键。如果mary的团队强调代码评审，这时发起pull request 是个好时机。</fc>
 
 <code>
 git checkout master
@@ -158,6 +165,10 @@ git push
 git branch -d release-0.1
 </code>
 Release branches act as a buffer between feature development (develop) and public releases (master). Whenever you merge something into master, you should tag the commit for easy reference:
+
+<fc #0000EE>
+发布分支扮演了缓存在任务任务分支（deveop）和主发布分支（master）。合并进入master分支，都需要追加标签便于参考：
+</fc>
 <code>
 git tag -a 0.1 -m "Initial public release" master
 git push --tags

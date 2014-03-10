@@ -139,3 +139,4 @@ gitcommand:git_merge
 git_concept:git_track_remote_branch
 gitcommand:git_show
 gitcommand:git_cat_file
+git_branch_model:git-pull-rquest-model

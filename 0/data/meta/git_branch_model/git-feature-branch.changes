@@ -62,3 +62,4 @@
 1394198636	10.212.40.39	E	git_branch_model:git-feature-branch	uahoo	[Bill 收到了合并请求] 	
 1394199467	10.212.40.39	E	git_branch_model:git-feature-branch	uahoo	[合并Mary代码到中央项目库] 	
 1394199717	10.212.40.39	E	git_branch_model:git-feature-branch	uahoo	[期间, John 也要同步代码] 	
+1394441141	10.221.135.122	E	git_branch_model:git-feature-branch	uahoo	[合并请求(Pull Requests)] 	

@@ -11,7 +11,8 @@
 ==== 并行开发 ====
 
   * [[git_concept:git_parallel_concept|分支与合并]]
-  * [[git_branch_model:gitbranchmodel|Git分支模式]] 
+  * [[git_branch_model:gitbranchmodel|Git分支模式]]
+ 
 
 
 

@@ -70,7 +70,7 @@ Git remote
 计算每次commit的唯一序数号
 中央集中式开发流程
 任务分支模式
-Gitflow Workflow
+Gitflow分支模式
 Forking Workflow
 Gerrit
 modgit 工具
@@ -139,3 +139,4 @@ git中如何合并某个指定文件？
 
 查看指定版本文件的内容
 查看指定版本文件的内容
+Pull Request Workflow

@@ -1,52 +1,36 @@
 
-<h1 class="sectionedit1" id="gitflow_workflow">Gitflow Workflow</h1>
+<h1 class="sectionedit1" id="gitflow分支模式">Gitflow分支模式</h1>
 <div class="level1">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-gitflow.png" class="media" title="git_branch_model:git-workflow-gitflow.png"><img src="/0/lib/exe/fetch.php?w=300&amp;tok=91494f&amp;media=git_branch_model:git-workflow-gitflow.png" class="mediacenter" alt="" width="300" /></a>
-The Gitflow Workflow section below is derived from Vincent Driessen at nvie. 
+The <a href="http://nvie.com/posts/a-successful-git-branching-model/" class="urlextern" title="http://nvie.com/posts/a-successful-git-branching-model/"  rel="nofollow">Gitflow Workflow</a> section below is derived from Vincent Driessen at nvie. 
 </p>
 
 <p>
-The Gitflow Workflow defines a strict branching model designed around the project release. While somewhat more complicated than the Feature Branch Workflow, this provides a robust framework for managing larger projects.
+<span style="color: #0000EE">Gitflow 围绕产品发布定义了一系列严格用途的的多任务分支模式。但比任务分支模式更复杂，但对于管理大型项目提供了强壮的框架。</span>
 </p>
 
 <p>
-<span style="color: #0000EE">Gitflow 围绕发布定义了严格的分支模式。比任务分支模式更复杂，但对于管理大型项目提供了强壮的框架。</span>
-</p>
-
-<p>
-This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
-</p>
-
-<p>
-<span style="color: #0000EE">相对于任务分支，gitflow没有增加新的概念，它只是分配了许多特殊角色的分支，定义了什么时间和如何交互。 这些分支分别用来开发、维护、发布等。你也可以利用任务分支的所有其他好处，pull request、隔离开发、有效协作等。</span>
+<span style="color: #0000EE">相对于任务分支，gitflow没有增加新的概念和命令，它只是赋予分支特定的角色，定义了分支之间什么时间和如何交互。 这些分支专门用来开发、维护、发布等功能。你也可以利用任务分支的所有其他好处，pull request、实验开发、有效协作等。</span>
 </p>
 
 </div>
-<!-- EDIT1 SECTION "Gitflow Workflow" [1-1360] -->
-<h2 class="sectionedit2" id="流程介绍">流程介绍</h2>
+<!-- EDIT1 SECTION "Gitflow分支模式" [1-765] -->
+<h2 class="sectionedit2" id="流程描述">流程描述</h2>
 <div class="level2">
 
 <p>
-The Gitflow Workflow still uses a central repository as the communication hub for all developers. And, as in the other workflows, developers work locally and push branches to the central repo. The only difference is the branch structure of the project.
-</p>
-
-<p>
-<span style="color: #0000EE">Gitflow 依然使用一个中央仓库作为所有团队成员的项目库。而且同其他工作流程一样，开发者依然在本地开发，并提交分支到中央仓库。和任务分支模式主要的不同是分支在项目中的布局不同。</span>
+<span style="color: #0000EE">Gitflow 依然使用一个中央仓库作为所有团队成员的官方项目库。而且同其他工作流程一样，开发者依然在本地开发，并提交分支到中央仓库。这种模式最大的不同是项目中的分支结构。</span>
 </p>
 
 </div>
-<!-- EDIT2 SECTION "流程介绍" [1361-1912] -->
-<h3 class="sectionedit3" id="产品历史分支">产品历史分支</h3>
+<!-- EDIT2 SECTION "流程描述" [766-1053] -->
+<h3 class="sectionedit3" id="产品历史分支_master_和_develop">产品历史分支(Master 和 Develop)</h3>
 <div class="level3">
 
 <p>
-Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. It&#039;s also convenient to tag all commits in the master branch with a version number.
-</p>
-
-<p>
-<span style="color: #0000EE">相对于项目库中的单个master分支，gitflows用两个分支来记录项目历史。 master分支记录项目的正式发布历史，开发分支用于集成各种功能。在master主分支上很便利的对特殊版本号贴上标签。</span>
+<span style="color: #0000EE">相对于项目库中的单个master分支，gitflows用两个分支来记录项目演变历史。 master分支记录项目的正式发布历史，开发分支记录功能集成迭代过程。按照产品的版本演进在master主分支上很便利贴上标签。</span>
 </p>
 
 <p>
@@ -59,21 +43,16 @@ The rest of this workflow revolves around the distinction between these two bran
 </p>
 
 </div>
-<!-- EDIT3 SECTION "产品历史分支" [1913-2759] -->
-<h3 class="sectionedit4" id="任务分支feature_branches">任务分支Feature Branches</h3>
+<!-- EDIT3 SECTION "产品历史分支(Master 和 Develop)" [1054-1625] -->
+<h3 class="sectionedit4" id="任务分支_feature_branch">任务分支(Feature Branch)</h3>
 <div class="level3">
 
 <p>
-Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration. But, instead of branching off of master, feature branches use develop as their parent branch. When a feature is complete, it gets merged back into develop. Features should never interact directly with master.
-</p>
-
-<p>
-<span style="color: #0000EE">每一个任务分支都在本地，这些分支也需要提交到中央项目仓库用于备份和协作。但是，相对于从主干master上开出分支，gitflow中的任务分支是从开发分支(develop）上创建的。当任务完成后，分支合并回开发分支(develop).任务分支从不直接和主干(master）打交道。</span>
+<span style="color: #0000EE">新功能的开发都在工程师本地分支上，最后要提交到中央项目仓库用于备份和协作开发。但是，其他分支模式都是从主干master开出分支，而gitflow中的任务分支是从开发分支(develop）上创建的。当任务完成后，任务分支合并回开发分支(develop).任务分支从不直接和主干(master）打交道。</span>
 </p>
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-2feature.png" class="media" title="git_branch_model:git-workflow-release-cycle-2feature.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-2feature.png" class="mediacenter" alt="" /></a>
-Note that feature branches combined with the develop branch is, for all intents and purposes, the Feature Branch Workflow. But, the Gitflow Workflow doesn’t stop there.
 </p>
 
 <p>
@@ -81,46 +60,39 @@ Note that feature branches combined with the develop branch is, for all intents 
 </p>
 
 </div>
-<!-- EDIT4 SECTION "任务分支Feature Branches" [2760-3852] -->
+<!-- EDIT4 SECTION "任务分支(Feature Branch)" [1626-2247] -->
 <h3 class="sectionedit5" id="发布分支_release_branches">发布分支（Release Branches）</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-3release.png" class="media" title="git_branch_model:git-workflow-release-cycle-3release.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-3release.png" class="mediacenter" alt="" /></a>
-Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop. Creating this branch starts the next release cycle, so no new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it&#039;s ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop, which may have progressed since the release was initiated.
 </p>
 
 <p>
-<span style="color: #0000EE">当代码逐渐成熟，准备发布的时候。你就需要从开发分支上开出一个发布分支。这也就意味着你进入下一个发布周期。在这以后，发布分支不接受新的功能代码的合并，只合并缺陷修复的代码，文档修改和其他面向发布的任务。如果准备发布，发布分支就合并到master主分支，并贴上标签。另外，发布分支也要合并回开发分支. </span>
+<span style="color: #0000EE">当代码逐渐成熟，准备发布的时候。你就需要从开发分支上开出一个发布分支。这也就意味着你进入这一轮发布周期。在这以后，发布分支不接受新的功能代码的合并，只合并缺陷修复的代码，文档修改和其他面向发布的任务。如果准备发布，发布分支就合并到master主分支，并贴上产品版本标签。同时，发布分支也要合并回开发分支，因为发布分支建立来，一些紧急修复也要合并回开发分支. </span>
 </p>
 
 <p>
-Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release. It also creates well-defined phases of development (e.g., it&#039;s easy to say, “this week we&#039;re preparing for version 4.0” and to actually see it in the structure of the repository).
+发布的准备过程使用一个专门的分支，便于团队专心致力发布前的工作，并不阻碍其他人同时进入下一个发布循环。这样也定义和规范了开发的不同阶段。比如说： 工程师很方便说“本周我们准备发布产品4.0”，而且在代码仓库里，我们也看到真实的行动。
 </p>
+<pre class="code">Common conventions:
+惯例：
 
-<p>
-Common conventions:
-</p>
-<pre class="code">  branch off: develop
-  merge into: master
-  naming convention: release-* or release/*</pre>
+    branch off: develop
+    merge into: master
+    naming convention: release-* or release/*</pre>
 
 </div>
-<!-- EDIT5 SECTION "发布分支（Release Branches）" [3853-5448] -->
-<h3 class="sectionedit6" id="维护分支_maintenance_branches">维护分支（Maintenance Branches）</h3>
+<!-- EDIT5 SECTION "发布分支（Release Branches）" [2248-3382] -->
+<h3 class="sectionedit6" id="维护分支_hot_fix_branch">维护分支（Hot Fix Branch）</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-4maintenance.png" class="media" title="git_branch_model:git-workflow-release-cycle-4maintenance.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-4maintenance.png" class="mediacenter" alt="" /></a>
-Maintenance or “hotfix” branches are used to quickly patch production releases. This is the only branch that should fork directly off of master. As soon as the fix is complete, it should be merged into both master and develop (or the current release branch), and master should be tagged with an updated version number.
 </p>
 
 <p>
-<span style="color: #0000EE">维护分支，或者叫”hotfix”分支用于快速补丁产品发布分支。这是唯一直接从master分支上开出的分支。一旦修复完成，代码应合并回master主干和develop分支（或者当前发布分支），master分支上也要贴一个标签。</span>
-</p>
-
-<p>
-Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle. You can think of maintenance branches as ad hoc release branches that work directly with master.
+<span style="color: #0000EE">维护分支，或者叫”hotfix”分支用于快速修补产品的安全类问题。这是唯一直接从master分支上开出的分支。一旦修复完成，代码应合并回master主干和develop分支（或者当前发布分支），master分支上也要贴一个标签。</span>
 </p>
 
 <p>
@@ -128,26 +100,25 @@ Having a dedicated line of development for bug fixes lets your team address issu
 </p>
 
 </div>
-<!-- EDIT6 SECTION "维护分支（Maintenance Branches）" [5449-6679] -->
+<!-- EDIT6 SECTION "维护分支（Hot Fix Branch）" [3383-4026] -->
 <h2 class="sectionedit7" id="实例演示">实例演示</h2>
 <div class="level2">
 
 <p>
-The example below demonstrates how this workflow can be used to manage a single release cycle. We’ll assume you have already created a central repository.
+下面演示发布循环的一次过程。假设你已经有中央的官方项目库，
 </p>
 
 </div>
-<!-- EDIT7 SECTION "实例演示" [6680-6862] -->
+<!-- EDIT7 SECTION "实例演示" [4027-4139] -->
 <h3 class="sectionedit8" id="创建开发分支">创建开发分支</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-5createdev.png" class="media" title="git_branch_model:git-workflow-release-cycle-5createdev.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-5createdev.png" class="mediacenter" alt="" /></a>
-The first step is to complement the default master with a develop branch. A simple way to do this is for one developer to create an empty develop branch locally and push it to the server:  
 </p>
 
 <p>
-<span style="color: #0000EE">第一步，从master上创建开发分支。简单的方法是，在本地创建一个空分支，然后提交到中央项目仓库：</span>
+<span style="color: #0000EE">第一步，从master上创建开发分支(developt)。简单的方法是，某个工程师在本地从master上创建一个叫develop的分支，然后提交到中央项目仓库：</span>
 </p>
 <pre class="code">git branch develop
 git push -u origin develop</pre>
@@ -157,45 +128,47 @@ This branch will contain the complete history of the project, whereas master wil
 </p>
 
 <p>
-<span style="color: #0000EE">这个分支包含了项目完整的开发历史，master主干分支包含的是重要节点版本历史。其余分支都是从开发分支中创建出来的。</span>
+<span style="color: #0000EE">这个分支包含了产品完整的历史路线，因为master主干包含产品的基线历史。接下来，团队成员克隆中央仓库，本地创建远程分支：</span>
 </p>
 <pre class="code">git clone ssh://user@host/path/to/repo.git
 git checkout -b develop origin/develop</pre>
 
 <p>
-Everybody now has a local copy of the historical branches set up.   
+每个成员现在都有本地拷贝。   
 </p>
 
 </div>
-<!-- EDIT8 SECTION "创建开发分支" [6863-7928] -->
+<!-- EDIT8 SECTION "创建开发分支" [4140-5043] -->
 <h3 class="sectionedit9" id="mary_和_john_开发新功能">Mary 和 John 开发新功能</h3>
 <div class="level3">
 
 <p>
  <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-6maryjohnbeginnew.png" class="media" title="git_branch_model:git-workflow-release-cycle-6maryjohnbeginnew.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-6maryjohnbeginnew.png" class="mediacenter" alt="" /></a>
-Our example starts with John and Mary working on separate features. They both need to create separate branches for their respective features. Instead of basing it on master, they should both base their feature branches on develop:
+</p>
+
+<p>
+我们的例子中，John和Mary有不同的需求开发任务，他们本地创建各自的任务分支去完成需求。以往的分支模式都是从master上创建任务分支。然而gitflow模式却是从develop上创建任务分支：
 </p>
 <pre class="code">git checkout -b some-feature develop</pre>
 
 <p>
-Both of them add commits to the feature branch in the usual fashion: edit, stage, commit:
+他俩在各自的分支上例行步骤完成开发：编辑，缓存，提交：
 </p>
 <pre class="code">git status
 git add &lt;some-file&gt;
 git commit</pre>
 
 </div>
-<!-- EDIT9 SECTION "Mary 和 John 开发新功能" [7929-8473] -->
+<!-- EDIT9 SECTION "Mary 和 John 开发新功能" [5044-5596] -->
 <h3 class="sectionedit10" id="mary_完成任务开发">Mary 完成任务开发</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-7maryfinishes.png" class="media" title="git_branch_model:git-workflow-release-cycle-7maryfinishes.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-7maryfinishes.png" class="mediacenter" alt="" /></a>
-After adding a few commits, Mary decides her feature is ready. If her team is using pull requests, this would be an appropriate time to open one asking to merge her feature into develop. Otherwise, she can merge it into her local develop and push it to the central repository, like so:
 </p>
 
 <p>
-<span style="color: #0000EE">Mary完成了开发任务。如果她使用pull request，需要评审然后合并到开发分支。否则，她合并任务分支进入本地的开发分支，然后推送到远端中央项目库：</span>
+<span style="color: #0000EE">Mary完成了自己的需求开发任务。如果她的团队使用了pull request，这是合适的时机去发起pull requests 要求合并自己的代码进入develop分支。 如果团队没有使用 pull requests，她合并任务分支进入本地的开发分支，然后推送到远端中央项目库：</span>
 </p>
 <pre class="code">git pull origin develop
 git checkout develop
@@ -204,21 +177,20 @@ git push
 git branch -d some-feature</pre>
 
 <p>
-The first command makes sure the develop branch is up to date before trying to merge in the feature. Note that features should never be merged directly into master. Conflicts can be resolved in the same way as in the Centralized Workflow.
+第一行命令确保本地develop分支和远端同步。注意的是任务分支不会直接合并入master，如何解决冲突和中央集中分支模式是一致的。
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Mary 完成任务开发" [8474-9441] -->
+<!-- EDIT10 SECTION "Mary 完成任务开发" [5597-6325] -->
 <h3 class="sectionedit11" id="mary开始计划发布产品">Mary开始计划发布产品</h3>
 <div class="level3">
 
 <p>
 <a href="/0/lib/exe/detail.php?id=git_branch_model%3Agit-workflow-gitflow&amp;media=git_branch_model:git-workflow-release-cycle-8maryprepsrelease.png" class="media" title="git_branch_model:git-workflow-release-cycle-8maryprepsrelease.png"><img src="/0/lib/exe/fetch.php?media=git_branch_model:git-workflow-release-cycle-8maryprepsrelease.png" class="mediacenter" alt="" /></a>
-While John is still working on his feature, Mary starts to prepare the first official release of the project. Like feature development, she uses a new branch to encapsulate the release preparations. This step is also where the release’s version number is established:
 </p>
 
 <p>
-<span style="color: #0000EE">John继续开发他的代码，Mary开始准备她的第一次项目发布。她用一个新分支专门用来发布。这一步也确立的发布产品的版本号：</span>
+<span style="color: #0000EE">John还在继续开发他的代码，Mary已经开始准备她的项目第一次发布。她用一个新分支专门用来管理发布过程。这一步确立了产品的第一个版本号0.1：</span>
 </p>
 <pre class="code">git checkout -b release-0.1 develop</pre>
 
@@ -231,7 +203,7 @@ As soon as Mary creates this branch and pushes it to the central repository, the
 </p>
 
 </div>
-<!-- EDIT11 SECTION "Mary开始计划发布产品" [9442-10484] -->
+<!-- EDIT11 SECTION "Mary开始计划发布产品" [6326-7126] -->
 <h3 class="sectionedit12" id="mary_完成发布">Mary 完成发布</h3>
 <div class="level3">
 
@@ -241,7 +213,9 @@ Once the release is ready to ship, Mary merges it into master and develop, then 
 </p>
 
 <p>
-<span style="color: #0000EE">一旦产品发布准备完毕，Mary合并发布分支到主干分支（master）和开发分支（develop），然后删除发布分支。</span>
+<span style="color: #0000EE">
+
+一旦产品发布准备完毕，Mary合并发布分支到主干分支（master）和开发分支（develop），然后删除发布分支。发布分支合并回开发分支很关键。如果mary的团队强调代码评审，这时发起pull request 是个好时机。</span>
 </p>
 <pre class="code">git checkout master
 git merge release-0.1
@@ -254,6 +228,12 @@ git branch -d release-0.1</pre>
 <p>
 Release branches act as a buffer between feature development (develop) and public releases (master). Whenever you merge something into master, you should tag the commit for easy reference:
 </p>
+
+<p>
+<span style="color: #0000EE">
+发布分支扮演了缓存在任务任务分支（deveop）和主发布分支（master）。合并进入master分支，都需要追加标签便于参考：
+</span>
+</p>
 <pre class="code">git tag -a 0.1 -m &quot;Initial public release&quot; master
 git push --tags</pre>
 
@@ -262,7 +242,7 @@ Git comes with several hooks, which are scripts that execute whenever a particul
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Mary 完成发布" [10485-11796] -->
+<!-- EDIT12 SECTION "Mary 完成发布" [7127-8746] -->
 <h3 class="sectionedit13" id="用户发现bug">用户发现bug</h3>
 <div class="level3">
 
@@ -296,7 +276,7 @@ git push
 git branch -d issue-#001</pre>
 
 </div>
-<!-- EDIT13 SECTION "用户发现bug" [11797-13045] -->
+<!-- EDIT13 SECTION "用户发现bug" [8747-9995] -->
 <h2 class="sectionedit14" id="where_to_go_from_here">Where To Go From Here</h2>
 <div class="level2">
 
@@ -309,4 +289,4 @@ Remember that the workflows presented here are merely examples of what’s possi
 </p>
 
 </div>
-<!-- EDIT14 SECTION "Where To Go From Here" [13046-] -->
+<!-- EDIT14 SECTION "Where To Go From Here" [9996-] -->
