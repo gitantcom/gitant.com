@@ -38,3 +38,20 @@ Branch branch_4 set up to track remote branch branch_4 from github.
 $ git remote show remote_repo
  </code>
  
+
+====修建远程分支====
+
+
+本地查看分支：
+<code>
+$ git branch -a
+* master
+  remotes/origin/master
+  remotes/origin/production
+</code>
+
+但是 production 这个分支事实上已经删除了。如何处理：
+
+<code>
+$git remote prune origin
+</code>

@@ -1,4 +1,4 @@
-a:46:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:18:"本地新分支？";i:1;i:3;i:2;i:4;}i:2;i:4;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:4;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:58:"
+a:53:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:18:"本地新分支？";i:1;i:3;i:2;i:4;}i:2;i:4;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:4;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:58:"
 $ git checkout -b alvin
 Switched to a new branch 'alvin'
 ";i:1;s:4:"bash";i:2;N;}i:2;i:36;}i:4;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:110;}i:5;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:12:"转换分支";i:1;i:3;i:2;i:110;}i:2;i:110;}i:6;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:110;}i:7;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:28:"
@@ -32,4 +32,6 @@ git checkout some_branch
 # push your changes to the remote repository:
 git push
 
-";i:1;s:4:"bash";i:2;N;}i:2;i:1183;}i:44;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1480;}i:45;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1480;}}
+";i:1;s:4:"bash";i:2;N;}i:2;i:1183;}i:44;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1481;}i:45;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:51:"如何查看本地分支跟踪远程那个分支？";i:1;i:3;i:2;i:1481;}i:2;i:1481;}i:46;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1481;}i:47;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1481;}i:48;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:87:"本地有很多分支，如何知道远程分支和本地那个分支有跟踪关系：";}i:2;i:1542;}i:49;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1635;}i:50;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:17:"
+$git branch -vv
+";i:1;N;i:2;N;}i:2;i:1635;}i:51;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1662;}i:52;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1662;}}

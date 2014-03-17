@@ -1,9 +1,13 @@
 
-<h2 class="sectionedit1" id="pull_request_workflow">Pull Request Workflow</h2>
+<h2 class="sectionedit1" id="pull_request_模式">Pull Request 模式</h2>
 <div class="level2">
 
 <p>
 Pull requests are a feature that makes it easier for developers to collaborate using Bitbucket. They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.
+</p>
+
+<p>
+<span style="color: #008B00">大部分git托管服务都提供pull requests功能，这让协同开发变得轻松了。它可以在向官方仓库集成新功能前，提供界面友好的交互讨论和代码评审。</span>
 </p>
 
 <p>
@@ -15,7 +19,15 @@ In their simplest form, pull requests are a mechanism for a developer to notify 
 </p>
 
 <p>
+<span style="color: #008B00">最简单的形式，某个开发者完成任务后，pull requests 帮助开发者提醒团队成员。某个功能在分支上开发完成，开发者发起一个pull reques ，这让团队成员知道他们要评审一下代码，然后决定是否把新功能合并进入主干分支了。</span>
+</p>
+
+<p>
 But, the pull request is more than just a notification—it’s a dedicated forum for discussing the proposed feature. If there are any problems with the changes, teammates can post feedback in the pull request and even tweak the feature by pushing follow-up commits. All of this activity is tracked directly inside of the pull request.
+</p>
+
+<p>
+<span style="color: #008B00">pull request 不仅可以通知，而且是个论坛，专门讨论变更，如果对变更有意见，团队成员就贴上看法。甚至直接提交自己的代码，调整变更。所有的活动在pull request里都一目了然。</span>
 </p>
 
 <p>
@@ -27,12 +39,16 @@ Compared to other collaboration models, this formal solution for sharing commits
 </p>
 
 </div>
-<!-- EDIT1 SECTION "Pull Request Workflow" [1-1516] -->
-<h3 class="sectionedit2" id="anatomy_of_a_pull_request">Anatomy of a Pull Request</h3>
+<!-- EDIT1 SECTION "Pull Request 模式" [1-2290] -->
+<h3 class="sectionedit2" id="pull_request描述">Pull Request描述</h3>
 <div class="level3">
 
 <p>
 When you file a pull request, all you’re doing is requesting that another developer (e.g., the project maintainer) pulls a branch from your repository into his repository. This means that you need to provide 4 pieces of information to file a pull request: the source repository, the source branch, the destination repository, and the destination branch.
+</p>
+
+<p>
+<span style="color: #008B00">当你发起pull request，你所做的事情就是请求其他开发者（比如，官方项目管理人员等）在他的本地合并你的分支上的变更进入他的仓库主干。这意味着发起一次pull request 需要4份信息：源仓库，源分支，目标仓库，目标分支。</span>
 </p>
 
 <p>
@@ -42,15 +58,44 @@ Git Workflows: Pull Requests
 <p>
 Many of these values will be set to a sensible default by Bitbucket. However, depending on your collaboration workflow, your team may need to specify different values. The above diagram shows a pull request that asks to merge a feature branch into the official master branch, but there are many other ways to use pull requests.
 </p>
+
+<p>
+<span style="color: #008B00">在Bitbucket里，很多值都出事设置了，依据你协作流程，团队值需声明特殊的值。上图显示了 pull request 要求合并一个任务分支到官方主干分支，当然，还有很多种使用pull request的方法。</span>
+</p>
 <hr />
 
 </div>
-<!-- EDIT2 SECTION "Anatomy of a Pull Request" [1517-2272] -->
-<h2 class="sectionedit3" id="how_it_works">How It Works</h2>
+<!-- EDIT2 SECTION "Pull Request描述" [2291-3615] -->
+<h2 class="sectionedit3" id="流程描述">流程描述</h2>
 <div class="level2">
 
 <p>
 Pull requests can be used in conjunction with the Feature Branch Workflow, the Gitflow Workflow, or the Forking Workflow. But a pull request requires either two distinct branches or two distinct repositories, so they will not work with the Centralized Workflow. Using pull requests with each of these workflows is slightly different, but the general process is as follows:
+</p>
+
+<p>
+<span style="color: #008B00"> Pull requests 都被用在任务分支模式、Gitflow分支模式、复刻分支模式中。 一个 pull request 需要两个不同的而非那只，或者两个不同的仓库，所有只有中央集中分支模式没有pull request 功能。 在这些分支模式中，pull request 使用的方法都有些区别，通用的流程如下： <br/>
+
+
+1)一个开发者在本地仓库创建一个任务分支,用来完成某个任务<br/>
+
+
+2)开发者提交分支到公开git托管库 <br/>
+
+
+3 开发者发起pull request <br/>
+
+
+4 团队评审代码，讨论，交互 <br/>
+
+
+5 项目管理人员合并变更代码进入官方项目仓库，然后关闭 pull request <br/>
+
+
+下面描述在不同的分支模式中，pull requests 如何最大化他们的功能。<br/>
+
+
+</span>
 </p>
 
 <p>
@@ -78,12 +123,16 @@ The rest of this section describes how pull requests can be leveraged against di
 </p>
 
 </div>
-<!-- EDIT3 SECTION "How It Works" [2273-3164] -->
-<h3 class="sectionedit4" id="feature_branch_workflow_with_pull_requests">Feature Branch Workflow With Pull Requests</h3>
+<!-- EDIT3 SECTION "流程描述" [3616-5276] -->
+<h3 class="sectionedit4" id="任务分支模式中的使用pull_requests">任务分支模式中的使用Pull Requests</h3>
 <div class="level3">
 
 <p>
 The Feature Branch Workflow uses a shared Bitbucket repository for managing collaboration, and developers create features in isolated branches. But, instead of immediately merging them into master, developers should open a pull request to initiate a discussion around the feature before it gets integrated into the main codebase.
+</p>
+
+<p>
+<span style="color: #008B00">任务分支模式中，有一个公共仓库来管理协作开发，开发者在各自孤立的分支上完成变更。 完成后并不能直接合并入主干，开发者需要发起一个pull request 来 进行讨论需求，评审代码，然后再决定是否合并入主干基线代码。</span>
 </p>
 
 <p>
@@ -95,20 +144,36 @@ There is only one public repository in the Feature Branch Workflow, so the pull 
 </p>
 
 <p>
+<span style="color: #008B00">在任务分支模式中，只有一个共享中央库，所以pull requests 的源仓库和目标仓库都是同一个。典型情况下，开发者声明他们的任务分支作为源分支，主干分支作为目标分支。</span>
+</p>
+
+<p>
 After receiving the pull request, the project maintainer has to decide what to do. If the feature is ready to go, they can simply merge it into master and close the pull request. But, if there are problems with the proposed changes, they can post feedback in the pull request. Follow-up commits will show up right next to the relevant comments.
+</p>
+
+<p>
+<span style="color: #008B00">收到pull request 后，项目管理人员立即展开工作。 如果任务分支已经完成，且成熟。他们只是简单地合并入进主干并关闭pull request，如果对于变革有意见，可能需要在pull request里贴出意见。后续提交将展示这些意见。</span>
 </p>
 
 <p>
 It’s also possible to file a pull request for a feature that is incomplete. For example, if a developer is having trouble implementing a particular requirement, they can file a pull request containing their work-in-progress. Other developers can then provide suggestions inside of the pull request, or even fix the problem themselves with additional commits.
 </p>
 
+<p>
+<span style="color: #008B00">任务没有完成也可以发发起pull request。比如，一个开发者在实现一个特殊的需求时遇到了麻烦，就可以发起一个包含当前工作进度的pull request 。其他的工程师可以在pull request里提供建议，或者直接修改代码并提交。</span>
+</p>
+
 </div>
-<!-- EDIT4 SECTION "Feature Branch Workflow With Pull Requests" [3165-4590] -->
-<h3 class="sectionedit5" id="gitflow_workflow_with_pull_requests">Gitflow Workflow With Pull Requests</h3>
+<!-- EDIT4 SECTION "任务分支模式中的使用Pull Requests" [5277-7867] -->
+<h3 class="sectionedit5" id="gitflow分支模式中使用pull_requests">Gitflow分支模式中使用Pull Requests</h3>
 <div class="level3">
 
 <p>
 The Gitflow Workflow is similar to the Feature Branch Workflow, but defines a strict branching model designed around the project release. Adding pull requests to the Gitflow Workflow gives developers a convenient place to talk about a release branch or a maintenance branch while they’re working on it.
+</p>
+
+<p>
+Gitflow分支模式和任务分支模式相似，gitflow围绕着项目发布定义了一些列严格用途的分支。 在Gitflow中使用pull request 给开发者在发布分支或者维护分支工作事，方便地讨论或者评审代码。
 </p>
 
 <p>
@@ -120,12 +185,16 @@ The mechanics of pull requests in the Gitflow Workflow are the exact same as the
 </p>
 
 <p>
+Gitflow中pull requests的用法和任务分支模式的用法一样。开发者在需求、任务、发布、补丁等分支需要评审的时候，就发起一个。团队成员可以收到通知。
+</p>
+
+<p>
 Features are generally merged into the develop branch, while release and hotfix branches are merged into both develop and master. Pull requests can be used to formally manage all of these merges.
 </p>
 
 </div>
-<!-- EDIT5 SECTION "Gitflow Workflow With Pull Requests" [4591-5432] -->
-<h3 class="sectionedit6" id="forking_workflow_with_pull_requests">Forking Workflow With Pull Requests</h3>
+<!-- EDIT5 SECTION "Gitflow分支模式中使用Pull Requests" [7868-9165] -->
+<h3 class="sectionedit6" id="复刻分支模式中使用_pull_requests">复刻分支模式中使用 Pull Requests</h3>
 <div class="level3">
 
 <p>
@@ -133,7 +202,15 @@ In the Forking Workflow, a developer pushes a completed feature to their own pub
 </p>
 
 <p>
+复刻模式分支模式中，开发者完成开发后把代码从私有库提交到自己的公开库，不想其他模式提交到公有仓库。然后，发起一个pull request 让项目维护者知道自己的代码写完了，可以先看看。
+</p>
+
+<p>
 The notification aspect of pull requests is particularly useful in this workflow because the project maintainer has no way of knowing when another developer has added commits to their Bitbucket repository.
+</p>
+
+<p>
+在这种模式中，pull request 发出的通知特别有用，让项目维护者知道谁修改什么。
 </p>
 
 <p>
@@ -155,182 +232,7 @@ Pull Requests: Forking workflow
 <p>
 The two developers could discuss and develop the feature inside of the pull request. When they’re done, one of them would file another pull request asking to merge the feature into the official master branch. This kind of flexibility makes pull requests very powerful collaboration tool in the Forking workflow.
 </p>
+<hr />
 
 </div>
-<!-- EDIT6 SECTION "Forking Workflow With Pull Requests" [5433-7108] -->
-<h2 class="sectionedit7" id="example">Example</h2>
-<div class="level2">
-
-<p>
-The example below demonstrates how pull requests can be used in the Forking Workflow. It is equally applicable to developers working in small teams and to a third-party developer contributing to an open source project.
-</p>
-
-<p>
-In the example, Mary is a developer, and John is the project maintainer. Both of them have their own public Bitbucket repositories, and John’s contains the official project.
-</p>
-
-</div>
-<!-- EDIT7 SECTION "Example" [7109-7524] -->
-<h3 class="sectionedit8" id="mary_forks_the_official_project">Mary forks the official project</h3>
-<div class="level3">
-
-<p>
-Pull Requests: Fork the project
-</p>
-
-<p>
-To start working in the project, Mary first needs to fork John’s Bitbucket repository. She can do this by signing in to Bitbucket, navigating to John’s repository, and clicking the Fork button.
-</p>
-
-<p>
-Pull Request: Fork in Bitbucket
-</p>
-
-<p>
-After filling out the name and description for the forked repository, she will have a server-side copy of the project.
-</p>
-
-</div>
-<!-- EDIT8 SECTION "Mary forks the official project" [7525-7950] -->
-<h3 class="sectionedit9" id="mary_clones_her_bitbucket_repository">Mary clones her Bitbucket repository</h3>
-<div class="level3">
-
-<p>
-Pull Request: Clone the Bitbucket repo
-</p>
-
-<p>
-Next, Mary needs to clone the Bitbucket repository that she just forked. This will give her a working copy of the project on her local machine. She can do this by running the following command:
-</p>
-
-<p>
-git clone <a href="https://user@bitbucket.org/user/repo.git" class="urlextern" title="https://user@bitbucket.org/user/repo.git"  rel="nofollow">https://user@bitbucket.org/user/repo.git</a>
-</p>
-
-<p>
-Keep in mind that git clone automatically creates an origin remote that points back to Mary’s forked repository.
-</p>
-
-</div>
-<!-- EDIT9 SECTION "Mary clones her Bitbucket repository" [7951-8399] -->
-<h3 class="sectionedit10" id="mary_develops_a_new_feature">Mary develops a new feature</h3>
-<div class="level3">
-
-<p>
-Pull Requests: develop a new feature
-</p>
-
-<p>
-Before she starts writing any code, Mary needs to create a new branch for the feature. This branch is what she will use as the source branch of the pull request.
-</p>
-
-<p>
-git checkout -b some-feature
-# Edit some code
-git commit -a -m “Add first draft of some feature”
-</p>
-
-<p>
-Mary can use as many commits as she needs to create the feature. And, if the feature’s history is messier than she would like, she can use an interactive rebase to remove or squash unnecessary commits. For larger projects, cleaning up a feature’s history makes it much easier for the project maintainer to see what’s going on in the pull request.
-</p>
-
-</div>
-<!-- EDIT10 SECTION "Mary develops a new feature" [8400-9089] -->
-<h3 class="sectionedit11" id="mary_pushes_the_feature_to_her_bitbucket_repository">Mary pushes the feature to her Bitbucket repository</h3>
-<div class="level3">
-
-<p>
-Pull Requests: Push feature to Bitbucket repository
-</p>
-
-<p>
-After her feature is complete, Mary pushes the feature branch to her own Bitbucket repository (not the official repository) with a simple git push:
-</p>
-
-<p>
-git push origin some-branch
-</p>
-
-<p>
-This makes her changes available to the project maintainer (or any collaborators who might need access to them).
-</p>
-
-</div>
-<!-- EDIT11 SECTION "Mary pushes the feature to her Bitbucket repository" [9090-9495] -->
-<h3 class="sectionedit12" id="mary_creates_the_pull_request">Mary creates the pull request</h3>
-<div class="level3">
-
-<p>
-Pull Request: Create Pull Request
-</p>
-
-<p>
-After Bitbucket has her feature branch, Mary can create the pull request through her Bitbucket account by navigating to her forked repository and clicking the Pull request button in the top-right corner. The resulting form automatically sets Mary’s repository as the source repository, and it asks her to specify the source branch, the destination repository, and the destination branch.
-</p>
-
-<p>
-Mary wants to merge her feature into the main codebase, so the source branch is her feature branch, the destination repository is John’s public repository, and the destination branch is master. She’ll also need to provide a title and description for the pull request. If there are other people who need to approve the code besides John, she can enter them in the Reviewers field.
-</p>
-
-<p>
-Pull Request: Bitbucket
-</p>
-
-<p>
-After she creates the pull request, a notification will be sent to John via his Bitbucket feed and (optionally) via email.
-</p>
-
-</div>
-<!-- EDIT12 SECTION "Mary creates the pull request" [9496-10494] -->
-<h3 class="sectionedit13" id="john_reviews_the_pull_request">John reviews the pull request</h3>
-<div class="level3">
-
-<p>
-Pull Request: Bitbucket pull requests
-</p>
-
-<p>
-John can access all of the pull requests people have filed by clicking on the Pull request tab in his own Bitbucket repository. Clicking on Mary’s pull request will show him a description of the pull request, the feature’s commit history, and a diff of all the changes it contains.
-</p>
-
-<p>
-If he thinks the feature is ready to merge into the project, all he has to do is hit the Merge button to approve the pull request and merge Mary’s feature into his master branch.
-</p>
-
-<p>
-But, for this example, let’s say John found a small bug in Mary’s code, and needs her to fix it before merging it in. He can either post a comment to the pull request as a whole, or he can select a specific commit in the feature’s history to comment on.
-</p>
-
-<p>
-Pull Request: Comment
-</p>
-
-</div>
-<!-- EDIT13 SECTION "John reviews the pull request" [10495-11325] -->
-<h3 class="sectionedit14" id="mary_adds_a_follow-up_commit">Mary adds a follow-up commit</h3>
-<div class="level3">
-
-<p>
-If Mary has any questions about the feedback, she can respond inside of the pull request, treating it as a discussion forum for her feature.
-</p>
-
-<p>
-To correct the error, Mary adds another commit to her feature branch and pushes it to her Bitbucket repository, just like she did the first time around. This commit is automatically added to the original pull request, and John can review the changes again, right next to his original comment.
-</p>
-
-</div>
-<!-- EDIT14 SECTION "Mary adds a follow-up commit" [11326-11799] -->
-<h3 class="sectionedit15" id="john_accepts_the_pull_request">John accepts the pull request</h3>
-<div class="level3">
-
-<p>
-Finally, John accepts the changes, merges the feature branch into master, and closes the pull request. The feature is now integrated into the project, and any other developers working on it can pull it into their own local repositories using the standard git pull command.
-Where To Go From Here
-</p>
-
-<p>
-You should now have all of the tools you need to start integrating pull requests into your existing workflow. Remember, pull requests are not a replacement for any of the Git-based collaboration workflows, but rather a convenient addition to them that makes collaboration more accessible to all of your team members.
-</p>
-
-</div>
-<!-- EDIT15 SECTION "John accepts the pull request" [11800-] -->
+<!-- EDIT6 SECTION "复刻分支模式中使用 Pull Requests" [9166-] -->

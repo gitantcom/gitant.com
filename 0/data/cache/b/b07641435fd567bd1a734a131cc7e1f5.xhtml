@@ -46,4 +46,22 @@ Branch branch_4 set up to track remote branch branch_4 from github.</pre>
  </pre>
 
 </div>
-<!-- EDIT5 SECTION "查看本地分支和远程分支之间的跟踪关系" [929-] -->
+<!-- EDIT5 SECTION "查看本地分支和远程分支之间的跟踪关系" [929-1040] -->
+<h3 class="sectionedit6" id="修建远程分支">修建远程分支</h3>
+<div class="level3">
+
+<p>
+本地查看分支：
+</p>
+<pre class="code">$ git branch -a
+* master
+  remotes/origin/master
+  remotes/origin/production</pre>
+
+<p>
+但是 production 这个分支事实上已经删除了。如何处理：
+</p>
+<pre class="code">$git remote prune origin</pre>
+
+</div>
+<!-- EDIT6 SECTION "修建远程分支" [1041-] -->

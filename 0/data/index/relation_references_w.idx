@@ -194,3 +194,4 @@ gitcommand:git_show
 gitcommand:git_cat_file
 http:10.210.132.20:8080_summary_luying1_2fsinaeditor.git
 git_branch_model:git-pull-rquest-model
+git_branch_model:git-gitblit-tickets

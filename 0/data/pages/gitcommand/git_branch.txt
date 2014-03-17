@@ -64,3 +64,11 @@ git checkout some_branch
 git push
 
 </code>
+
+====如何查看本地分支跟踪远程那个分支？====
+
+本地有很多分支，如何知道远程分支和本地那个分支有跟踪关系：
+<code>
+$git branch -vv
+</code>
+

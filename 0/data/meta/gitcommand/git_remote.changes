@@ -13,3 +13,8 @@
 1393992262	10.221.135.103	E	gitcommand:git_remote	uahoo		
 1393997746	10.221.135.103	E	gitcommand:git_remote	uahoo	[查看本地分支和远程分支之间的跟踪关系] 	
 1393997762	10.221.135.103	E	gitcommand:git_remote	uahoo	[查看本地分支和远程分支之间的跟踪关系] 	
+1394003144	127.0.0.1	E	gitcommand:git_remote		外部编辑	
+1395031598	10.221.135.150	E	gitcommand:git_remote	uahoo		
+1395031694	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
+1395031707	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
+1395044820	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	

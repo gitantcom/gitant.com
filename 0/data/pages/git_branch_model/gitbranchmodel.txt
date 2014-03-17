@@ -16,4 +16,7 @@
 
 ===== Pull Request 模式=====
 [[git_branch_model:git-pull-rquest-model | Pull Request 模式]]
+
+===== Gitblit Tickets 模式 =====
+[[git_branch_model:git-gitblit-tickets| Gitblit Tickets 实现pull requests ]]
 ----
