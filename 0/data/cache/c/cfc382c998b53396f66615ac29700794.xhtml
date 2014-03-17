@@ -1,34 +1,4 @@
 
-<h3 class="sectionedit1" id="输出最后一次提交的改变">输出最后一次提交的改变</h3>
-<div class="level3">
-
-<p>
-这个命令，我经常使用它 来发送其他没有使用git的人来检查或者集成所修改的。它会输出最近提交的修改类容到一个zip文件中。
-</p>
-<pre class="code bash">	<span class="kw2">git archive</span> <span class="re5">-o</span> ..<span class="sy0">/</span>updated.zip HEAD $<span class="br0">&#40;</span><span class="kw2">git diff</span> <span class="re5">--name-only</span> HEAD^<span class="br0">&#41;</span></pre>
-
-</div>
-<!-- EDIT1 SECTION "输出最后一次提交的改变" [2-306] -->
-<h3 class="sectionedit2" id="输出两个提交间的改变">输出两个提交间的改变</h3>
-<div class="level3">
-
-<p>
-类似的，如果你需要输出某两个提交间的改变时，你可以使用这个。
-</p>
-<pre class="code bash">	<span class="kw2">git archive</span> <span class="re5">-o</span> ..<span class="sy0">/</span>latest.zip NEW_COMMIT_ID_HERE $<span class="br0">&#40;</span><span class="kw2">git</span> diff--name-only OLD_COMMIT_ID_HERE NEW_COMMIT_ID_HERE<span class="br0">&#41;</span></pre>
-
-<p>
-3. 克隆 指定的远程分支
-</p>
-
-<p>
-如果你渴望只克隆远程仓库的一个指定分支，而不是整个仓库分支，这对你帮助很大。
-1 	git init
-2 	git remote add -t BRANCH_NAME_HERE -f origin REMOTE_REPO_<abbr title="Uniform Resource Locator">URL</abbr>_PATH_HERE
-3 	git checkout BRANCH_NAME_HERE
-4. 应用 从不相关的本地仓库来的补丁
-</p>
-
 <p>
 如果你需要其它一些不相关的本地仓库作为你现在仓库的补丁，这里就是通往那里的捷径。
 1 	git –git-dir=PATH_TO_OTHER_REPOSITORY_HERE/.git format-patch -k -1 –stdout COMMIT_HASH_ID_HERE| git am -3 -k
@@ -118,6 +88,3 @@ stoneyang
 您也可以将某条branch配置为总是使用rebase推送：
 1 	git config branch.BRANCH_NAME_HERE.rebase true
 </p>
-
-</div>
-<!-- EDIT2 SECTION "输出两个提交间的改变" [307-] -->

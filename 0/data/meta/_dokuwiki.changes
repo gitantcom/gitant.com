@@ -68,3 +68,34 @@
 1392791876	127.0.0.1	E	gitcommand:git_branch		外部编辑	
 1395043580	10.221.135.150	E	gitcommand:git_branch	uahoo		
 1395044820	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
+1395051157	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Collaboration Workflow] 	
+1395051226	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Why not GitHub-style Pull/Merge Requests?] 	
+1395051257	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Gitblit's flow looks like this:] 	
+1395051312	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Nomenclature] 	
+1395051413	10.221.135.150	E	gitcommand:git_command1	uahoo	[Git] 	
+1395051497	10.221.135.150	E	gitcommand:git_command1	uahoo	[GitbLIT] 	
+1395051511	10.221.135.150	E	gitcommand:git_command1	uahoo	[GitBlit] 	
+1395051521	10.221.135.150	C	gitcommand:gitblit_tickets	uahoo	创建	
+1395052017	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo		
+1395052309	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo		
+1395052495	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Ticket RefSpecs] 	
+1395052574	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Ticket RefSpecs] 	
+1395052614	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[to add commits to an existing patchset] 	
+1395052642	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[to rewrite a patchset (amend, rebase, squash)] 	
+1395052824	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Ticket RefSpec Tricks] 	
+1395052871	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Merging Patchsets] 	
+1395052912	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Ticket RefSpec Tricks] 	
+1395053170	10.221.135.150	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
+1387958201	127.0.0.1	E	gitcommand:git_how		外部编辑	
+1395053197	10.221.135.150	E	gitcommand:git_how	uahoo		
+1387958201	127.0.0.1	E	gitcommand:git_archive		外部编辑	
+1395053214	10.221.135.150	E	gitcommand:git_archive	uahoo		
+1395053265	10.221.135.150	E	gitcommand:git_how	uahoo		
+1395053324	10.221.135.150	E	gitcommand:git_clone	uahoo		
+1395053347	10.221.135.150	D	gitcommand:git_how	uahoo	移除	
+1395058513	10.212.40.248	E	git_branch_model:git-pull-rquest-model	uahoo	[复刻分支模式中使用 Pull Requests] 	
+1395058958	10.212.40.248	E	gitcommand:git_command1	uahoo	[分支合并] 	
+1395059095	10.212.40.248	E	gitcommand:git_command1	uahoo	[分支合并] 	
+1395059241	10.212.40.248	C	gitcommand:git_rebase_i	uahoo	创建	
+1395059714	10.212.40.248	E	gitcommand:git_command1	uahoo	[GitBlit] 	
+1395060416	10.212.40.248	C	gitcommand:git_describe	uahoo	创建	

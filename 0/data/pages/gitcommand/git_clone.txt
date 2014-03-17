@@ -41,3 +41,12 @@ rm -rf project.git
 <code>
 git clone git@gitcafe.com/username/newproject.git
 </code>
+
+==== 克隆 指定的远程分支====
+
+如果你渴望只克隆远程仓库的一个指定分支，而不是整个仓库分支，这对你帮助很大。
+<code>
+1 	git init
+2 	git remote add -t BRANCH_NAME_HERE -f origin REMOTE_REPO_URL_PATH_HERE
+3 	git checkout BRANCH_NAME_HERE
+</code>

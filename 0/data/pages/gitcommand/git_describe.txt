@@ -1,0 +1,1 @@
+ git  describe 只显示有标注的tags。

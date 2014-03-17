@@ -1,4 +1,4 @@
-a:62:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:15:"克隆git仓库";i:1;i:4;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:4;}i:2;i:1;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:15:"
+a:69:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:15:"克隆git仓库";i:1;i:4;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:4;}i:2;i:1;}i:3;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:15:"
 git clone url
 ";i:1;N;i:2;N;}i:2;i:28;}i:4;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:53;}i:5;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:10:"bare模式";i:1;i:4;i:2;i:53;}i:2;i:53;}i:6;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:4;}i:2;i:53;}i:7;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:53;}i:8;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:88:"git提供一种对外发布，供开发者克隆的一种空工作目录的bare方式。";}i:2;i:70;}i:9;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:164;}i:10;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:22:"
 git clone --bare url
@@ -17,4 +17,8 @@ cd ..
 rm -rf project.git
 ";i:1;N;i:2;N;}i:2;i:963;}i:52;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:997;}i:53;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:997;}i:54;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:997;}i:55;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:87:" 到新服务器 GitCafe 上找到 Clone 地址，直接 Clone 到本地就可以了。";}i:2;i:1001;}i:56;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:1088;}i:57;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:1088;}i:58;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:1088;}i:59;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:51:"
 git clone git@gitcafe.com/username/newproject.git
-";i:1;N;i:2;N;}i:2;i:1094;}i:60;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1153;}i:61;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1153;}}
+";i:1;N;i:2;N;}i:2;i:1094;}i:60;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1155;}i:61;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:28:"克隆 指定的远程分支";i:1;i:3;i:2;i:1155;}i:2;i:1155;}i:62;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:1155;}i:63;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1155;}i:64;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:114:"如果你渴望只克隆远程仓库的一个指定分支，而不是整个仓库分支，这对你帮助很大。";}i:2;i:1194;}i:65;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1314;}i:66;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:120:"
+1 	git init
+2 	git remote add -t BRANCH_NAME_HERE -f origin REMOTE_REPO_URL_PATH_HERE
+3 	git checkout BRANCH_NAME_HERE
+";i:1;N;i:2;N;}i:2;i:1314;}i:67;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:1443;}i:68;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:1443;}}

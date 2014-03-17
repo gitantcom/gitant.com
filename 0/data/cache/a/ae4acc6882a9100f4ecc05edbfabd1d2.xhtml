@@ -59,16 +59,20 @@ Gitblit stores each ticket as a journal (list of changes). A ticket journal is r
 
 </div>
 <!-- EDIT3 SECTION "Ticket Model" [1927-2322] -->
-<h3 class="sectionedit4" id="collaboration_workflow">Collaboration Workflow</h3>
+<h3 class="sectionedit4" id="collaboration_workflow_协作流程">Collaboration Workflow 协作流程</h3>
 <div class="level3">
 
 <p>
 Gitblit uses a 3-repository workflow. This means that Gitblit cuts the fork repository out of the collaboration workflow: patchsets are pushed directly to a special branch of the canonical repository, not to a fork. You may also push to fork, if you want, but all collaboration occurs in the canonical repository, not your fork.
 </p>
 
+<p>
+Gitblit 用3个仓库实现流程。这样减少了fork的过程： 补丁集合可以提交到中央库的特殊分支上，不像fork模式。
+</p>
+
 </div>
 
-<h4 id="persistence_choices">Persistence Choices</h4>
+<h4 id="persistence_choices_坚持的选择">Persistence Choices 坚持的选择</h4>
 <div class="level4">
 
 <p>
@@ -84,7 +88,7 @@ You can find descriptions of the available persistence services in tickets setup
 </p>
 
 </div>
-<!-- EDIT4 SECTION "Collaboration Workflow" [2323-3319] -->
+<!-- EDIT4 SECTION "Collaboration Workflow 协作流程" [2323-3495] -->
 <h3 class="sectionedit5" id="limitations">Limitations</h3>
 <div class="level3">
 
@@ -95,7 +99,7 @@ You can find descriptions of the available persistence services in tickets setup
 </p>
 
 </div>
-<!-- EDIT5 SECTION "Limitations" [3320-4052] -->
+<!-- EDIT5 SECTION "Limitations" [3496-4228] -->
 <h3 class="sectionedit6" id="how_did_github_influence_the_design_of_tickets">How did GitHub influence the design of Tickets?</h3>
 <div class="level3">
 
@@ -108,7 +112,7 @@ Gitblit&#039;s Ticket querying and discussion ui are modeled after GitHub&#039;s
 </p>
 
 </div>
-<!-- EDIT6 SECTION "How did GitHub influence the design of Tickets?" [4053-4345] -->
+<!-- EDIT6 SECTION "How did GitHub influence the design of Tickets?" [4229-4521] -->
 <h3 class="sectionedit7" id="how_did_bitbucket_influence_the_design_of_tickets">How did BitBucket influence the design of Tickets?</h3>
 <div class="level3">
 
@@ -125,7 +129,7 @@ Branch Pull Requests. BitBucket has a very cool feature of creating a pull reque
 </p>
 
 </div>
-<!-- EDIT7 SECTION "How did BitBucket influence the design of Tickets?" [4346-5204] -->
+<!-- EDIT7 SECTION "How did BitBucket influence the design of Tickets?" [4522-5380] -->
 <h3 class="sectionedit8" id="how_did_gerrit_influence_the_design_of_tickets">How did Gerrit influence the design of Tickets?</h3>
 <div class="level3">
 
@@ -142,15 +146,19 @@ Gitblit has adopted Gerrit&#039;s three-repository workflow and magic ref design
 </p>
 
 </div>
-<!-- EDIT8 SECTION "How did Gerrit influence the design of Tickets?" [5205-5999] -->
+<!-- EDIT8 SECTION "How did Gerrit influence the design of Tickets?" [5381-6175] -->
 <h3 class="sectionedit9" id="nomenclature">Nomenclature</h3>
 <div class="level3">
 
 <p>
-1.The organizational unit of the Gitblit Tickets feature is the ticket.
-2.A ticket can be used to report a bug, request an enhancement, ask a question, etc. A ticket can also be used to collaborate on a patchset that addresses the request.
-3.A patchset is a series of commits from a merge base that exists in the target branch of your repository to the tip of the patchset. A patchset may only contain a single commit, or it may contain dozens. This is similar to the commits in a Pull Request. One important distinction here is that in Gitblit, each Patchset is developed on a separate branch and can be completely rewritten without losing the previous patchsets (this creates a new patchset).
-4.A ticket monitors the development of patchsets by tracking revisions to patchsets. The ticket alslo monitors rewritten patchsets. Each patchset is developed on it&#039;s own Git branch.
+1.The organizational unit of the Gitblit Tickets feature is the ticket.<br/>
+
+2.A ticket can be used to report a bug, request an enhancement, ask a question, etc. A ticket can also be used to collaborate on a patchset that addresses the request.<br/>
+
+3.A patchset is a series of commits from a merge base that exists in the target branch of your repository to the tip of the patchset. A patchset may only contain a single commit, or it may contain dozens. This is similar to the commits in a Pull Request. One important distinction here is that in Gitblit, each Patchset is developed on a separate branch and can be completely rewritten without losing the previous patchsets (this creates a new patchset).<br/>
+
+4.A ticket monitors the development of patchsets by tracking revisions to patchsets. The ticket alslo monitors rewritten patchsets. Each patchset is developed on it&#039;s own Git branch.<br/>
+
 </p>
 
 <p>
@@ -162,7 +170,7 @@ If you prefer the Gerrit-style workflow, you can achieve a fair approximation by
 </p>
 
 </div>
-<!-- EDIT9 SECTION "Nomenclature" [6000-7610] -->
+<!-- EDIT9 SECTION "Nomenclature" [6176-7795] -->
 <h3 class="sectionedit10" id="types_of_tickets">Types of Tickets</h3>
 <div class="level3">
 
@@ -183,33 +191,46 @@ The only difference between these two ticket types is how they are created (on-p
 </p>
 
 </div>
-<!-- EDIT10 SECTION "Types of Tickets" [7611-8641] -->
+<!-- EDIT10 SECTION "Types of Tickets" [7796-8826] -->
 <h3 class="sectionedit11" id="why_not_github-style_pull_merge_requests">Why not GitHub-style Pull/Merge Requests?</h3>
 <div class="level3">
 
 <p>
 GitHub-style Pull Requests require the following workflow:
-1.Fork RepoA → MyRepoA
-2.Clone MyRepoA
-3.Create MyRepoA_Clone:topic_branch and hack on contribution
-4.Push MyRepoA_Clone:topic_branch upstream to MyRepoA:topic_branch
-5.Open Pull Request from MyRepoA:topic_branch → RepoA:integration_branch
-6.RepoA owner pulls MyRepoA:topic_branch → RepoA:integration_branch and reviews
-7.RepoA owner pushes merged contribution upstream to RepoA:integration_branch
 </p>
+<ol>
+<li class="level1"><div class="li"> Fork RepoA → MyRepoA</div>
+</li>
+<li class="level1"><div class="li"> Clone MyRepoA</div>
+</li>
+<li class="level1"><div class="li"> Create MyRepoA_Clone:topic_branch and hack on contribution</div>
+</li>
+<li class="level1"><div class="li"> Push MyRepoA_Clone:topic_branch upstream to MyRepoA:topic_branch</div>
+</li>
+<li class="level1"><div class="li"> Open Pull Request from MyRepoA:topic_branch → RepoA:integration_branch</div>
+</li>
+<li class="level1"><div class="li"> RepoA owner pulls MyRepoA:topic_branch → RepoA:integration_branch and reviews</div>
+</li>
+<li class="level1"><div class="li"> RepoA owner pushes merged contribution upstream to RepoA:integration_branch</div>
+</li>
+</ol>
 
 </div>
-<!-- EDIT11 SECTION "Why not GitHub-style Pull/Merge Requests?" [8642-9154] -->
+<!-- EDIT11 SECTION "Why not GitHub-style Pull/Merge Requests?" [8827-9353] -->
 <h3 class="sectionedit12" id="gitblit_s_flow_looks_like_this">Gitblit&#039;s flow looks like this:</h3>
 <div class="level3">
-
-<p>
-1.Clone RepoA
-2.Create RepoA_Clone:topic_branch and hack on contribution
-3.Push RepoA_Clone:topic_branch upstream to RepoA:refs/for/[new|id]
-4.RepoA owner fetches &amp; merges branch ticket/[id]
-5.RepoA owner pushes merged contribution upstream to RepoA:integration_branch
-</p>
+<ol>
+<li class="level1"><div class="li"> Clone RepoA</div>
+</li>
+<li class="level1"><div class="li"> Create RepoA_Clone:topic_branch and hack on contribution</div>
+</li>
+<li class="level1"><div class="li"> Push RepoA_Clone:topic_branch upstream to RepoA:refs/for/[new|id]</div>
+</li>
+<li class="level1"><div class="li"> RepoA owner fetches &amp; merges branch ticket/[id]</div>
+</li>
+<li class="level1"><div class="li"> RepoA owner pushes merged contribution upstream to RepoA:integration_branch</div>
+</li>
+</ol>
 
 <p>
 The Gitblit workflow eliminates the 4-repository design of a GitHub pull request (canonical, canonical working copy, fork, &amp; fork working copy) in favor of a 3-repository design (canonical, canonical working copy, clone working copy).
@@ -228,4 +249,4 @@ Additionally, because the patchset is not linked to a user&#039;s personal fork 
 </p>
 
 </div>
-<!-- EDIT12 SECTION "Gitblit's flow looks like this:" [9155-] -->
+<!-- EDIT12 SECTION "Gitblit's flow looks like this:" [9354-] -->

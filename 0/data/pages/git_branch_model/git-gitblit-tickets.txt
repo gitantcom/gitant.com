@@ -32,11 +32,14 @@ Gitblit takes inspiration from GitHub, BitBucket, and Gerrit.
 
 Gitblit stores each ticket as a journal (list of changes). A ticket journal is retrieved from the chosen persistence engine and an effective ticket is built by applying the ordered changes from the journal. These changes are usually additive, but in some cases a change may represent a deletion. Tickets are indexed by Lucene against which all ticket queries are executed.
 
-====Collaboration Workflow====
+====Collaboration Workflow 协作流程====
 
 Gitblit uses a 3-repository workflow. This means that Gitblit cuts the fork repository out of the collaboration workflow: patchsets are pushed directly to a special branch of the canonical repository, not to a fork. You may also push to fork, if you want, but all collaboration occurs in the canonical repository, not your fork.
 
-===Persistence Choices===
+Gitblit 用3个仓库实现流程。这样减少了fork的过程： 补丁集合可以提交到中央库的特殊分支上，不像fork模式。
+
+
+===Persistence Choices 坚持的选择===
 
 Gitblit's ticket data is based on a ridiculously simple concept: a ticket is the end result of applying a sequence of changes to an empty ticket. Each change is serialized as JSON and stored in a journal. The journal may be a simple text file (journal.json) or it may be a Redis LIST or some future persistence type.
 
@@ -72,10 +75,11 @@ After working with this design for many months and dogfooding dozens of tickets 
 Gitblit has adopted Gerrit's three-repository workflow and magic ref design for pushes of new ticket patchsets or rewrites of existing ticket patchsets.
 
 ====Nomenclature=====
-1.The organizational unit of the Gitblit Tickets feature is the ticket.
-2.A ticket can be used to report a bug, request an enhancement, ask a question, etc. A ticket can also be used to collaborate on a patchset that addresses the request.
-3.A patchset is a series of commits from a merge base that exists in the target branch of your repository to the tip of the patchset. A patchset may only contain a single commit, or it may contain dozens. This is similar to the commits in a Pull Request. One important distinction here is that in Gitblit, each Patchset is developed on a separate branch and can be completely rewritten without losing the previous patchsets (this creates a new patchset).
-4.A ticket monitors the development of patchsets by tracking revisions to patchsets. The ticket alslo monitors rewritten patchsets. Each patchset is developed on it's own Git branch.
+
+1.The organizational unit of the Gitblit Tickets feature is the ticket.\\
+2.A ticket can be used to report a bug, request an enhancement, ask a question, etc. A ticket can also be used to collaborate on a patchset that addresses the request.\\
+3.A patchset is a series of commits from a merge base that exists in the target branch of your repository to the tip of the patchset. A patchset may only contain a single commit, or it may contain dozens. This is similar to the commits in a Pull Request. One important distinction here is that in Gitblit, each Patchset is developed on a separate branch and can be completely rewritten without losing the previous patchsets (this creates a new patchset).\\
+4.A ticket monitors the development of patchsets by tracking revisions to patchsets. The ticket alslo monitors rewritten patchsets. Each patchset is developed on it's own Git branch.\\
 
 Tracking patchsets is similar in concept to Gerrit, but there is a critical difference. In Gerrit, every commit in the patchset has it's own ticket AND Git branch. In Gerrit, patchsets can be easily rewritten and for each rewritten commit, a new branch ref is created. This leads to an explosion in refs for the repository over time. In Gitblit, only the tip of the patchset gets a branch ref and this branch ref is updated, like a regular branch, unless a rewrite is detected.
 
@@ -96,21 +100,23 @@ The only difference between these two ticket types is how they are created (on-p
 ====Why not GitHub-style Pull/Merge Requests?=====
 
 GitHub-style Pull Requests require the following workflow:
-1.Fork RepoA -> MyRepoA
-2.Clone MyRepoA
-3.Create MyRepoA_Clone:topic_branch and hack on contribution
-4.Push MyRepoA_Clone:topic_branch upstream to MyRepoA:topic_branch
-5.Open Pull Request from MyRepoA:topic_branch -> RepoA:integration_branch
-6.RepoA owner pulls MyRepoA:topic_branch -> RepoA:integration_branch and reviews
-7.RepoA owner pushes merged contribution upstream to RepoA:integration_branch
+  - Fork RepoA -> MyRepoA
+  - Clone MyRepoA
+  - Create MyRepoA_Clone:topic_branch and hack on contribution
+  - Push MyRepoA_Clone:topic_branch upstream to MyRepoA:topic_branch
+  - Open Pull Request from MyRepoA:topic_branch -> RepoA:integration_branch
+  - RepoA owner pulls MyRepoA:topic_branch -> RepoA:integration_branch and reviews
+  - RepoA owner pushes merged contribution upstream to RepoA:integration_branch
 
 ====Gitblit's flow looks like this:=====
-1.Clone RepoA
-2.Create RepoA_Clone:topic_branch and hack on contribution
-3.Push RepoA_Clone:topic_branch upstream to RepoA:refs/for/[new|id]
-4.RepoA owner fetches & merges branch ticket/[id]
-5.RepoA owner pushes merged contribution upstream to RepoA:integration_branch
 
+  - Clone RepoA
+  - Create RepoA_Clone:topic_branch and hack on contribution
+  - Push RepoA_Clone:topic_branch upstream to RepoA:refs/for/[new|id]
+  - RepoA owner fetches & merges branch ticket/[id]
+  - RepoA owner pushes merged contribution upstream to RepoA:integration_branch
+
+ 
 The Gitblit workflow eliminates the 4-repository design of a GitHub pull request (canonical, canonical working copy, fork, & fork working copy) in favor of a 3-repository design (canonical, canonical working copy, clone working copy).
 
 You might wonder: Is it a good idea to allow users to push into the canonical repository?

@@ -61,3 +61,16 @@ rm -rf project.git</pre>
 <pre class="code">git clone git@gitcafe.com/username/newproject.git</pre>
 
 </div>
+
+<h3 class="sectionedit1" id="克隆_指定的远程分支">克隆 指定的远程分支</h3>
+<div class="level3">
+
+<p>
+如果你渴望只克隆远程仓库的一个指定分支，而不是整个仓库分支，这对你帮助很大。
+</p>
+<pre class="code">1 	git init
+2 	git remote add -t BRANCH_NAME_HERE -f origin REMOTE_REPO_URL_PATH_HERE
+3 	git checkout BRANCH_NAME_HERE</pre>
+
+</div>
+<!-- EDIT1 SECTION "克隆 指定的远程分支" [1155-] -->
