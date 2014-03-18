@@ -1,19 +1,19 @@
 
 
 
-====本地新分支？====
+====创建本地新分支？====
 <code bash>
 $ git checkout -b alvin
 Switched to a new branch 'alvin'
 </code>
 
 
-====转换分支====
+====切换到不同分支====
 <code>
 git checkout <branch-name>
 </code>
 
-====本地删除分支====
+====删除本地分支====
 <code bash>
 $ git branch -d simon
 error: The branch 'simon' is not fully merged.
@@ -22,11 +22,29 @@ If you are sure you want to delete it, run
 </code>
 
 
-====删除远端仓库的分支？====
-删除origin上的simon分支？
+====删除远端仓库的分支和标签？====
+
+**删除origin上的simon分支**
 <code>
 $ git push origin :simon
 </code>
+
+**删除远程分支**
+
+在Git v1.7.0 之后，可以使用这种语法删除远程分支：
+<code>
+git push origin --delete <branchName>
+</code>
+<code>
+git push origin --delete <branchName>
+</code>
+**删除远程tag**
+<code>
+git push origin --delete tag <tagname>
+</code>
+
+ 
+
 ----  
   
 ====修改本地分支名称？====

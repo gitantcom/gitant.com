@@ -59,3 +59,11 @@ git_branch_model:git-workflow-svn-9.png
 wiki:201206011608225491.jpg
 wiki:201206011608404371.jpg
 wiki:201206011608475841.jpg
+git_branch_model:wl_nrpqs.jpg
+git_concept:git-flow.png
+git_concept:dest.png
+git_concept:master.png
+git_concept:feature.png
+git_concept:merge-no-ff.png
+git_concept:merge.png
+git_concept:hotfix.png

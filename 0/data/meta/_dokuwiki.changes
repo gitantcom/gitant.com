@@ -1,34 +1,3 @@
-1394430200	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Gitflow Workflow] 	
-1394430603	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Gitflow Workflow] 	
-1394430910	10.221.135.122	E	git_branch_model:gitbranchmodel	uahoo		
-1394430968	10.221.135.122	C	git_branch_model:git-pull-rquest-model	uahoo	创建	
-1394431128	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Gitflow Workflow] 	
-1394431500	10.221.135.122	E	git_branch_model:git-pull-rquest-model	uahoo		
-1394432441	10.221.135.122	E	sidebar	uahoo	[并行开发] 	
-1394432511	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Gitflow Workflow] 	
-1394432582	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[流程介绍] 	
-1394432930	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[流程描述] 	
-1394433521	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[产品历史分支] 	
-1394433845	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[任务分支Feature Branches] 	
-1394434139	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[任务分支] 	
-1394434310	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[历史分支] 	
-1394434331	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[发布历史分支(master)] 	
-1394434363	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[发布历史分支(Master 和 Develop)] 	
-1394434413	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[发布和集成分支(Master 和 Develop)] 	
-1394436323	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[发布分支（Release Branches）] 	
-1394436417	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[维护分支（Maintenance Branches）] 	
-1394436745	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[维护分支（Hot Fix Branch）] 	
-1394437282	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[实例演示] 	
-1394437942	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[创建开发分支] 	
-1394438170	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 和 John 开发新功能] 	
-1394438609	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 和 John 开发新功能] 	
-1394439013	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 和 John 开发新功能] 	
-1394439401	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 完成任务开发] 	
-1394439620	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary开始计划发布产品] 	
-1394440547	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 完成发布] 	
-1394440902	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 完成发布] 	
-1394441061	10.221.135.122	E	git_branch_model:git-workflow-gitflow	uahoo	[Mary 完成发布] 	
-1394441141	10.221.135.122	E	git_branch_model:git-feature-branch	uahoo	[合并请求(Pull Requests)] 	
 1394594206	10.221.135.122	E	git_branch_model:git-pull-rquest-model	uahoo		
 1394594743	10.221.135.122	E	git_branch_model:git-pull-rquest-model	uahoo	[Pull Request 模式] 	
 1394595582	10.221.135.122	E	git_branch_model:git-pull-rquest-model	uahoo	[Pull Request 模式] 	
@@ -52,7 +21,6 @@
 1394619226	10.221.135.122	E	git_branch_model:git-pull-rquest-model	uahoo	[Gitflow分支模式中使用Pull Requests] 	
 1394634022	10.212.40.140	E	git_branch_model:git-pull-rquest-model	uahoo	[Mary forks the official project] 	
 1394679856	10.221.135.135	E	git_branch_model:git-pull-rquest-model	uahoo	[复刻分支模式中使用 Pull Requests] 	
-1394003144	127.0.0.1	E	gitcommand:git_remote		外部编辑	
 1395031598	10.221.135.150	E	gitcommand:git_remote	uahoo		
 1395031694	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
 1395031707	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
@@ -65,7 +33,6 @@
 1395036903	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Design] 	
 1395036937	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[ollaboration Workflow] 	
 1395036956	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[How did BitBucket influence the design of Tickets?] 	
-1392791876	127.0.0.1	E	gitcommand:git_branch		外部编辑	
 1395043580	10.221.135.150	E	gitcommand:git_branch	uahoo		
 1395044820	10.221.135.150	E	gitcommand:git_remote	uahoo	[远程分支已经被别人删除，本地更新后，依然看到远程分支？] 	
 1395051157	10.221.135.150	E	git_branch_model:git-gitblit-tickets	uahoo	[Collaboration Workflow] 	
@@ -86,9 +53,7 @@
 1395052871	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Merging Patchsets] 	
 1395052912	10.221.135.150	E	gitcommand:gitblit_tickets	uahoo	[Ticket RefSpec Tricks] 	
 1395053170	10.221.135.150	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
-1387958201	127.0.0.1	E	gitcommand:git_how		外部编辑	
 1395053197	10.221.135.150	E	gitcommand:git_how	uahoo		
-1387958201	127.0.0.1	E	gitcommand:git_archive		外部编辑	
 1395053214	10.221.135.150	E	gitcommand:git_archive	uahoo		
 1395053265	10.221.135.150	E	gitcommand:git_how	uahoo		
 1395053324	10.221.135.150	E	gitcommand:git_clone	uahoo		
@@ -99,3 +64,56 @@
 1395059241	10.212.40.248	C	gitcommand:git_rebase_i	uahoo	创建	
 1395059714	10.212.40.248	E	gitcommand:git_command1	uahoo	[GitBlit] 	
 1395060416	10.212.40.248	C	gitcommand:git_describe	uahoo	创建	
+1395065660	10.212.40.214	E	gitcommand:git_version_range	uahoo		
+1395065726	10.212.40.214	E	gitcommand:git_version_range	uahoo		
+1395065954	10.212.40.214	E	git_concept:git_concept	uahoo	[git的合并] 	
+1392791876	127.0.0.1	E	git_branch_model:git_branch_style		外部编辑	
+1395111200	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
+1395111286	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
+1395111344	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[远程分支/跟踪分支] 	
+1395112169	10.221.135.150	E	gitcommand:git_branch	uahoo	[本地新分支？] 	
+1395112187	10.221.135.150	E	gitcommand:git_branch	uahoo	[转换分支] 	
+1395112204	10.221.135.150	E	gitcommand:git_branch	uahoo	[本地创建新分支？] 	
+1395112219	10.221.135.150	E	gitcommand:git_branch	uahoo	[本地删除分支] 	
+1395112382	10.221.135.150	E	gitcommand:git_branch	uahoo	[删除远端仓库的分支？] 	
+1395112419	10.221.135.150	E	gitcommand:git_branch	uahoo	[删除远端仓库的分支和标签？] 	
+1395113226	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[长期分支/产品分支] 	
+1395113239	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[短期分支/任务分支] 	
+1395113252	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[短期分支/任务分支] 	
+1395113308	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[短期分支/任务分支] 	
+1395114777	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
+1395114805	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[远程分支/跟踪分支] 	
+1392791876	127.0.0.1	E	wiki:github_howto_pull_request		外部编辑	
+1395117017	10.221.135.150	E	wiki:github_howto_pull_request	uahoo	[GitHub如何操作pull request？] 	
+1394003144	127.0.0.1	E	git_concept:git_parallel_concept		外部编辑	
+1395133781	10.221.135.150	E	git_concept:git_parallel_concept	uahoo		
+1395133792	10.221.135.150	D	gitcommand:git_flow	uahoo	移除	
+1395133902	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git分支] 	
+1395133957	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395134020	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395134623	10.221.135.150	C	git_concept:git_branch_gitflow_style	uahoo	创建	
+1395135499	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[Git-flow 分支的类型和模式] 	
+1395135706	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[分布式而非集中式] 	
+1395136231	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[主分支] 	
+1395136286	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[功能分支] 	
+1395136353	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[功能分支] 	
+1395136425	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[热修复分支] 	
+1395136594	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[Git-flow 分支的类型和模式] 	
+1395136646	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[为何是Git？] 	
+1395136671	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[分布式而非集中式] 	
+1395136689	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[分布式而非集中式] 	
+1395136707	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[Git-flow 分支类型和模式] 	
+1395136755	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[主分支] 	
+1395136767	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[主分支] 	
+1395136817	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[辅助性分支] 	
+1395136834	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[辅助性分支] 	
+1395136911	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[功能分支] 	
+1395137029	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[功能分支] 	
+1395137072	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[功能分支] 	
+1395137109	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[创建一个功能分支] 	
+1395137134	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[合并一个功能到develop分支] 	
+1395137161	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[Release 分支] 	
+1395137350	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo	[Release 分支] 	
+1395137440	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395137457	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395137628	10.221.135.150	E	git_concept:git_branch_gitflow_style	uahoo		

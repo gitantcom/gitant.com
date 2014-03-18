@@ -12,31 +12,39 @@
 <div class="level3">
 
 <p>
-最常用的指明范围的方法是双点的语法。这种语法主要是让 Git 区分出可从一个分支中获得而不能从另一个分支中获得的提交。例如，假设你有类似于图 6-1 的提交历史。
+ 你可以用”..”来指两个提交(commit)之间的区间. 下面的命令会给出你在”7b593b5” 和”51bea1”之间除了”7b593b5外”的所有提交(commit)(注意:51bea1是最近的提交).
 </p>
 
 <p>
- 图 6-1. 范围选择的提交历史实例
+7b593b5..51bea1
+</p>
+
+<p>
+这会包括所有 从 7b593b开始的提交(commit). 译者注: 相当于 7b593b..HEAD
+</p>
+
+<p>
+7b593b.. 
 </p>
 
 <p>
 你想要查看你的试验分支上哪些没有被提交到主分支，那么你就可以使用 master..experiment 来让 Git 显示这些提交的日志——这句话的意思是“所有可从experiment分支中获得而不能从master分支中获得的提交”。为了使例子简单明了，我使用了图标中提交对象的字母来代替真实日志的输出，所以会显示：
-$ git log master..experiment
-D
-C
 </p>
+<pre class="code">$ git log master..experiment
+D
+C</pre>
 
 <p>
 另一方面，如果你想看相反的——所有在 master 而不在 experiment 中的分支——你可以交换分支的名字。experiment..master 显示所有可在 master 获得而在 experiment 中不能的提交：
-$ git log experiment..master
-F
-E
 </p>
+<pre class="code">$ git log experiment..master
+F
+E</pre>
 
 <p>
 这在你想保持 experiment 分支最新和预览你将合并的提交的时候特别有用。这个语法的另一种常见用途是查看你将把什么推送到远程：
-$ git log origin/master..HEAD
 </p>
+<pre class="code">$ git log origin/master..HEAD</pre>
 
 <p>
 这条命令显示任何在你当前分支上而不在远程origin 上的提交。如果你运行 git push 并且的你的当前分支正在跟踪 origin/master，被git log origin/master..HEAD 列出的提交就是将被传输到服务器上的提交。 你也可以留空语法中的一边来让 Git 来假定它是 HEAD。例如，输入 git log origin/master.. 将得到和上面的例子一样的结果—— Git 使用 HEAD 来代替不存在的一边。

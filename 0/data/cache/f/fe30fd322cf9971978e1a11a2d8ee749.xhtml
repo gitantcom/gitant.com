@@ -1,18 +1,18 @@
 
-<h3 class="sectionedit1" id="本地新分支">本地新分支？</h3>
+<h3 class="sectionedit1" id="创建本地新分支">创建本地新分支？</h3>
 <div class="level3">
 <pre class="code bash">$ <span class="kw2">git checkout</span> <span class="re5">-b</span> alvin
 Switched to a new branch <span class="st_h">'alvin'</span></pre>
 
 </div>
-<!-- EDIT1 SECTION "本地新分支？" [4-109] -->
-<h3 class="sectionedit2" id="转换分支">转换分支</h3>
+<!-- EDIT1 SECTION "创建本地新分支？" [4-115] -->
+<h3 class="sectionedit2" id="切换到不同分支">切换到不同分支</h3>
 <div class="level3">
 <pre class="code">git checkout &lt;branch-name&gt;</pre>
 
 </div>
-<!-- EDIT2 SECTION "转换分支" [110-173] -->
-<h3 class="sectionedit3" id="本地删除分支">本地删除分支</h3>
+<!-- EDIT2 SECTION "切换到不同分支" [116-188] -->
+<h3 class="sectionedit3" id="删除本地分支">删除本地分支</h3>
 <div class="level3">
 <pre class="code bash">$ <span class="kw2">git branch</span> <span class="re5">-d</span> simon
 error: The branch <span class="st_h">'simon'</span> is not fully merged.
@@ -20,25 +20,40 @@ If you are sure you want to delete it, run
 <span class="st_h">'git branch -D simon'</span>.</pre>
 
 </div>
-<!-- EDIT3 SECTION "本地删除分支" [174-357] -->
-<h3 class="sectionedit4" id="删除远端仓库的分支">删除远端仓库的分支？</h3>
+<!-- EDIT3 SECTION "删除本地分支" [189-372] -->
+<h3 class="sectionedit4" id="删除远端仓库的分支和标签">删除远端仓库的分支和标签？</h3>
 <div class="level3">
 
 <p>
-删除origin上的simon分支？
+<strong>删除origin上的simon分支</strong>
 </p>
 <pre class="code">$ git push origin :simon</pre>
+
+<p>
+<strong>删除远程分支</strong>
+</p>
+
+<p>
+在Git v1.7.0 之后，可以使用这种语法删除远程分支：
+</p>
+<pre class="code">git push origin --delete &lt;branchName&gt;</pre>
+<pre class="code">git push origin --delete &lt;branchName&gt;</pre>
+
+<p>
+<strong>删除远程tag</strong>
+</p>
+<pre class="code">git push origin --delete tag &lt;tagname&gt;</pre>
 <hr />
 
 </div>
-<!-- EDIT4 SECTION "删除远端仓库的分支？" [358-479] -->
+<!-- EDIT4 SECTION "删除远端仓库的分支和标签？" [373-783] -->
 <h3 class="sectionedit5" id="修改本地分支名称">修改本地分支名称？</h3>
 <div class="level3">
 <pre class="code">$ git branch -m old_branch new_branch</pre>
 <hr />
 
 </div>
-<!-- EDIT5 SECTION "修改本地分支名称？" [480-575] -->
+<!-- EDIT5 SECTION "修改本地分支名称？" [784-879] -->
 <h3 class="sectionedit6" id="修改远端仓库分支名称">修改远端仓库分支名称？</h3>
 <div class="level3">
 
@@ -50,7 +65,7 @@ $ <span class="kw2">git push</span> origin :old_branch   <span class="co0">#删�
 <hr />
 
 </div>
-<!-- EDIT6 SECTION "修改远端仓库分支名称？" [576-820] -->
+<!-- EDIT6 SECTION "修改远端仓库分支名称？" [880-1124] -->
 <h3 class="sectionedit7" id="设置远程分支的跟踪">设置远程分支的跟踪?</h3>
 <div class="level3">
 
@@ -74,7 +89,7 @@ Assuming there is a remote repository that you cloned your local repository from
 <span class="kw2">git push</span></pre>
 
 </div>
-<!-- EDIT7 SECTION "设置远程分支的跟踪?" [821-1480] -->
+<!-- EDIT7 SECTION "设置远程分支的跟踪?" [1125-1784] -->
 <h3 class="sectionedit8" id="如何查看本地分支跟踪远程那个分支">如何查看本地分支跟踪远程那个分支？</h3>
 <div class="level3">
 
@@ -84,4 +99,4 @@ Assuming there is a remote repository that you cloned your local repository from
 <pre class="code">$git branch -vv</pre>
 
 </div>
-<!-- EDIT8 SECTION "如何查看本地分支跟踪远程那个分支？" [1481-] -->
+<!-- EDIT8 SECTION "如何查看本地分支跟踪远程那个分支？" [1785-] -->

@@ -1,6 +1,6 @@
 ====git分支====
   * [[git_branch_model:git_branch_style|分支类型]]
-  * [[gitcommand:git_flow| git-flow的分支类型]]
+
 
 
 ====git 创建分支====
@@ -16,10 +16,14 @@
 
  
 
-====git pull request===
+====git pull request====
   * [[wiki:github_howto_pull_request|github 如何pull request ?]]
   * [[git_concept:git_howto_pull_request|git 如何pull request ？]]
 
 ====git rebase vs merge ====
   * [[git_concept:merge_rebase_diff| merge和rebase的区别？]]
   * [[git_branch_model:git_rebase_workflow| git rebase 流程]]
+
+====git flow ====
+  * [[http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html | git-flow 的安装和使用?]]
+  * [[git_concept:git_branch_gitflow_style | git-flow的分支种类和模式]]

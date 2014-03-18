@@ -1,5 +1,12 @@
 ==== GitHub如何操作pull request？ ====
-----
+主repo(upstream)只开放给某些人，其他人做贡献就得用pull request，让有权限的人review后merge进去 。\\
+有一个仓库，叫Repo A。\\
+你如果要往里贡献代码，首先要Fork这个Repo，于是在你的Github账号下有了一个Repo A2。\\
+然后你在这个A2下工作，Commit，push等。
+然后你希望原始仓库Repo A合并你的工作，你可以在Github上发起一个Pull Request，意思是请求Repo A的所有者从你的A2合并分支。\\
+如果被审核通过并正式合并，这样你就为项目A做贡献了。
+
+
 GitHub的官方帮助如下：
 
 • [[https://help.github.com/articles/fork-a-repo|Fork A Repo]] 
@@ -11,6 +18,8 @@ GitHub的官方帮助如下：
 •[[https://help.github.com/articles/closing-a-pull-request|Closing a pull request]] 
 
 •[[ https://help.github.com/articles/tidying-up-pull-requests | Tidying up Pull Requests]]
+
+
 
 
 发现这个官方文档写得比较简单，并没有提到开源项目协作方式的一些必要的trick（比如建立topic branch），还有Pull Request的运作细节也没有提到。写个简单的总结补充一下。

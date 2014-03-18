@@ -1,7 +1,19 @@
 
 <h3 class="sectionedit1" id="github如何操作pull_request">GitHub如何操作pull request？</h3>
 <div class="level3">
-<hr />
+
+<p>
+主repo(upstream)只开放给某些人，其他人做贡献就得用pull request，让有权限的人review后merge进去 。<br/>
+
+有一个仓库，叫Repo A。<br/>
+
+你如果要往里贡献代码，首先要Fork这个Repo，于是在你的Github账号下有了一个Repo A2。<br/>
+
+然后你在这个A2下工作，Commit，push等。
+然后你希望原始仓库Repo A合并你的工作，你可以在Github上发起一个Pull Request，意思是请求Repo A的所有者从你的A2合并分支。<br/>
+
+如果被审核通过并正式合并，这样你就为项目A做贡献了。
+</p>
 
 <p>
 GitHub的官方帮助如下：
@@ -32,7 +44,7 @@ GitHub的官方帮助如下：
 </p>
 
 </div>
-<!-- EDIT1 SECTION "GitHub如何操作pull request？" [1-731] -->
+<!-- EDIT1 SECTION "GitHub如何操作pull request？" [1-1298] -->
 <h3 class="sectionedit2" id="step_1fork原项目">Step 1: Fork原项目</h3>
 <div class="level3">
 
@@ -45,7 +57,7 @@ GitHub的官方帮助如下：
 </p>
 
 </div>
-<!-- EDIT2 SECTION "Step 1: Fork原项目" [732-954] -->
+<!-- EDIT2 SECTION "Step 1: Fork原项目" [1299-1521] -->
 <h3 class="sectionedit3" id="step_2创建你的主题_topic_branch">Step 2: 创建你的主题（topic）branch</h3>
 <div class="level3">
 
@@ -71,7 +83,7 @@ $ git checkout fix-unicode-error
 </p>
 
 </div>
-<!-- EDIT3 SECTION "Step 2: 创建你的主题（topic）branch" [955-1512] -->
+<!-- EDIT3 SECTION "Step 2: 创建你的主题（topic）branch" [1522-2079] -->
 <h3 class="sectionedit4" id="step_3在主题branch下完成需要的工作">Step 3: 在主题branch下完成需要的工作</h3>
 <div class="level3">
 
@@ -118,7 +130,7 @@ $ git rebase upstream/master
 </p>
 
 </div>
-<!-- EDIT4 SECTION "Step 3: 在主题branch下完成需要的工作" [1513-2720] -->
+<!-- EDIT4 SECTION "Step 3: 在主题branch下完成需要的工作" [2080-3287] -->
 <h3 class="sectionedit5" id="step_4发送第一个pull_request">Step 4: 发送第一个Pull Request</h3>
 <div class="level3">
 
@@ -153,7 +165,7 @@ GitHub的界面：左边选择base branch，右边选择head branch。
 </p>
 
 </div>
-<!-- EDIT5 SECTION "Step 4: 发送第一个Pull Request" [2721-4115] -->
+<!-- EDIT5 SECTION "Step 4: 发送第一个Pull Request" [3288-4682] -->
 <h3 class="sectionedit6" id="step_5pull_request发送之后">Step 5: Pull Request发送之后……</h3>
 <div class="level3">
 
@@ -190,7 +202,7 @@ git pull和git merge是GitHub上最常用的merge Pull Requests的方式，在�
 </p>
 
 </div>
-<!-- EDIT6 SECTION "Step 5: Pull Request发送之后……" [4116-5537] -->
+<!-- EDIT6 SECTION "Step 5: Pull Request发送之后……" [4683-6104] -->
 <h3 class="sectionedit7" id="step_6pull_request关闭之后">Step 6: Pull Request关闭之后</h3>
 <div class="level3">
 
@@ -236,4 +248,4 @@ $ git branch -d fix-unicode-error
 </p>
 
 </div>
-<!-- EDIT7 SECTION "Step 6: Pull Request关闭之后" [5538-] -->
+<!-- EDIT7 SECTION "Step 6: Pull Request关闭之后" [6105-] -->
