@@ -12,6 +12,7 @@
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-cat-file.html|git-cat-file(1)]] 和 [[https://www.kernel.org/pub/software/scm/git/docs/git-show.html|git-show (1)]] 查看仓库对象内容和文件内容。
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-reset.html|git-reset(1)]]和[[https://www.kernel.org/pub/software/scm/git/docs/git-checkout.html|git-checkout(1)]]（带路径名 参数）放弃修改。 
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-tag.html| git-tag(1)]]用来给已知点打标签 
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-clean.html| git-clean(1)]] 清除工作目录未加入缓存的文件
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html| git-rev-parse(1)]] 查询对象的SHA值
   *[[https://www.kernel.org/pub/software/scm/git/docs/git-stash.html| git-stash(1)]] 保存未提交变更，清除工作目录
 

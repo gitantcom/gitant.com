@@ -19,6 +19,7 @@
   * [[gitcommand:git_stash|git stash]]
   * [[gitcommand:git_whatchanged| git whatchanged ]]
   * [[gitcommand:git_archive| git archive ]]
+  * [[gitcommnad:git_clean | git clean ]]
 
 ===== 撤销变更 =====
 

@@ -145,3 +145,4 @@ gitcommand:gitblit_tickets
 gitcommand:git_rebase_i
 gitcommand:git_describe
 git_concept:git_branch_gitflow_style
+gitcommnad:git_clean

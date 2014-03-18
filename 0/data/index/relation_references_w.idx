@@ -198,3 +198,4 @@ git_branch_model:git-gitblit-tickets
 gitcommand:gitblit_tickets
 gitcommand:git_rebase_i
 git_concept:git_branch_gitflow_style
+gitcommnad:git_clean
