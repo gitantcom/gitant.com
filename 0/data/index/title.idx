@@ -74,7 +74,7 @@ Gitflow分支模式
 Forking Workflow
 Gerrit
 modgit 工具
-Github
+Git 的在线托管服务器
 搭建自己的Git代码托管仓库
 官网最新下载
 Git 官方文档
@@ -130,7 +130,7 @@ git的存储对象
 查看工作目录的变更
 git rm
 
-
+git clean
 git fetch
 
 git 修改最新提交的commit log
@@ -145,4 +145,7 @@ Using Tickets
 交互式rebase
 
 Git-flow 分支类型和模式
-git clean
+
+Gitflow
+git clone checkout fetch push  pull
+git merge  rebase  cherry-pick

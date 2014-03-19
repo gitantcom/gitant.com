@@ -14,11 +14,13 @@
   * [[gitcommand:merge_diverged_detached|分叉分支和分离分支]]
 
 
+==== GitBlit====
+   * [[gitcommand:gitblit_tickets | gitblit 工单操作]]
  
 
-====git pull request====
+==== pull request====
   * [[wiki:github_howto_pull_request|github 如何pull request ?]]
-  * [[git_concept:git_howto_pull_request|git 如何pull request ？]]
+  * [[git_concept:git_howto_pull_request|gitblit 如何pull request ？]]
 
 ====git rebase vs merge ====
   * [[git_concept:merge_rebase_diff| merge和rebase的区别？]]
@@ -27,3 +29,4 @@
 ====git flow ====
   * [[http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html | git-flow 的安装和使用?]]
   * [[git_concept:git_branch_gitflow_style | git-flow的分支种类和模式]]
+  * [[gitcommand:git_flow_command | centos 安装 git flow]]

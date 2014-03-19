@@ -146,3 +146,6 @@ gitcommand:git_rebase_i
 gitcommand:git_describe
 git_concept:git_branch_gitflow_style
 gitcommnad:git_clean
+gitcommand:git_flow_command
+git_concept:git_pull_push_checkout
+git_concept:git_merge_rebase_chery-pick

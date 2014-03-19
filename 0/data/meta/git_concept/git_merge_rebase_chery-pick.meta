@@ -1,0 +1,23 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1395225331;s:8:"modified";i:1395225472;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1395225472;s:2:"ip";s:14:"10.221.135.165";s:4:"type";s:1:"E";s:2:"id";s:39:"git_concept:git_merge_rebase_chery-pick";s:4:"user";s:5:"uahoo";s:3:"sum";s:33:"[git merge  rebase  cherry-pick] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}s:5:"title";s:30:"git merge  rebase  cherry-pick";s:11:"description";a:2:{s:15:"tableofcontents";a:5:{i:0;a:4:{s:3:"hid";s:28:"git_merge_rebase_cherry-pick";s:5:"title";s:30:"git merge  rebase  cherry-pick";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:1;a:4:{s:3:"hid";s:9:"git_merge";s:5:"title";s:9:"git merge";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:2;a:4:{s:3:"hid";s:10:"git_rebase";s:5:"title";s:10:"git rebase";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:15:"git_cherry-pick";s:5:"title";s:15:"git cherry-pick";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:4;a:4:{s:3:"hid";s:17:"git_pull_--rebase";s:5:"title";s:17:"git pull --rebase";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:143:"git merge  rebase  cherry-pick
+
+----------
+
+git merge
+
+
+
+----------
+
+git rebase
+
+
+
+----------
+
+git cherry-pick
+
+
+
+----------
+
+git pull --rebase";}s:8:"relation";a:2:{s:5:"media";a:4:{s:27:"git_concept:merge-no-ff.png";b:1;s:26:"git_concept:git-rebase.png";b:1;s:31:"git_concept:git-cherry-pick.png";b:1;s:25:"git_concept:git-loopy.png";b:1;}s:10:"firstimage";s:27:"git_concept:merge-no-ff.png";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1395225331;s:8:"modified";i:1395225472;}s:7:"creator";s:5:"lixin";s:4:"user";s:5:"uahoo";s:11:"last_change";a:7:{s:4:"date";i:1395225472;s:2:"ip";s:14:"10.221.135.165";s:4:"type";s:1:"E";s:2:"id";s:39:"git_concept:git_merge_rebase_chery-pick";s:4:"user";s:5:"uahoo";s:3:"sum";s:33:"[git merge  rebase  cherry-pick] ";s:5:"extra";s:0:"";}s:11:"contributor";a:1:{s:5:"uahoo";s:5:"lixin";}}}

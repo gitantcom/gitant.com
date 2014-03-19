@@ -19,7 +19,7 @@
   * [[gitcommand:git_stash|git stash]]
   * [[gitcommand:git_whatchanged| git whatchanged ]]
   * [[gitcommand:git_archive| git archive ]]
-  * [[gitcommnad:git_clean | git clean ]]
+  * [[gitcommand:git_clean | git clean ]]
 
 ===== 撤销变更 =====
 
@@ -74,8 +74,6 @@
 
 
 
-===== GitBlit=====
-   * [[gitcommand:gitblit_tickets | gitblit 工单操作]]
-   * [[gitcommand:gitsubmodel| Git submodel 子模块操作]]  
+
 
  

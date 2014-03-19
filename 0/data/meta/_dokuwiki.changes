@@ -67,7 +67,6 @@
 1395065660	10.212.40.214	E	gitcommand:git_version_range	uahoo		
 1395065726	10.212.40.214	E	gitcommand:git_version_range	uahoo		
 1395065954	10.212.40.214	E	git_concept:git_concept	uahoo	[git的合并] 	
-1392791876	127.0.0.1	E	git_branch_model:git_branch_style		外部编辑	
 1395111200	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
 1395111286	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
 1395111344	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[远程分支/跟踪分支] 	
@@ -83,9 +82,7 @@
 1395113308	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[短期分支/任务分支] 	
 1395114777	10.221.135.150	E	git_branch_model:git_branch_style	uahoo		
 1395114805	10.221.135.150	E	git_branch_model:git_branch_style	uahoo	[远程分支/跟踪分支] 	
-1392791876	127.0.0.1	E	wiki:github_howto_pull_request		外部编辑	
 1395117017	10.221.135.150	E	wiki:github_howto_pull_request	uahoo	[GitHub如何操作pull request？] 	
-1394003144	127.0.0.1	E	git_concept:git_parallel_concept		外部编辑	
 1395133781	10.221.135.150	E	git_concept:git_parallel_concept	uahoo		
 1395133792	10.221.135.150	D	gitcommand:git_flow	uahoo	移除	
 1395133902	10.221.135.150	E	git_concept:git_parallel_concept	uahoo	[git分支] 	
@@ -121,3 +118,41 @@
 1395138668	10.221.135.150	E	gitcommand:git_command	uahoo	[个人开发者（单独开发）] 	
 1395138708	10.221.135.150	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
 1395138849	10.221.135.150	C	gitcommnad:git_clean	uahoo	创建	
+1395197977	10.221.135.165	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395198001	10.221.135.165	D	gitcommnad:git_clean	uahoo	移除	
+1395198026	10.221.135.165	E	gitcommand:git_command1	uahoo	[暂存与快照] 	
+1394003144	127.0.0.1	E	gitcommand:git_clean		外部编辑	
+1395198057	10.221.135.165	E	gitcommand:git_clean	uahoo		
+1395198215	10.221.135.165	C	gitcommand:git_flow_command	uahoo	创建	
+1395198259	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[centos 安装 git flow] 	
+1395200864	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[centos 安装 git flow] 	
+1395211554	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[centos 安装 git flow] 	
+1395212534	10.221.135.165	E	git_concept:git_parallel_concept	uahoo	[git flow] 	
+1395212651	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[centos 安装 git flow] 	
+1395212679	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[git flow] 	
+1395212701	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[Git flow] 	
+1395212734	10.221.135.165	E	gitcommand:git_flow_command	uahoo	[centos 安装 git flow] 	
+1395212816	10.221.135.165	E	git_concept:git_parallel_concept	uahoo	[git pull request] 	
+1395212835	10.221.135.165	E	git_concept:git_parallel_concept	uahoo	[pull request] 	
+1395212968	10.221.135.165	E	gitcommand:git_command1	uahoo	[GitBlit] 	
+1395213135	10.221.135.165	E	git_concept:git_parallel_concept	uahoo		
+1395213784	10.221.135.165	E	git_concept:git_parallel_concept	uahoo	[GitBlit] 	
+1395217870	10.221.135.165	E	git_host:git_repo_localnet	uahoo		
+1393397998	127.0.0.1	E	git_host:git_repo_online		外部编辑	
+1395218789	10.221.135.165	E	git_host:git_repo_online	uahoo		
+1395219725	10.221.135.165	C	git_concept:git_pull_push_checkout	uahoo	创建	
+1395220165	10.221.135.165	E	git_concept:git_pull_push_checkout	uahoo		
+1395220189	10.221.135.165	E	git_concept:git_pull_push_checkout	uahoo		
+1395220673	10.221.135.165	E	git_concept:git_pull_push_checkout	uahoo		
+1395223160	10.221.135.165	E	git_concept:git_pull_push_checkout	uahoo		
+1395223186	10.221.135.165	E	git_concept:git_pull_push_checkout	uahoo		
+1395223292	10.221.135.165	E	git_concept:git_concept	uahoo	[git的合并] 	
+1395223345	10.221.135.165	E	git_concept:git_concept	uahoo	[git的合并] 	
+1395223398	10.221.135.165	E	git_concept:git_concept	uahoo	[git的合并] 	
+1395224531	10.221.135.165	E	git_concept:git_concept	uahoo	[git的合并] 	
+1395224570	10.221.135.165	E	git_concept:git_concept	uahoo	[git的合并] 	
+1395225331	10.221.135.165	C	git_concept:git_merge_rebase_chery-pick	uahoo	创建	
+1395225460	10.221.135.165	E	git_concept:git_merge_rebase_chery-pick	uahoo		
+1395225472	10.221.135.165	E	git_concept:git_merge_rebase_chery-pick	uahoo	[git merge  rebase  cherry-pick] 	
+1395226309	10.221.135.165	E	gitcommand:git_config	uahoo		
+1395226324	10.221.135.165	E	gitcommand:git_config	uahoo	[git 配置冲突解决中diff工具] 	

@@ -24,3 +24,8 @@ git config --global alias.ci commit
 ===仓库级别的配置===
 存在在仓库 ./git/config,对仓库有效。
 设置git仓库的trace的remote git 地址。
+
+===git 配置冲突解决中diff工具===
+<code>
+git config merge.conflictstyle diff3
+</code>

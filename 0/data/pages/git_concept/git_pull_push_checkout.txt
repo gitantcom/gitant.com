@@ -1,0 +1,9 @@
+====git clone checkout fetch push  pull  ====
+<code>
+git clone  
+git checkout
+git fetch
+git push
+git pull
+</code>
+{{ :git_concept:git_clone_push.jpg |}}

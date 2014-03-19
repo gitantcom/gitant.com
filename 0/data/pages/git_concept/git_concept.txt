@@ -32,10 +32,9 @@
   * [[git_concept:git_object_desc|git 的存储对象]]
 
 ====git的合并====
-  * [[git_concept:git_lost_head| Detached HEAD ]]
-  * [[git_concept:git_lost_head| Diverged HEAD ]]
-  * [[git_concept:git_pull_push_checkout|git 的拉、推、检出]]
-  * [[git_concept:git_master_branch_stush|git 的主干、分支、分支的分支]]
+  * [[git_concept:git_lost_head|Diverged HEAD和Detached HEAD ]]
+  * [[git_concept:git_pull_push_checkout|git 的克隆、检出、推拉]]
+  * [[git_branch_model:git_branch_style|git 的主干、分支、远程分支]]
   * [[git_concept:git_merge_rebase_ chery-pick|git 的合并、变基、挑选]]
   * [[git_concept:git_conflict|git 的冲突]]
 

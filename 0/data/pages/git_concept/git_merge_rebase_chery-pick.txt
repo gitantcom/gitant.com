@@ -1,0 +1,23 @@
+=====git merge  rebase  cherry-pick=====
+------
+
+
+====git merge ====
+{{ :git_concept:merge-no-ff.png |}}
+-----
+
+====git rebase====
+{{ :git_concept:git-rebase.png |}}
+-----
+
+====git cherry-pick ====
+{{ :git_concept:git-cherry-pick.png |}}
+
+
+----
+====git pull --rebase ====
+{{ :git_concept:git-loopy.png |}}
+
+
+
+
