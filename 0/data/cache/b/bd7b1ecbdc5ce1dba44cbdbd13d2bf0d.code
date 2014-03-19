@@ -1,3 +1,0 @@
-$ <span class="kw2">git config</span> <span class="re5">--system</span>
-$ <span class="kw2">git config</span> <span class="re5">--global</span>
-$ <span class="kw2">git config</span> <span class="re5">--local</span> 或 $ <span class="kw2">git config</span>

@@ -1,1 +1,0 @@
-<span class="co4">$ </span><span class="kw2">git archive</span> <span class="re5">--format</span>=<span class="kw2">tar</span> <span class="re5">--prefix</span>=proj-1.2.3<span class="sy0">/</span> HEAD

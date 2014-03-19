@@ -1,1 +1,0 @@
-<span class="co4">$ </span><span class="kw2">git remote</span> add <span class="re5">--track</span> master origin  https:<span class="sy0">//</span>github.com<span class="sy0">/</span>user<span class="sy0">/</span>repo.git

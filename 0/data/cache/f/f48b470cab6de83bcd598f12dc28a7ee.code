@@ -1,2 +1,0 @@
-<span class="kw2">git reset</span> <span class="re5">--hard</span> HEAD^
-<span class="kw2">git reset</span> <span class="re5">--soft</span> HEAD

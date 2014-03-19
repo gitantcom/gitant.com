@@ -1,4 +1,0 @@
-blob <span class="co0"># 通常被用来存储文件数据，一般是个文件。  </span>
-<span class="kw2">tree</span>  <span class="co0"># 基本上像个目录结构，比如x / yyy  </span>
-commit <span class="co0"># 它指向一个单独的tree，它标记了一个时刻的项目的面貌，就像给这个project照了个艳照一样。它包含那个时刻的元信息，例如时间戳，改变本次提交的作者，前一个提交的指向标等等。  </span>
-tag <span class="co0"># 专门用来指定某些特殊行为的commits。</span>
