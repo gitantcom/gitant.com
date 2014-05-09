@@ -1,5 +1,7 @@
 
 ===== 搭建自己的Git代码托管仓库 =====
+====git daemon + gitweb ====
+[[gitcommand:
 
 ==== Gitolite ====
 [[https://github.com/sitaramc/gitolite/wiki|Gitolite]]

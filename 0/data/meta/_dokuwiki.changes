@@ -167,3 +167,5 @@
 1395237443	10.212.40.134	E	git_concept:git_lost_head	uahoo	[diverged HEAD] 	
 1395237490	10.212.40.134	E	git_concept:git_lost_head	uahoo	[diverged HEAD] 	
 1395237597	10.212.40.134	E	git_concept:git_lost_head	uahoo	[diverged HEAD] 	
+1399455839	127.0.0.1	E	git_host:git_repo_localnet		外部编辑	
+1399534328	10.221.135.100	E	git_host:git_repo_localnet	uahoo		
