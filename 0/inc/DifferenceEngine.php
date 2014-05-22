@@ -439,799 +439,650 @@ class _DiffEngine {
                 }
 
                 /*
-                 * Set CORRESPONDING to the end of the changed run, at the last
-                 * point where it corresponds to a changed run in the other file.
-                 * CORRESPONDING == LEN means no such point has been found.
-                 */
-                $corresponding = $j < $other_len ? $i : $len;
+                 * Set      aurn $s[$start - _toý«P%PbW_DiffOp_Add extends _DiffOp To@°-Ë‰PbWsñ= 0) {
+  Yhananged.
+            while ($y_EC˜oï    ENes ane th// e a%Pb    beAlgoNU dwe can later determine whether the run  changes.
+    = +;
+             ?    :f thi     */
+                $runlength = $i - $start;
 
-                /*
-                 * Move the changed region forward, so long as the
-                 * first changed line matches the following unchanged one.
-                 * This merges with following changed regions.
-                 * Do this second, so that if there are no merges,
-                 * the changed region is moved forward as far as possible.
-                 */
-                while ($i < $len && $lines[$start] == $lines[$i]) {
-                    $changed[$start++] = false;
-                    $changed[$i++] = 1;
-                    while ($i < $len && $changed[$i])
-                        $i++;
+               while 
+                 * Move the changed    * k, so long as the
+           * but ack, so lorevious unchanged line matches the last c    * but e.
+                 * This merges w Do       is co      * R    t_Diffl linees the                    *art;
 
-                    USE_ASSERTS && assert('$j < $other_len && ! $other_changed[$j]');
-                    $j++;
-                    if ($j < $other_len && $other_changed[$j]) {
-                        $corresponding = $i;
-                        while ($j < $other_len && $other_changed[$j])
-                            $j++;
-                    }
-                }
-            } while ($runlength != $i - $start);
-
-            /*
-             * If possible, move the fully-merged run of changes
-             * back to a corresponding run in the other file.
-             */
-            while ($corresponding < $i) {
-                $changed[--$start] = 1;
-                $changed[--$i] = 0;
-                USE_ASSERTS && assert('$j > 0');
-                while ($other_changed[--$j])
+              omputvfs.
+while     farf identical lines tlater determine whether the runchanged[$j])
+               */
+            whilstart > 0 && $lines[$start - 1] == */
+     -$start] = 1;
+                n of change   -$s 1]) {
+                changed[$j])
+         of changes.
+            whil        nier_len && $other_________($i < $len && ! $changed[$i]) {
+                USE_ASSERTS && assert('$j < $other    nd[$j]');
+                     ;
+                $j++;
+                                 }
+        hanges.
+    = +ij]');
+                    changed[;
+                $j++;
+                while ($j < $otherther    nd[$j]');
+                 $ymids[$k] = $ymids[$k-1];
+      changed[has grown.!
+                           $eesponding point iIfdentical ,putvf      uhoo-s thed /*
+           sponding point i  /* _DiffO hanges.
+    Ë‰PbWsñ= 0) {
+  Yhananged.
+            * $other_changed[$jO hanges.
+       i& !$this->xchanged[$xi- 1] == $lines[$i - 1]) {
+                $changed[--$s01]) {
+                              $start--;
+                    USSERTS && assert('$j > 0');
+                    w ($other_changed[--$j])
                     continue;
-                USE_ASSERTS && assert('$j >= 0 && !$other_changed[$j]');
-            }
-        }
-    }
+                    USE_ASSERTS && assert2[1]);
+           }Op_Change($thisrep whinthe vecch($opCHUNKS+1  return $end;    sum'ngs.* @author Gostlyairiki
 }
+}
+
+ew _Dif     $pt1 = $pt2COp {
+   o and has a $this-s      HUNKS+1 urn $end;    sum'ngs.*  has nd has a@paramthis->xchang  LCS iAn  LCS is tsum'ngs.*  has );
+   (Typly ili <dwhifl liot
+     * maYhana)nd has a@paramth$this->y  LCS iAn  LCS is tsum'ngs.*  has batim from analyffOp {
+    vate
+ */
+class _DiffEngine {
+
+    fennceEngineoffrey T. $end]] = false;
+        /fenn->s private
+ */
+class _DiffEng$end]] = f//   while /canivate
+ */
+class _DiffEng$end]]       $pt1 = $pt2 $this-> $this-dGostl.*  has nd has aSYNOPSIS:*  has nd has a    f         } el     w        wend) {
+  * log->g=    f -> $this->cd) {
+  * @ypos;
+ dd the AGostlydd the rep whinthe v      this-
+      *  has );
+       e exclff;
+ tl.*  has batim from anal $this->closing = $cog->g=    wh;sing = $cog->
+        /his->seq[0]= $yofM_ADed[](alse;
+        id
+ew _ }
+
+        $beg g->
+       $x1)     -> $this->cd) {
+           $edits[] = n $t$end]]       $pt1 = $pt2 /cannchang    ;
+ tl.*  has ) {
+  * @ypos;
+ bool Tru1;
+    return $end; thid/N/Nally i.*  has batim from analisE      }
+
+        M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->class!ss _Diff
+                 ypos;
+ his->xchanged[$skip] = $typos;
+ the shorte       $pt1 = $pt2 $this->ents.
+     *
+     *onrn $edits;
+    }
+
+
+    /**
+  llowing identical line
+ ute thechan   lnte ic purentre free to) {
+  * @ypos;
+ %PbTnts.
+     *
+     * Re*  has batim from anallcs>closing = $co($xoff == $xlim |M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+                 o($xo+       $ly   ->eturn new _ed[$skip] = $typos;
+ $s->in_seq       $pt1 = $pt2Geat one  exclff;sen/161alse;
+       identical linof tp {
+         his->xchang parame: dif   cd       identicacOp {
+   o and has ) {
+  * @ypos;
+  LCS iTone  exclff;se(ie. is nosum'ngs.*  has batim from anale virtual", E_USE     w      $this->in_seq =M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->eturn                 h($opt    andi*/
+clasnt($lines) ==.
+   ly   ->eturn new _ed[$skip] = $typos;
+ $s_construct       $pt1 = $pt2Geat one) {
+    sen/161alse;
+       identical linof tp {
+         h$this->y parame: dif   cd       identicacOp {
+   o and has ) {
+  * @ypos;
+  LCS iTonese(ie. is nosum'ngs.*  has batim from anal ? count($this->orig     w      $this->in_seq =M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->e = 'cha                 h($opt    andi*/
+clasnt($lines) ==.
+   ly   ->se() {
+       ed[$skip] = $typos;
+ $s_construct       $pt1 = $pt2 /cannaGostlychanot obfusllowing identical line
+ _Diffts =echan ebugg     urentrs.*  has batim from analy /canivate
+ */
+class _DiffEng   function __c coit o    om_lines, $s!ss coit o         retur( if (($this->xchvar $closing;
+
+Rf tp {
+    lor exclff;
+oesn's a com reverse() {
+        ttion __c coit o     _DiffEng !ss coit o         r ? count(if (($this->xchvar $closing;
+
+Rf tp {
+    lo) {
+    
+oesn's a com reverse() {
+     sing = $cog->g=    wh-> $this->cd) {
+      __c coit o     _DiffEng !ss coit o    g->
+ etur( if (($this->xchvar $closing;
+
+Rfthis-dGr exclff;
+oesn's a com reverse() {
+        ttion __c coit o    om_lines, $s!ss coit o    g->
+  ? count(if (($this->xchvar $closing;
+
+Rfthis-dG) {
+    
+oesn's a com reverse() {
+     sing = $cohangclass _Dnone'== $xlim |M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($hangclass 1)     ->clasa                 var $closing;
+
+Eged,ts between
+ non-ome ion reverse() {
+        ting = $cohangclass _     ->clasin_seq[$ypos] = 1;
+   ($xoff   $this->>cd) {
+     var $closing;
+
+ostlydkay:
+    =  ($x reverse()NOTICEn new _DiffO_Changesense:i  d   re.* @author GM         e($this->ostlyaiew _$pt1 = $pt2COp {
+   o and has nd has a $this-s      HUNKS+1 urn $end;    sum'ngs.*  has nd has al linrom anau cd    **
+ * Claslim -* Thidenticacase-    nsitvs used ,lemensed  line at->ychidenticac      bWsñlinte- glob.*  has nd has a@paramthis->xchang  LCS iAn  LCS is tsum'ngs.*  has );(Typly ili <dwhifl liot
+     * maYhana)nd has nd has a@paramth$this->y  LCS iAn  LCS is tsum'ngs.*  has nd has a@paramthm     _is->xchang  LCS il lin LCS iul
+
+  *  has ); ($lcs
+       ($dit      * ofed togeth id
+is->xchang.*  has );Tthis->{x,y bWsñhm     _is->xchang  ust trim mñhm     _$this->y  Lso t   * st }
+}
+
 
 /**
- * Class representing a 'diff' between two sequences of strings.
+  Lsst trim mñnt);
+
+*
+ *  an
+     *tl.*  has ) {
+  * @paramthm     _$this->y  LCS il lin LCS iul
+
+  *  has ); ($lcs
+             * ofed togeth id
+$this->y.*  has batim from analyffOp {
+    vate
  */
-class Diff {
+class _DiffEn,ñhm     _is->xchang,thm     _$this->y)yairiki
 
-    var $edits;
 
-    /**
-     * Constructor.
-     * Computes diff between sequences of strings.
-     *
-     * @param $from_lines array An array of strings.
-     *      (Typically these are lines from a file.)
-     * @param $to_lines array An array of strings.
-     */
-    function __construct($from_lines, $to_lines) {
-        $eng = new _DiffEngine;
-        $this->edits = $eng->diff($from_lines, $to_lines);
-        //$this->_check($from_lines, $to_lines);
+
+
+   contiff($from_lines, $0;
+
+       m     _is->xchang          //   contiff($fr$this->y)y;
+
+       m     _$this->y)   sing = $c  Lsnt::yffOp {
+    vm     _is->xchang,thm     _$this->y)  sing = $co operations.
+        $$ec          $this->_     eq[0]= $yofM_A
+            i$$ec  0)
     }
 
-    /**
-     * Compute reversed Diff.
-     *
-     * SYNOPSIS:
-     *
-     *  $diff = new Diff($lines1, $lines2);
-     *  $rev = $diff->reverse();
-     * @return object A Diff object representing the inverse of the
-     *          original diff.
-     */
-    function reverse() {
-        $rev = $this;
-        $rev->edits = array();
-        foreach ($this->edits as $edit) {
-            $rev->edits[] = $edit->reverse();
-        }
-        return $rev;
-    }
+        $beg n __con&this->_     nges
+ eturd) {
+            $nstruct($oeturn& !$this->xchanged[$xn __conh($opt   andiis->xchang,thxiasnt($lineturn&1]) {
+              op+       $leturn new _ed[$$$$$ >= 0 && !$othe {
+        &this->_     nges
+  $this->orig            $nstruct($orig, $clo !$this->xchanged[$xi
+        h($opt   andi _DiffEn,ñhyiasnt($linrig, $clo1]) {
+             yop+       $lse() {
+       ed[$$$$$ >ed[$$$$$ >ed[$DiffO_ChangeA thor G) {
+     >ostlsnternallythe oor G
+     s
+     *tlbWsñ oor ic  *tlb
+     .* @ It    * thiscd   * of the oor GanacustomLIM) via * _Diitaend,
+er to obementfaeni  * se {
+s.* @author Gostl/ note: diaiew _$pt1 = $pt2N     * ofq);
+      neturn"iffEn" to p whirvb.*  has nd has alytheul
 
-    /**
-     * Check for empty diff.
-     *
-     * @return bool True iff two sequences were identical.
-     */
-    function isEmpty() {
-        foreach ($this->edits as $edit) {
-            if ($edit->type != 'copy')
-                return false;
-        }
-        return true;
-    }
-
-    /**
-     * Compute the length of the Longest Common Subsequence (LCS).
-     *
-     * This is mostly for diagnostic purposed.
-     *
-     * @return int The length of the LCS.
-     */
-    function lcs() {
-        $lcs = 0;
-        foreach ($this->edits as $edit) {
-            if ($edit->type == 'copy')
-                $lcs += count($edit->orig);
-        }
-        return $lcs;
-    }
-
-    /**
-     * Get the original set of lines.
-     *
-     * This reconstructs the $from_lines parameter passed to the
-     * constructor.
-     *
-     * @return array The original sequence of strings.
-     */
-    function orig() {
-        $lines = array();
-
-        foreach ($this->edits as $edit) {
-            if ($edit->orig)
-                array_splice($lines, count($lines), 0, $edit->orig);
-        }
-        return $lines;
-    }
-
-    /**
-     * Get the closing set of lines.
-     *
-     * This reconstructs the $to_lines parameter passed to the
-     * constructor.
-     *
-     * @return array The sequence of strings.
-     */
-    function closing() {
-        $lines = array();
-
-        foreach ($this->edits as $edit) {
-            if ($edit->closing)
-                array_splice($lines, count($lines), 0, $edit->closing);
-        }
-        return $lines;
-    }
-
-    /**
-     * Check a Diff for validity.
-     *
-     * This is here only for debugging purposes.
-     */
-    function _check($from_lines, $to_lines) {
-        if (serialize($from_lines) != serialize($this->orig()))
-            trigger_error("Reconstructed original doesn't match", E_USER_ERROR);
-        if (serialize($to_lines) != serialize($this->closing()))
-            trigger_error("Reconstructed closing doesn't match", E_USER_ERROR);
-
-        $rev = $this->reverse();
-        if (serialize($to_lines) != serialize($rev->orig()))
-            trigger_error("Reversed original doesn't match", E_USER_ERROR);
-        if (serialize($from_lines) != serialize($rev->closing()))
-            trigger_error("Reversed closing doesn't match", E_USER_ERROR);
-
-        $prevtype = 'none';
-        foreach ($this->edits as $edit) {
-            if ($prevtype == $edit->type)
-                trigger_error("Edit sequence is non-optimal", E_USER_ERROR);
-            $prevtype = $edit->type;
-        }
-
-        $lcs = $this->lcs();
-        trigger_error("Diff okay: LCS = $lcs", E_USER_NOTICE);
-    }
+   bts.
+ftSet  $otfM_A
+f the oor , 0;
+  ub oor inserts/de Daiwanadd tse of theto o{
+  Yot u>y.*  has batim }
 }
 
-/**
- * FIXME: bad name.
- */
-class MappedDiff extends Diff {
-    /**
-     * Constructor.
-     *
-     * Computes diff between sequences of strings.
-     *
-     * This can be used to compute things like
-     * case-insensitve diffs, or diffs which ignore
-     * changes in white-space.
-     *
-     * @param $from_lines array An array of strings.
-     *  (Typically these are lines from a file.)
-     *
-     * @param $to_lines array An array of strings.
-     *
-     * @param $mapped_from_lines array This array should
-     *  have the same size number of elements as $from_lines.
-     *  The elements in $mapped_from_lines and
-     *  $mapped_to_lines are what is actually compared
-     *  when computing the diff.
-     *
-     * @param $mapped_to_lines array This array should
-     *  have the same number of elements as $to_lines.
-     */
-    function __construct($from_lines, $to_lines, $mapped_from_lines, $mapped_to_lines) {
+q);
+   _  netur_    w   0if     $pt1 = $pt2N     * ofanged[$skipneturn"iffEn" to p whirvb.*  has nd has alytheul
 
-        assert(count($from_lines) == count($mapped_from_lines));
-        assert(count($to_lines) == count($mapped_to_lines));
-
-        parent::__construct($mapped_from_lines, $mapped_to_lines);
-
-        $xi = $yi = 0;
-        $ecnt = count($this->edits);
-        for ($i = 0; $i < $ecnt; $i++) {
-            $orig = &$this->edits[$i]->orig;
-            if (is_array($orig)) {
-                $orig = array_slice($from_lines, $xi, count($orig));
-                $xi += count($orig);
-            }
-
-            $closing = &$this->edits[$i]->closing;
-            if (is_array($closing)) {
-                $closing = array_slice($to_lines, $yi, count($closing));
-                $yi += count($closing);
-            }
-        }
-    }
+   bts.
+ftSet  $otfM_A
+f the oor , 0;
+  ub oor inserts/de Daiwanadd tse of theto o{
+  Yot u>y.*  has batim }
 }
 
-/**
- * A class to format Diffs
+anged[$s_  netur_    w   0if     $pt1 = $pt2/ notemaY *tl.*  has ) {
+  * @paramthdstlydd the AGostlydd the.*  has )@ypos;
+ sum'ngthe di note: d* se {
+.*  has batim from anal         i falsesing = $co operations);
+
+        block$end]);
+
+        $tipneturn     $this->in_seq = aq);
+off   $this);
+   _  netur_    w
+        $tnangedoff   $thianged[$s_  netur_    wUSE_ASSERTS && ass_ines[_s priis->in_seq =M_ADed[](a  f ->       id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+ !$this->xchanged[$   $nstruct($oblock         while (list ($junk,      $ly   ->eturn if (aq);
+o+$tnanged                     }
+      block $x1)     j]');
+                 $ymids[$k] = $ymiiiiied[$                   }
+     pos($nanged                     }
+          ipneturn     $tt   andiy   ->etur.
+   lnanged j]');
+                         block $x1)          if ($copy)netur       $content = p_wiki_xhtml($id, $date, false);
+   && ass_block($x   lnangedo+$tx     x   ly   lnangedo+$ty     y   lblock       $content = p_wiki_xh block$end]);
+
+        $ = p_wiki_xhtml($id, $date, fatml($id, $date, fa ipneturn  iy   ->etur      ed[$$$$$ >ed[$$$$$$$$$tem->category = $meta[' __co nstruct($oblock         while (list ($ju ipneturn     $tt   andiipneturasnt($linr)netur     aq);
+assert('$j < $other    nx0  $thi   nt($linr)netur ssert('$j < $other    ny0peratio  nt($linr)netur ssert('$j < $other    nblock$enete[] = $from_lines[$ $meta[' __cnr)netur                   }
+      block $x1)          if ($copy)netur       $content = ptml($id, $date, fa block $x1)     j]');
+        nged[$j])
+          y   ->eturn                   op+       $ly   ->eturn new _ed[$         y   ->e = 'cha                  yop+       $ly   ->se() {
+       ed[$sk    ttion __cnstruct($oblock  = 0 && !$othe && ass_block($x   lx     x   ly   ly     y   lblock   = 0 && !$          $thi_his_s priis-ed[$sk    tfrom analyblock($xbeg(8,(ien  lybeg(8,yien  &
+ew _Dange';
+
+    functio_ines[_block($&& ass_block_h     ($xbeg(8,(ien  lybeg(8,yien)eq[0]= $yofM_ADed[](a       id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+                 o  while (netur$ly   ->eturn new _ed[$    ts[] = ney   ->class=ss  _Di
+                 o  while _Ded$ly   ->se() {
+       ed[$    ts[] = ney   ->class=ss iffOp_D
+                 o  whileiffOp_d$ly   ->eturn new _ed[$    ts[] = ney   ->class=ss iffOp_C
+                 o  while      Udiy   ->etur.
+ly   ->se() {
+       ed[$    ts[]                 var $closing;
+
+Unkn$xofnged,clas reverse() {
+        ting }e';
+
+    functio_his_block(is-ed[$sk    tfrom analyines[_s prii}
+
+        obyines[(is-ed[$sk    tfrom analyhis_s priinge';
+
+    fot x1)obyget_) $flag>>cd) {
+     obyhis_ one >cd) {
+             ot s-ed[$sk    tfrom analyblock_h     ($xbeg(8,(ien  lybeg(8,yien)   function __c,(ien > 1or ($xi = $skip; if .= "," . ($xbego+$txien - seps[] = $fl   $miien > 1or ($xi = $skipy if .= "," . ($ybego+$tyien - seps) {
+             ; if ._c,(ien ? $miien ?s i' :s i'  }
+'a'  .ipy ifs-ed[$sk    tfrom analyines[_block($h     )   functionecho $h     s-ed[$sk    tfrom analyhis_block(i   func;
+
+        return    wdi*/
+clasohanfi$num' ' }
+
+        M_ADed[](ais->y  s $s_coor ($xi = $skiecho "ohanfi$n".functio_hscapndi*/
+c)."\n"s-ed[$sk    tfrom analy (netur$l  var $type = 'add';
+
+  n    wdi*/
+clis-ed[$sk    tfrom analy _Ded$l  var $type = 'add';
+
+  n    wdi*/
+cl, ">"is-ed[$sk   tfrom analyiffOp_d$l  var $type = 'add';
+
+  n    wdi*/
+cl, "<"is-ed[$sk    tfrom analy      Udiar $type = 'change';
+
+    functioyiffOp_d$leturn new _ed[$echo "---\n"s-ed[$    functioy _Ded$lse() {
+        r     $pt1 = $pt2Escapn sum'ng1 = $pt21 = $pt2Ovsin      ches thodlast in) {
+  Yh note: dsl   hscap    Ëif(!$oe free to B$conc$thisref(!$os    r to con       d*WITHOUT hscap   .1 = $pt21 = $pt2@paramth  r sum'ngthturn um'ngtto hscapn*  has )@ypos;
+ sum'ngthe dhscapnd sum'ng.*  has batim from analyhscapndisum)ge';
+
+            sum new _DiffO_ChangeUted[ty oor G
+   suyd[$skHTMLdi note: d*dstlsnternalDephis->nal   requ}
+}
+
+DIFF_INLINESTYLES,    tru1;ly, smin ion p wode frdrnalinng assuyd>y  Lsou cd.+]] fulG
+   HTMLd    g  us     
+ * sUNKS > 2, and sll text search to the feed object
  *
- * This class formats the diff in classic diff format.
- * It is intended that this class be customized via inheritance,
- * to obtain fancier outputs.
- */
-class DiffFormatter {
-    /**
-     * Number of leading context "lines" to preserve.
-     *
-     * This should be left at zero for this class, but subclasses
-     * may want to set this to other values.
-     */
-    var $leading_context_lines = 0;
+ * oor GHTMLostlyaiew _$pt1 = $pt2Holds
+    suyd>   ret  us ba ic CSS*  has batim ine ic pub  a  suyd>y ng it to registered pch($o- _Dedng a        '  /*grNU d-color: #ddffdd;', registered pch($o-iffOp_dng a      '  /*grNU d-color: #ffdddd;', registered pch($o- (netur'ered p   '  /*grNU d-color: #f5f5f5;', registered pch($o-nces'istered p   'color: #ff    ;', register)if     $pt1 = $pt2Rpos;
+  nc$this   suyde parame: d*  has batim ine ic from anal ss$lsethi  re)ge';
 
-    /**
-     * Number of trailing context "lines" to preserve.
-     *
-     * This should be left at zero for this class, but subclasses
-     * may want to set this to other values.
-     */
-    var $trailing_context_lines = 0;
+       requiDIFF_INLINESTYLES $yoff, $ylim(iDIFF_INLINESTYLES)ge';
 
-    /**
-     * Format a diff.
-     *
-     * @param $diff object A Diff object.
-     * @return string The formatted output.
-     */
-    function format($diff) {
+     $ylim(!  }
 
-        $xi = $yi = 1;
-        $block = false;
-        $context = array();
+ self:: suyd>y[lsethi  re           ''      ed[$           'suyd>="'.self:: suyd>y[lsethi  re .'"'      ed[$}ed[$                     'sethi="'.lsethi  re.'"'      ed[$}new _DiffO_Changene for phpwiki. (Taken from     
+    li <  <?php
+/* *tl.php,**
+ * A PHP diUNKS >/
+code freeNBSP', "\xC2\xA0"is ed[$// utf-8 non- }
 
-        $nlead = $this->leading_context_lines;
-        $ntrail = $this->trailing_context_lines;
+     sglob.*uthor GeHWLDF_WordAccumulatorDairiki
+ * @accesyffOp {
+     $type = 'add';
 
-        $this->_start_diff();
+  n    w $this->seq[0]= $yoff';
 
-        foreach ($diff->edits as $edit) {
-            if ($edit->type == 'copy') {
-                if (is_array($block)) {
-                    if (count($edit->orig) <= $nlead + $ntrail) {
-                        $block[] = $edit;
-                    }
-                    else{
-                        if ($ntrail) {
-                            $context = array_slice($edit->orig, 0, $ntrail);
-                            $block[] = new _DiffOp_Copy($context);
-                        }
-                        $this->_block($x0, $ntrail + $xi - $x0, $y0, $ntrail + $yi - $y0, $block);
-                        $block = false;
-                    }
-                }
-                $context = $edit->orig;
-            }
-            else {
-                if (! is_array($block)) {
-                    $context = array_slice($context, count($context) - $nlead);
-                    $x0 = $xi - count($context);
-                    $y0 = $yi - count($context);
-                    $block = array();
-                    if ($context)
-                        $block[] = new _DiffOp_Copy($context);
-                }
-                $block[] = $edit;
-            }
+  n    num''q[0]= $yoff';
 
-            if ($edit->orig)
-                $xi += count($edit->orig);
-            if ($edit->closing)
-                $yi += count($edit->closing);
-        }
+  ngrNUpnum''q[0]= $yoff';
 
-        if (is_array($block))
-            $this->_block($x0, $xi - $x0, $y0, $yi - $y0, $block);
+  ntagnum''q[0]= sk    tfrom analyflushGrNUp($   ntag)   function __c,';
 
-        return $this->_end_diff();
-    }
+  ngrNUpn!=ss f
+ !$this->xchang __c,';
 
-    function _block($xbeg, $xlen, $ybeg, $ylen, &$edits) {
-        $this->_start_block($this->_block_header($xbeg, $xlen, $ybeg, $ylen));
-        foreach ($edits as $edit) {
-            if ($edit->type == 'copy')
-                $this->_context($edit->orig);
-            elseif ($edit->type == 'add')
-                $this->_added($edit->closing);
-            elseif ($edit->type == 'delete')
-                $this->_deleted($edit->orig);
-            elseif ($edit->type == 'change')
-                $this->_changed($edit->orig, $edit->closing);
-            else
-                trigger_error("Unknown edit type", E_USER_ERROR);
-        }
-        $this->_end_block();
-    }
+  ntagnuCENTces'
+                 o  while    n.= '< {
+    '.HTMLostl:: ss$ch($o-nces').'>'.functio_hscapndi';
 
-    function _start_diff() {
-        ob_start();
-    }
+  ngrNUp).'</ {
+   >'      ed[$    ts[] = ne';
 
-    function _end_diff() {
-        $val = ob_get_contents();
-        ob_end_clean();
-        return $val;
-    }
+  ntagnuCEN _Di
+                 o  while    n.= '< pan '.HTMLostl:: ss$ch($o- _Dedng a ).'>'.functio_hscapndi';
 
-    function _block_header($xbeg, $xlen, $ybeg, $ylen) {
-        if ($xlen > 1)
-            $xbeg .= "," . ($xbeg + $xlen - 1);
-        if ($ylen > 1)
-            $ybeg .= "," . ($ybeg + $ylen - 1);
+  ngrNUp).'</ pan>'      ed[$    ts[] = ne';
 
-        return $xbeg . ($xlen ? ($ylen ? 'c' : 'd') : 'a') . $ybeg;
-    }
+  ntagnuCENiffi
+                 o  while    n.= '< pan '.HTMLostl:: ss$ch($o-iffOp_dng a ).'><iff>'.functio_hscapndi';
 
-    function _start_block($header) {
-        echo $header;
-    }
+  ngrNUp).'</iff></ pan>'      ed[$    ts[]                 o  while    n.= functio_hscapndi';
 
-    function _end_block() {
-    }
+  ngrNUp)     ting }e';
 
-    function _lines($lines, $prefix = ' ') {
-        foreach ($lines as $line)
-            echo "$prefix ".$this->_escape($line)."\n";
-    }
+    functio_grNUpnum''q[0]= $yoff';
 
-    function _context($lines) {
-        $this->_lines($lines);
-    }
+  ntagnum$   ntagq[0]= sk    tfrom analyflushL fre$   ntag)   functionf';
 
-    function _added($lines) {
-        $this->_lines($lines, ">");
-    }
-    function _deleted($lines) {
-        $this->_lines($lines, "<");
-    }
+  nflushGrNUp($   ntag); function __c,';
 
-    function _changed($orig, $closing) {
-        $this->_deleted($orig);
-        echo "---\n";
-        $this->_added($closing);
-    }
+  n    n!ss f
+= 0 && !$othe && ass_    whs; $i++)
+  _           conf';
 
-    /**
-     * Escape string
-     * 
-     * Override this method within other formatters if escaping required.
-     * Base class requires $str to be returned WITHOUT escaping.
-     * 
-     * @param $str string Text string to escape
-     * @return string The escaped string.
-     */
-    function _escape($str){
-        return $str;
-    }
+  n    num''q[0]= sk    tfrom anal _DWords$l$dataass agnum'')   function __c,'agn
+        }ntag)= 0 && !$othe && ass_flushGrNUp($tag); 
+        M_ADed[](a$data  s $$datylim,$nchunks);
+      -ng assl
+
+   ts =ecy, s   f   * k,  * of$dat.$this->xchang __c,$dat =ss f
+= 0 && !$otheeeee ($other_changed[--$j] __c,$dat
+    = "\n" $seps[0];
+            whilegrNUpn.= NBSP1]) {
+             && ass_flushL fre$tag); function         $dat =
+    trc,$dat, seps[] = $fl0]= sk[] = $fl0]=    cont! tr trc,$dat, "\n"       ting = $co  whilegrNUpn.= ,$dat      ed[$}new _Di    tfrom analgetL   wd)   functionf';
+
+  nflushL fre'~done'cd) {
+             && ass_    ws-ed[$sk    tfrom analyhscapndisum)ge';
+
+           hscdisum) new _DiffOthor GWordLevel    e($this->M         eairiki
+ * @accesyffOp {
+    leturDiffEn,ñhse() {
+DiffEng   function $xlim eturD$dataasseturDsum'    ); $i++)
+  _he fe leturDiffEncd) {
+      $xlim se() {
+D$dataassse() {
+Dsum'    ); $i++)
+  _he fe lse() {
+DiffEng  sing = $c  Lsnt::yffOp {
+    veturD$dataassse() {
+D$dataasseturDsum'    assse() {
+Dsum'    )s-ed[$sk    tfrom analyie fe liffEng   function __c!p wg_a com_all('/ ( [^\S\n]+ | [0-9_A-Za-z\x80-\xff]+ | . ) (?: (?!< \n) [^\S\n])? /xsu', registered p implode("\n"       w),thm         while (ly($ylim, $xli, $xli f
+, , $xli f
+       ed[$skip] = $typos;
+ ruct($om      mis->_compask    tfrom anale virtual", E_USE n __con     HWLDF_WordAccumulators->in_seq =M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+                 on __-> _DWords$ly   ->eturn new _ed[$    ts[] = ney   ->eturn                  n __-> _DWords$ly   ->etur,ENTces'
+      ed[$skip] = $typos;
+  n __->getL   wd)_compask    tfrom anal ? count($this->orig i
+             HWLDF_WordAccumulators->in_seq =M_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+                 oi
+     -> _DWords$ly   ->se() {
+       ed[$    ts[] = ney   ->e = 'cha                  i
+     -> _DWords$ly   ->se() {
+,ENTces'
+      ed[$skip] = $typos;
+  i
+     ->getL   wd)_compaskffOthor GInng aWordLevel    e($this->M         eairiki
+ * @accesyffOp {
+    leturDiffEn,ñhse() {
+DiffEng   function $xlim eturD$dataasseturDsum'    ); $i++)
+  _he fe leturDiffEncd) {
+      $xlim se() {
+D$dataassse() {
+Dsum'    ); $i++)
+  _he fe lse() {
+DiffEng  sing = $c  Lsnt::yffOp {
+    veturD$dataassse() {
+D$dataasseturDsum'    assse() {
+Dsum'    )s-ed[$sk    tfrom analyie fe liffEng   function __c!p wg_a com_all('/ ( [^\S\n]+ | [0-9_A-Za-z\x80-\xff]+ | . ) (?: (?!< \n) [^\S\n])? /xsu', registered p implode("\n"       w),thm         while (ly($ylim, $xli, $xli f
+, , $xli f
+       ed[$skip] = $typos;
+ ruct($om      mis->_compask    tfrom analinng artual", E_USE n __con     HWLDF_WordAccumulators-", E_USEM_ADed[](alse;
+        id
+ew _ }
+
+        $begpos($y   ->class=ss _Diff
+                 on __-> _DWords$ly   ->se() {
+       ed[$    ts[] = ney   ->class=ss iffOp_C
+seps[0];
+          n __-> _DWords$ly   ->etur,ENiffi
+; function         n __-> _DWords$ly   ->se() {
+,EN _Di
+ps[] = $fl0]= s ts[] = ney   ->class=ss iffOp_D
+                 on __-> _DWords$ly   ->etur,ENiffi
+; function    ts[] = ney   ->class=ss  _Di
+                 on __-> _DWords$ly   ->se() {
+,EN _Di
+ps[] = $fl0]= ts[] = ney   ->eturn                  n __-> _DWords$ly   ->etur,ENiffi
+; functionskip] = $typos;
+  n __->getL   wd)_compaskffO_Change"Ununcti"  *tlb
+     td andernallythe oor G
+     s
+     *tlbWsñ oor ic "ununcti  *tl"b
+     .* @rnalNOTE:* se {
+    plmentsturn us unsafubsequusnd whHTMLdast therhscap   .1 
+ * oor GUnunctiostl/ note: di($this->ostl/ note: diairiki
+ * @accesyffOp {
+    l  netur_    w   4)   functionf';
+
+  q);
+   _  netur_    w   $  netur_    w
+        $t  $thianged[$s_  netur_    w   $  netur_    w
+     sk    tfrom analyblock_h     ($xbeg(8,(ien  lybeg(8,yien)   function __c,(ien 
+  1or ($xi = $skip; if .= "," . ,(ienps[] = $fl   $miien 
+  1or ($xi = $skipy if .= "," . miiend) {
+            "@@ -$xbego+py if @@\n"s-ed[$sk    tfrom analy _Ded$l  var $type = 'add';
+
+  n    wdi*/
+cl, "+"is-ed[$sk   tfrom analyiffOp_d$l  var $type = 'add';
+
+  n    wdi*/
+cl, "-"is-ed[$sk   tfrom analy      Udiar $typfclffange';
+
+    functioyiffOp_d$leturn new _ed[$functioy _Ded$lfclffa_compaskffO_Change Wiki   ia T:Diffsuyde  *tlb
+     td anderna * oor GT:Difostl/ note: di($this->ostl/ note: diaiompa}
 }
 
-/**
- * Utilityclass for styling HTML formatted diffs
- *
- * Depends on global var $DIFF_INLINESTYLES, if true some minimal predefined
- * inline styles are used. Useful for HTML mails and RSS feeds
- *
- * @author Andreas Gohr <andi@splitbrain.org>
- */
-class HTMLDiff {
-    /**
-     * Holds the style names and basic CSS
-     */
-    static public $styles = array(
-            'diff-addedline'    => 'background-color: #ddffdd;',
-            'diff-deletedline'  => 'background-color: #ffdddd;',
-            'diff-context'      => 'background-color: #f5f5f5;',
-            'diff-mark'         => 'color: #ff0000;',
-        );
+col pan = 2hange extends _DiffOp {
+    )   functionf';
 
-    /**
-     * Return a class or style parameter
-     */
-    static function css($classname){
-        global $DIFF_INLINESTYLES;
+  q);
+   _  netur_    w   2
+        $t  $thianged[$s_  netur_    w   2s-ed[$sk    tfrom anal         i false       $// P whirvbñlintesglobpwiki  nv a 1   sy, sto non- }
 
-        if($DIFF_INLINESTYLES){
-            if(!isset(self::$styles[$classname])) return '';
-            return 'style="'.self::$styles[$classname].'"';
-        }else{
-            return 'class="'.$classname.'"';
-        }
-    }
+     sglob      * Thi// Doine numnv a  have*
+    m _Dif    f$dat-wraphanged);
+
+ ot x1)  Lsnt::         i fa;anged);
+
+ ot x1) {
+_
+     e('  ','&#160; ',
+ ot a;anged);
+
+ ot x1)p wg_
+     e('/ (?=<)|(?<=[ >]) /',
+'&#160;',
+ ot a;anged);
+
+        ot s-ed[$sk    tfrom analyp w(altur   functionf'turn  *   g andalk,  s(altur d) {
+             &tur
+     sk    tfrom analyblock_h     ($xbeg(8,(ien  lybeg(8,yien)   function   requilas->orig     $l $pt2las-['ng a ].' '.$xbeg>orig     $l2$pt2las-['ng a ].' '.$ybeg>orig     $y();'<tr><td '.HTMLostl:: ss$ch($o-blockh      ).' col pan="'.l     r ol pan.'">'.fl1.":</td>\n"anged.
+        '<td '.HTMLostl:: ss$ch($o-blockh      ).' col pan="'.l     r ol pan.'">'.fl2.":</td>\n"anged.
+        "</tr>\n"s-ed[$    ts[] = n s-ed[$sk    tfrom analyines[_block($h     )   functionpri  $lh     )s-ed[$sk    tfrom analyhis_block(i   func;
+
+        return    wdi*/
+clasohanfi$=' ',
+ color="linte"i   func;
+
+        retur _DedL fre$*/
+c,$hscapnd=d]);
+g   function __c!$hscapnd
+seps[0];
+     p; $yi < $nctio_hscapndi*/
+c); functionskip] = $typos;
+ '<td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>+</td>'lines tlater dete'<td '.HTMLostl:: ss$ch($o- _Dedng a ).'>' .  p; $y.'</td>'s-ed[$sk    tfrom analiffOp_dL fre$*/
+c,$hscapnd=d]);
+g   function __c!$hscapnd
+seps[0];
+     p; $yi < $nctio_hscapndi*/
+c); functionskip] = $typos;
+ '<td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>-</td>'lines tlater dete'<td '.HTMLostl:: ss$ch($o-iffOp_dng a ).'>' .  p; $y.'</td>'s-ed[$sk    tfrom analg    Lg artual", E_USEypos;
+ '<td col pan="'.l     r ol pan.'">&#160;</td>'s-ed[$sk    tfrom anal  neturL fre$*/
+ctual", E_USEypos;
+ '<td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>&#160;</td>'lines tlater dete'<td '.HTMLostl:: ss$ch($o- (netur').'>'.functio_hscapndi*/
+c).'</td>'s-ed[$sk    tfrom analy _Ded$l  var $type = 'add';
+
+  n _DedL frwdi*/
+clad]);
+gs-ed[$sk    tfrom analy _DedL frwdi*/
+cla$hscapnd=d]);
+gtype = 'adM_ADed[](ais->y  s $s_coo}
+
+        $begpri  $'<tr>' . alse;
+      Lg artu. alse;
+  _DedL fre$*/
+c,$hscapndtu. "</tr>\n"); functionskip] sk    tfrom analyiffOp_d$l  var $type = 'adM_ADed[](ais->y  s $s_coo}
+
+        $begpri  $'<tr>' . alse;
+ iffOp_dL fre$*/
+c) . alse;
+      Lg artu. "</tr>\n"); functionskip] sk    tfrom analy (netur$l  var $type = 'adM_ADed[](ais->y  s $s_coo}
+
+        $begpri  $'<tr>' . alse;
+   neturL fre$*/
+ctu.  alse;
+   neturL fre$*/
+ctu. "</tr>\n"); functionskip] sk    tfrom analy      Udiar $type = 'change';
+
+    f  f        WordLevel    diar $type = 'cha;hi//   chehscapns
+     *tlbdatae';
+
+    f elg=    f ->e virt>orig     $  $del   f -> ? count(nes);
+        $othp; $yi <   $tt e.c e)
+           while (l$a; $yi <   $tt e.c e)        $edits[] =pri  $'<tr>' . alse;
+ iffOp_dL fre$*/
+c,tru1tu. alse;
+  _DedL fre$a*/
+c,tru1tu. "</tr>\n"); functionskip] e (l$';
+
+  n _DedL frwdi _D,tru1t; #iIfdanys.
+ftothis-ed[$sk    tfrom analyhscapndisum)ual", E_USEypos;
+ hscdisum) new _DiffO_Change Inng assuyd>  *tlb
+     td anderna * oor GInng aostl/ note: di($this->ostl/ note: diaiompa}
 }
 
-/**
- *  Additions by Axel Boldt follow, partly taken from diff.php, phpwiki-1.3.3
- *
- */
+col pan = 2hange extends _DiffOp {
+    )   functionf';
 
-define('NBSP', "\xC2\xA0");     // utf-8 non-breaking space.
+  q);
+   _  netur_    w   2
+        $t  $thianged[$s_  netur_    w   2s-ed[$sk    tfrom anal         i false       $// P whirvbñlintesglobpwiki  nv a 1   sy, sto non- }
 
-class _HWLDF_WordAccumulator {
+     sglob      * Thi// Doine numnv a  have*
+    m _Dif    f$dat-wraphanged);
 
-    function __construct() {
-        $this->_lines = array();
-        $this->_line = '';
-        $this->_group = '';
-        $this->_tag = '';
-    }
+ ot x1)  Lsnt::         i fa;anged);
 
-    function _flushGroup($new_tag) {
-        if ($this->_group !== '') {
-            if ($this->_tag == 'mark')
-                $this->_line .= '<strong '.HTMLDiff::css('diff-mark').'>'.$this->_escape($this->_group).'</strong>';
-            elseif ($this->_tag == 'add')
-                $this->_line .= '<span '.HTMLDiff::css('diff-addedline').'>'.$this->_escape($this->_group).'</span>';
-            elseif ($this->_tag == 'del')
-                $this->_line .= '<span '.HTMLDiff::css('diff-deletedline').'><del>'.$this->_escape($this->_group).'</del></span>';
-            else
-                $this->_line .= $this->_escape($this->_group);
-        }
-        $this->_group = '';
-        $this->_tag = $new_tag;
-    }
+ ot x1) {
+_
+     e('  ','&#160; ',
+ ot a;anged);
 
-    function _flushLine($new_tag) {
-        $this->_flushGroup($new_tag);
-        if ($this->_line != '')
-            $this->_lines[] = $this->_line;
-        $this->_line = '';
-    }
+ ot x1)p wg_
+     e('/ (?=<)|(?<=[ >]) /',
+'&#160;',
+ ot a;anged);
 
-    function addWords($words, $tag = '') {
-        if ($tag != $this->_tag)
-            $this->_flushGroup($tag);
+        ot s-ed[$sk    tfrom analyp w(altur   functionf'turn  *   g andalk,  s(altur d) {
+             &tur
+     sk    tfrom analyblock_h     ($xbeg(8,(ien  lybeg(8,yien)   function   requilas->orig      __c,(ien 
+  1or ($xi = $skip; if .= "," . ,(ienps[] = $fl   $miien 
+  1or ($xi = $skipy if .= "," . miiend) {
+     $y();'<tr><td col pan="'.l     r ol pan.'" '.HTMLostl:: ss$ch($o-blockh      ).'>@@ '.$las-['ng a ]." -$xbego+py if @@"d) {
+     $y(.= ' < pan '.HTMLostl:: ss$ch($o-iffOp_dng a ).'><iff>'.flas-['iffOp_d ].'</iff></ pan>'      ed[$$y(.= ' < pan '.HTMLostl:: ss$ch($o- _Dedng a ).'>'.flas-['c}
 
-        foreach ($words as $word) {
-            // new-line should only come as first char of word.
-            if ($word == '')
-                continue;
-            if ($word[0] == "\n") {
-                $this->_group .= NBSP;
-                $this->_flushLine($tag);
-                $word = substr($word, 1);
-            }
-            assert(!strstr($word, "\n"));
-            $this->_group .= $word;
-        }
-    }
+p_d ].'</ pan>'      ed[$$y(.= "</td></tr>\n"s-ed[$    ts[] = n s-ed[$sk    tfrom analyines[_block($h     )   functionpri  $lh     ."\n")s-ed[$sk    tfrom analyhis_block(i   func;
 
-    function getLines() {
-        $this->_flushLine('~done');
-        return $this->_lines;
-    }
+        return    wdi*/
+clasohanfi$=' ',
+ color="linte"i   func;
 
-    function _escape($str){
-        return hsc($str);
-    }
-}
+        retury _Ded$l  var $type = 'adM_ADed[](ais->y  s $s_coo}
 
-class WordLevelDiff extends MappedDiff {
+        $begpri  $'<tr><td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>&#160;</td><td '.HTMLostl:: ss$ch($o- _Dedng a ).'>'.< $nctio_hscapndi*/
+c)u. "</td></tr>\n"); functionskip] sk    tfrom analyiffOp_d$l  var $type = 'adM_ADed[](ais->y  s $s_coo}
 
-    function __construct($orig_lines, $closing_lines) {
-        list ($orig_words, $orig_stripped) = $this->_split($orig_lines);
-        list ($closing_words, $closing_stripped) = $this->_split($closing_lines);
+        $begpri  $'<tr><td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>&#160;</td><td '.HTMLostl:: ss$ch($o-iffOp_dng a ).'><iff>' .< $nctio_hscapndi*/
+c)u. "</iff></td></tr>\n"); functionskip] sk    tfrom analy (netur$l  var $type = 'adM_ADed[](ais->y  s $s_coo}
 
-        parent::__construct($orig_words, $closing_words, $orig_stripped, $closing_stripped);
-    }
+        $begpri  $'<tr><td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>&#160;</td><td '.HTMLostl:: ss$ch($o- (netur').'>'.< $nctio_hscapndi*/
+c)u."</td></tr>\n"); functionskip] sk    tfrom analy      Udiar $type = 'change';
 
-    function _split($lines) {
-        if (!preg_match_all('/ ( [^\S\n]+ | [0-9_A-Za-z\x80-\xff]+ | . ) (?: (?!< \n) [^\S\n])? /xsu',
-             implode("\n", $lines), $m)) {
-            return array(array(''), array(''));
-        }
-        return array($m[0], $m[1]);
-    }
+    f  f        Inng aWordLevel    diar $type = 'cha;hi//   chehscapns
+     *tlbdatae';
 
-    function orig() {
-        $orig = new _HWLDF_WordAccumulator;
-
-        foreach ($this->edits as $edit) {
-            if ($edit->type == 'copy')
-                $orig->addWords($edit->orig);
-            elseif ($edit->orig)
-                $orig->addWords($edit->orig, 'mark');
-        }
-        return $orig->getLines();
-    }
-
-    function closing() {
-        $closing = new _HWLDF_WordAccumulator;
-
-        foreach ($this->edits as $edit) {
-            if ($edit->type == 'copy')
-                $closing->addWords($edit->closing);
-            elseif ($edit->closing)
-                $closing->addWords($edit->closing, 'mark');
-        }
-        return $closing->getLines();
-    }
-}
-
-class InlineWordLevelDiff extends MappedDiff {
-
-    function __construct($orig_lines, $closing_lines) {
-        list ($orig_words, $orig_stripped) = $this->_split($orig_lines);
-        list ($closing_words, $closing_stripped) = $this->_split($closing_lines);
-
-        parent::__construct($orig_words, $closing_words, $orig_stripped, $closing_stripped);
-    }
-
-    function _split($lines) {
-        if (!preg_match_all('/ ( [^\S\n]+ | [0-9_A-Za-z\x80-\xff]+ | . ) (?: (?!< \n) [^\S\n])? /xsu',
-             implode("\n", $lines), $m)) {
-            return array(array(''), array(''));
-        }
-        return array($m[0], $m[1]);
-    }
-
-    function inline() {
-        $orig = new _HWLDF_WordAccumulator;
-        foreach ($this->edits as $edit) {
-            if ($edit->type == 'copy')
-                $orig->addWords($edit->closing);
-            elseif ($edit->type == 'change'){
-                $orig->addWords($edit->orig, 'del');
-                $orig->addWords($edit->closing, 'add');
-            } elseif ($edit->type == 'delete')
-                $orig->addWords($edit->orig, 'del');
-            elseif ($edit->type == 'add')
-                $orig->addWords($edit->closing, 'add');
-            elseif ($edit->orig)
-                $orig->addWords($edit->orig, 'del');
-        }
-        return $orig->getLines();
-    }
-}
-
-/**
- * "Unified" diff formatter.
- *
- * This class formats the diff in classic "unified diff" format.
- *
- * NOTE: output is plain text and unsafe for use in HTML without escaping.
- */
-class UnifiedDiffFormatter extends DiffFormatter {
-
-    function __construct($context_lines = 4) {
-        $this->leading_context_lines = $context_lines;
-        $this->trailing_context_lines = $context_lines;
-    }
-
-    function _block_header($xbeg, $xlen, $ybeg, $ylen) {
-        if ($xlen != 1)
-            $xbeg .= "," . $xlen;
-        if ($ylen != 1)
-            $ybeg .= "," . $ylen;
-        return "@@ -$xbeg +$ybeg @@\n";
-    }
-
-    function _added($lines) {
-        $this->_lines($lines, "+");
-    }
-    function _deleted($lines) {
-        $this->_lines($lines, "-");
-    }
-    function _changed($orig, $final) {
-        $this->_deleted($orig);
-        $this->_added($final);
-    }
-}
-
-/**
- *  Wikipedia Table style diff formatter.
- *
- */
-class TableDiffFormatter extends DiffFormatter {
-    var $colspan = 2;
-
-    function __construct() {
-        $this->leading_context_lines = 2;
-        $this->trailing_context_lines = 2;
-    }
-
-    function format($diff) {
-        // Preserve whitespaces by converting some to non-breaking spaces.
-        // Do not convert all of them to allow word-wrap.
-        $val = parent::format($diff);
-        $val = str_replace('  ','&#160; ', $val);
-        $val = preg_replace('/ (?=<)|(?<=[ >]) /', '&#160;', $val);
-        return $val;
-    }
-
-    function _pre($text){
-        $text = htmlspecialchars($text);
-        return $text;
-    }
-
-    function _block_header($xbeg, $xlen, $ybeg, $ylen) {
-        global $lang;
-        $l1 = $lang['line'].' '.$xbeg;
-        $l2 = $lang['line'].' '.$ybeg;
-        $r = '<tr><td '.HTMLDiff::css('diff-blockheader').' colspan="'.$this->colspan.'">'.$l1.":</td>\n".
-             '<td '.HTMLDiff::css('diff-blockheader').' colspan="'.$this->colspan.'">'.$l2.":</td>\n".
-             "</tr>\n";
-        return $r;
-    }
-
-    function _start_block($header) {
-        print($header);
-    }
-
-    function _end_block() {
-    }
-
-    function _lines($lines, $prefix=' ', $color="white") {
-    }
-
-    function addedLine($line,$escaped=false) {
-        if (!$escaped){
-            $line = $this->_escape($line);
-        }
-        return '<td '.HTMLDiff::css('diff-lineheader').'>+</td>'.
-               '<td '.HTMLDiff::css('diff-addedline').'>' .  $line.'</td>';
-    }
-
-    function deletedLine($line,$escaped=false) {
-        if (!$escaped){
-            $line = $this->_escape($line);
-        }
-        return '<td '.HTMLDiff::css('diff-lineheader').'>-</td>'.
-               '<td '.HTMLDiff::css('diff-deletedline').'>' .  $line.'</td>';
-    }
-
-    function emptyLine() {
-        return '<td colspan="'.$this->colspan.'">&#160;</td>';
-    }
-
-    function contextLine($line) {
-        return '<td '.HTMLDiff::css('diff-lineheader').'>&#160;</td>'.
-               '<td '.HTMLDiff::css('diff-context').'>'.$this->_escape($line).'</td>';
-    }
-
-    function _added($lines) {
-        $this->_addedLines($lines,false);
-    }
-
-    function _addedLines($lines,$escaped=false){
-        foreach ($lines as $line) {
-            print('<tr>' . $this->emptyLine() . $this->addedLine($line,$escaped) . "</tr>\n");
-        }
-    }
-
-    function _deleted($lines) {
-        foreach ($lines as $line) {
-            print('<tr>' . $this->deletedLine($line) . $this->emptyLine() . "</tr>\n");
-        }
-    }
-
-    function _context($lines) {
-        foreach ($lines as $line) {
-            print('<tr>' . $this->contextLine($line) .  $this->contextLine($line) . "</tr>\n");
-        }
-    }
-
-    function _changed($orig, $closing) {
-        $diff = new WordLevelDiff($orig, $closing);  // this escapes the diff data
-        $del = $diff->orig();
-        $add = $diff->closing();
-
-        while ($line = array_shift($del)) {
-            $aline = array_shift($add);
-            print('<tr>' . $this->deletedLine($line,true) . $this->addedLine($aline,true) . "</tr>\n");
-        }
-        $this->_addedLines($add,true); # If any leftovers
-    }
-
-    function _escape($str) {
-        return hsc($str);
-    }
-}
-
-/**
- *  Inline style diff formatter.
- *
- */
-class InlineDiffFormatter extends DiffFormatter {
-    var $colspan = 2;
-
-    function __construct() {
-        $this->leading_context_lines = 2;
-        $this->trailing_context_lines = 2;
-    }
-
-    function format($diff) {
-        // Preserve whitespaces by converting some to non-breaking spaces.
-        // Do not convert all of them to allow word-wrap.
-        $val = parent::format($diff);
-        $val = str_replace('  ','&#160; ', $val);
-        $val = preg_replace('/ (?=<)|(?<=[ >]) /', '&#160;', $val);
-        return $val;
-    }
-
-    function _pre($text){
-        $text = htmlspecialchars($text);
-        return $text;
-    }
-
-    function _block_header($xbeg, $xlen, $ybeg, $ylen) {
-        global $lang;
-        if ($xlen != 1)
-            $xbeg .= "," . $xlen;
-        if ($ylen != 1)
-            $ybeg .= "," . $ylen;
-        $r = '<tr><td colspan="'.$this->colspan.'" '.HTMLDiff::css('diff-blockheader').'>@@ '.$lang['line']." -$xbeg +$ybeg @@";
-        $r .= ' <span '.HTMLDiff::css('diff-deletedline').'><del>'.$lang['deleted'].'</del></span>';
-        $r .= ' <span '.HTMLDiff::css('diff-addedline').'>'.$lang['created'].'</span>';
-        $r .= "</td></tr>\n";
-        return $r;
-    }
-
-    function _start_block($header) {
-        print($header."\n");
-    }
-
-    function _end_block() {
-    }
-
-    function _lines($lines, $prefix=' ', $color="white") {
-    }
-
-    function _added($lines) {
-        foreach ($lines as $line) {
-            print('<tr><td '.HTMLDiff::css('diff-lineheader').'>&#160;</td><td '.HTMLDiff::css('diff-addedline').'>'. $this->_escape($line) . "</td></tr>\n");
-        }
-    }
-
-    function _deleted($lines) {
-        foreach ($lines as $line) {
-            print('<tr><td '.HTMLDiff::css('diff-lineheader').'>&#160;</td><td '.HTMLDiff::css('diff-deletedline').'><del>' . $this->_escape($line) . "</del></td></tr>\n");
-        }
-    }
-
-    function _context($lines) {
-        foreach ($lines as $line) {
-            print('<tr><td '.HTMLDiff::css('diff-lineheader').'>&#160;</td><td '.HTMLDiff::css('diff-context').'>'. $this->_escape($line) ."</td></tr>\n");
-        }
-    }
-
-    function _changed($orig, $closing) {
-        $diff = new InlineWordLevelDiff($orig, $closing);  // this escapes the diff data
-        $add = $diff->inline();
-
-        foreach ($add as $line)
-            print('<tr><td '.HTMLDiff::css('diff-lineheader').'>&#160;</td><td>'.$line."</td></tr>\n");
-    }
-
-    function _escape($str) {
-        return hsc($str);
-    }
-}
-
-
-//Setup VIM: ex: et ts=4 :
+    f  $del   f ->inng arts->in_seq =M_ADed[](a  $d s $s_coor ($xi = $skipri  $'<tr><td '.HTMLostl:: ss$ch($o-*/
+ch      ).'>&#160;</td><td>'.fl $y."</td></tr>\n"); funcsk    tfrom analyhscapndisum)ual", E_USEypos;
+ hscdisum) new _DiffO
+//Sposp VIM:i($:i(t ts=4 :
+                  he feed ob-doku* A P3d71006/in
