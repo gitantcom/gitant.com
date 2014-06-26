@@ -29,3 +29,48 @@ git config --global alias.ci commit
 <code>
 git config merge.conflictstyle diff3
 </code>
+
+====github 403 报错====
+<code>
+error: The requested URL returned error: 403 while accessing https://github.com/xueshell-com/shell_script_example.git/info/refs
+
+fatal: HTTP request failed
+</code>
+解决办法：
+<fc #800000>
+git remote set-url origin https://username@github.com/username/project.git</fc>
+
+===github 设置buffer===
+error: RPC failed; result=22, HTTP code = 0
+
+解决办法：
+git config http.postBuffer 524288000
+
+====Linux用户https协议记住密码====
+
+Linux 用户可以使用 ‘cache’ 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）：
+
+ 
+<code>
+
+git config --global credential.helper 'cache --timeout 3600'
+
+  
+</code>
+ 
+ 
+
+ 
+ 
+下面的命令可以查看 ‘cache’ 认证助手的所有配置：
+
+ 
+<code>
+
+git help credential-cache
+
+
+</code>
+
+ 
+除了这些方法之外，还有一种使用 .netrc 文件的方式

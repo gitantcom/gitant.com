@@ -1,0 +1,103 @@
+
+<h4 id="系统级别配置">系统级别配置</h4>
+<div class="level4">
+
+<p>
+所有用户下的所有仓库均遵守的配置信息。
+/etc/gitconfig
+</p>
+<pre class="code">git config --system </pre>
+
+</div>
+
+<h4 id="用户级别配置">用户级别配置</h4>
+<div class="level4">
+
+<p>
+登录用户支持的配置信息。配置文件存放在主目录(home directory)一个叫~/.gitconfig 的文件中
+</p>
+<pre class="code">$ git config --global user.name &quot;Robin Hu&quot;
+$ git config --global user.email &quot;hudashi@gmail.com&quot;
+$ git config --global core.editor vim #vim 默认编辑器</pre>
+
+<p>
+配置别名
+</p>
+<pre class="code"># Add some SVN-like aliases
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.up rebase
+git config --global alias.ci commit</pre>
+
+</div>
+
+<h4 id="仓库级别的配置">仓库级别的配置</h4>
+<div class="level4">
+
+<p>
+存在在仓库 ./git/config,对仓库有效。
+设置git仓库的trace的remote git 地址。
+</p>
+
+</div>
+
+<h4 id="git_配置冲突解决中diff工具">git 配置冲突解决中diff工具</h4>
+<div class="level4">
+<pre class="code">git config merge.conflictstyle diff3</pre>
+
+</div>
+
+<h3 class="sectionedit1" id="github_403_报错">github 403 报错</h3>
+<div class="level3">
+<pre class="code">error: The requested URL returned error: 403 while accessing https://github.com/xueshell-com/shell_script_example.git/info/refs
+
+fatal: HTTP request failed</pre>
+
+<p>
+解决办法：
+<span style="color: #800000">
+git remote set-url origin <a href="https://username@github.com/username/project.git" class="urlextern" title="https://username@github.com/username/project.git"  rel="nofollow">https://username@github.com/username/project.git</a></span>
+</p>
+
+</div>
+
+<h4 id="github_设置buffer">github 设置buffer</h4>
+<div class="level4">
+
+<p>
+error: RPC failed; result=22, HTTP code = 0
+</p>
+
+<p>
+解决办法：
+git config http.postBuffer 524288000
+</p>
+
+</div>
+<!-- EDIT1 SECTION "github 403 报错" [905-1336] -->
+<h3 class="sectionedit2" id="linux用户https协议记住密码">Linux用户https协议记住密码</h3>
+<div class="level3">
+
+<p>
+Linux 用户可以使用 ‘cache’ 认证助手包来缓存认证信息，运行下面的命令来启用凭据缓存，启用后每次输入密码将保存一小时（3600秒）：
+</p>
+<pre class="code">
+git config --global credential.helper &#039;cache --timeout 3600&#039;
+
+  </pre>
+
+<p>
+下面的命令可以查看 ‘cache’ 认证助手的所有配置：
+</p>
+<pre class="code">
+git help credential-cache
+
+</pre>
+
+<p>
+除了这些方法之外，还有一种使用 .netrc 文件的方式
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Linux用户https协议记住密码" [1337-] -->

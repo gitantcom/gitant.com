@@ -1,0 +1,4 @@
+$ <span class="kw2">git reset</span> HEAD~
+Unstaged changes after reset:
+M Zeus
+M Adonis

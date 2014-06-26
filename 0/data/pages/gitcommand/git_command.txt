@@ -46,7 +46,7 @@
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-push.html|git-push(1)]]用来发布最新的内容。 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html| git-cherry-pick(1)]]挑选某次提交合并 
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-submodule.html|git-submodle(1)]] 将其他仓库成为仓库的子目录
-
+  *[[https://www.kernel.org/pub/software/scm/git/docs/git-rev-list.html | git-rev-list(1) ]]
 ===== 代码库管理=====
 代码库管理员使用下列工具来设置及维护开发者对代码库的访问。
   * [[https://www.kernel.org/pub/software/scm/git/docs/git-daemon.html|git-daemon(1)]]允许匿名者从代码库下载

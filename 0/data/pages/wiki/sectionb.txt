@@ -1,5 +1,5 @@
 {{ :wiki:201206011608404371.jpg?200 |sectionB}}  
-    * [[http://10.210.132.20:8080/summary/~xiaozhen%2FIOSPUSH.git|IOSPUSH]]
+    * [[https://github.com/ |Github]]
    
 
 

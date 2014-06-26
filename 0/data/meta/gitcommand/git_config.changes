@@ -5,3 +5,8 @@
 1390469426	10.221.135.120	E	gitcommand:git_config	uahoo		
 1395226309	10.221.135.165	E	gitcommand:git_config	uahoo		
 1395226324	10.221.135.165	E	gitcommand:git_config	uahoo	[git 配置冲突解决中diff工具] 	
+1400560358	127.0.0.1	E	gitcommand:git_config		外部编辑	
+1401177739	10.221.135.182	E	gitcommand:git_config	uahoo		
+1401177777	10.221.135.182	E	gitcommand:git_config	uahoo	[github 错位信息的配置] 	
+1401177858	10.221.135.182	E	gitcommand:git_config	uahoo		
+1402643796	10.221.135.17	E	gitcommand:git_config	uahoo		
